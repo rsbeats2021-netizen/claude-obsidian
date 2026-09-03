@@ -46,10 +46,10 @@ video scripts.
    `03-images/manifest.md` with its attribution line.
 
 **Known gaps, deliberately left:**
-- Only deck 1 has an `02-slideshow.md` (visual direction per slide). The other
-  five have CSV + brief but no per-slide visual plan yet.
-- No deck has actual image files except growth-plate-fusion.
-- Redraws still owed on deck 1: slide 3 transplant two-panel, slide 6/7 curves.
+- Decks 7-8 (aromatase, fgfr3) have no visual plan or video script yet.
+- No deck has actual image files except growth-plate-fusion (1 cleared figure).
+- Redraws owed: deck 1 slide 3 transplant two-panel + slides 6/7 curves;
+  resting-zone slide 3 proliferation-collapse chart; catch-up slides 1 and 6.
 
 **Commands:**
 ```bash
@@ -124,21 +124,20 @@ shows, nutrition/natural levers. Not dosing or protocol content — see
       prescribed medication) is non-negotiable.** If cutting for length, cut a
       mechanism slide instead.
 
-## Next topics (drafted from vault research, ready to build)
+## Next topics (not yet built)
 
-- [ ] **Catch-up growth** — growth inhibition *conserves* proliferative capacity,
-      so plates grow faster afterward. Independently confirms the "bank account"
-      model. Source: Baron 2004, already in library.
-- [ ] **GH doesn't increase height in non-deficient people** — the strongest
-      existing script (video 2 in style refs). Rebuild as a carousel with the
-      author-year-dose-outcome chain as the spine; that rhythm is the best
-      device in the current material.
-- [ ] **Estrogen, not testosterone, sets final height** — aromatase deficiency
-      and ER-α mutation case reports (men who kept growing into their 20s).
-      Counterintuitive, Tier 1, well-documented.
-- [ ] **AAS in adolescents accelerate skeletal maturation** — Stirling 1994
-      controlled trial: oxandrolone accelerated growth *and* skeletal maturation.
-      The tradeoff, with real trial data.
+Vault material exists for these; no brief or CSV written yet.
+
+- [ ] **AAS accelerate skeletal maturation** — Stirling 1994 controlled trial:
+      oxandrolone accelerated growth *and* skeletal maturation in peri-pubertal
+      boys. The tradeoff with real trial data, not animal models.
+- [ ] **Aromatase inhibition in birds vs mammals** — vault comparison page
+      exists. Genuinely novel angle nobody in this niche covers.
+- [ ] **Sox9 / Runx2 / Dlx5** — the transcription-factor network governing
+      chondrocyte maturation. Pairs with `resting-zone-stem-cells`.
+- [ ] **Craniofacial / mandibular growth** — audience clearly wants it (video 4
+      in style refs). Vault sources are AAS-in-rats studies, so the honest
+      version is "what the animal literature actually shows", not a protocol.
 
 ## Library / tooling
 

@@ -2,7 +2,7 @@
 
 ## ▶ START HERE NEXT SESSION
 
-**State as of 2026-09-03.** Six decks built, all CSVs validated against the
+**State as of 2026-09-03.** Eight decks built, all CSVs validated against the
 Canva template. Pipeline is proven end-to-end on deck 1.
 
 | Deck | brief | visual plan | video | CSV | figure catalogue |
@@ -13,6 +13,8 @@ Canva template. Pipeline is proven end-to-end on deck 1.
 | resting-zone-stem-cells | ✅ | ✅ | ✅ | ✅ | ✅ best |
 | catch-up-growth | ✅ | ✅ | ✅ | ✅ | ✅ |
 | stimulants-and-growth | ✅ | ✅ | ✅ | ✅ | thin/adjacent |
+| aromatase-inhibitor-monitoring-gap | ✅ | — | — | ✅ | ✅ |
+| fgfr3-overgrowth | ✅ | — | — | ✅ | ✅ |
 
 Every deck now has: tier-tagged brief · per-slide visual plan with named
 figure assignments · validated 5-column CSV · figure catalogue. Five have
@@ -176,3 +178,22 @@ cleared papers and 164 figures already exceed what the next several decks need.
 - Pipeline guide: `~/Documents/Claude/Prompts/tiktok-slideshow-pipeline.md`
 - `python3 scripts/find-oa-figures.py "<topic>" --reviews`
 - `python3 scripts/scan-figure-licences.py`
+
+## Decks 7-8 (added late session)
+
+- [ ] **aromatase-inhibitor-monitoring-gap** — brief ✅ CSV ✅ figures ✅
+      The most useful thing this channel could say about AIs: paediatric
+      height studies don't screen for the sensory/cognitive outcomes oncology
+      treats as standard monitoring. Bouliari's cohort had zero cognitive
+      endpoints over ~25 months. "No reported side effects" ≠ "no side effects".
+      Still needs: visual plan, video script.
+- [ ] **fgfr3-overgrowth** — brief ✅ CSV ✅ figures ✅
+      Hook is a 2024 case report: child on a pan-FGFR inhibitor for a tumour
+      developed skeletal *overgrowth* — the mechanism confirmed by accident, in
+      a human, in reverse. Then the three drug strategies (TYRA-300,
+      infigratinib, and meclizine, a repurposed motion-sickness pill).
+      ⚠️ Slide 8 framing is required: these treat a genetic dysplasia in people
+      who have it, not a height pathway for people who don't.
+      Still needs: visual plan, video script.
+      Cross-link found: PMC paper on FGFR3 disrupting *resting zone chondrocyte
+      turnover* via CREB — ties this deck directly to `resting-zone-stem-cells`.

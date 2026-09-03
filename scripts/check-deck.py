@@ -37,9 +37,21 @@ def check(path):
     if not rows:
         return [f"{path}: empty file"], []
 
-    cols = list(rows[0].keys())
+    cols = [c for c in rows[0].keys() if c is not None]
     if cols != COLUMNS:
         errs.append(f"columns are {cols}, expected {COLUMNS}")
+
+    # Field drift: an unquoted comma inside a field splits it, pushing the tail
+    # into DictReader's None key. The row still has all five NAMED keys, so a
+    # column check alone sails straight past it — and Canva then renders a
+    # truncated punch line with the tier flag as the tag. Caught this only
+    # after 10 rows across 8 decks had already drifted.
+    for i, r in enumerate(rows, 1):
+        if None in r:
+            errs.append(
+                f"slide {i}: field drift — an unquoted comma split a field "
+                f"(overflow: {r[None]!r}). Quote the field containing the comma."
+            )
 
     if not (8 <= len(rows) <= 12):
         warns.append(f"{len(rows)} slides — target 8-12 for swipe-through completion")

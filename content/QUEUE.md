@@ -13,12 +13,14 @@ Canva template. Pipeline is proven end-to-end on deck 1.
 | resting-zone-stem-cells | ✅ | ✅ | ✅ | ✅ | ✅ best |
 | catch-up-growth | ✅ | ✅ | ✅ | ✅ | ✅ |
 | stimulants-and-growth | ✅ | ✅ | ✅ | ✅ | thin/adjacent |
-| aromatase-inhibitor-monitoring-gap | ✅ | — | — | ✅ | ✅ |
-| fgfr3-overgrowth | ✅ | — | — | ✅ | ✅ |
+| aromatase-inhibitor-monitoring-gap | ✅ | ✅ | ✅ | ✅ | thin |
+| fgfr3-overgrowth | ✅ | ✅ | ✅ | ✅ | thin (2 usable) |
 
-Every deck now has: tier-tagged brief · per-slide visual plan with named
-figure assignments · validated 5-column CSV · figure catalogue. Five have
-video scripts.
+**All eight decks are complete**: tier-tagged brief · per-slide visual plan
+with named figure assignments · validated 5-column CSV · figure catalogue ·
+video script. Two intentional gaps only:
+- `gh-height-myth` video script held pending per-study citation verification
+- `growth-plate-fusion` also holds one actually-cleared CC-BY image file
 
 **Highest-value single visuals across the batch** (if design time is limited):
 1. `estrogen` slide 4 — estradiol ×10 arrow hitting a broken receptor
@@ -46,7 +48,8 @@ video scripts.
    `03-images/manifest.md` with its attribution line.
 
 **Known gaps, deliberately left:**
-- Decks 7-8 (aromatase, fgfr3) have no visual plan or video script yet.
+- Figure *catalogues* exist for all decks, but only growth-plate-fusion has an
+  actual image file. Pulling images is the main remaining manual work.
 - No deck has actual image files except growth-plate-fusion (1 cleared figure).
 - Redraws owed: deck 1 slide 3 transplant two-panel + slides 6/7 curves;
   resting-zone slide 3 proliferation-collapse chart; catch-up slides 1 and 6.
@@ -180,19 +183,17 @@ cleared papers and 164 figures already exceed what the next several decks need.
 
 ## Decks 7-8 (added late session)
 
-- [ ] **aromatase-inhibitor-monitoring-gap** — brief ✅ CSV ✅ figures ✅
+- [ ] **aromatase-inhibitor-monitoring-gap** — COMPLETE (brief/visual/video/CSV)
       The most useful thing this channel could say about AIs: paediatric
       height studies don't screen for the sensory/cognitive outcomes oncology
       treats as standard monitoring. Bouliari's cohort had zero cognitive
       endpoints over ~25 months. "No reported side effects" ≠ "no side effects".
-      Still needs: visual plan, video script.
-- [ ] **fgfr3-overgrowth** — brief ✅ CSV ✅ figures ✅
+- [ ] **fgfr3-overgrowth** — COMPLETE (brief/visual/video/CSV)
       Hook is a 2024 case report: child on a pan-FGFR inhibitor for a tumour
       developed skeletal *overgrowth* — the mechanism confirmed by accident, in
       a human, in reverse. Then the three drug strategies (TYRA-300,
       infigratinib, and meclizine, a repurposed motion-sickness pill).
       ⚠️ Slide 8 framing is required: these treat a genetic dysplasia in people
       who have it, not a height pathway for people who don't.
-      Still needs: visual plan, video script.
       Cross-link found: PMC paper on FGFR3 disrupting *resting zone chondrocyte
       turnover* via CREB — ties this deck directly to `resting-zone-stem-cells`.

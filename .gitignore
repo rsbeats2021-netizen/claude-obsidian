@@ -132,3 +132,24 @@ _attachments/
 # v1.8 methodology mode (host-specific by default; `git add -f` to commit if desired)
 .vault-meta/mode.json
 .vault-meta/mode.*.tmp
+
+# ---- Source library and personal content (added 2026-09-03) ----
+# 886MB of copyrighted journal PDFs. Owning a paper is not a licence to
+# republish it, and this repo is public. Never commit these.
+.raw/Studies/
+.raw/Studies yet to analyze/
+
+# Personal reference screenshots of other creators' posts (42MB)
+.raw/style-refs/slideshows/
+.raw/style-refs/scripts/
+.raw/style-refs/anti-examples/
+
+# Third-party Obsidian plugin binaries — installed, not authored here
+.obsidian/plugins/dataview/
+.obsidian/plugins/notebook-navigator/
+.obsidian/plugins/obsidian-git/
+.obsidian/plugins/templater-obsidian/
+
+# All-rights-reserved figures extracted for reference only. See
+# content/*/03-images/manifest.md for licence status per asset.
+content/*/03-images/fig-senescence-baron2004.png

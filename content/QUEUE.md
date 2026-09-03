@@ -48,8 +48,14 @@ video script. Two intentional gaps only:
    `03-images/manifest.md` with its attribution line.
 
 **Known gaps, deliberately left:**
-- Figure *catalogues* exist for all decks, but only growth-plate-fusion has an
-  actual image file. Pulling images is the main remaining manual work.
+- 9 image files exist across 4 decks (2 extracted CC-BY, 3 generated SVG charts,
+  1 earlier Hallett figure). The other 4 decks still need images.
+- Two extraction routes now proven: `scan-figure-licences.py` finds CC-BY papers
+  in the LOCAL library (PMC blocks scripted download, local PDFs don't), and
+  `make-deck-charts.py` generates brand-palette SVG for chart slides.
+- Remaining redraws are conceptual, not chart-shaped: the estrogen deck's
+  broken-receptor graphic, the FGFR3 mirror-image axis, the aromatase
+  two-checklists. Those need a designer, not a script.
 - No deck has actual image files except growth-plate-fusion (1 cleared figure).
 - Redraws owed: deck 1 slide 3 transplant two-panel + slides 6/7 curves;
   resting-zone slide 3 proliferation-collapse chart; catch-up slides 1 and 6.

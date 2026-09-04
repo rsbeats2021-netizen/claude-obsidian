@@ -1,10 +1,10 @@
-headline,subhead,body,punch,tag
-Your final height,IS DECIDED BY ONE CELL TYPE,A thin layer of stem cells sitting at the very top of the growth plate.,Everything below them is just the assembly line they feed.,@metroraz
-They're called,RESTING ZONE CELLS,"The name is misleading. They aren't resting — they're the reserve. They divide slowly, and each division produces the columns of chondrocytes that actually lengthen the bone.",They aren't idle. They're being spent.,@metroraz
-And they run out,FAST,"In rabbits, over 95% of resting zone cells were dividing at birth. By 17 weeks that had collapsed to under 10%. The cell count dropped too — not just the activity.","The reserve depletes both ways: fewer cells, and less active.",TIER 1 · Schrier 2006
-We now know,EXACTLY WHICH CELLS,"They're marked by PTHrP, and single-cell sequencing of human pubertal growth plate biopsies confirmed the same two subpopulations exist in people, not just mice.",This stopped being a mouse story in 2025.,TIER 1 · Chu 2025
-Activate them,AND BONE GETS LONGER,"A single Hedgehog-agonist bead implanted in one rat femur produced measurable, progressively increasing leg length versus the untreated leg on the same animal.",Same animal. Same genetics. One leg longer.,TIER 2 · Trompet 2024
-They also need,A VERY SPECIFIC NICHE,"These cells only stay stem-like in a low-Wnt environment. Force canonical Wnt signalling on and they lose the ability to form columns at all.",The niche isn't background. It's a requirement.,TIER 2 · Hallett 2021
-And growth hormone,ACTS ON THEM DIRECTLY,"GH stimulates human resting zone cells through JAK/STAT and local TGF-beta — independent of the liver IGF-1 pathway everyone talks about.",The GH story has a second half nobody covers.,TIER 2 · Chu 2025
-But here's the gap,WORTH BEING HONEST ABOUT,"Whether normal fusion is these cells clonally exhausting themselves has never been directly tested. It's the best model available and it's still inference.",Best available explanation is not the same as demonstrated.,TIER 3 · UNTESTED
-It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.,@metroraz
+headline,subhead,body,punch
+Your final height,IS DECIDED BY ONE CELL TYPE,A thin layer of stem cells sitting right at the top of the growth plate.,Everything under them is just the production line they feed.
+They're called,RESTING ZONE CELLS,"The name is misleading. They're not resting, they're the reserve. They divide slowly, and every division produces the columns of chondrocytes that actually make the bone longer.",They're not idle. They're being spent.
+And they run out,FAST,"In rabbits, over 95% of resting zone cells were dividing at birth. By 17 weeks that dropped under 10%. The cell count fell too, not just the activity.",Fewer cells and less active. It empties both ways.
+We now know,EXACTLY WHICH CELLS,"They're marked by PTHrP. Single cell sequencing of human pubertal growth plate biopsies confirmed the same two populations exist in people, not just mice.",This stopped being a mouse story in 2025.
+Switch them on,AND BONE GETS LONGER,"One Hedgehog agonist bead implanted in a single rat femur produced a measurable, growing length difference against the untreated leg on the same animal.","Same animal, same genetics, one leg longer."
+They also need,A VERY SPECIFIC NICHE,These cells only stay stem like in a low Wnt environment. Force canonical Wnt signalling on and they lose the ability to form columns at all.,The niche isn't background. It's a requirement.
+And growth hormone,HITS THEM DIRECTLY,"GH stimulates human resting zone cells through JAK/STAT and local TGF beta, completely separate from the liver IGF-1 pathway everyone talks about.",The GH story has a second half nobody covers.
+But here's the gap,WORTH BEING HONEST ABOUT,Nobody has directly tested whether normal fusion is these cells clonally exhausting themselves. It's the best model we have and it's still inference.,Best available explanation is not the same as proven.
+It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.

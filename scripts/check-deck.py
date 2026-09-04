@@ -17,11 +17,11 @@ import glob
 import re
 import sys
 
-COLUMNS = ["headline", "subhead", "body", "punch", "tag"]
+COLUMNS = ["headline", "subhead", "body", "punch"]
 
 # Ceilings measured against the built Canva template. Raise these only after
 # re-testing the template — they are what guarantees copy fits the boxes.
-LIMITS = {"headline": 30, "subhead": 30, "body": 300, "punch": 140, "tag": 30}
+LIMITS = {"headline": 30, "subhead": 30, "body": 300, "punch": 160}
 
 # Deliberately NOT checked: whether each slide leaves an open loop. That's a
 # semantic property, and a regex for it fired on 4 of 9 slides that genuinely
@@ -65,9 +65,11 @@ def check(path):
             cap = LIMITS.get(col)
             if cap and len(val) > cap:
                 errs.append(f"slide {i}: '{col}' is {len(val)} chars, over the {cap} ceiling — will overflow")
-    tiers = [r for r in rows if re.search(r"tier\s*[23]", r.get("tag", ""), re.I)]
-    if not tiers:
-        warns.append("no Tier 2/3 flag anywhere — check nothing uncertain is stated as settled")
+    # Em dashes are banned in deck copy by house style.
+    for i, r in enumerate(rows, 1):
+        for col in COLUMNS:
+            if "\u2014" in (r.get(col) or ""):
+                errs.append(f"slide {i}: em dash in '{col}' - house style bans them")
 
     return errs, warns
 

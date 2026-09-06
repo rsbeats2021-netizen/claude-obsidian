@@ -73,3 +73,47 @@ evidence, and I won't either.
   something, with the last slide turning them back on this account
 
 **A-CLASSIC** — everything else (37 decks)
+
+## Writing rules (revised 6 Sep, after feedback)
+
+The old decks argued. These explain. Every deck is now one of two shapes and
+nothing else.
+
+**SHAPE 1 — How something works**
+Mechanism, then the evidence for it, then what it means for you. No detour
+through what the literature debates.
+
+**SHAPE 2 — A problem and what to do about it**
+What goes wrong, how it goes wrong, which variants are worst, what actually
+changes the outcome. If nothing changes it, say that plainly.
+
+### Banned
+
+- **Literature commentary.** "Chagin cites the earlier work and argues they are
+  not strictly contradictory" tells a viewer nothing they can use.
+- **Ending on 'nobody knows'.** If the last slide leaves someone with "we have
+  androgen receptors in bone and don't know what they do", the deck failed.
+- **Claim, then counterclaim, then a third point.** Pick the thing that is true
+  and explain it properly.
+- **Being vague to stay safe.** If a claim needs a caveat, state the caveat in
+  one line and move on. Do not build a slide around hedging.
+
+### Still required
+
+- If the evidence isn't strong enough for a claim with no serious counter
+  argument, say so in one line, or drop the claim. Do not fudge it.
+- Dose, species and population stay attached to numbers. "4.5 to 9.6 cm/year in
+  paediatric growth disorders" is usable. "It increases growth" is not.
+- Where a real tradeoff exists it goes in as information, not as hedging.
+  Oxandrolone gained height AND advanced bone age 3 to 7 months. Both are facts
+  a viewer needs.
+
+### Correction logged
+
+`androgen-receptors-in-bone` has been deleted and replaced by
+`local-conversion-growth-plate`. The old deck leaned on Chagin 2009 (no effect
+of testosterone or oxandrolone on longitudinal growth in organ culture) and
+presented that as the state of play. That was incomplete: a review of 45
+studies found oxandrolone produced 4.5 to 9.6 cm/year growth velocity and 2.3
+to 4.6 cm additional adult height in paediatric growth disorders. The organ
+culture null result does not override the clinical record.

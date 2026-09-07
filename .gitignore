@@ -156,3 +156,6 @@ content/*/03-images/fig-senescence-baron2004.png
 
 # Rendered slide output (generated, not source)
 content/*/07-rendered/
+
+# Scraped competitor media, do not commit (GBs, and not ours)
+content/_style-analysis/tiktok/

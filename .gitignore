@@ -153,3 +153,6 @@ _attachments/
 # All-rights-reserved figures extracted for reference only. See
 # content/*/03-images/manifest.md for licence status per asset.
 content/*/03-images/fig-senescence-baron2004.png
+
+# Rendered slide output (generated, not source)
+content/*/07-rendered/

@@ -117,3 +117,44 @@ presented that as the state of play. That was incomplete: a review of 45
 studies found oxandrolone produced 4.5 to 9.6 cm/year growth velocity and 2.3
 to 4.6 cm additional adult height in paediatric growth disorders. The organ
 culture null result does not override the clinical record.
+
+## Rule added 7 Sep: no exhaustiveness claims
+
+The aromatase inhibitor deck said "the entire evidence base is four randomised
+trials, 207 participants." That was false.
+
+Where it came from: a vault source note reporting that **one systematic review
+found 4 RCTs meeting its inclusion criteria** (AI vs placebo, male children and
+adolescents, short stature). A narrow filter applied by one review became, in my
+deck, a census of the whole literature.
+
+It was checkable and I did not check it. Searching outside the vault found
+Hero 2006 (near final height, constitutional delay), Mauras (AI vs GH vs
+combination), Salehpour (letrozole vs oxandrolone, placebo controlled), a 2024
+three year anastrozole vs letrozole trial in 79 males, an anastrozole plus GH
+multicentre trial, and a 2019 monotherapy study reporting no adult height gain.
+I had also already used Jacobson 2005 in another deck, which alone disproves the
+claim.
+
+### The rule
+
+**Never claim a literature is complete, small, or settled from a single source.**
+
+Banned phrasings unless verified by an actual literature search:
+- "the entire evidence base is..."
+- "there are only N studies"
+- "no trial has ever..."
+- "nobody has looked at..."
+
+A systematic review's inclusion count describes **that review's filter**, not the
+field. Say "one systematic review found 4 RCTs meeting its criteria" or say
+nothing.
+
+### And search outside the vault
+
+The vault is what happened to get downloaded. It is not the literature. Any
+claim about what does or does not exist has to be checked against the actual
+literature, not against the file count in `.raw/Studies`.
+
+Where a claim cannot be verified, leave the question open rather than closing it
+in the direction that sounds stronger.

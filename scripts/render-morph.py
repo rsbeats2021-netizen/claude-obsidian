@@ -153,7 +153,7 @@ def main():
     ap.add_argument("deck")
     ap.add_argument("--size", choices=list(SIZES), default="3:4")
     ap.add_argument("--palette", choices=list(PALETTES), default="slate")
-    ap.add_argument("--brand", default="METRORAZ")
+    ap.add_argument("--brand", default="RESTINGZONE")
     ap.add_argument("--images", choices=["none", "few", "mixed", "many"], default="mixed")
     ap.add_argument("--out")
     a = ap.parse_args()
@@ -192,7 +192,9 @@ def main():
                     break
             if not img and a.images in ("mixed", "many"):
                 pool = sorted(glob.glob(os.path.join(imgdir, "studies", "*.png")))
-                cap = 2 if a.images == "mixed" else 99
+                # one receipt per deck. Repeating the same screenshot across slides
+                # reads as padding rather than evidence.
+                cap = 1
                 if pool and receipts < cap and 1 < i < len(rows):
                     img = ('<div class="studylabel">THE STUDY</div>'
                            f'<div class="imgband study"><img src="file://'
@@ -214,7 +216,7 @@ def main():
             padtop=int(30 * k), brandsize=int(30 * k), brandls=int(7 * k),
             brandgap=int(12 * k), divgap=int(20 * k), btop=int(30 * k),
             bgap=int(26 * k), pgap=int(34 * k), igap=int(26 * k),
-            imax=int(430 * k), smax=int(330 * k), slsize=int(24 * k),
+            imax=int(430 * k), smax=int(210 * k), slsize=int(24 * k),
             arrowsize=int(60 * k), footsize=int(19 * k),
             hsize=max(int(40 * k), int((78 - max(0, len(r["headline"]) - 16) * 1.5) * k)),
             bsize=max(int(24 * k), int((40 - max(0, body_len - 150) * 0.030) * k)),

@@ -159,7 +159,7 @@ def main():
     ap.add_argument("--out")
     ap.add_argument("--size", choices=list(SIZES), default="9:16",
                     help="4:5 keeps content clear of TikTok's UI overlay")
-    ap.add_argument("--handle", default="@metroraz")
+    ap.add_argument("--handle", default="@restingzone")
     a = ap.parse_args()
     global W, H
     W, H = SIZES[a.size]

@@ -142,3 +142,71 @@ anabolic for bone.
 That is a real, citable pathway for load-induced bone formation and it is
 stronger backing for the loading argument than the ERα mechanotransduction
 material I built `mechanical-loading-bone` from. Worth adding.
+
+---
+
+## 9. Aspect ratio, measured
+
+2,232 competitor slide images measured, then joined to their post stats.
+
+### What they actually use
+
+| dimensions | count | ratio |
+|---|---|---|
+| 1080x1920 | 475 | 0.562 (9:16) |
+| 960x1280 | 251 | 0.750 |
+| 1080x1440 | 183 | 0.750 |
+| 1080x1080 | 103 | 1.000 |
+| 1080x1350 | 25 | 0.800 (4:5) |
+
+No single standard. 9:16 is most common by count, but that count is inflated by
+single-image posts.
+
+### Raw performance, which is misleading
+
+| aspect | n | median plays | saves/1k |
+|---|---|---|---|
+| 4:5 | 106 | 14,400 | 17.9 |
+| 1:1 | 68 | 8,625 | 13.0 |
+| 9:16 | 222 | 7,129 | 4.9 |
+
+### The confound
+
+Median slide count by aspect: **9:16 = 1 slide**, 4:5 = 6, 1:1 = 3. The 9:16
+bucket is mostly single-image meme posts, not decks. That is what drags it down,
+not the ratio.
+
+### Controlled, decks of 6+ slides only
+
+| aspect | n | median plays | saves/1k |
+|---|---|---|---|
+| **4:5** | 56 | **22,200** | **31.5** |
+| 9:16 | 52 | 16,000 | 23.6 |
+| 1:1 | 30 | 11,265 | 26.0 |
+
+4:5 still wins after controlling: +39% plays, +33% saves. And it is used across
+seven different accounts, so it is not one outlier driving it. The two strongest
+accounts by median (doctor.morph 34,500 and bio.science 24,000) both use 4:5
+predominantly.
+
+### Tension with platform guidance
+
+TikTok's own recommendation is 1080x1920. Ratios other than 9:16 get padded.
+So the platform says one thing and the observed data says another.
+
+### Likely explanation: the UI overlay
+
+On a full-bleed 9:16 image, TikTok's interface sits **on top of the content**.
+Caption, username and music ticker along the bottom, the like/comment/share
+column down the right. That covers roughly the bottom fifth and the right edge.
+
+In this deck format the bottom is where the punch line goes. A 4:5 image
+centres in the frame and stays clear of all of it.
+
+That is a mechanistic reason for the observed result rather than a coincidence,
+which is why it is worth acting on despite contradicting the official spec.
+
+### Recommendation
+
+Test 4:5 (1080x1350). Both renderers now take `--size 4:5`. Keep the ratio
+consistent within a single carousel; TikTok handles mixed ratios badly.

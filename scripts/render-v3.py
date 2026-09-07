@@ -24,7 +24,8 @@ import sys
 import tempfile
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-W, H = 1080, 1920
+SIZES = {"9:16": (1080, 1920), "4:5": (1080, 1350), "1:1": (1080, 1080)}
+W, H = SIZES["9:16"]
 
 STYLES = {
     "dark": dict(
@@ -172,7 +173,11 @@ def main():
     ap.add_argument("deck")
     ap.add_argument("--style", choices=list(STYLES), required=True)
     ap.add_argument("--out")
+    ap.add_argument("--size", choices=list(SIZES), default="9:16",
+                    help="4:5 keeps content clear of TikTok's UI overlay")
     a = ap.parse_args()
+    global W, H
+    W, H = SIZES[a.size]
     d = a.deck.rstrip("/")
     render(d, a.style, a.out or os.path.join(d, f"08-{a.style}"))
 

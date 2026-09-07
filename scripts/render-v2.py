@@ -32,35 +32,36 @@ import tempfile
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 1080, 1920
 
-INK = "#0B0B0B"
+INK = "#141414"
+BG  = "#EDEDEA"   # soft light grey, easier on the eye than pure white
 BLUE = "#1B4DE4"
 RED = "#E0243B"
 GREY = "#8A8A8A"
 
 TEMPLATE = """<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Figtree:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   *{{margin:0;padding:0;box-sizing:border-box}}
-  html,body{{width:{W}px;height:{H}px;background:#fff;}}
+  html,body{{width:{W}px;height:{H}px;background:{BG};}}
   .wrap{{position:absolute;inset:0;padding:96px 62px 90px;
         display:flex;flex-direction:column;align-items:center;text-align:center;
         justify-content:{justify};}}
-  .headline{{font-family:Archivo,sans-serif;font-weight:900;font-size:{hsize}px;
+  .headline{{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:{hsize}px;
         line-height:1.0;color:{INK};letter-spacing:-1px;}}
-  .section{{font-family:Archivo,sans-serif;font-weight:900;font-size:70px;
+  .section{{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:70px;
         color:{BLUE};letter-spacing:1px;margin-bottom:16px;}}
-  .sub{{font-family:Archivo,sans-serif;font-weight:800;font-size:44px;
+  .sub{{font-family:Figtree,sans-serif;font-weight:800;font-size:44px;
         color:{BLUE};margin-top:20px;line-height:1.1;}}
   .blocks{{margin-top:52px;display:flex;flex-direction:column;gap:44px;width:100%;}}
-  .b{{font-family:Archivo,sans-serif;font-weight:700;font-size:{bsize}px;
+  .b{{font-family:Figtree,sans-serif;font-weight:600;font-size:{bsize}px;
       line-height:1.28;color:{INK};}}
-  .punch{{font-family:Archivo,sans-serif;font-weight:900;font-size:{psize}px;
+  .punch{{font-family:Figtree,sans-serif;font-weight:800;font-size:{psize}px;
       line-height:1.2;color:{INK};margin-top:56px;}}
   .imgband{{margin:40px 0 10px;width:100%;display:flex;justify-content:center;}}
   .imgband img{{max-width:96%;max-height:620px;}}
-  .arrow{{font-size:96px;color:{INK};margin-top:60px;font-family:Archivo,sans-serif;font-weight:900;}}
-  .foot{{position:absolute;bottom:44px;left:0;right:0;font-family:Archivo,sans-serif;
-      font-weight:700;font-size:24px;color:{GREY};text-align:center;}}
+  .arrow{{font-size:96px;color:{INK};margin-top:60px;font-family:Figtree,sans-serif;font-weight:800;}}
+  .foot{{position:absolute;bottom:44px;left:0;right:0;
+      font-weight:600;font-size:23px;color:{GREY};text-align:center;font-family:Figtree,sans-serif;}}
   em{{font-style:normal;color:{BLUE};}}
   strong{{font-weight:700;color:{RED};}}
 </style></head><body>
@@ -127,10 +128,12 @@ def render(deck, outdir, handle):
         punch_html = f'<div class="punch">{marks(punch)}</div>' if punch else ""
         arrow = '<div class="arrow">&#8594;</div>' if i == 1 else ""
 
-        foot = handle + (("   " + credits[f"slide-{i:02d}"]) if f"slide-{i:02d}" in credits else "")
+        # handle removed by request; footer now carries only the legally
+        # required image credit, and is blank when a slide has no image
+        foot = credits.get(f"slide-{i:02d}", "")
         allcopy = body + punch
         page = TEMPLATE.format(
-            W=W, H=H, INK=INK, BLUE=BLUE, RED=RED, GREY=GREY,
+            W=W, H=H, INK=INK, BLUE=BLUE, RED=RED, GREY=GREY, BG=BG,
             justify="center" if not img else "flex-start",
             hsize=fit(r["headline"], 108, 62, 20),
             bsize=fit(allcopy, 52, 34, 210),

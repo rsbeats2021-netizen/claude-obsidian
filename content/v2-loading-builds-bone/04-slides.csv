@@ -1,0 +1,14 @@
+headline,subhead,body,punch
+Mechanical force,,builds bone through a named pathway,THE MECHANISM NOBODY EXPLAINS
+Your bones,SECTION: THE SENSOR,contain cells called *osteocytes*. | They sit inside the bone matrix and do one job: detect mechanical stress. | They convert physical force into chemical signals.,Your skeleton has dedicated force sensors.
+When you load bone,SECTION: THE CASCADE,"Osteocytes sense the strain. | They secrete *nitric oxide* and *PGE2*. | Those two block a protein called **sclerostin**, coded by the *SOST* gene.",Load in. Sclerostin down.
+Sclerostin,,"is a brake on bone formation. | It blocks the *Wnt* pathway, which is the main anabolic signal for bone. | Less sclerostin means more Wnt.","Loading works by removing a brake, not adding a gas pedal."
+And more Wnt,,increases the number of cells that produce bone. | It also suppresses bone resorption at the same time. | Both directions at once.,More building. Less breakdown.
+This was measured,SECTION: THE STUDY,"Robling and colleagues, Journal of Biological Chemistry, 2008. | Mechanical stimulation of bone in vivo reduced osteocyte Sost and sclerostin expression. | Direct measurement of the gene response to load.",Without sclerostin downregulation there is no bone growth from mechanical stress.
+Cartilage does it too,SECTION: THE OTHER SENSOR,*Chondrocytes* sense load through a three tier cascade. | Ion channels at the membrane. Then intracellular signalling. Then gene expression.,Force gets converted into transcription.
+The receptor doing it,,is *estrogen receptor alpha*. | It works as a mechanotransducer with no estrogen bound to it at all. | Completely separate from its hormone job.,Your estrogen receptor moonlights as a strain gauge.
+Loading in range,SECTION: THE DOSE RESPONSE,"maintains ER alpha expression. | That keeps *COL2* and *SOX9* running, which are the genes for cartilage identity. | The tissue is told to keep being cartilage.",Right amount of load builds tissue.
+Loading above it,,**inhibits** ER alpha expression. | COL2 and SOX9 get downregulated. | **MMP13** and **ADAMTS4** get upregulated. Those are cartilage degrading enzymes.,Same tissue. Same receptor. Opposite result.
+Which means,SECTION: THE TAKEAWAY,Loading is not binary. It has a dose response curve. | There is a window where force builds and a level above it where the same tissue breaks itself down. | Both halves are real and measured.,The variable is magnitude. Not whether you load.
+And adults,,are not exempt from this. | Blocking the *P2Y2* receptor increased periosteal bone formation under exercise loading in adult mice. | Adult bone still responds to mechanical signals.,Your skeleton never stops listening to force.
+It's never over,,Real mechanisms. Real citations. No protocols.,Follow for more

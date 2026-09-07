@@ -1,10 +1,10 @@
-headline,subhead,body,punch,tag
-Your cartilage,HAS ITS OWN BODY CLOCK,"Not your brain's clock. A clock inside the tissue.","And a hormone in your bloodstream can reset it.",@metroraz
-Circadian rhythm,GETS EXPLAINED AS ONE CLOCK,"A master pacemaker in the brain telling the body what time it is. Peripheral tissues as passengers following instructions.","Most tissues keep their own time.",@metroraz
-Cartilage,IS ONE OF THEM,"Growth plate cartilage runs a local circadian clock, measurable in organ-cultured femurs — isolated tissue, no brain attached, still keeping time.","Disconnected from the body and still rhythmic.",TIER 2 · Okubo 2015
-And PTH,RESETS IT,"Parathyroid hormone signalling resets the circadian clock specifically within cartilage — a previously uncharacterised link between PTH signalling and circadian biology in the growth plate.","A hormone acting as a time signal, not just a growth signal.",TIER 2
-Why that's interesting,STRUCTURALLY,"PTH and PTHrP already sit at the centre of growth plate regulation through the feedback loop controlling chondrocyte maturation. Now the same axis carries timing information.","One pathway doing regulation and scheduling.",TIER 2
-Which raises,AN OBVIOUS QUESTION,"If the tissue's clock can be reset by a hormone, then sleep disruption, shift patterns and feeding timing all become plausible inputs to growth plate biology.","Plausible. Not demonstrated — and that distinction is the point.",TIER 3 · SPECULATIVE
-This is where,MOST CONTENT GOES WRONG,"A real mechanism gets discovered, and the sleep-optimisation version appears before anyone has measured a height outcome. The mechanism is real. The advice is invented.","Real pathway, invented protocol.",TIER 3
-The honest position,ON CIRCADIAN AND GROWTH,"Cartilage keeps local time and PTH can shift it. That's what's established. Everything downstream of it is currently a hypothesis wearing a lab coat.","Knowing a clock exists isn't knowing how to set it.",TIER 2
-It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.,@metroraz
+headline,subhead,body,punch
+Your cartilage,KEEPS ITS OWN TIME,"A working circadian clock inside the tissue, running without your brain.",And parathyroid hormone resets it.
+Isolated tissue,STILL KEEPS RHYTHM,"Growth plate cartilage in organ cultured femurs runs a measurable circadian clock. No brain attached, no light input, no feeding cues. The tissue oscillates on its own.",Disconnected from the body and still on schedule.
+PTH,SHIFTS THE CLOCK,Parathyroid hormone signalling resets the circadian clock specifically within cartilage. A hormone that already regulates the growth plate also carries timing information into it.,One pathway doing regulation and scheduling at once.
+Which matters,BECAUSE PTH IS CENTRAL HERE,PTHrP sits in the feedback loop with Indian hedgehog that controls when chondrocytes stop proliferating and start hypertrophy. That's the loop deciding how long cells keep dividing.,The timing signal plugs into the growth decision.
+Clock genes,CONTROL REAL OUTPUTS,"Circadian machinery in cartilage gates matrix production, proliferation and metabolic activity across the day. These aren't background rhythms, they're the tissue's actual work being scheduled.",Cartilage does different jobs at different hours.
+Which is why,GH TIMING ISN'T ARBITRARY,"Growth hormone is secreted in pulses, biggest during deep sleep. A tissue running its own clock is set up to be more responsive at some points in that cycle than others.",Pulse timing meets tissue timing.
+What's established,AND WHAT ISN'T,The clock exists in cartilage and PTH resets it. Whether disrupted sleep measurably changes adult height in humans has not been tested.,Mechanism confirmed. Height outcome unmeasured.
+The usable point,IS ABOUT PATTERN,"Hormone effects here depend on when the signal arrives, not only how much arrives. That's already proven for GH, where pulsatile delivery beat continuous at matched dose.",Amount and timing are separate variables.
+It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.

@@ -1,10 +1,10 @@
-headline,subhead,body,punch,tag
-There's a protein,THAT MAKES MICE LONGER,"And unlike most findings in this field, it comes with human genetic evidence.","Most growth-plate results never get that far.",@metroraz
-Osteolectin,WAS ALREADY KNOWN,"As a factor maintaining adult bone mass. That was its whole described job — keeping an existing skeleton dense.","Then someone looked at juveniles.",@metroraz
-In young animals,IT DOES SOMETHING ELSE,"Osteolectin increases growth plate chondrocyte proliferation and promotes bone elongation, producing increased body length in juvenile mice.","A different function in a different life stage.",TIER 2 · PNAS 2023
-Which is a pattern,WORTH NOTICING,"The same molecule doing maintenance in adults and construction in juveniles. Growth biology and maintenance biology reuse the same parts for different jobs.","Ask what a protein does at your age, not in general.",TIER 2
-Then the rare part,FOR THIS FIELD,"A human genetic variant in osteolectin was identified and linked to a functional phenotype — direct human genetic evidence, not mouse-model inference.","Almost nothing else in this literature clears that bar.",TIER 1
-Why that matters,MORE THAN THE MOUSE RESULT,"Mouse growth-plate findings frequently fail to transfer — rodents don't undergo true epiphyseal fusion at sexual maturity the way humans do.","A human variant sidesteps the species problem entirely.",TIER 1
-What it doesn't mean,IS ALSO IMPORTANT,"There is no osteolectin intervention. This is a mechanism with unusually good evidence, not an available lever, and the gap between those is enormous.","Well-evidenced and unavailable are compatible.",TIER 2
-The real lesson,IS ABOUT EVIDENCE QUALITY,"When you hear a growth claim, ask whether it rests on a mouse, a cell culture, or a human genetic variant. Those aren't the same kind of knowing.","The species the finding lives in tells you most of what you need.",TIER 1
-It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.,@metroraz
+headline,subhead,body,punch
+There's a protein,THAT MAKES BONES LONGER,It increases growth plate proliferation directly.,And humans carrying a variant in it have a measurable phenotype.
+Osteolectin,HAD A KNOWN DAY JOB,It was described as a factor maintaining adult bone mass. Keeping an existing skeleton dense. That was the whole understood function.,Then someone checked juveniles.
+In young animals,IT DRIVES ELONGATION,"Osteolectin increases growth plate chondrocyte proliferation and promotes bone elongation, producing greater body length in juvenile mice.","More proliferation in the plate, more length in the bone."
+Which is the exact lever,EVERYTHING ELSE ACTS ON,Growth plate output is proliferation times how long you keep proliferating. Osteolectin pushes the first term directly rather than through a hormone axis.,"It acts on the cells, not on the endocrine system."
+Then the rare part,A HUMAN VARIANT,"A genetic variant in osteolectin was identified in people and linked to a functional phenotype. Not extrapolated from mice, found in humans.",Most growth plate findings never clear that bar.
+Why that bar matters,IS THE SPECIES PROBLEM,Rodents don't undergo true epiphyseal fusion at sexual maturity the way humans do. A mouse growth plate finding may not transfer at all. A human variant sidesteps that entirely.,This is the difference between suggestive and demonstrated.
+It also fits,THE STEM CELL PICTURE,"Growth plate output traces back to resting zone progenitors. Anything raising their proliferation raises the ceiling on total growth, which is why this protein is interesting rather than incidental.",Same target as the Hedgehog work.
+What to take from it,BEYOND THE PROTEIN,"Growth plate proliferation is directly druggable in principle, and at least one target has human genetic support behind it. That's the current frontier of this field.",This is where the research is actually pointing.
+It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.

@@ -1,10 +1,10 @@
-headline,subhead,body,punch,tag
-Your nervous system,TALKS TO YOUR GROWTH PLATE,Through the same receptor adrenaline uses.,And knocking it out increases bone mass.,@metroraz
-This whole field,THINKS IN HORMONES,"Estrogen, androgens, growth hormone, IGF-1, thyroid. Every framework for bone growth runs on the endocrine system.",The sympathetic nervous system is a separate input nobody includes.,@metroraz
-Bone and cartilage cells,CARRY BETA-2 RECEPTORS,"The same receptor class that responds to adrenaline and noradrenaline. Catecholamines act directly on these cells, not just on blood flow to them.",Stress chemistry has a direct receptor in your skeleton.,TIER 2
-Delete that receptor,AND BONE MASS RISES,"Mice lacking beta-2 adrenergic receptors — either systemically or specifically in osteoblasts — show increased bone mass.",Removing a nervous system signal built more bone.,TIER 2 · mouse genetics
-It also touches,CELL FATE,"Catecholamines influence chondrocyte-to-osteoblast transdifferentiation — one of the four competing theories for how growth plates actually execute closure.",A nervous system input sitting on top of a cell-fate decision.,TIER 2
-Which connects,TO SOMETHING PRACTICAL,"Chronic stress, sleep, and stimulant medication all move catecholamine signalling. This is a plausible mechanism linking those to skeletal outcomes.",Plausible mechanism. Not a demonstrated height effect.,TIER 3 · SPECULATIVE
-Why nobody covers this,IS THE INTERESTING PART,"It sits outside the hormone framework, so it doesn't appear in the literature people in this space read. It isn't hidden — it's in a different silo.",The gaps in a field are usually where its categories are.,TIER 2
-Be clear on the limits,BEFORE ACTING ON IT,"Mouse genetics and cell-level work. No human height outcome data. This is a mechanism worth knowing, not a lever worth pulling.",Knowing a pathway exists is not knowing how to use it.,TIER 3
-It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.,@metroraz
+headline,subhead,body,punch
+Adrenaline,ACTS ON YOUR BONE CELLS,"Directly, through the beta 2 receptor sitting on osteoblasts and chondrocytes.",And deleting that receptor increases bone mass.
+Bone and cartilage,CARRY BETA 2 RECEPTORS,"The same receptor class that responds to adrenaline and noradrenaline. Catecholamines act on these cells directly, not just by changing blood flow to them.",Your sympathetic nervous system has a direct line into your skeleton.
+Knock the receptor out,AND BONE MASS RISES,"Mice lacking beta 2 adrenergic receptors, either everywhere or only in osteoblasts, show increased bone mass. Removing a nervous system signal built more bone, which means the normal signal was restraining it.",Sympathetic tone suppresses bone formation.
+It also reaches,CELL FATE,Catecholamines influence chondrocyte to osteoblast transdifferentiation. That's one of the four proposed routes by which growth plate cartilage converts into bone at closure.,A stress signal sitting on top of a fate decision.
+Which is why,BETA BLOCKERS GET STUDIED,"If beta 2 signalling restrains bone formation, blocking it should do the opposite. That prediction is why this receptor is studied in osteoporosis at all.",The pharmacology follows directly from the knockout.
+The honest limit,IS THE SPECIES,Mouse genetics and cell level work. No human height outcome data exists for this pathway.,Established in mice. Untested for height in people.
+What it does explain,IS WHY STRESS ISN'T VAGUE,"Chronic stress raises catecholamine tone. That isn't a metaphor about cortisol, it's a specific receptor on your bone cells being activated more often.",There's a physical receptor between stress and your skeleton.
+And why stimulants,MAKE MECHANISTIC SENSE HERE,"Stimulant medication raises catecholamine signalling directly. That gives a concrete pathway linking it to the growth effects seen in paediatric data, separate from appetite.",Two findings that looked unrelated share a receptor.
+It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.

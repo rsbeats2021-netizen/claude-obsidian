@@ -35,12 +35,49 @@ import tempfile
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 SIZES = {"3:4": (960, 1280), "4:5": (1080, 1350), "9:16": (1080, 1920)}
 
-# His ground is a pale blue-grey wash. 'darker' and 'dark' step it down for
-# people who find the original too close to white.
-TONES = {
-    "original": ("#EAF0F3", "#DCE6EB", "#F2F6F8"),
-    "darker":   ("#D2DAE0", "#BFCBD4", "#DBE2E7"),
-    "dark":     ("#B8C4CC", "#A5B4BE", "#C6D0D7"),
+# Palettes. Same structure as the reference design, different colour worlds, so
+# the layout carries over without the look being a copy.
+#   bg/w2/w3   ground and the two radial washes
+#   ink        body text
+#   grad       headline gradient stops
+#   acc        mechanism terms
+#   acc2       numbers and hard claims
+#   hl         highlight background
+#   brand      brand line and divider
+#   shadow     headline drop shadow
+PALETTES = {
+    "slate": dict(bg="#D2DAE0", w2="#BFCBD4", w3="#DBE2E7", ink="#0A0C10",
+                  grad=("#080A14", "#1B2AA8", "#2438E8"), acc="#2438E8",
+                  acc2="#E23A2E", hl="#FFD84D", brand="#12183A",
+                  shadow="rgba(20,30,80,0.30)"),
+    "forest": dict(bg="#E7EDE4", w2="#D3DFCD", w3="#F1F5EE", ink="#0C140E",
+                   grad=("#08140C", "#175E38", "#1F9D55"), acc="#177245",
+                   acc2="#C2410C", hl="#FDE68A", brand="#0F2E1C",
+                   shadow="rgba(15,60,35,0.28)"),
+    "ember": dict(bg="#F2E7DC", w2="#E7D5C3", w3="#FAF2EA", ink="#17100A",
+                  grad=("#1A0F06", "#9A3412", "#EA580C"), acc="#B45309",
+                  acc2="#B91C1C", hl="#FFE08A", brand="#3B1D0B",
+                  shadow="rgba(90,40,10,0.26)"),
+    "violet": dict(bg="#E8E5F2", w2="#D7D2E9", w3="#F2F0F8", ink="#100C18",
+                   grad=("#0D0818", "#5B21B6", "#8B5CF6"), acc="#6D28D9",
+                   acc2="#DB2777", hl="#FDE68A", brand="#2A1B4A",
+                   shadow="rgba(60,30,120,0.28)"),
+    "midnight": dict(bg="#101720", w2="#16202C", w3="#0C1219", ink="#EEF3F8",
+                     grad=("#FFFFFF", "#8FD3FF", "#38BDF8"), acc="#5EEAD4",
+                     acc2="#FCA5A5", hl="#3F3F1E", brand="#8FA6BC",
+                     shadow="rgba(0,0,0,0.55)"),
+    "carbon": dict(bg="#15161A", w2="#1D1F25", w3="#101114", ink="#F2F2F0",
+                   grad=("#FFFFFF", "#FFC46B", "#FF9F1C"), acc="#FFB020",
+                   acc2="#FF6B6B", hl="#4A3A12", brand="#9A9A96",
+                   shadow="rgba(0,0,0,0.6)"),
+    "deepgreen": dict(bg="#0E1A14", w2="#14251C", w3="#0A140F", ink="#EAF3ED",
+                      grad=("#FFFFFF", "#7EE6A8", "#34D399"), acc="#34D399",
+                      acc2="#FCA5A5", hl="#2C3A1C", brand="#7FA891",
+                      shadow="rgba(0,0,0,0.55)"),
+    "paper": dict(bg="#EDEAE3", w2="#E1DCD1", w3="#F6F4EF", ink="#14120E",
+                  grad=("#12100C", "#3F5E4C", "#5C8A6E"), acc="#3F5E4C",
+                  acc2="#9A3324", hl="#F2D680", brand="#2A2620",
+                  shadow="rgba(40,35,25,0.22)"),
 }
 
 TPL = """<!doctype html><html><head><meta charset="utf-8">
@@ -57,38 +94,38 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
  .body{{flex:1;display:flex;flex-direction:column;align-items:center;
         justify-content:center;width:100%;}}
  .brand{{font-family:Poppins,sans-serif;font-weight:800;font-size:{brandsize}px;
-        letter-spacing:{brandls}px;color:#12183A;margin-bottom:{brandgap}px;}}
+        letter-spacing:{brandls}px;color:{brand};margin-bottom:{brandgap}px;}}
  .headline{{font-family:Poppins,sans-serif;font-weight:900;font-size:{hsize}px;
         line-height:1.02;letter-spacing:-0.5px;text-transform:uppercase;
-        background:linear-gradient(96deg,#080A14 12%,#1B2AA8 58%,#2438E8 100%);
+        background:linear-gradient(96deg,{g0} 12%,{g1} 58%,{g2} 100%);
         -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-        filter:drop-shadow(0 5px 7px rgba(20,30,80,0.30));}}
+        filter:drop-shadow(0 5px 7px {shadow});}}
  .divider{{width:76%;margin:{divgap}px auto 0;display:flex;align-items:center;
         justify-content:center;gap:12px;}}
- .divider .ln{{flex:1;height:3px;background:linear-gradient(90deg,transparent,#12183A 35%,#12183A 65%,transparent);}}
- .divider .dot{{width:16px;height:16px;background:#12183A;transform:rotate(45deg);}}
+ .divider .ln{{flex:1;height:3px;background:linear-gradient(90deg,transparent,{brand} 35%,{brand} 65%,transparent);}}
+ .divider .dot{{width:16px;height:16px;background:{brand};transform:rotate(45deg);}}
  .blocks{{margin-top:{btop}px;display:flex;flex-direction:column;gap:{bgap}px;width:100%;}}
  .b{{font-family:Poppins,sans-serif;font-weight:700;font-size:{bsize}px;
-     line-height:1.30;color:#0A0C10;}}
+     line-height:1.30;color:{ink};}}
  .punch{{font-family:Poppins,sans-serif;font-weight:900;font-size:{psize}px;
-     line-height:1.24;color:#0A0C10;margin-top:{pgap}px;}}
+     line-height:1.24;color:{ink};margin-top:{pgap}px;}}
  .imgband{{margin:{igap}px 0 4px;width:100%;display:flex;justify-content:center;}}
  .imgband img{{max-width:98%;max-height:{imax}px;}}
- .imgband.study img{{background:#fff;padding:12px;border:2px solid #12183A22;max-height:{smax}px;}}
+ .imgband.study img{{background:#fff;padding:12px;border:2px solid {brand}33;max-height:{smax}px;}}
  .studylabel{{font-family:Poppins,sans-serif;font-weight:900;font-size:{slsize}px;
-     color:#1B2AA8;letter-spacing:4px;margin-top:26px;}}
+     color:{acc};letter-spacing:4px;margin-top:26px;}}
  .arrow{{font-family:Poppins,sans-serif;font-size:{arrowsize}px;font-weight:800;
-     color:#1B2AA8;margin-top:34px;}}
+     color:{acc};margin-top:34px;}}
  .foot{{position:absolute;bottom:26px;left:46px;right:46px;font-family:Poppins,sans-serif;
-     font-weight:600;font-size:{footsize}px;color:#7B8792;text-align:center;}}
- em{{font-style:normal;color:#2438E8;}}
- strong{{color:#E23A2E;font-weight:800;}}
+     font-weight:600;font-size:{footsize}px;color:{brand};opacity:.75;text-align:center;}}
+ em{{font-style:normal;color:{acc};}}
+ strong{{color:{acc2};font-weight:800;}}
  u{{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;
-    text-decoration-color:#2438E8;}}
- mark{{background:#FFD84D;color:inherit;padding:2px 9px;border-radius:4px;}}
+    text-decoration-color:{acc};}}
+ mark{{background:{hl};color:inherit;padding:2px 9px;border-radius:4px;}}
 </style></head><body>
 <div class="wrap">
- <div class="brand">{brand}</div>
+ <div class="brand">{brandtext}</div>
  <div class="headline">{headline}</div>
  <div class="divider"><div class="ln"></div><div class="dot"></div><div class="ln"></div></div>
  <div class="body">
@@ -115,7 +152,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("deck")
     ap.add_argument("--size", choices=list(SIZES), default="3:4")
-    ap.add_argument("--tone", choices=list(TONES), default="darker")
+    ap.add_argument("--palette", choices=list(PALETTES), default="slate")
     ap.add_argument("--brand", default="METRORAZ")
     ap.add_argument("--images", choices=["none", "few", "mixed", "many"], default="mixed")
     ap.add_argument("--out")
@@ -123,7 +160,7 @@ def main():
 
     deck = a.deck.rstrip("/")
     W, H = SIZES[a.size]
-    bg, wash2, wash3 = TONES[a.tone]
+    P = PALETTES[a.palette]
     k = H / 1280.0                      # everything scales off his canvas height
 
     rows = list(csv.DictReader(open(os.path.join(deck, "04-slides.csv"))))
@@ -136,7 +173,7 @@ def main():
                 kk, v = line.split(":", 1)
                 credits[kk.strip()] = v.strip()
 
-    outdir = a.out or os.path.join(deck, "09-morph")
+    outdir = a.out or os.path.join(deck, f"09-{a.palette}")
     os.makedirs(outdir, exist_ok=True)
     tmp = tempfile.mkdtemp()
     receipts = 0
@@ -164,8 +201,11 @@ def main():
 
         body_len = len("".join(parts)) + len(punch)
         page = TPL.format(
-            W=W, H=H, bg=bg, wash2=wash2, wash3=wash3,
-            brand=html.escape(a.brand), headline=marks(r["headline"]),
+            W=W, H=H, bg=P['bg'], wash2=P['w2'], wash3=P['w3'],
+            ink=P['ink'], acc=P['acc'], acc2=P['acc2'], hl=P['hl'],
+            brand=P['brand'], shadow=P['shadow'],
+            g0=P['grad'][0], g1=P['grad'][1], g2=P['grad'][2],
+            brandtext=html.escape(a.brand), headline=marks(r["headline"]),
             blocks=blocks,
             punch=f'<div class="punch">{marks(punch)}</div>' if punch else "",
             imgblock=img,
@@ -188,7 +228,7 @@ def main():
                         f"--screenshot={os.path.join(outdir, f'slide-{i:02d}.png')}",
                         f"file://{src}"], capture_output=True)
     shutil.rmtree(tmp, ignore_errors=True)
-    print(f"  {len(rows)} slides -> {outdir}  ({a.size}, {a.tone})")
+    print(f"  {len(rows)} slides -> {outdir}  ({a.size}, {a.palette})")
 
 
 if __name__ == "__main__":

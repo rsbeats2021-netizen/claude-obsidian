@@ -1,5 +1,23 @@
 # How to split this work across chats
 
+## Using this file
+
+Paste **one** prompt into a new chat, not the whole file. The other four
+workstreams are wasted context in a chat that will not touch them.
+
+Shorter and self-updating, since Claude Code can read the repo:
+
+```
+Read content/_CHATS.md and follow the RESEARCH AND CLAIMS section. Topic: <X>
+```
+
+That one line works for any of the five. Swap the section name. If I later
+change the rules in this file, the prompt stays correct without you editing
+anything, which the pasted version does not.
+
+Use the full pasted prompts below when you want to override or add to what the
+section says for a one-off.
+
 ## Use Claude Code, not Cowork
 
 Everything here is files and scripts in this repo: decks, briefs, claims

@@ -15,6 +15,7 @@ Usage:
 """
 import argparse
 import csv
+import glob
 import html
 import os
 import re
@@ -28,20 +29,45 @@ SIZES = {"9:16": (1080, 1920), "4:5": (1080, 1350), "1:1": (1080, 1080)}
 W, H = SIZES["9:16"]
 
 STYLES = {
-    "dark": dict(
-        bg="#0E1116", ink="#F2F4F7", accent="#FFB020", accent2="#3DD6D0",
-        grey="#7C8794", band="#161B22",
-        fonts="family=Anton&family=Inter:wght@400;600;700",
-        hfont="'Anton',sans-serif", hweight="400", bfont="'Inter',sans-serif",
-        bweight="400", pweight="700", htransform="none", hspacing="0px",
-    ),
     "editorial": dict(
         bg="#F7F3EC", ink="#1A1815", accent="#8A3324", accent2="#3F5E4C",
         grey="#8B8378", band="#EDE6DA",
         fonts="family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;700",
         hfont="'Instrument Serif',Georgia,serif", hweight="400",
         bfont="'Inter',sans-serif", bweight="400", pweight="700",
-        htransform="none", hspacing="-1px",
+        htransform="none", hspacing="-1px", align="left",
+    ),
+    "editorial-grey": dict(
+        bg="#ECEDEA", ink="#16181A", accent="#1B4DE4", accent2="#B02A37",
+        grey="#8A8F94", band="#E1E3DF",
+        fonts="family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;700",
+        hfont="'Instrument Serif',Georgia,serif", hweight="400",
+        bfont="'Inter',sans-serif", bweight="400", pweight="700",
+        htransform="none", hspacing="-1px", align="left",
+    ),
+    "editorial-centre": dict(
+        bg="#EFEFEC", ink="#141414", accent="#0F5132", accent2="#8A3324",
+        grey="#8A8A85", band="#E4E4E0",
+        fonts="family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;700",
+        hfont="'Instrument Serif',Georgia,serif", hweight="400",
+        bfont="'Inter',sans-serif", bweight="500", pweight="700",
+        htransform="none", hspacing="-0.5px", align="center",
+    ),
+    "morph": dict(
+        bg="#F4F6F8", ink="#101418", accent="#1B4DE4", accent2="#E0243B",
+        grey="#7B848C", band="#101418",
+        fonts="family=Archivo+Black&family=Archivo:wght@600;700;800",
+        hfont="'Archivo Black',sans-serif", hweight="400",
+        bfont="'Archivo',sans-serif", bweight="700", pweight="800",
+        htransform="uppercase", hspacing="0px", align="center",
+    ),
+    "dark": dict(
+        bg="#0E1116", ink="#F2F4F7", accent="#FFB020", accent2="#3DD6D0",
+        grey="#7C8794", band="#161B22",
+        fonts="family=Anton&family=Inter:wght@400;600;700",
+        hfont="'Anton',sans-serif", hweight="400", bfont="'Inter',sans-serif",
+        bweight="400", pweight="700", htransform="none", hspacing="0px",
+        align="center",
     ),
     "blocks": dict(
         bg="#FFFFFF", ink="#101010", accent="#FF3B30", accent2="#0A84FF",
@@ -49,7 +75,20 @@ STYLES = {
         fonts="family=Anton&family=Archivo:wght@500;700;900",
         hfont="'Anton',sans-serif", hweight="400", bfont="'Archivo',sans-serif",
         bweight="500", pweight="900", htransform="uppercase", hspacing="0.5px",
+        align="center",
     ),
+}
+
+# How *term* and **term** render. The winning competitor decks use colour, but
+# underline and weight are worth testing since they survive greyscale and
+# colourblind viewers.
+EMPHASIS = {
+    "colour":    ("color:{accent2};font-weight:700",              "color:{accent};font-weight:700"),
+    "bold":      ("font-weight:800",                              "font-weight:800;color:{accent}"),
+    "underline": ("text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;text-decoration-color:{accent2}",
+                  "text-decoration:underline;text-decoration-thickness:5px;text-underline-offset:6px;text-decoration-color:{accent};font-weight:700"),
+    "highlight": ("background:{accent2}22;padding:2px 6px;border-radius:4px;font-weight:700",
+                  "background:{accent}22;padding:2px 6px;border-radius:4px;font-weight:700;color:{accent}"),
 }
 
 TPL = """<!doctype html><html><head><meta charset="utf-8">
@@ -73,11 +112,14 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
  .rule{{width:120px;height:5px;background:{accent};margin:36px 0 0;}}
  .imgband{{margin:34px 0 6px;width:100%;display:flex;justify-content:{align};}}
  .imgband img{{max-width:96%;max-height:600px;}}
+ .imgband.study img{{max-height:420px;border:2px solid {grey}55;background:#fff;padding:10px;}}
+ .studylabel{{font-family:{bfont};font-weight:800;font-size:30px;color:{accent};
+     letter-spacing:3px;margin-top:30px;}}
  .arrow{{font-family:{bfont};font-size:82px;font-weight:700;color:{accent};margin-top:52px;}}
  .foot{{position:absolute;bottom:44px;left:62px;right:62px;font-family:{bfont};
      font-weight:400;font-size:22px;color:{grey};text-align:{talign};}}
- em{{font-style:normal;color:{accent2};font-weight:700;}}
- strong{{font-weight:700;color:{accent};}}
+ em{{font-style:normal;{emstyle};}}
+ strong{{{strongstyle};}}
 </style></head><body>
 {bandhtml}
 <div class="wrap">
@@ -102,8 +144,10 @@ def fit(t, base, floor, budget):
     return max(floor, int(base - max(0, len(t) - budget) * 0.085))
 
 
-def render(deck, style, outdir):
+def render(deck, style, outdir, emphasis="colour", images="few"):
     S = STYLES[style]
+    em_s, st_s = EMPHASIS[emphasis]
+    em_s = em_s.format(**S); st_s = st_s.format(**S)
     rows = list(csv.DictReader(open(os.path.join(deck, "04-slides.csv"))))
     imgdir = os.path.join(deck, "03-images")
     credits = {}
@@ -120,20 +164,30 @@ def render(deck, style, outdir):
         parts = [p.strip() for p in (r.get("body") or "").split("|") if p.strip()]
         blocks = "".join(f'<div class="b">{marks(p)}</div>' for p in parts)
         img = ""
-        for ext in (".svg", ".png", ".jpg"):
-            c = os.path.join(imgdir, f"slide-{i:02d}{ext}")
-            if os.path.exists(c):
-                img = f'<div class="imgband"><img src="file://{os.path.abspath(c)}"></div>'
-                break
+        if images != "none":
+            for ext in (".svg", ".png", ".jpg"):
+                c = os.path.join(imgdir, f"slide-{i:02d}{ext}")
+                if os.path.exists(c):
+                    img = f'<div class="imgband"><img src="file://{os.path.abspath(c)}"></div>'
+                    break
+            # 'many' fills the gaps with study receipts: a screenshot of the
+            # actual paper header, which is the device the top competitor deck
+            # uses instead of a citation line
+            if not img and images == "many":
+                pool = sorted(glob.glob(os.path.join(imgdir, "studies", "*.png")))
+                if pool and 1 < i < len(rows):
+                    pick = pool[(i - 2) % len(pool)]
+                    img = ('<div class="studylabel">STUDY</div>'
+                           f'<div class="imgband study"><img src="file://{os.path.abspath(pick)}"></div>')
         sub = (r.get("subhead") or "").strip()
         if sub.upper().startswith("SECTION:"):
             sub = sub.split(":", 1)[1].strip()
         punch = (r.get("punch") or "").strip()
-        hsize = fit(r["headline"], 112 if style != "editorial" else 122, 64, 20)
+        hsize = fit(r["headline"], 122 if style.startswith("editorial") else 112, 64, 20)
 
         head = (f'<div class="headline">{marks(r["headline"])}</div>'
                 + (f'<div class="sub">{marks(sub.upper())}</div>' if sub else "")
-                + ('<div class="rule"></div>' if style == "editorial" else ""))
+                + ('<div class="rule"></div>' if style.startswith("editorial") else ""))
         # blocks style puts the headline in a solid band at the top
         bandhtml = f'<div class="band">{head}</div>' if style == "blocks" else ""
         headhtml = "" if style == "blocks" else head
@@ -145,10 +199,10 @@ def render(deck, style, outdir):
             hfont=S["hfont"], hweight=S["hweight"], bfont=S["bfont"],
             bweight=S["bweight"], pweight=S["pweight"],
             htransform=S["htransform"], hspacing=S["hspacing"],
-            hlh="0.98" if style != "editorial" else "1.04",
+            hlh="1.04" if style.startswith("editorial") else "0.98",
             pad="330px 62px 100px" if style == "blocks" else "96px 62px 92px",
-            align="flex-start" if style == "editorial" else "center",
-            talign="left" if style == "editorial" else "center",
+            align="flex-start" if S["align"] == "left" else "center",
+            talign=S["align"],
             btop=46 if style != "blocks" else 20, bgap=40,
             hsize=hsize, bsize=fit("".join(parts) + punch, 50, 34, 210),
             psize=fit(punch, 54, 38, 80),
@@ -156,6 +210,7 @@ def render(deck, style, outdir):
             punch=f'<div class="punch">{marks(punch)}</div>' if punch else "",
             imgblock=img,
             arrow='<div class="arrow">&#8594;</div>' if i == 1 else "",
+            emstyle=em_s, strongstyle=st_s,
             foot=html.escape(credits.get(f"slide-{i:02d}", "")))
         src = os.path.join(tmp, f"s{i:02d}.html")
         open(src, "w").write(page)
@@ -172,6 +227,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("deck")
     ap.add_argument("--style", choices=list(STYLES), required=True)
+    ap.add_argument("--emphasis", choices=list(EMPHASIS), default="colour")
+    ap.add_argument("--images", choices=["none","few","many"], default="few")
     ap.add_argument("--out")
     ap.add_argument("--size", choices=list(SIZES), default="9:16",
                     help="4:5 keeps content clear of TikTok's UI overlay")
@@ -179,7 +236,7 @@ def main():
     global W, H
     W, H = SIZES[a.size]
     d = a.deck.rstrip("/")
-    render(d, a.style, a.out or os.path.join(d, f"08-{a.style}"))
+    render(d, a.style, a.out or os.path.join(d, f"08-{a.style}"), a.emphasis, a.images)
 
 
 if __name__ == "__main__":

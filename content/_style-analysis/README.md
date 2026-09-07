@@ -72,3 +72,56 @@ Measured across my own 44 decks:
 
 Same sentence shape reused. Real writing varies its connectors. If the decks you
 send do this differently, that's the first thing I want to copy.
+
+---
+
+# Videos
+
+Same structure, videos alongside the slideshow folders:
+
+```
+content/_style-analysis/
+  @accountname/
+    deck-01/          slideshow screenshots
+    video-01.mp4      video files sit at the account level
+    video-02.mp4
+```
+
+## How videos get read
+
+I can't watch video or transcribe audio. But captions are almost always burned
+in, so frames recover the spoken script visually:
+
+```bash
+.venv/bin/python scripts/extract-video-frames.py content/_style-analysis/@account
+```
+
+It samples a frame a second, then drops near-identical neighbours, so a 60
+second video collapses to roughly 15-25 frames: about one per caption change.
+Then I read those.
+
+It also reports pacing, which is a real stylistic variable in itself: duration,
+number of caption changes, and seconds per caption. A creator changing captions
+every 1.2s is writing very differently from one changing every 4s.
+
+**If a video has no burned-in captions I can't recover the script.** Paste the
+words in a text file next to it and I'll work from that.
+
+## What I'm comparing across the two formats
+
+Slideshow and video are different problems and should read differently:
+
+| | Slideshow | Video |
+|---|---|---|
+| Who sets the pace | Reader | Creator |
+| Re-reading | Free | Impossible |
+| Engagement action | Swipe | Keep watching |
+| Sentence length | Can carry longer | Has to land first time |
+| Hook window | Slide 1, self-paced | ~3 seconds of autoplay |
+
+So the questions are: do the accounts write these differently, or reuse one
+voice for both? Are the same topics structured differently per format? Does the
+hook change shape when the viewer can't control the pace?
+
+If a creator uses one voice for both, that's worth knowing. If they split, the
+split itself is the lesson.

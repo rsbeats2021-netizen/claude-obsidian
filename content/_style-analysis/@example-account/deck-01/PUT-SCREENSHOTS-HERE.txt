@@ -1,0 +1,4 @@
+Delete this file and this @example-account folder once you have real ones in.
+It exists only to show the shape:
+
+  @accountname / deck-01 / 01.png, 02.png, 03.png ...

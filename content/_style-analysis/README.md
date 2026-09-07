@@ -2,25 +2,35 @@
 
 ## How to give them to me
 
-One folder per slideshow. Screenshots in order.
+Account, then slideshow, then screenshots in order:
 
 ```
 content/_style-analysis/
-  deck-01/
-    01.png  02.png  03.png ...
-  deck-02/
-    01.png  02.png ...
+  @accountname/
+    deck-01/
+      01.png  02.png  03.png ...
+    deck-02/
+      01.png  02.png ...
+  @otheraccount/
+    deck-01/
+      ...
 ```
 
-Folder names can be anything: the creator handle, the topic, or just a number.
-If two decks are from the same account, say so in `notes.txt` so I can tell
-whose voice is whose.
+This grouping is better than a flat pile, because voice belongs to the account
+and topic belongs to the deck. Several decks from one account show me that
+creator's sentence habits. Decks across accounts show me what's common to the
+format itself rather than to one person. I can't separate those from a flat
+folder.
 
-Optional `notes.txt` in the top folder:
+Numbering the screenshots is the only thing that has to be right. Slide order
+carries the argument, and a deck read out of order tells me nothing about how
+they build a swipe.
+
+Anything you happen to know per account is useful in `notes.txt` at the top
+level, but none of it is required:
 ```
-deck-01 = @someaccount, height topic
-deck-02 = @someaccount, same account
-deck-03 = different creator
+@accountname = big account, mostly height
+@otheraccount = smaller, more general fitness
 ```
 
 **Do NOT tell me which performed best.** That's the point of the exercise. I

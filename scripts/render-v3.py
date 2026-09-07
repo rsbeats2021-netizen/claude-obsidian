@@ -54,8 +54,8 @@ STYLES = {
         htransform="none", hspacing="-0.5px", align="center",
     ),
     "morph": dict(
-        bg="#F4F6F8", ink="#101418", accent="#1B4DE4", accent2="#E0243B",
-        grey="#7B848C", band="#101418",
+        bg="#E8E9E6", ink="#101418", accent="#1B4DE4", accent2="#D62839",
+        grey="#79807E", band="#101418", hl="#FFE066",
         fonts="family=Archivo+Black&family=Archivo:wght@600;700;800",
         hfont="'Archivo Black',sans-serif", hweight="400",
         bfont="'Archivo',sans-serif", bweight="700", pweight="800",
@@ -118,8 +118,11 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
  .arrow{{font-family:{bfont};font-size:82px;font-weight:700;color:{accent};margin-top:52px;}}
  .foot{{position:absolute;bottom:44px;left:62px;right:62px;font-family:{bfont};
      font-weight:400;font-size:22px;color:{grey};text-align:{talign};}}
- em{{font-style:normal;{emstyle};}}
- strong{{{strongstyle};}}
+ em{{font-style:normal;color:{accent};font-weight:700;}}
+ strong{{color:{accent2};font-weight:800;}}
+ u{{text-decoration:underline;text-decoration-thickness:4px;
+    text-underline-offset:7px;text-decoration-color:{accent};}}
+ mark{{background:{hl};color:inherit;padding:3px 10px;border-radius:5px;}}
 </style></head><body>
 {bandhtml}
 <div class="wrap">
@@ -134,20 +137,35 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
 
 
 def marks(s):
+    """Four markers, each carrying a different meaning so the reader learns
+    what a treatment signals rather than seeing decoration:
+
+      *term*        blue      a mechanism, receptor, gene or enzyme
+      **number**    red bold  a figure or a hard finding
+      _phrase_      underline the conclusion of the slide
+      ==phrase==    highlight the thing to remember
+    """
     s = html.escape(s)
+    s = re.sub(r"==(.+?)==", r'<mark>\1</mark>', s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    s = re.sub(r"_(.+?)_", r"<u>\1</u>", s)
     s = re.sub(r"\*(.+?)\*", r"<em>\1</em>", s)
     return s
 
 
 def fit(t, base, floor, budget):
-    return max(floor, int(base - max(0, len(t) - budget) * 0.085))
+    """Shrink for long copy, then scale to the canvas.
+
+    4:5 is 1350px tall against 9:16's 1920. Without the height scale the same
+    type ran off the bottom of the shorter canvas, which is what was cropping
+    content."""
+    size = base - max(0, len(t) - budget) * 0.085
+    return max(int(floor * (H / 1920) ** 0.5), int(size * (H / 1920) ** 0.62))
 
 
-def render(deck, style, outdir, emphasis="colour", images="few"):
+def render(deck, style, outdir, emphasis="colour", images="mixed"):
+    render._receipts = 0
     S = STYLES[style]
-    em_s, st_s = EMPHASIS[emphasis]
-    em_s = em_s.format(**S); st_s = st_s.format(**S)
     rows = list(csv.DictReader(open(os.path.join(deck, "04-slides.csv"))))
     imgdir = os.path.join(deck, "03-images")
     credits = {}
@@ -173,6 +191,18 @@ def render(deck, style, outdir, emphasis="colour", images="few"):
             # 'many' fills the gaps with study receipts: a screenshot of the
             # actual paper header, which is the device the top competitor deck
             # uses instead of a citation line
+            # 'mixed' is the default blend: generated diagrams carry the
+            # mechanism, real figures carry the evidence, and a small number of
+            # study receipts carry the proof. Receipts are capped at 2 so they
+            # stay a punctuation mark rather than the texture of the deck.
+            if not img and images == "mixed":
+                pool = sorted(glob.glob(os.path.join(imgdir, "studies", "*.png")))
+                used = getattr(render, "_receipts", 0)
+                if pool and used < 2 and i in (max(2, len(rows) // 3), len(rows) - 3):
+                    pick = pool[used % len(pool)]
+                    render._receipts = used + 1
+                    img = ('<div class="studylabel">THE STUDY</div>'
+                           f'<div class="imgband study"><img src="file://{os.path.abspath(pick)}"></div>')
             if not img and images == "many":
                 pool = sorted(glob.glob(os.path.join(imgdir, "studies", "*.png")))
                 if pool and 1 < i < len(rows):
@@ -210,7 +240,7 @@ def render(deck, style, outdir, emphasis="colour", images="few"):
             punch=f'<div class="punch">{marks(punch)}</div>' if punch else "",
             imgblock=img,
             arrow='<div class="arrow">&#8594;</div>' if i == 1 else "",
-            emstyle=em_s, strongstyle=st_s,
+            hl=S.get("hl","#FFE58A"),
             foot=html.escape(credits.get(f"slide-{i:02d}", "")))
         src = os.path.join(tmp, f"s{i:02d}.html")
         open(src, "w").write(page)
@@ -228,7 +258,7 @@ def main():
     ap.add_argument("deck")
     ap.add_argument("--style", choices=list(STYLES), required=True)
     ap.add_argument("--emphasis", choices=list(EMPHASIS), default="colour")
-    ap.add_argument("--images", choices=["none","few","many"], default="few")
+    ap.add_argument("--images", choices=["none","few","mixed","many"], default="mixed")
     ap.add_argument("--out")
     ap.add_argument("--size", choices=list(SIZES), default="9:16",
                     help="4:5 keeps content clear of TikTok's UI overlay")

@@ -97,6 +97,17 @@ def render(deck, outdir, handle):
 
     rows = list(csv.DictReader(open(csv_path)))
     imgdir = os.path.join(deck, "03-images")
+
+    # CC BY images legally require attribution. Credits live in
+    # 03-images/credits.txt as "slide-05: Trompet et al. 2024, CC BY 4.0" and
+    # get printed in the footer of that slide.
+    credits = {}
+    cpath = os.path.join(imgdir, "credits.txt")
+    if os.path.exists(cpath):
+        for line in open(cpath):
+            if ":" in line and line.strip() and not line.startswith("#"):
+                k, v = line.split(":", 1)
+                credits[k.strip()] = v.strip()
     os.makedirs(outdir, exist_ok=True)
     tmp = tempfile.mkdtemp()
 
@@ -117,7 +128,9 @@ def render(deck, outdir, handle):
             subhead=html.escape(r["subhead"]).upper(),
             body=html.escape(r["body"]),
             punch=html.escape(r["punch"]),
-            imgblock=img, handle=html.escape(handle))
+            imgblock=img,
+            handle=html.escape(handle + ("   ·   " + credits[f"slide-{i:02d}"]
+                                         if f"slide-{i:02d}" in credits else "")))
 
         src = os.path.join(tmp, f"s{i:02d}.html")
         open(src, "w").write(page)

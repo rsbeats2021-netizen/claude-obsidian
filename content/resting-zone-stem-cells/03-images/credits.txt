@@ -1,0 +1,2 @@
+# Attribution for CC BY images. Printed in the slide footer automatically.
+slide-05: Trompet et al. 2024, JCI Insight, CC BY 4.0

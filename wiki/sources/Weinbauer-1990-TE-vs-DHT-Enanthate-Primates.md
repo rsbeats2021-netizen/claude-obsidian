@@ -9,6 +9,7 @@ confidence: high
 key_claims:
   - "32.7 mg DHT-enanthate = 23.6 mg pure steroid, confirming the 72.14% DHT mass fraction of the heptanoate/enanthate ester."
   - "AUC did not differ between DHT-enanthate and testosterone enanthate at equimolar steroid; DHTE's terminal half-life was longer (7 vs 4-5 days)."
+  - "Formulation recovered from full text: 32.7 mg DHT-enanthate dissolved in 1 mL sesame oil, i.e. 32.7 mg/mL ester = 23.6 mg/mL DHT-equivalent. The preparation came from the WHO and the NICHD Contraceptive Development Branch."
 created: 2026-10-17
 updated: 2026-10-17
 tags:
@@ -27,7 +28,17 @@ sources: []
 
 # Weinbauer et al. 1990 — TE vs DHT-Enanthate in Monkeys
 
-*Acta Endocrinol (Copenh)* 122(4):432–42. PMID 2333732. DOI 10.1530/acta.0.1220432. The definitive head-to-head. Full text not reachable; vehicle and injection volume not in the abstract.
+*Acta Endocrinol (Copenh)* 122(4):432–42. PMID 2333732. DOI 10.1530/acta.0.1220432. The definitive head-to-head. Full text obtained 2026-10-17.
+
+## Formulation — the third published DHT ester concentration
+
+From Methods, verbatim:
+
+> "Groups of four orchidectomized monkeys received a single im injection of **32.7 mg DHTE** (5.8–9.9 mg/kg) or 32.8 mg TE (7.1–9.9 mg/kg), i.e. 23.6 mg pure steroid, **dissolved in 1 ml sesame oil**. The DHTE preparation was provided by the **World Health Organization** (Geneva, Switzerland) and **Dr G. Bialy (Contraceptive Development Branch, Center for Population Research, National Institutes of Child Health and Human Development**, Bethesda, MD)."
+
+So **32.7 mg/mL DHT enanthate in sesame oil = 23.6 mg/mL DHT-equivalent**, in a 1 mL IM injection. Experiment 2 used the same 32.7 mg in 1 mL sesame oil at 2.1–3.2 mg/kg in the larger rhesus monkeys.
+
+Two things follow from the provenance line. First, this is a **WHO/NICHD contraceptive-development preparation**, not a commercial product — so DHT enanthate was formally in the male-contraceptive pipeline, which no published trial ever reports (see the open gaps in [[DHT Esters — Dosing and Concentrations]]). Second, 32.7 mg/mL is nowhere near the 190 mg/mL solubility ceiling the [[Keenan-1990-DHT-Heptanoate-Patent-US4956357]] establishes for the same ester in the same vehicle, so the concentration was chosen for dose convenience, not forced by solubility.
 
 ## Dose — and the mass-fraction confirmation
 

@@ -19,6 +19,14 @@ Navigation: [[index]] | [[hot]] | [[overview]]
 
 Append-only. New entries go at the TOP. Never edit past entries.
 
+## 2026-10-17 (gap-closing pass) — two of three DHT ester gaps closed
+
+- **Weinbauer 1990 formulation recovered** (full text obtained). "32.7 mg DHTE ... i.e. 23.6 mg pure steroid, **dissolved in 1 ml sesame oil**" = **32.7 mg/mL ester, 23.6 mg/mL DHT-equivalent**, 1 mL IM. Experiment 2 used the same concentration at 2.1-3.2 mg/kg in rhesus.
+- **The provenance line is the bigger find**: "The DHTE preparation was provided by the **World Health Organization** (Geneva) and **Dr G. Bialy (Contraceptive Development Branch**, Center for Population Research, **NICHD**, Bethesda)." DHT enanthate was therefore inside a formal male-contraceptive development programme. No human trial was ever published and nothing records what became of it — the gap is now better characterised rather than closed.
+- **Pesomax strength found** in the Italian registry: **"PESOMAX IM 10F 2ML 15MG"**, ten 2 mL ampoules at 15 mg, **AIC 015012014**, Crinos SpA, class RR, ~EUR 1.76, status **revocato**. So ~7.5 mg/mL (per-mL figure is arithmetic on the Italian per-unit naming convention, which the listing does not spell out). Also corrects the widespread secondary-source claim that DHT propionate is "marketed in Italy" — the authorisation is revoked.
+- **The concentration table goes from two figures to four**, spanning 40-fold for the heptanoate/enanthate alone: 190 mg/mL (clinical, solubility ceiling), 32.7 mg/mL (WHO/NICHD primate prep), 5.0 mg/mL (rodent), plus 7.5 mg/mL for the propionate. Weinbauer's 32.7 mg/mL sitting far under the 190 mg/mL ceiling in the *same vehicle* shows research concentrations were set by dose convenience, not solubility.
+- **Coutts 1997 remains unreachable** and is now documented as such. Unpaywall reports `oa_status: green`, but its only location is `clinchem.org/content/43/11/2091.abstract` — the abstract page, not a deposited full text. A false positive; not on any mirror checked. The 1.32 mL injection volume stays an inference from the patent's 190 mg/mL.
+
 ## 2026-10-17 (verifier pass) — corrections to the DHT ester slice before commit
 
 - Dispatched `agents/verifier.md` against the staged 13-page diff per CLAUDE.md. Verdict HOLD-FIX-FIRST: 0 BLOCKER, 4 HIGH, 9 MEDIUM, 6 LOW. All arithmetic it re-derived independently (mass fractions, DHT-equivalents, ng/dL conversions, injection volumes) checked out; the findings were internal-consistency and overclaim errors. Fixed before committing.

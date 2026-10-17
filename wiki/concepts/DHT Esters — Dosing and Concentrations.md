@@ -43,7 +43,7 @@ Two naming notes first, because they decide what you are reading.
 
 **Heptanoate = enanthate.** Both name the same seven-carbon acyl group (C7, heptanoic/enanthic acid). The literature splits by lab, not by molecule: the Baylor/Texas group (Keenan, Sparrow, Eberle) wrote **DHT heptanoate / DHT-hp / DHTH**, the Münster group (Weinbauer, Nieschlag) wrote **dihydrotestosterone-enanthate / DHTE**. CAS 33776-88-4, C26H42O3, MW 402.62. Brand: *Anaboleen Depot*.
 
-**Propionate = propanoate.** Same three-carbon ester. CAS 855-22-1, C22H34O3, MW 346.51. Brand: *Pesomax* (Italy).
+**Propionate = propanoate.** Same three-carbon ester. CAS 855-22-1, C22H34O3, MW 346.51. Brand: *Pesomax* (Crinos SpA, Italy; authorisation now revoked).
 
 > [!warning] Do not conflate with drostanolone
 > The 1960s breast-cancer literature on "**2α-methyl**-dihydrotestosterone propionate" is **drostanolone propionate** (Masteron), a different molecule. Five oncology papers (PMIDs 13706491, 13920749, 14202595, 4316818, 5632753) are drostanolone, not DHT propionate, and are excluded from the tables below.
@@ -64,14 +64,16 @@ This is independently confirmed by [[Weinbauer-1990-TE-vs-DHT-Enanthate-Primates
 
 ## Concentration (mg/mL) — the hard numbers
 
-Only **two** mg/mL figures exist in the accessible literature for either ester. Both are given verbatim.
+Four mg/mL figures exist in the accessible literature across the two esters. All are given verbatim or with their arithmetic shown.
 
 | Preparation | Concentration | Vehicle | Source |
 |---|---|---|---|
-| DHT heptanoate, clinical | **190 mg/mL** (= 137.1 mg/mL DHT-equivalent) | sesame oil, dissolved at 37 °C, 0.20 µm filtered into sterile vials | [[Keenan-1990-DHT-Heptanoate-Patent-US4956357]] |
+| DHT heptanoate, clinical | **190 mg/mL** (= 137.1 mg/mL DHT-equivalent) — a solubility ceiling, not a fill strength | sesame oil, dissolved at 37 °C, 0.20 µm filtered into sterile vials | [[Keenan-1990-DHT-Heptanoate-Patent-US4956357]] |
+| DHT enanthate, primate (WHO / NICHD prep) | **32.7 mg/mL** (= 23.6 mg/mL DHT-equivalent) | 1 mL sesame oil, IM | [[Weinbauer-1990-TE-vs-DHT-Enanthate-Primates]] |
 | DHT enanthate, rodent | **5.0 mg/mL** (= 3.6 mg/mL DHT-equivalent) | 90% olive oil / 10% DMSO, s.c.; Steraloids | [[Hanson-2020-DHT-Enanthate-Castrate-Rat-Hypertension]] |
+| **DHT propionate, commercial** — *Pesomax*, Crinos SpA (Italy) | **15 mg per 2 mL ampoule ≈ 7.5 mg/mL** (= 6.3 mg/mL DHT-equivalent) | oil solution, IM, 10 ampoules per pack | AIFA/Italian registry listing, AIC **015012014**; status **revocato** (withdrawn) |
 
-The 190 mg/mL figure is not an arbitrary fill strength — the patent states it as a **ceiling**:
+Note the 40-fold spread between the clinical heptanoate preparation and the two research preparations of the same ester. The 190 mg/mL figure is not an arbitrary fill strength — the patent states it as a **ceiling**:
 
 > "it was dissolved in sesame oil at 37 °C to a concentration of 190 mg/ml. (This was the limit of solubility of DHT-hep in sesame oil at 37 °C."
 
@@ -79,7 +81,11 @@ Alternative vehicles the patent names but does not quantify: cottonseed, corn, p
 
 Implied injection volumes at 190 mg/mL (arithmetic, not stated in the source): 200 mg → **1.05 mL**; 250 mg → **1.32 mL**; 400 mg → **2.11 mL**.
 
-**No mg/mL figure is recoverable for DHT propionate.** *Pesomax* ampoule strength is not in Wikipedia, PubMed, or any English drug directory reached here; it would need AIFA or a historical Italian directory (Farmindex / Guida ai Farmaci). Every DHT propionate study below reports mg or mg/kg only — concentration is never stated.
+Weinbauer's 32.7 mg/mL sits far below the heptanoate's solubility ceiling in the same vehicle, so research concentrations were set by dose convenience rather than by what would dissolve.
+
+**The Pesomax figure comes from the registry listing, not a label.** The Italian packaging designation is "PESOMAX IM 10F 2ML 15MG" — ten 2 mL ampoules at 15 mg, AIC 015012014, Crinos SpA, prescription class RR (repeatable 10× in 6 months), listed retail ~€1.76, and marketing authorisation **revoked**. Italian packaging nomenclature states strength per unit, so 15 mg is the per-ampoule content and 7.5 mg/mL follows; *the listing does not spell out "per ampoule", so treat the per-mL figure as my arithmetic on that convention.* No SmPC or foglio illustrativo text was recoverable. Note this also corrects the common secondary-source claim that DHT propionate is "marketed in Italy" — it is withdrawn.
+
+No DHT propionate *study* states a concentration; every one reports mg or mg/kg only.
 
 ## DHT heptanoate / enanthate — every study found
 
@@ -205,8 +211,8 @@ Note the arithmetic: 200 mg DHT-hp q3wk delivers ~144 mg DHT over 21 days ≈ **
 
 | Ester | Brand | Market | Concentration |
 |---|---|---|---|
-| Propionate | Pesomax | Italy | not recoverable |
-| Enanthate (heptanoate) | Anaboleen Depot | — | not recoverable |
+| Propionate | Pesomax (Crinos SpA) | Italy — **withdrawn** | **15 mg / 2 mL ampoule ≈ 7.5 mg/mL**, AIC 015012014 |
+| Enanthate (heptanoate) | Anaboleen Depot | — | not recoverable (the 32.7 mg/mL figure is a WHO/NICHD research prep, not this product) |
 | Benzoate | Ermalone-Amp, Hermalone, Sarcosan | — | not recoverable |
 | Valerate | Apeton | — | not recoverable |
 | Acetate, butyrate, formate, undecanoate | — | never marketed | — |
@@ -215,12 +221,13 @@ Note the arithmetic: 200 mg DHT-hp q3wk delivers ~144 mg DHT over 21 days ≈ **
 
 Stating the gaps precisely, because the absence is itself the finding:
 
-1. **No DHT ester mg/mL is published except the two above.** Not for any marketed product.
+1. **No DHT ester concentration is published beyond the four above**, and only one of the four (*Pesomax*) is a marketed product — recovered from a registry listing rather than a label.
 2. **No human PK study of DHT propionate.** Ever. The 1983 Klinefelter study measured plasma DHT but reported no PK parameters.
 3. **Three regimens are unstated at source**: the per-dose mg in [[Keenan-1987-DHT-Heptanoate-Pharmacokinetics]], the dose for the patent's second androgen-example patient, and the doses for its 10 further adolescents ("results not shown"). Everything else has been recovered from full text.
-4. **No DHT heptanoate contraception trial.** The 1986 patent lists male contraception as a possible use; no trial followed. The suppression data (T → 29.5 ng/dL) suggest it would have worked.
-5. **Coutts 1997's preparation is undescribed** — the 250 mg dose has no stated vehicle or concentration; the 1.32 mL figure above is inferred from the patent's 190 mg/mL only.
-6. **Weinbauer 1990's vehicle and volume are not in the abstract** and the 1990 *Acta Endocrinologica* full text was not reachable.
+4. **No DHT ester contraception trial was ever published — but the ester was in the pipeline.** The 1986 patent lists male contraception as a possible use, and [[Weinbauer-1990-TE-vs-DHT-Enanthate-Primates]] states that its DHT-enanthate came from the **WHO** and the **NICHD Contraceptive Development Branch**, which places the compound inside a formal contraceptive-development programme. Nothing records a human trial or what became of it. The suppression data (testosterone to 29.5 ng/dL) are consistent with it being viable; that it *would have worked* is my inference.
+5. **Coutts 1997's preparation remains undescribed.** The 250 mg dose has no stated vehicle or concentration, and the 1.32 mL figure above is inferred from the patent's 190 mg/mL only. The full text is genuinely unreachable: Unpaywall reports it as `oa_status: green`, but the location it offers (`clinchem.org/content/43/11/2091.abstract`) is the abstract page, not a deposited full text — a false positive. Not on any mirror checked.
+6. ~~Weinbauer 1990's vehicle~~ — **closed**: 32.7 mg in 1 mL sesame oil, WHO/NICHD preparation.
+7. ~~*Pesomax* ampoule strength~~ — **closed**: 15 mg per 2 mL ampoule, AIC 015012014, now withdrawn.
 
 ## How to think about this body of evidence — interpretation
 

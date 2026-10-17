@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "477f1cf965ca606e",
+        "id": "8e9e0691e9c0cd66",
         "type": "tabs",
         "children": [
           {
-            "id": "a31de1b302cdc5cf",
+            "id": "bb46d27669b1abea",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/vocabulary/Runx2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Runx2"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:growth-plate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +73,19 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
+          },
+          {
+            "id": "eadd02e7e47c329f",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "Notebook Navigator"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -177,15 +192,51 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-memos:Thino": false,
+      "obsidian-memos:Thino Super": false,
+      "notebook-navigator:Notebook Navigator": false
     }
   },
-  "active": "a31de1b302cdc5cf",
-  "lastOpenFiles": []
+  "active": "eadd02e7e47c329f",
+  "lastOpenFiles": [
+    "wiki/concepts/_index.md",
+    "wiki/concepts/vocabulary/Androgen Receptor (AR).md",
+    "wiki/sources/Dlx5-Chondrocyte-Differentiation.md",
+    "wiki/concepts/vocabulary/Estrogen Receptor (ER).md",
+    "wiki/sources/Aromatase-Inhibitors-Near-Final-Height-Males.md",
+    "wiki/sources/MRI-Growth-Plate-Closure-Adolescents-Kvist.md",
+    "wiki/concepts/Epiphyseal Fusion Mechanisms.md",
+    "wiki/concepts/Compounding Knowledge.md",
+    "wiki/concepts/cherry-picks.md",
+    "wiki/domains/Health and Nutrition.md",
+    "wiki/domains/Endocrinology.md",
+    "wiki/domains/_index.md",
+    "wiki/concepts/vocabulary/Aromatase.md",
+    "wiki/index.md",
+    "README.md",
+    "wiki/sources/Growth-Plate-Senescence-Epiphyseal-Fusion-Review.md",
+    "wiki/comparisons/Aromatase Inhibition and Bone - Mammals vs Egg-Laying Birds.md",
+    "wiki/sources/Peptide-AEDG-Immunosenescence-Interferon.md",
+    "wiki/sources/Medicinal-Peptide-Drugs-Pharmacology-Overview.md",
+    "wiki/sources/Peptide-Bioregulators-Plant-Callus-Growth.md",
+    "wiki/sources/Peptide-Bioregulators-Review-Solovev.md",
+    "wiki/sources/Peptide-KEDW-DNA-Gene-Expression.md",
+    "wiki/sources/H19-Gene-Silencing-Rhabdomyosarcoma.md",
+    "wiki/sources/Peptide-Regulation-Chondrogenic-Stem-Cell-Differentiation.md",
+    "wiki/sources/Testosterone-Liver-Kidney-Function-Rabbits.md",
+    "wiki/sources/Dietary-Supplement-DHT-Testosterone-Estradiol-Dose-Response.md",
+    "wiki/concepts/vocabulary",
+    "wiki/Wiki Map.canvas",
+    "wiki/domains",
+    "naamloze map"
+  ]
 }

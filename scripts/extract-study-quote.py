@@ -23,7 +23,7 @@ try:
 except ImportError:
     sys.exit("needs pymupdf")
 
-HIGHLIGHT = (1, 0.87, 0.30)   # warm yellow
+HIGHLIGHT = (1, 0.84, 0.10)   # marker yellow
 PAD = 14
 
 
@@ -66,20 +66,35 @@ def quote(doc, phrase, out, dpi=460, context=2):
         band = hits[0]
         for h in hits[1:]:
             band |= h
-        # widen to the full column and add a couple of lines of context
+        # Find the column by walking outward from the hit along its own line and
+        # stopping at the first gap wider than a word space. Anything else on the
+        # same height (a sidebar, a caption spanning the page) is a different
+        # column and must not widen the crop. That is how an author's contact
+        # block once ended up on a slide.
         words = page.get_text("words")
-        same_col = [w for w in words if abs(w[0] - band.x0) < 260 or abs(w[2] - band.x1) < 260]
-        left = min([w[0] for w in same_col], default=band.x0) - PAD
-        right = max([w[2] for w in same_col], default=band.x1) + PAD
         line_h = band.height or 12
+        on_line = sorted((w for w in words if abs(w[1] - band.y0) < line_h * 0.6), key=lambda w: w[0])
+        GAP = 14
+        idx = [k for k, w in enumerate(on_line) if w[2] > band.x0 and w[0] < band.x1]
+        lo = hi = idx[0] if idx else 0
+        while lo > 0 and on_line[lo][0] - on_line[lo - 1][2] < GAP:
+            lo -= 1
+        while hi + 1 < len(on_line) and on_line[hi + 1][0] - on_line[hi][2] < GAP:
+            hi += 1
+        col_left, col_right = on_line[lo][0], on_line[hi][2]
+        # the column's true right edge is the widest line in it, not this line
+        ymin, ymax = band.y0 - line_h * (context + 1), band.y1 + line_h * (context + 1)
+        in_col = [w for w in words if ymin < w[1] < ymax and w[0] >= col_left - 6 and w[0] < col_right]
+        col_right = max([w[2] for w in in_col], default=col_right)
+        left, right = col_left - PAD, col_right + PAD
         clip = pymupdf.Rect(max(page.rect.x0, left),
                             max(page.rect.y0, band.y0 - line_h * context),
                             min(page.rect.x1, right),
                             min(page.rect.y1, band.y1 + line_h * context))
         # draw the highlight before rendering
         for h in hits:
-            page.draw_rect(h, color=None, fill=HIGHLIGHT, fill_opacity=0.42,
-                           overlay=False)
+            page.draw_rect(h, color=None, fill=HIGHLIGHT, fill_opacity=0.45,
+                           overlay=True)
         page.get_pixmap(dpi=dpi, clip=clip).save(out)
         print(f"  quote p{pno+1} -> {os.path.basename(out)}")
         return True

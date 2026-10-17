@@ -162,3 +162,37 @@ content/_style-analysis/tiktok/
 
 # OCR corpus is regenerable from the scrape; keep it out of git
 content/_style-analysis/slide-text.jsonl
+
+# ---- Research pipeline artefacts (added 2026-09-11) ----
+# This repo is public. Everything below is either third-party content or
+# regenerable from local sources that are themselves gitignored.
+
+# Local venv for pymupdf / faster-whisper
+.venv-research/
+
+# Video transcripts: same policy as slide-text.jsonl above — derived from the
+# scrape, regenerable via scripts/transcribe-videos.py
+content/_style-analysis/video-text.jsonl
+
+# Rendered decks, exports and build dirs (generated, large)
+content/_style-analysis/*-out/
+content/_style-analysis/*-build/
+content/_style-analysis/export/
+content/_style-analysis/export-jpg/
+content/_style-analysis/*.zip
+
+# Extracted study figures: 1.6GB of publisher-owned images. Regenerable from
+# .raw/Studies/ via scripts/extract-figures.py. (_attachments/ is already
+# ignored above; this is explicit for anyone reading the rules.)
+_attachments/figures/
+
+# Derived third-party content — NOT for a public repo.
+# wiki/creators/ quotes competitor slide text verbatim and names accounts,
+# post ids and view counts. wiki/figures/ quotes journal figure captions.
+# Both are generated locally by scripts/ and belong in the vault, not on GitHub.
+wiki/creators/
+wiki/figures/
+
+# Personal chat exports + chat archive (private, never commit)
+.raw/claude-export/
+wiki/chats/

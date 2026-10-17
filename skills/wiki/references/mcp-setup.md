@@ -34,7 +34,7 @@ Uses MarkusPfundstein's mcp-obsidian. Requires the Local REST API plugin running
 claude mcp add-json obsidian-vault '{
   "type": "stdio",
   "command": "uvx",
-  "args": ["mcp-obsidian"],
+  "args": ["--with", "mcp<2.0.0", "mcp-obsidian"],
   "env": {
     "OBSIDIAN_API_KEY": "<YOUR_KEY>",
     "OBSIDIAN_HOST": "127.0.0.1",
@@ -43,6 +43,9 @@ claude mcp add-json obsidian-vault '{
   }
 }' --scope user
 ```
+
+> [!warning] Pin `mcp<2.0.0`
+> `mcp-obsidian` 0.2.2 declares `mcp>=1.1.0` but its code still uses the pre-2.0 low-level `Server.list_tools()` decorator API, which the `mcp` 2.0 SDK removed. Without the `--with "mcp<2.0.0"` constraint, plain `uvx mcp-obsidian` resolves `mcp` 2.0.0 and crashes with `AttributeError: 'Server' object has no attribute 'list_tools'`. This is unrelated to the Python version — `uvx` already runs the tool on its own isolated Python 3.13.
 
 > [!warning] Security
 > `NODE_TLS_REJECT_UNAUTHORIZED: "0"` **disables TLS certificate verification process-wide** for the MCP server. It is required here because the Local REST API plugin uses a self-signed certificate. This is acceptable for `127.0.0.1` (localhost) connections only. Never use this setting for any non-loopback connection. If you are uncomfortable with the global TLS bypass, prefer **Option D (Obsidian CLI)** or **Option B (filesystem-based)** which avoid this entirely.

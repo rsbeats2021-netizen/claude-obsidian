@@ -2,7 +2,3656 @@
   "version": 1,
   "created": "2026-04-23",
   "description": "Ingest delta tracker and address map for the claude-obsidian vault. Do not hand-edit; wiki-ingest maintains this.",
-  "sources": {},
+  "sources": {
+    ".raw/Studies/Honey-Nutrition-Domain/Novel BiocementHoney Composites for Bone Regenerative Medicine - Medvecky et al - 2023.pdf": {
+      "hash": "dd415796a154c757906fc69b57d48917",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Biocement-Honey-Composites.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Chondrogenic Differentiation of Mesenchymal Stem Cells - Somoza et al - 2014.pdf": {
+      "hash": "ccdeb4179e28379d6ff6fd8393135c58",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Chondrogenic-Differentiation-MSC-Challenges-Review-Somoza2014"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effect of Different Concentrations of Forskolin Along with Mature - Bahmanpour et al - 2020.pdf": {
+      "hash": "5e9c6ecd91c6611facb01f590de31104",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Forskolin-Granulosa-Cell-ESC-Germ-Cell-Differentiation.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Effects of a Novel Astragalus Extract - 2025.pdf": {
+      "hash": "9fa6b481d801578786e4eef605897384",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Astragalus-Extract-GH-Alternative-IGF1-Bone-Growth"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Parathyroid Hormone-Related Peptide Represses Chondrocyte Hypertrophy via - Kozhemyakina et al - 2009.pdf": {
+      "hash": "45487008283eb2eeb0d900f131f8ddea",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/PTHrP-HDAC4-MEF2-Chondrocyte-Hypertrophy-Kozhemyakina2009.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/PTHrP-Ihh Feedback Loop.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Cyclic AMP Regulates Extracellular Matrix Gene Expression and Metabolism - Rockel et al - 2009.pdf": {
+      "hash": "9eb6e079c598ef63dcba419179de6a42",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "cAMP-ECM-Gene-Expression-Rat-Chondrocytes-Rockel2009"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Analysis of Musculoskeletal System Disease as a Factor Influencing - Bidarova et al - 2012.pdf": {
+      "hash": "13b8fec962e9e18fd6750c5be136dc12",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Musculoskeletal-Disease-Chondroprotector-Consumption-Stavropol.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Effects of Combined Aerobic Dance Exercise and Honey Supplementation on - Ooi et al - 2011.pdf": {
+      "hash": "139f189f0f2d44e71a44487c52d7b877",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Aerobic-Dance-Bone-Turnover.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Honey for Nutrition and Health - Bogdanov et al - 2008.pdf": {
+      "hash": "2d5cbb8df20315ecbaf0e946de69386d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Nutrition-Health-Review-2008.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Composition and Bioactivity.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Short Stature in Children - Frasier - 1981.pdf": {
+      "hash": "6139f6b4cefba4f28b115512348cbc83",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Short-Stature-Children-Classic-Review-Frasier1981.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/The Role of the Growth Plate in Longitudinal Bone Growth - Hurwitz - 1991.pdf": {
+      "hash": "a2f5b38708f7156ac901533be525ef1d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Role-of-Growth-Plate-Longitudinal-Bone-Growth.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Epithelial-Mesenchymal Transition and Mesenchymal-Epithelial Transition - Zhou et al - 2015.pdf": {
+      "hash": "80213509a27d961aacace975bf21e504",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "EMT-MET-Growth-Plate-Chondrocyte-Differentiation-Zhou2015"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/FOXO4-DRI Induces Keloid Senescent Fibroblast Apoptosis via p53 Nuclear - Kong et al - 2025.pdf": {
+      "hash": "19f49ce128ed4656b17443a396a4d868",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "FOXO4-DRI-Keloid-Senescence-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Cartilage-Targeted IGF-1 Treatment to Promote Longitudinal Bone Growth - Lui et al - 2010.pdf": {
+      "hash": "80b5186b40aa7919e5c1b4bb45f89a0c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Cartilage-Targeted-IGF1-Bone-Growth-Lui-Baron"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Role of Growth Hormone Receptor Signaling in Osteogenesis from Murine Bone - Cool et al - 2005.pdf": {
+      "hash": "aa3f0a5ba9ba3e60a3a4ac56c6f1a0ba",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Receptor-Osteogenesis-BMPC-Cool2005.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Letrozole (Aromatase Inhibitor) Increases Bone Strength in Laying Hens - 2019.pdf": {
+      "hash": "986a319ad22f8ece1ee3e210d3780533",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Letrozole-Bone-Laying-Hens.md",
+        "wiki/comparisons/Aromatase Inhibition and Bone - Mammals vs Egg-Laying Birds.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/A Transmembrane Intracellular Estrogen Receptor Mediates Rapid Cell - Revankar et al - 2005.pdf": {
+      "hash": "7a633043ce60f2d7846ac803622887b8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GPER1-Discovery-Transmembrane-Estrogen-Receptor-Revankar2005"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Cell Cycle Analysis of Proliferative Zone Chondrocytes in Growth Plates - Wilsman et al - 1996.pdf": {
+      "hash": "e32106af2d7cf819957986fdc64dc6e8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Cell-Cycle-Proliferative-Zone-Chondrocytes-Wilsman1996"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Preclinical Formulations for Discovery and Toxicology - Neervannan - 2006.pdf": {
+      "hash": "62872e8cae54643086621f23320ca52e",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Preclinical-Formulations-Drug-Discovery-Toxicology.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Small Molecule Compounds Promoting Chondrocyte Proliferation and - Li et al - 2020.pdf": {
+      "hash": "8f7a83861cdff377c2b9159bfe5b0ab4",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Cartilage-Tissue-Engineering-Small-Molecules.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Investigating Insulin's Role in Regulating Local Aromatase in Growth Plate - Hu et al - 2025.pdf": {
+      "hash": "f4cc2c191d97a336103bda4a7e2dc84a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Insulin-Local-Aromatase-Growth-Plate-Obesity.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Effects on Bone and Muscle - Notelovitz - 2000.pdf": {
+      "hash": "9fd238f5d51a09963b094712649396f9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Androgen-Effects-Bone-Muscle-Notelovitz"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Mechanical Properties, Bone Mineral Content, and Bone Composition of the - Aerssens et al - 1993.pdf": {
+      "hash": "942e7b2773a865be00e00a50d70da323",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Nandrolone-OVX-Rat-Femur-Mechanical-Properties-Aerssens1993.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/The Effects of Tualang Honey on Bone Metabolism of Postmenopausal Women - Effendy et al - 2012.pdf": {
+      "hash": "39b0861eb44e389812f9957dc84442ec",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Tualang-Honey-Bone-Metabolism-Postmenopausal-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/DHEA and the Skeleton - Gordon et al - 1999.pdf": {
+      "hash": "df0959104c747d8695c23f3fff4c208f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/DHEA-and-the-Skeleton-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md",
+        "wiki/concepts/vocabulary/Dihydrotestosterone (DHT).md",
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md",
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Changes in Bone Metabolism and Antioxidant Status with Combined Exercise - Tavafzadeh et al - 2015.pdf": {
+      "hash": "7ee6e772fcfd482d86449fc9d742867e",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Exercise-Antioxidant-Bone-Metabolism.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Expression of Estrogen Receptor α and β in the Epiphyseal Plate of the Rat - Eerden et al - 2001.pdf": {
+      "hash": "0f23efc8f68e2ddab908dbc3210e1ded",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-Expression-Rat-Epiphyseal-Plate-VanDerEerden"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of 19-Norandrostenololylaurate on Serum Testosterone, Libido, and - Koskinen et al - 1997.pdf": {
+      "hash": "b628a037bf7b131438badf4e8ade1522",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Norandrostenololylaurate-Testosterone-Growth-Plate-Colts-Koskinen1997.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Effect of Jumping Exercises on Short-Stature Symptoms and Serum GH, IGF-1, - 2025.pdf": {
+      "hash": "f17ea0f429cd64942746a59ee5c71a58",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Jumping-Exercise-Short-Stature-GH-IGF1"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Growth-Promoting Effect of Recombinant Human Growth Hormone and Stanozolol - Fang et al - 1999.pdf": {
+      "hash": "15c3de422f2dac0f47306af9f7822b93",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Stanozolol-Turner-Syndrome-Fang1999.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Mechanisms of DNA Damage by Photoexcited 9-Methyl-β-Carbolines - Vignoni et al - 2013.pdf": {
+      "hash": "2066ecd190e29ae8d1349d00cbdce987",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Beta-Carboline-DNA-Damage-Photoexcited-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Anabolic Steroids and Osteoporosis - Dequeker et al - 1980.pdf": {
+      "hash": "2a2ea34a4635b6660fd36db80e4f0659",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Anabolic-Steroids-Osteoporosis-Dequeker-Geusens.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Donepezil and 5-HT4 Receptor Effects on Object Recognition Memory - Freret et al - 2012.pdf": {
+      "hash": "209387065789a48b6ec9aa4decabba69",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Donepezil-5HT4-Object-Recognition-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/Hormones and Antioxidant Systems - extraction) - 2010.pdf": {
+      "hash": "ccf746bda6ac5cfd6af7ee45dc2809e3",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Hormones-and-Antioxidant-Systems.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Diverse Mechanisms of Growth Plate Exhaustion Underlie Bone Growth - Dolan et al - 2022.pdf": {
+      "hash": "37488bd1b20f8091ec187f4aa22effc1",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Differential-Growth-Plate-Senescence-Bone-Size-Dolan2022"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Systemic and Local Regulation of the Growth Plate - Eerden et al - 2003.pdf": {
+      "hash": "e806d3035c88104f42d20590d6b50244",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Systemic-Local-Regulation-Growth-Plate-Review-VanDerEerden2003"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Skeletal Overgrowth in a Pre-Pubescent Child Treated with Pan-FGFR - Majlessipour et al - 2024.pdf": {
+      "hash": "5f15deec6ed0234acfcc167de8bbb268",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Skeletal-Overgrowth-Pan-FGFR-Inhibitor-Case-Report"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Receptor-Related Receptor γ Regulation by Interleukin-1 in - Bonnelye et al - 2011.pdf": {
+      "hash": "6134c6660783b7eb5216a1b7189bd95e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERR-IL1-Osteoarthritic-Chondrocytes-Bonnelye2011.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Signaling Pathways and Molecular Mechanisms Involved in Maintenance of - (NICHD et al - 2020.pdf": {
+      "hash": "4f08a9ef431a6d1ce32079cdb5dfc2da",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Resting-Zone-Chondrocytes-Stem-Cell-Review-Lui2020.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Changes of Gene Expression Profile During Differentiation of Equine Bone - Ropka-Molik et al - 2026.pdf": {
+      "hash": "443a20dc0ee57499e38a827137796790",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Equine-MSC-Gene-Expression-Adipocyte-Chondrocyte-Differentiation.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Fulvestrant-Mediated Attenuation of the Innate Immune Response Decreases - Abrahamsson et al - 2020.pdf": {
+      "hash": "898fd38034d5cb1dc23d76809c2a665f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-Immune-Response-Breast-Cancer-Dabrosin.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Comparison of the Catabolic Effects of PTH - 2020.pdf": {
+      "hash": "b08e93a5178a530e80ba7e25f0069777",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Abaloparatide-PTH-Catabolic-Effects-Bone.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of Androgens on Human Fascia - Fede et al - 2025.pdf": {
+      "hash": "927db67732e2b5122d001c755afb15c2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgens-Human-Fascia-Fede2025.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/DUPLICATE of - Signaling Pathways and Molecular Mechanisms Involved in Maintenance of - (NICHD et al - 2020.pdf": {
+      "hash": "d744199c5fc0ec29848f9bc1648759ed",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "Resting-Zone-Chondrocytes-Stem-Cell-Review-Lui2020",
+      "note": "Same paper as Lui 2020 ('Home for a Rest: Stem Cell Niche of the Postnatal Growth Plate') already ingested under a paraphrased title; abstract text matches verbatim."
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Expression of Estrogen Receptor-α and -β in Rat and Rabbit Growth Plate - Nilsson et al - 1999.pdf": {
+      "hash": "5d0559c725cbdda62b895284ff0b8c4e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-Expression-Rat-Rabbit-Growth-Plate-Postnatal-Nilsson1999"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of Anabolic Steroid on Craniofacial Growth and Development in Rats - 1990.pdf": {
+      "hash": "3f0f8a6af82a20cfa5a6b79319616795",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Nandrolone-Craniofacial-Growth-Rats-Fischman"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Liquiritigenin Is a Plant-Derived Highly Selective Estrogen Receptor β - Mersereau et al - 2000.pdf": {
+      "hash": "987bf82733a9144ec3a2a4526e3ec4f1",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Liquiritigenin-ERbeta-Selective-Agonist-Mersereau"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Pharmacokinetics and Pharmacodynamics of 7α-Methyl-19-Nortestosterone - Suvisaari et al - 1997.pdf": {
+      "hash": "3b6533d4ac66c84d4887f3cfc88b0b8e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/MENT-Human-PK-Suvisaari1997.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Actions in the Growth Plate Cartilage - Institutet) - 2020.pdf": {
+      "hash": "d56484497422440352da88b28fd3e8ae",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Estrogen-Actions-Growth-Plate-Cartilage-Thesis-Iravani2020.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Ecdysteroids and Multidrug Resistance in Cancer Cells - 2012.pdf": {
+      "hash": "70bde5875b732617fcad119e09bb448b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Ecdysteroid-MDR-Cancer-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/The Flavonol Glycoside Icariin Promotes Bone Formation in Growing Rats by - Shi et al - 2017.pdf": {
+      "hash": "ff8ee7874541af14f4830546ce1c5ade",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Icariin-Bone-Formation-cAMP-Primary-Cilia-Osteoblasts"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Neuroregenerative Effect of Oxandrolone - Bianchi et al - 2015.pdf": {
+      "hash": "a52839dcd72d7d8fc3400204065a907e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Oxandrolone-Neuroregenerative-Case-Report-Bianchi2015.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Methylphenidate Promotes Premature Growth Plate Closure - Pazos-Pérez et al - 2023.pdf": {
+      "hash": "ceb05b2cc6ac9b1a6c0bae8819160de5",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Methylphenidate-Premature-Growth-Plate-Closure-Pazos-Perez"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/BPC-157 in Musculoskeletal Healing - McGuire et al - 2025.pdf": {
+      "hash": "298ddb3fdae122f85ba21bb596c1ccd9",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/BPC-157-Musculoskeletal-Healing-Review.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Effects of Letrozole on Bone Biomarkers and Femur Fracture in Female Rats - Yonden et al - 2010.pdf": {
+      "hash": "deeaa724ffd56d7b24a29280ed545563",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Letrozole-Bone-Biomarkers-Femur-Fracture-Yonden.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/The Role of the Resting Zone in Growth Plate Chondrogenesis - Abad et al - 2002.pdf": {
+      "hash": "0030f08d1bdc84a5e67911dd3a2a8eb7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Resting-Zone-Growth-Plate-Chondrogenesis-Abad2002.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - Estrogen Receptor α, But Not Estrogen Receptor β, Is Involved in the - Lindberg et al - 2001.pdf": {
+      "hash": "a6ce729896c01497958448008fbc5d24",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "ERKO-BERKO-DERKO-OPG-RANKL-Male-Mice-Windahl2001",
+      "note": "Full duplicate PDF of the same Lindberg et al. 2001 paper already ingested via joe-425 2.pdf."
+    },
+    ".raw/Studies/Off-Topic/Medicinal Peptide Drugs - Trofimova et al - 2022.pdf": {
+      "hash": "f1674544429c72546a56e982f9b9ea9d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Medicinal-Peptide-Drugs-Pharmacology-Overview.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone and IGF-I Stimulate Cell Function in Distinct Zones of the - Peng - 1995.pdf": {
+      "hash": "39b6dacdc6d032c9bb0b229052006d62",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/GH-IGF1-Distinct-Zones-Rat-Growth-Plate-Oberbauer.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Roles of Pulsatility and Continuity of GH Administration in the Regulation - Bick et al - 1992.pdf": {
+      "hash": "345326e28139c4aa085591b91098407b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Pulsatility-Hepatic-Receptors-IGFBP-Bick1992.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Receptor α, But Not Estrogen Receptor β, Is Involved in the - Lindberg et al - 2001.pdf": {
+      "hash": "8ff03d985adbb0c1150c1ba394906ec9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERKO-BERKO-DERKO-OPG-RANKL-Male-Mice-Windahl2001"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/miRNA Regulation of Chondrocyte Metabolism in Osteoarthritis - Zhang et al - 2024.pdf": {
+      "hash": "56ce9c9726d9079953e698cb5f6d7d44",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/miRNA-Osteoarthritis-Chondrocyte-Metabolism-Review-Zhang2024.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/The Effect of Anabolic Steroids on Mandibular Growth - Gebhardt et al - 1990.pdf": {
+      "hash": "5f13485416233ff6b9bb3507b8f25798",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Anabolic-Steroids-Mandibular-Growth-Rats-Gebhardt"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Stimulation of Skeletal Stem Cells in the Growth Plate Promotes Linear - lab) - 2024.pdf": {
+      "hash": "715e3482b0da3f20880d2aa28207508a",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Skeletal-Stem-Cells-Growth-Plate-Hedgehog-Signaling.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Induction of Apoptosis in Bovine Articular Chondrocyte by Prostaglandin E2 - Miwa et al - 2000.pdf": {
+      "hash": "9413e172f2961475435740980922dbcc",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "PGE2-Apoptosis-Bovine-Articular-Chondrocytes-cAMP-Miwa2000"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Role of JAKSTAT3 Signaling in Cancer Metastasis, Cancer Stem Cells, and - Jin - 2019.pdf": {
+      "hash": "d1fffb6ca43d5a25c4d05d577a10ee5a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/JAK-STAT3-Cancer-Metastasis-WookJin2019.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Honey Supplementation Combined with Jumping Exercise Intensities on Bone - Mosavat et al - 2014.pdf": {
+      "hash": "98e88cedbe6473bdc990c595f750546f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Jumping-Exercise-Bone-Gonadotropins.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Dramatic Effect of a Non-17α Alkyl Testosterone Derivative Anabolic Agent - Al-Mosawi - 2006.pdf": {
+      "hash": "8701a2ae10e07db6d085df764c039f80",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Nandrolone-Achondroplasia-Case-Report.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Factors Affecting Prepubertal and Pubertal Bone Age Progression - Satoh et al - 2022.pdf": {
+      "hash": "38c93ebeb4d478321864c714853e3869",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Bone-Age-Progression-Factors-Review-Satoh2022.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Role of Estrogen Receptor α and Its Activation Function-1 for Growth - Börjesson et al - 2012.pdf": {
+      "hash": "bb43390413da81971ccd40d6a7f3e892",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/ERalpha-AF1-Growth-Plate-Closure-Female-Mice.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md",
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md",
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Human Growth Hormone Potentiates Colony Formation of Rat Epiphyseal Plate - Lindahl et al - 1986.pdf": {
+      "hash": "b0f181be508ca836f47a33a08157c771",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "hGH-Colony-Formation-Rat-Epiphyseal-Chondrocytes-Lindahl1986"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Mechanisms Enforcing the Estrogen Receptor Selectivity of Botanical - Jiang et al - 2010.pdf": {
+      "hash": "50db1e6654ebe79940e5d6b646d4ebfc",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Botanical-Estrogen-ER-Selectivity-Mechanisms-Jiang.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Efficacy of Letrozole for Delaying Bone Age Advancement in Adolescent - Hospital) - 2005.pdf": {
+      "hash": "86e05dc152bb4479096f6e68ff44611e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Letrozole-Bone-Age-Adrenal-Suppression-Jacobson2005.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Height Gains from Longitudinal Bone Growth - 2024.pdf": {
+      "hash": "355c188c36006163aab55c84fe95128a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Growth-Plate-Zones-Height-Gains-Review-CEP2023.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/β2-Adrenergic Receptor Signaling in Cartilage and Bone - 2020.pdf": {
+      "hash": "d6a15c959cc25db11818fe08a57412e3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Beta2-Adrenergic-Receptor-Chondrocyte-Osteoblast-Transdifferentiation-Catecholamines"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/Skeletal Development (Chapter, Basic and Applied Bone Biology, 2nd Ed.) - Biology et al - 2019.pdf": {
+      "hash": "2d9af970e6b489c49e7b634df0de7ab7",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Skeletal-Development-Basic-Applied-Bone-Biology.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Short and Long-Term Effects of Growth Hormone in Children and Adolescents - Ranke - 2021.pdf": {
+      "hash": "0d7a60bd350be8d36ef96657a0ef8351",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Deficiency-Children-Effects-Review-Ranke2021.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Estrogen and Androgen Receptors in Human Sperm Mitochondria - 2000.pdf": {
+      "hash": "ddf7df9ab9d7a022db5a7a472293503d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ER-AR-Human-Sperm-Mitochondria-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/The Effects of Trenbolone Supplementation on the Extremity Bones in - Lök - 2019.pdf": {
+      "hash": "8756b201ee6678ecd39f798853a3a07f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Trenbolone-Extremity-Bones-Running-Rats.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Fulvestrant (Faslodex) — How to Make a Good Drug Better (Robertson) - Robertson - 2000.pdf": {
+      "hash": "bf12c68d35c1a5e6bec7d66d4ceda8ea",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-Drug-Development-Robertson.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Long-Term Low-Dose Testosterone Treatment for Pubertal Growth in Boys with - Niños et al - 1995.pdf": {
+      "hash": "82783a48d84ae1bc1bfa004aa3f09e17",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Low-Dose-Testosterone-CDGP-Bergada1995.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/S-Equol A Selective Estrogen Receptor Beta Ligand and DHT Antagonist - Setchell et al - 2005.pdf": {
+      "hash": "7c2610a41feb71e5fa7f5ade64511db5",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/S-Equol-Estrogen-Receptor-Anti-Androgen.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Regulation of Rapid Signal Transducer and Activator of Transcription-5 - Gevers et al - 2009.pdf": {
+      "hash": "e03b380f82c53d20c84ac4086822e00e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Rapid-STAT5-Phosphorylation-Resting-Chondrocytes-Gevers2009.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md",
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Aromatase Inhibitors for Short Stature in Male Children and Adolescents - O'Grady - 2015.pdf": {
+      "hash": "a16441fc44ca63da8671e56f6ca04042",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Aromatase-Inhibitors-Short-Stature-Cochrane-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Neither Soyfoods Nor Isoflavones Warrant Classification as Endocrine - Messina et al - 2021.pdf": {
+      "hash": "a21ef019d963e630ba8000c00e71b96d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Soy-Isoflavones-Endocrine-Disruptor-Technical-Review-Messina2021.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Estrogen Receptor-Alpha-Interacting Cytokeratins Potentiate the - Long et al - 2010.pdf": {
+      "hash": "faf8c13e92f83b5395ffb7365b807106",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERalpha-Cytokeratins-Fulvestrant-Breast-Cancer-2010.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/FK962 and Donepezil Act Synergistically to Improve Cognition in Rats - McCarthy et al - 2011.pdf": {
+      "hash": "e2b1b9a07fe212e920e49a1a15061a4c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "FK962-Donepezil-Cognition-McCarthy2011-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Sirt1 An Increasingly Interesting Molecule with a Potential Role in Bone - Chen et al - 2024.pdf": {
+      "hash": "e8b222a57e65973ff4c8a84f37e8f25e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/SIRT1-Bone-Metabolism-Osteoporosis-Chen2024.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Selective HDAC2 Inhibition Silences Progesterone Receptor Signaling in - Bicaku et al - 2008.pdf": {
+      "hash": "5ef9dd3d5eaddda7c6354dd00bc72791",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/0008-5472.CAN-07-2822 (1).pdf",
+      "note": "exact duplicate filename variant found during queue rescan"
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Therapeutic Effects of Growth Hormone Combined with Low-Dose Stanozolol on - Xiong et al - 2010.pdf": {
+      "hash": "16da3272838b7439af399733165ab7ba",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Stanozolol-Turner-Syndrome-Final-Height-Xiong.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - Anti-Inflammatory Effects of Liquiritigenin via Inhibition of - Kim et al - 2010.html": {
+      "hash": "aee54ea2fa7c71c91273f9046f428340",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/Liquiritigenin-Anti-Inflammatory-NFkB-iNOS.md",
+      "note": "HTML version of the same article as bjp200879a.pdf (Kim et al., liquiritigenin anti-inflammatory), ingested once via the PDF."
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Effects of Estrogen on Growth Plate Senescence and Epiphyseal Fusion - Weise et al - 2001.pdf": {
+      "hash": "b628d41724cbb03377b5ba1161675b46",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estrogen-Growth-Plate-Senescence-Epiphyseal-Fusion-Weise2001"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Use of Mestanolone Hormone to Induce Male Sex in Nile Tilapia Fry - 2026.pdf": {
+      "hash": "6ce375973e8ebecd408a9781be85f0db",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Mestanolone-Tilapia-Masculinization-Thesis.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Selective HDAC2 Inhibition Silences Progesterone Receptor Signaling in - Bicaku et al - 2008.pdf": {
+      "hash": "5ef9dd3d5eaddda7c6354dd00bc72791",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/HDAC2-Progesterone-Receptor-Breast-Cancer.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/miRNA-Based Regulation in Growth Plate Cartilage - Thakore et al - 2020.pdf": {
+      "hash": "b048f50e20f6aeb06494b18df06b8a2b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/miRNA-Growth-Plate-Cartilage-Review-Thakore-Delany.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of Long-Term Administration of Deca-Durabolin on Reproductive - Zabiba - 2017.pdf": {
+      "hash": "4043a9984b0443a0848bf822bb920818",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Deca-Durabolin-Reproductive-Organ-Damage-Rats.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Role of Estrogen and Estrogen Receptor in GH-Secreting Adenomas - Voltan et al - 2023.pdf": {
+      "hash": "250277905a06fb69e1a04221d1e86601",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estrogen-ER-GH-Secreting-Adenomas-Voltan2023"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Sex Steroid Regulation of Cartilage and Bone Cell Proliferation - Somjen et al - 1991.pdf": {
+      "hash": "bd4196759b686457a40b46db7f61bee1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Sex-Steroid-Regulation-Cartilage-Bone-Proliferation.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/The GH Secretagogues Ipamorelin and GH-Releasing Peptide-6 Increase Bone - Svensson et al - 2000.pdf": {
+      "hash": "7f7f513d5d2b6542bc64d4649d4e5cd4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Secretagogues-Ipamorelin-GHRP6-Bone-Mineral-Content-Svensson2000"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/SPI1 Activates Mitochondrial Unfolded Protein Response Signaling to - Zu et al - 2025.pdf": {
+      "hash": "39edd23379ecbb7e544ca32f68857e93",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "SPI1-Mitochondrial-UPR-Chondrocyte-Senescence-OA"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Role of Estrogen Receptor α in Growth Plate Cartilage for Longitudinal - Börjesson et al - 2010.pdf": {
+      "hash": "c1e84cb75133256535a8893ac4077d54",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERalpha-Cartilage-Specific-Inactivation-GH-IGF1-Axis-Borjesson2010.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Chondrocytes in the Resting Zone of the Growth Plate Are Maintained in a - Hallett et al - 2021.pdf": {
+      "hash": "71b9d14933af6884ab992e800525e353",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/PTHrP-Resting-Chondrocytes-Wnt-Inhibitory-Environment.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md",
+        "wiki/concepts/vocabulary/PTHrP-Ihh Feedback Loop.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/TYRA-300, an FGFR3-Selective Inhibitor, Promotes Bone Growth in Two - Starrett et al - 2025.pdf": {
+      "hash": "e5a57877b9aba90a2832202239f442a8",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/TYRA-300-FGFR3-Inhibitor-Chondrodysplasia.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Nongenomic Membrane Effects of 17β-Estradiol on Chondrocyte Membrane - Sylvia et al - 2000.pdf": {
+      "hash": "dacefda8deb3a6136738ae4ec0edebe8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estradiol-Membrane-Receptor-PKC-Sex-Specific-Sylvia2000"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Reactivation of a Silenced H19 Gene in Human Rhabdomyosarcoma by - Lynch et al - 2002.pdf": {
+      "hash": "cd0b968c622019329f360f7e1b510f4d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/H19-Gene-Silencing-Rhabdomyosarcoma.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Idiopathic Short Stature in the Genomic Era - Paparella et al - 2025.pdf": {
+      "hash": "226bc3604648ac6e59f13f36141bc058",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Idiopathic-Short-Stature-Genomic-Era-Paparella2025.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Growth Cartilage cAMP Response to PTH, Calcitonin, and Somatotropin in - Kreusser et al - 1982.pdf": {
+      "hash": "9c78482beb9ec5e18b6a8708c3ff781f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "PTH-Calcitonin-GH-cAMP-Growth-Cartilage-Uremic-Kreusser1982"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/The Small Compound TD-198946 Protects Against Intervertebral Degeneration - Kushioka et al - 2020.pdf": {
+      "hash": "95c719735d9523678519c8afeb42af84",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/TD-198946-Intervertebral-Disc-Regeneration.md"
+      ],
+      "pages_updated": [
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Tethering with Tension Band Plates for Epiphysiodesis in Limb Length - 2020.pdf": {
+      "hash": "29c3be9378ae8b62e9afc80e743ec474",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Epiphysiodesis-Tension-Band-Plates-Limb-Length-Discrepancy"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Receptor Modulation Does Not Affect Longitudinal Bone Growth - Chagin et al - 2009.pdf": {
+      "hash": "e0e5ba769fa2ca601fb0c9a5b4d1b423",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Androgen-Receptor-Modulation-No-Effect-Growth-Plate.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/The Role of Accelerated Growth Plate Fusion in the Absence of SOCS2 on - Samvelyan et al - 2022.pdf": {
+      "hash": "f08d2416d605d9af17ca30cfa8431fb1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/SOCS2-Accelerated-Growth-Plate-Fusion-Osteoarthritis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md",
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Hormonal Regulation of Estrogen and Androgen Receptors in Male Efferent - 2000.pdf": {
+      "hash": "a1ef558aedc1f12f76bdac8a41140188",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ER-AR-Male-Efferent-Ductules-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Dual Mechanism for cAMP-Dependent Modulation of Ca2+ Signalling in - D'Andrea et al - 1996.pdf": {
+      "hash": "44dc11c53276b7025280cbb229a32de0",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/cAMP-Calcium-Articular-Chondrocytes-DAndrea1996.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/PTHrP-Ihh Feedback Loop.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Growth Plate Chondrocytes - Hallett et al - 2019.pdf": {
+      "hash": "d41e3859551dbedbc143bf990e605f59",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Growth-Plate-Chondrocytes-Skeletal-Development-Review-Hallett2019"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Use of Tamoxifen to Improve Height Potential in Short Pubertal Boys - Kreher et al - 2005.pdf": {
+      "hash": "bf7f772577335945de689482a88cf191",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Tamoxifen-Height-Potential-Short-Pubertal-Boys-Kreher2005.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Evaluation of Estrogenic Activity of Licorice Species in Comparison with - Hajirahimkhan et al - 2010.pdf": {
+      "hash": "fe05db322a2277b6465cc2e08364febe",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Licorice-Hops-Estrogenic-Activity-Hajirahimkhan.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/FGFR3 Mutations in Achondroplasia and Related Chondrodysplasia Syndromes - 2000.pdf": {
+      "hash": "736a24366e4cdc759672427b60885023",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "FGFR3-Achondroplasia-Chondrodysplasia-Foundational-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Peptide Regulation of Chondrogenic Stem Cell Differentiation - Linkova et al - 2023.pdf": {
+      "hash": "e6f3d9ad0a220b041b63a4683ccd327d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Peptide-Regulation-Chondrogenic-Stem-Cell-Differentiation.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md",
+        "wiki/concepts/vocabulary/Runx2.md",
+        "wiki/concepts/Molecular Regulators of Growth Plate Chondrocyte Maturation.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/A New Role for Estrogen Receptor α in Cell Proliferation and Cancer - Livezey et al - 2018.pdf": {
+      "hash": "1a9757298df8ae70d10452d038ed2292",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERalpha-Cell-Proliferation-Cancer-UPR-Livezey.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Homologous Androgen Receptor Up-Regulation in Osteoblastic Cells May Be - Wiren et al - 1999.pdf": {
+      "hash": "2c962d6aacbd20b666d506d1c146b831",
+      "duplicate_of": ".raw/Growth Plates/wiren1999 (1).pdf",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "note": "Byte-identical duplicate (same MD5 hash); skipped, not separately ingested."
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Pulsatility of Growth Hormone Signaling in Liver Cells - Choi et al - 2000.pdf": {
+      "hash": "54dea6448a4aa2c5d57bc616c18b977c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Pulsatility-STAT5b-Liver-Review-ChoiWaxman"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Homologous Androgen Receptor Up-Regulation in Osteoblastic Cells May Be - Wiren et al - 1999.pdf": {
+      "hash": "2c962d6aacbd20b666d506d1c146b831",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Androgen-Receptor-Upregulation-Osteoblasts.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Capivasertib Plus Fulvestrant in HR-PositiveHER2-Negative Advanced Breast - 2025.pdf": {
+      "hash": "5a91db48a7db7649cee6eea070859bcf",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Capivasertib-Fulvestrant-BreastCancer-Phase3-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Chondrogenesis, Chondrocyte Differentiation, and Articular Cartilage - Goldring - 2012.pdf": {
+      "hash": "d822315277a699dfc1322ae93d2770c5",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Chondrogenesis-Osteoarthritis-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md",
+        "wiki/concepts/vocabulary/Runx2.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/High Levels of Androgens Cause Chondrocyte Accumulation and Loss of Smooth - Hiremath et al - 2010.pdf": {
+      "hash": "9bbb342c92324867256ad6d74ac2384a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgen-Ectopic-Chondrocyte-Penile-Body-Hiremath.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Membrane Effects of Sex Hormones on Growth Plate Chondrocytes - labs et al - 2012.pdf": {
+      "hash": "7340857bd574a0f0fc03b0294a510f75",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Membrane-Effects-Sex-Hormones-Growth-Plate-Chondrocytes-Thesis.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Three Estrogen Receptor Mechanisms in the Growth Plate.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Russian Federation Patent - Property - 2000.pdf": {
+      "hash": "66e5415063bade636261f9d1696138b7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Russian-Patent-Cell-Culture-Method.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/The Effects of Parathyroid Hormone and Calcium Gluconate on the Skeletal - Selye et al - 1940.pdf": {
+      "hash": "1d19228eb9bfdb7d2a63c40591811e88",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/PTH-Calcium-Gluconate-Mouse-Skeleton-Selye.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/PTHrP-Ihh Feedback Loop.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Reactivation of Vertebral Growth Plate Function in Vertebral Body - Latalski et al - 2022.pdf": {
+      "hash": "4e338b42d03d2a677edc2fcc025d3d9c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Vertebral-Growth-Plate-Reactivation-Tethering-Latalski2022"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Concise Report on Fluorescein Dye Dilution Method for Retinal Circulation - 1973.pdf": {
+      "hash": "8b40fb93accff51037789c4f447cfd0e",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Fluorescein-Dye-Dilution-Retinal-Blood-Flow.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Signaling Pathways in Growth Plate Development and Their Role in Skeletal - 2010.pdf": {
+      "hash": "83fa29044915029c8bbd33156ec77ecf",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Growth-Plate-Signaling-Pathways-Review-Chondrodysplasia"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Short Peptides as Signaling Molecules in Homeostasis Regulation - Khavinson et al - 2013.pdf": {
+      "hash": "9e016040b942ec4eaf09d4c84877c4ae",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Peptide-Bioregulators-Review-Solovev.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Anabolic-Androgenic Steroids and Skeletal Muscle Androgen Receptor - 2020.pdf": {
+      "hash": "a8388a205c6611ac779b96c1ee3d2117",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "AAS-Skeletal-Muscle-Androgen-Receptor-Review-MuscleHypertrophy"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Growth Promotion in the Short Normal Child - Children et al - 1994.pdf": {
+      "hash": "a3d71eb09e14213134b7c85a62fb07fc",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Growth-Promotion-Short-Normal-Child-Thesis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md",
+        "wiki/concepts/vocabulary/Testosterone.md",
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Alterations in Growth Plate and Articular Cartilage Morphology Associated - Gruber et al - 2004.pdf": {
+      "hash": "d7f186fb95592ad31e06b0028b3491b1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Sox9-Localization-Magnesium-Deficient-Rat-Growth-Plate.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md",
+        "wiki/concepts/Molecular Regulators of Growth Plate Chondrocyte Maturation.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Erdafitinib (BALVERSA) FDA Prescribing Information — Highlights - labeling) - 2019.pdf": {
+      "hash": "500c5c6cfa59ce82d0860d3e8b739ae2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Erdafitinib-FGFR-Inhibitor-Prescribing-Information.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Investigations Into the Human Metabolism of Trestolone - Piper et al - 2025.pdf": {
+      "hash": "77ef25c4e7fbb057d14c842ebcd31366",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Trestolone-Human-Metabolism-Doping-Analysis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Differential Regulation of Skeletal StemProgenitor Cells in Distinct - Solidum et al - 2023.pdf": {
+      "hash": "88ca63767418f706bb565ac32f97be77",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Differential-Regulation-Skeletal-Stem-Progenitor-Cells-Compartments.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Rapid Membrane Responses to Dihydrotestosterone Are Sex Dependent in - ElBaradie et al - 2012.pdf": {
+      "hash": "f6ac034c079177f3e8ec7542bba5920f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/DHT-Rapid-Membrane-Response-Sex-Dependent-ElBaradie2012.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Dynasore, the Dynamin Inhibitor, Modulates Longitudinal Bone Growth in a - Marchan-Alvarez et al - 2026.pdf": {
+      "hash": "febc53ff820fe6fb841b2a280e39ab2e",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Dynasore-Hormetic-Bone-Growth.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/Skeletal-Stem-Cells-Growth-Plate-Hedgehog-Signaling.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/A Review of Fulvestrant in Breast Cancer - Schmid - 2017.pdf": {
+      "hash": "92105be7655b56c56603cb2672acb667",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-Breast-Cancer-Review-Nathan-Schmid.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Long-Term Central Stimulant Treatment and Growth in Children and - 2015.pdf": {
+      "hash": "065ac0fd34b5305f9001cb44529c1ab8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Central-Stimulants-ADHD-Growth-Final-Height-410Children"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Receptor (AR) Pathophysiological Roles in BoneMuscle, - Chang et al - 2013.pdf": {
+      "hash": "cfe896dee954c961789aefe251e3b16a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ARKO-Mice-Tissue-Specific-Review-Chang"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/The Plasma Pharmacokinetics of R-Lipoic Acid Administered as Sodium - 2007.pdf": {
+      "hash": "d31d9d20a7969d85a4b8b6175bbeee55",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/R-Lipoic-Acid-Plasma-Pharmacokinetics.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Localization of Estrogen Receptors-α and -β and Androgen Receptor in the - Nilsson et al - 2003.pdf": {
+      "hash": "55f630e6a6840d90a945df54b117e1e3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-AR-Localization-Human-Pubertal-Growth-Plate-Nilsson2003"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Osteoarthritis Cartilage Degradation via ADAMTS and MMP Matrix-Degrading - 2010.pdf": {
+      "hash": "777717152207891dbfbd9e84c9f15bc9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Osteoarthritis-ADAMTS-MMP-Cartilage-Degradation.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth, GH-Binding Protein, and GH Receptors Are Differentially Regulated - Gevers et al - 1996.pdf": {
+      "hash": "31b7cc8bbd37414180899616bf448106",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Secretory-Pattern-Peak-Trough-Gevers1996.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Growth Inhibition, Not Hypothyroidism Specifically, Delays Growth Plate - 2010.pdf": {
+      "hash": "b4d9322fb1804724175014fe89c45ff8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Hypothyroidism-Growth-Plate-Senescence-Generality-Test"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Equol Is a Novel Anti-Androgen That Inhibits Prostate Growth and Hormone - Lund et al - 2004.pdf": {
+      "hash": "42b42aac41bc7224f00ddde12a4f4bed",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Equol-Anti-Androgen-Prostate-Growth-Lund2004.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Effects of Honey Consumption on Bone Metabolism in Female Athletes - Ahmad - 2017.pdf": {
+      "hash": "da23e1af9cfb68f59b0560807cc6a651",
+      "duplicate_of": ".raw/Honey/10527-Nur_Syamsina_Ahmad_–_Thesis.pdf",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "note": "Truncated preview/watermarked excerpt of the full thesis (verified via substring match); skipped, not separately ingested."
+    },
+    ".raw/Studies/Off-Topic/9-Methyl-β-Carboline Effects on Dopaminergic Neurons - Hamann et al - 2008.pdf": {
+      "hash": "f786a94d5686a527f1308eb5f5deafb4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Methyl-Beta-Carboline-Dopaminergic-Neurons-Hamann2008-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effects of Fulvestrant on Proliferation and Apoptosis of Prolactinoma - 2018.pdf": {
+      "hash": "7ea758638ac102389b0c57be0d5de67c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Fulvestrant-Prolactinoma-GH3-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Recent Advances in the Understanding of Growth Plate Physiology - Lui et al - 2014.pdf": {
+      "hash": "c51c58824aa3407f7a9c8c58d253567d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Growth-Plate-Physiology-Review-Lui2014"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/The Effects of Receptor Activator of NF-κB Ligand-Binding Peptides on Bone - Rashed et al - 2021.pdf": {
+      "hash": "3978d7f29b7a60925f10b7e7a0b85f0e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/RANKL-Binding-Peptides-Bone-Resorption-Formation-Rashed2021.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Receptor Structure, Role in Prostate Cancer and Drug Discovery - Tan et al - 2015.pdf": {
+      "hash": "440121b75ffc2d16ce8a52083a78f740",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgen-Receptor-Structure-Prostate-Cancer-Tan2015.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/PEPITEM An Endogenous Osteopeptide with Anabolic Osteogenic Activity - Lewis et al - 2020.pdf": {
+      "hash": "c365fe3fd7e2fd469e475db9a8a1a5d0",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "PEPITEM-Anabolic-Osteopeptide-Osteoblast-Osteoclast-Coupling"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effects of Androgen Receptor Overexpression on Chondrogenic Ability of - Hui et al - 2021.pdf": {
+      "hash": "1e32dd5c3ce4d8732d24d46c8f8a0552",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/AR-Overexpression-Chondrogenic-Rabbit-Articular-Chondrocytes.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md",
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md",
+        "wiki/concepts/vocabulary/Sox9.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Pulsed Glucocorticoids Enhance Dystrophic Muscle Performance Through - Quattrocelli et al - 2019.pdf": {
+      "hash": "db7715b1f0eba738f9b3f2c3da19f882",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Pulsed-Glucocorticoids-DMD-Muscle-Quattrocelli-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Histone Deacetylase 3 Suppression Increases Phlpp1 Expression in - Bradley et al - 2013.pdf": {
+      "hash": "13b239ea82bab77ecff333b9e2441a9d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "HDAC3-Phlpp1-Chondrocyte-Akt-Matrix-Secretion-Bradley2013"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/The Localization of Androgen Receptors in Human Bone - Abu et al - 1990.pdf": {
+      "hash": "4fa467d85ecde146241fdd6559f57e78",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Androgen-Receptor-Localization-Human-Bone-Abu1997"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Anabolic Steroids and Craniofacial Growth in the Rat - Barrett et al - 1993.pdf": {
+      "hash": "9c27035c27a1065b2715af7268905400",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Anabolic-Steroids-Craniofacial-Growth-Rat-BarrettHarris1993"
+      ],
+      "pages_updated": [],
+      "note": "Text extraction failed (scanned/image-only PDF); recovered by rendering pages as images and reading them directly (no OCR toolchain available)."
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Autocrine and Paracrine Actions of IGF-I Signaling in Skeletal Development - Wang et al - 2013.pdf": {
+      "hash": "f39dcefeaf43dda8d7b66b15e528c824",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Autocrine-Paracrine-IGF1-Skeletal-Development-Wang2013.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/A Transcriptional Atlas of the Pubertal Human Growth Plate Reveals Direct - Chu et al - 2025.pdf": {
+      "hash": "3207b8c573ee8763076659c62caade6c",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Human-Growth-Plate-Transcriptional-Atlas-GH-Stem-Cells.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Delayed Effects of cAMP on Endothelial Barrier Permeability via Gene - Perrot et al - 2018.pdf": {
+      "hash": "158b06bb874846afbd28b39235ae8ca6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "cAMP-Endothelial-Permeability-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/The Influence of Anabolic Steroids on Growth - Prader - 1970.pdf": {
+      "hash": "c570f29790674ab02d7704d70f52b195",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Anabolic-Steroids-Growth-Review-Prader.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/9-Methyl-β-Carboline Inhibits Monoamine Oxidase Activity and Stimulates - Keller et al - 2020.pdf": {
+      "hash": "f121b2ad1439a0af1274dfc39fd9ae5c",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Methyl-Beta-Carboline-MAO-Inhibitor-Neurotrophic.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Peptides for Targeting Chondrogenic Induction and Cartilage Regeneration - Liao et al - 2024.pdf": {
+      "hash": "de547387d113126c469ce18120991136",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Chondroinductive-Peptides-Cartilage-Regeneration.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Effects of Intranasal Long-Acting Insulin Pretreatment on Postoperative - Zhang et al - 2020.pdf": {
+      "hash": "e4771ff6cc0b1c4692c1b0552d77e3eb",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Intranasal-Insulin-Postoperative-Delirium.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Protective Effects of Tualang Honey on Bone Structure in Experimental - Zaid et al - 2012.pdf": {
+      "hash": "f071bf1845385448d63eeb482e2378dd",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Tualang-Honey-Bone-Structure-Ovariectomized-Rats.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Thymus-Pituitary Axis and Aging - Goya et al - 1999.pdf": {
+      "hash": "800a65730dd7b1bd149d61108d893f35",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Thymus-Pituitary-Axis-Aging-Goya1999-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/Nootropics as Cognitive Enhancers - Malík et al - 2022.pdf": {
+      "hash": "52fceadff2856108de9338b71ae569cc",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Nootropics-Cognitive-Enhancers.md"
+      ],
+      "pages_updated": [],
+      "note": "Verified via grep to have no substantive topical overlap with the rest of this folder (growth plates/hormones); not linked into the Endocrinology domain. Likely misplaced in this folder."
+    },
+    ".raw/Studies/Off-Topic/Targeted Apoptosis of Senescent Cells Restores Tissue Homeostasis in - Baar et al - 2017.pdf": {
+      "hash": "f3a9e083d2af621ee46d4d0a8757a956",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Senescent-Cell-Apoptosis-Aging-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Childhood Growth Comparing Long Bone Cortical Thickness and Length in Four - Cobby - 2025.pdf": {
+      "hash": "48e1c5ea22a0e12d800fa600988bc4ab",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Childhood-Growth-Hunter-Gatherer-Societies-Anthropology.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Bioavailability Study of Enantiopure - AnandaKumar et al - 2024.pdf": {
+      "hash": "1ae6a0cc8b13693f90f07332b3c41c58",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "SEquol-Bioavailability-Rats-Sex-Dose"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effects of Short Bioactive Peptides - journal) - 2017.pdf": {
+      "hash": "9128c8305d0c37be686ea8d0e59b5d81",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Peptide-Bioregulators-Plant-Callus-Growth.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Off-Topic/Breast Cancer Prevention with Liquiritigenin from Licorice Through - Hajirahimkhan et al - 2023.pdf": {
+      "hash": "5f347104271cbe25349eedfa77aefd95",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Liquiritigenin-Breast-Cancer-Prevention-Aromatase-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Thick or Thin Implications of Cartilage Architecture for Osteoarthritis - Río - 2025.pdf": {
+      "hash": "373473cc09d58bbd54cb162ea2506ac3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Cartilage-Architecture-Osteoarthritis-Risk-DelRio2025.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Intermittent Androgen Suppression for Rising PSA Level After Radiotherapy - Crook et al - 2012.pdf": {
+      "hash": "5364d3d9130463668b87ba21b8a1ce0b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgen-Suppression-PSA-Prostate-Cancer-Crook2012.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/cAMP Signaling in Disease - 2016.pdf": {
+      "hash": "4bacca3ca8d959f853829e22d6fde065",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "cAMP-Signaling-General-Review-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Composition and Biological Activity of Cartilage Tissue of Hydrobionts - nd.pdf": {
+      "hash": "5aad32986cc2e864c72a0e82e293a28e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Russian-Cartilage-Tissue-Hydrobionts-FailedExtraction"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/ERα and ERβ Status Determines Response to Combined TamoxifenFulvestrant - 2016.pdf": {
+      "hash": "8e45d3549d2d37e3937be025990d4ded",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-Fulvestrant-Tamoxifen-BreastCancer-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Sustained Elevation of Pulsatile GH Secretion and IGF-I, IGFBP-3, IGFBP-5 - Bowers et al - 2004.pdf": {
+      "hash": "adeab76955daa53aa2f58eeb3c4b6c75",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GHRP2-Sustained-GH-IGF1-Older-Adults-Bowers2004.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Mechanotransduction Pathways in Articular Chondrocytes and the Emerging - Wang et al - 2023.pdf": {
+      "hash": "bcd172cb0b165afb57023cb616511262",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/ERalpha-Mechanotransduction-Chondrocytes-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md",
+        "wiki/concepts/vocabulary/Sox9.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Binding Affinities of 28 Androgens for Two Nuclear Androgen Receptors - 2000.pdf": {
+      "hash": "d96f955a9b25045a4ad780424b4f3ae4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "AR-Binding-Affinity-Fish-Brain-Ovary-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone-Releasing Peptides - 1999.pdf": {
+      "hash": "8c52dc197aeceee23f502d38f6bf701e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GHRP-Mechanism-Review-GHIR1999"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Physicochemical, Phytochemical, Antioxidant, and Inhibition Properties of - Edo et al - 2022.pdf": {
+      "hash": "f7a11b57394c2225491f45a83628fd8b",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Raw-vs-Regular-Honey-Nigeria.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Composition and Bioactivity.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of Nandrolone Phenylpropionate on the Bone of Young Rats - Ronning et al - 1960.pdf": {
+      "hash": "4a39a134cbf521ffabcb7508c2e1b1a6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Nandrolone-Phenylpropionate-Young-Rat-Bone-Ronning.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Prenatal Androgen Excess Induces Multigenerational Effects on Female and - Abruzzese et al - 2023.pdf": {
+      "hash": "8c5abbeaae7875b7cc9449b712147a08",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Prenatal-Androgen-Excess-Multigenerational-Effects.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/The Growth Plate Structure, Endochondral Ossification, and Regulatory - 2020.pdf": {
+      "hash": "da8543f4965fb30876ff520104435962",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Growth-Plate-Endochondral-Ossification-Review-EOR2020.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Contributions of Estrogen Fluctuations and Mechanical Occlusal Factors to - 2020.pdf": {
+      "hash": "b03b0c0e38ed610ed0069e275a7c56b0",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Idiopathic-Condylar-Resorption-Estrogen-Occlusal-Factors"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Effect of Estrogen and Testosterone on Long Bone Growth in Gonadectomized - Ornoy et al - 1994.pdf": {
+      "hash": "80205532a7b3a2b59db3522e9d49ad0f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estrogen-Testosterone-Long-Bone-Growth-Gonadectomized-Mice-Ornoy1994"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Significance of Androgens of Adrenal Origin in Polycystic Ovary Syndrome - Vítků) - 2023.pdf": {
+      "hash": "5c02560d1ead1fa1cf7eebb21aec02ad",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/11-Oxygenated-Androgens-PCOS-Hirsutism-Thesis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md",
+        "wiki/concepts/vocabulary/Dihydrotestosterone (DHT).md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Aromatase Inhibitors in Men - Jong - 2011.pdf": {
+      "hash": "e01e4a6fc9005f74fb1321b4bcf633cd",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Aromatase-Inhibitors-in-Men-Effects-Therapeutic-Options.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Effects of Honey and Hydroxyapatite on Bone Healing in Rats - Bigham-Sadegh et al - 2018.pdf": {
+      "hash": "00caec9fbf7f9777937869866a8728cc",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Hydroxyapatite-Bone-Healing.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/DUPLICATE of - The Role of the Resting Zone in Growth Plate Chondrogenesis - Abad et al - 2002.pdf": {
+      "hash": "8e4f107eebf03a66db1f6baba0132d5e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/Resting-Zone-Growth-Plate-Chondrogenesis-Abad2002.md",
+      "note": "Same paper (Abad et al. 2002) as The_Role_of_the_Resting_Zone_in_Growth_Plate_Chond (1).pdf, different filename/rendering/hash."
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Pharmacokinetics of S-(-)Equol Administered as SE5-OH Tablets to - 2010.html": {
+      "hash": "89b07ee7ef0b051d24803a6b25e7fcfc",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/S-Equol-SE5OH-Pharmacokinetics-Postmenopausal-Women.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Cyclopia Extract Effects on Estrogen Receptor Signaling in Breast Cancer - 2023.pdf": {
+      "hash": "bc7d301eaf0927d316576ceb255993ed",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Cyclopia-Extract-ER-Breast-Cancer-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Role of IGF-I and IGF-Binding Proteins Within Diaphragm Muscle in - Lewis et al - 2002.pdf": {
+      "hash": "8f04a9c5fa21f178afa41f74c15bea4c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "IGF1-IGFBP-Diaphragm-Nandrolone-Lewis2002"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/A Guide for Estimating the Maximum Safe Starting Dose and Conversion - Saadh et al - 2020.pdf": {
+      "hash": "b297f4842d33c9770fd9a6c50140bef1",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Maximum-Safe-Starting-Dose-Animal-Human-Conversion.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/A Cross-Sectional Magnetic Resonance Imaging Study of Factors Influencing - Kvist et al - 2021.pdf": {
+      "hash": "8ed33c3ac7442714e7704f41f9d301d1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/MRI-Growth-Plate-Closure-Adolescents-Kvist.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Fulvestrant-Dependent Interacting Proteins Mediate Immobilization and - Long et al - 2006.pdf": {
+      "hash": "7c5849eb626ceb01474430d9d939efd2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-ER-Degradation-Mechanism-Long2006.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/G-Protein-Coupled Estrogen Receptor-1 Facilitates Chondrocyte - Chou et al - 2025.pdf": {
+      "hash": "b7cf698bdefb99a979702e67d9ebd4d1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/GPER1-Chondrocyte-Proliferation-PTHrP-Ihh.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md",
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/An Open Label, Dose Response Study to Determine the Effect of a Dietary - Anderson - 2008.pdf": {
+      "hash": "b3252ecdd234c2ccdb3903501f2f4d97",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Dietary-Supplement-DHT-Testosterone-Estradiol-Dose-Response.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/5-Alpha-Reductase.md",
+        "wiki/concepts/vocabulary/Aromatase.md",
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Satellite Cells and Trenbolone-Induced Skeletal Muscle Hypertrophy in - Thompson et al - 1989.pdf": {
+      "hash": "9d7839721eb9109817a0f3d38ec3a847",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Trenbolone-Satellite-Cells-Muscle-Hypertrophy-Thompson1989"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/19-Nortestosterone (Nandrolone, Deca-Durabolin) - 2020.pdf": {
+      "hash": "d197f6fd723f35354c25b2c9c2c0bdd6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Nandrolone-Therapeutic-Applications-Review-MaleHealth"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/DUPLICATE of - A Randomized Controlled Dose-Response Pilot Study of Addition of hCG to - Thuesen et al - 2012.pdf": {
+      "hash": "e85c60612ab2afa5a58ba2305f0dde63",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "hCG-FSH-IVF-Controlled-Ovarian-Stimulation",
+      "note": "Thuesen et al. hCG-FSH-IVF paper, already flagged off-topic"
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Evidence That Estrogen Hastens Epiphyseal Fusion by Irreversibly Depleting - Nilsson et al - 2014.pdf": {
+      "hash": "ecbbdeb19c8b6c32c39c0cdacc70a71c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Estrogen-Irreversible-Resting-Zone-Depletion-Nilsson2014.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Epigenetic Regulation of Skeletal Stem Cells - 2020.pdf": {
+      "hash": "7e5124cdd87566c1ee2d369e1feb5256",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "SSC-Epigenetic-Regulation-Ptip-Glycolysis"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Demonstration of Estrogen Production and Function in a Human Chondrocyte - Nilsson et al - 2001.pdf": {
+      "hash": "52008fd80e19d1151cbf403a5db16fe4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Local-Estrogen-Production-Growth-Plate-Cartilage-Nilsson2001"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/ERβ Regulates Inflammasome Activation in the Hippocampus After Global - 2010.pdf": {
+      "hash": "2b2093c51d61929e769520feeafe3bb5",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERbeta-Inflammasome-Hippocampal-Ischemia-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Snail1 Is a Transcriptional Effector of FGFR3 Signaling During - Frutos et al - 2007.pdf": {
+      "hash": "f9259cec19ace0e4d95f2d1ac59cc456",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Snail1-FGFR3-Chondrogenesis-Achondroplasia-DeFrutos2007"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Control of Growth by the Somatotropic Axis - Butler et al - 2001.pdf": {
+      "hash": "30e87bd30babdf45495204de3c885705",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Somatotropic-Axis-GH-IGF-Related-Independent-Roles-Butler2001.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Microbiome Analysis of Raw Honey Reveals Important Factors Influencing the - Xiong et al - 2023.pdf": {
+      "hash": "84d328f8ef19205cac05288faa837d7b",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Microbiome-Analysis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Microbiome.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Decoding Estrogen Receptor and GPER Biology - Saha et al - 2020.pdf": {
+      "hash": "9b5deb768db33a054915eeed852dbc17",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GPER-ERalpha-Breast-Cancer-Structural-Saha.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Osteolectin Promotes the Maintenance of Bone Mass and Growth Plate - 2023.pdf": {
+      "hash": "cc7d5b4328d1b799a7c18cdd7953e01f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Osteolectin-Growth-Plate-Proliferation-Bone-Elongation-PNAS2023"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effects of Androgen Treatment on Final Adult Stature in Constitutional - 1973.pdf": {
+      "hash": "9778256f3de83dbb2b107506d0b6a22e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Androgens-Constitutional-Delay-Growth-1973"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Effects of Basswood Honey vs. Honey-Comparable Glucose-Fructose Solution - Münstedt et al - 2008.pdf": {
+      "hash": "93b5d6270d1a058c5ee74446cc7fcf6a",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-vs-Glucose-Fructose-Solution.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Hypoglycemic Mechanism.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Paradoxical Action of Fulvestrant in Estradiol-Induced Regression of - Osipo et al - 2003.pdf": {
+      "hash": "53c1b22c716b018590e6715c6c618ee8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Fulvestrant-Paradoxical-Tamoxifen-Osipo-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Growth-Plate Chondrocytes Respond to 17β-Estradiol with Sex-Specific - Ekstein et al - 2005.pdf": {
+      "hash": "db6a69d22cc518413a3a9f9f8383b7c8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Estrogen-IP3-Calcium-Growth-Plate-Sex-Specific-Ekstein2005.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Effects of Honey Consumption on Bone Metabolism in Female Athletes - Ahmad - 2017.pdf": {
+      "hash": "b4d01e1b119e84d979161c3c1d874d7d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Bone-Metabolism-Female-Athletes-Thesis.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ],
+      "note": "166-page PhD thesis; read strategically (abstract + per-chapter conclusions), not cover-to-cover."
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Oxandrolone Therapy in Pediatric Growth Disorders - Soliman et al - 2025.pdf": {
+      "hash": "3b2f4d4810fe425f4486160f4cb40808",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Oxandrolone-Pediatric-Growth-Disorders-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Effects on Bone Metabolism - Hofbauer et al - 1990.pdf": {
+      "hash": "77786fe615df4f09a2059975b6a4d38b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgen-Bone-Metabolism-Review-Hofbauer-Khosla.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/Chromosomal and Hormonal Factors Involved in Human Sexual Dimorphism - Fukami et al - 2026.pdf": {
+      "hash": "4c899cc709b850871c3a26d58c819456",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Chromosomal-Hormonal-Factors-Human-Sexual-Dimorphism.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Effect of Estradiol on the Growth Plate Chondrocytes of Limb and Spine - Shi et al - 2017.pdf": {
+      "hash": "83e609d4443a649416f451d30cb7a0bd",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estradiol-Growth-Plate-Limb-Spine-ER-Concentration-Shi2017"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Gene Regulation in the Magnocellular Hypothalamo-Neurohypophysial System - Burbach et al - 2001.pdf": {
+      "hash": "37f0dc83c310dafff7cd73e5c3a69a40",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Magnocellular-Hypothalamo-Neurohypophysial-Gene-Regulation-Burbach.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/7α-Methyl-19-Nortestosterone - 2000.pdf": {
+      "hash": "7c29136ad71dd3788fcee0a5f2cc59f9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "MENT-Male-Contraceptive-Androgen-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Growth Hormone (GH) Dose-Dependent IGF-I Response Relates to Pubertal - Lundberg et al - 2015.pdf": {
+      "hash": "dc679e199c45930a5f85a70c0ea5fe6b",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/12902_2015_Article_80 (1).pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Chondrocyte Senescence in Osteoarthritis - Tan et al - 2026.pdf": {
+      "hash": "3dafe2e98a7ee2dd996197adf953d259",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Chondrocyte-Senescence-OA-Review-Tan2026"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Overview of the Molecular Steps in Steroidogenesis of the GABAergic - Rasmusson - 2018.pdf": {
+      "hash": "4e493775bfe34df06945d1152ddc83e1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Neurosteroids-GABAergic-Allopregnanolone.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Off-Topic/Inhibition of 15-Hydroxyprostaglandin Dehydrogenase - 2015.pdf": {
+      "hash": "e4888789355712167db3fd6a6c4e6926",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "15PGDH-Inhibitor-Tissue-Regeneration-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Misconceptions (1) Epiphyseal Fusion Causes Cessation of Growth (Parfitt, - Parfitt - 2002.pdf": {
+      "hash": "0a2671c2459b37fc534e04f2b0398d2d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Misconceptions-Epiphyseal-Fusion-Causes-Cessation-Growth-Parfitt2002"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Contributions of Gender and Systemic Estradiol and Testosterone - Veldhuis et al - 2004.pdf": {
+      "hash": "cdc937f018c497c3079b735985bfda44",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Gender-Estradiol-Testosterone-GH-Secretagogue-Drive-Veldhuis2004"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - Fulvestrant Treatment of Precocious Puberty in Girls with McCune-Albright - Sims et al - 2012.pdf": {
+      "hash": "e02d04710007ae4c398d7bf885ca644c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "Fulvestrant-Precocious-Puberty-McCune-Albright",
+      "note": "Same paper (Sims et al. 2012, fulvestrant for McCune-Albright precocious puberty) already ingested; matching title/authors confirmed."
+    },
+    ".raw/Studies/Off-Topic/Bone and Tooth Society Pituitary Adenoma Workshop — Conference Abstract - NA - 1999.pdf": {
+      "hash": "6c9107526cdc90f95bf0b04935dd9dc7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Conference-Abstract-Deadline-Notice-NotAPaper"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Safety and Efficacy of Meclizine Treatment Over 26 Weeks in Children with - 2025.pdf": {
+      "hash": "a1e6317ce6d72cbabce5ecf0959bcf65",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Meclizine-Achondroplasia-Phase2-Japan-Trial"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Nandrolone Induces Conditioned Place Preference in Adolescent Mice via D1 - 2010.pdf": {
+      "hash": "48168b8ecce234bbb6536f6b44d24699",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Nandrolone-Conditioned-Place-Preference-Adolescent-Mice"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Molecular Mechanisms of Chondrocyte Proliferation and Differentiation - Chen et al - 2021.pdf": {
+      "hash": "7623460ad20d962bd723be5067a44612",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Chondrocyte-Proliferation-Differentiation-Mechanisms-Review-Chen2021.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Phytochemical and Pharmacological Role of Liquiritigenin and - Ramalingam et al - 2018.pdf": {
+      "hash": "62bfd2d3c4ccbdc4956eeb2448fd5775",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Liquiritigenin-Isoliquiritigenin-Pharmacology-Review-Ramalingam.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Effects of Androgen Receptor Overexpression on Chondrogenic Ability of - Hui et al - 2021 (2).pdf": {
+      "hash": "1e32dd5c3ce4d8732d24d46c8f8a0552",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/13770_2021_Article_358 (1).pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Interpreting IGF-1 in Children Treated with Recombinant Growth Hormone - Ly et al - 2020.pdf": {
+      "hash": "07e86aeedbb006408476bdd6a2bac9f4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/IGF1-Interpretation-GH-Treated-Children-Puberty-Ly.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Retrotransposon Reactivation in Mesenchymal Stromal Cells Promotes Clonal - Zhang et al - 2024.pdf": {
+      "hash": "5d4e3a15756b5e4b4d52144ab35adc2c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Retrotransposon-MSC-Dnmt3a-HSC-Clonal-Expansion-Zhang2024.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/The Role of Histone Acetylation in Mesenchymal Stem Cell Differentiation - Jang et al - 2022.pdf": {
+      "hash": "817d471eb8fcdec907d868d1969ea2cb",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Histone-Acetylation-MSC-Differentiation-Review-Jang2022.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Application of Kartogenin for the Treatment of Cartilage Defects - Liu et al - 2020.pdf": {
+      "hash": "561bbb1df166c9188abcc6d64d7af730",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Kartogenin-Cartilage-Defects-Review-Liu.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Androgen-Accelerated Bone Maturation in Mice Is Not Attenuated by - Gunther et al - 2001.pdf": {
+      "hash": "612cd0a6629dd65ffb26670d23471b7e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Androgen-Bone-Maturation-Not-Attenuated-Faslodex-Gunther2001"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Dual Effects of Liquiritigenin on the Proliferation of Bone Cells - Uchino et al - 2020.pdf": {
+      "hash": "6f1703b8bc9848ff5854ada4274519d7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Liquiritigenin-Osteoblast-Osteoclast-Dual-Effects.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Roncoleukin, Vladonix, and Interferon in the Treatment of Coronavirus - Serikov et al - 2022.pdf": {
+      "hash": "315667a16567e37bd602d9a6c99d890d",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Roncoleukin-Interferon-COVID-Treatment.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Selective ERα and ERβ Agonists PPT and DPN Differentially Affect Growth - Chagin et al - 2004.pdf": {
+      "hash": "0434df555aab83068df669ded24cc7ca",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-Selective-Agonist-PPT-Shortens-Bones-Chagin2004"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effects of Fulvestrant, an Estrogen Receptor Antagonist, on MMQ Cells and - Li et al - 2009.pdf": {
+      "hash": "718cc0ea078a4774afe5c635a2c5ab6c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-MMQ-Pituitary-Cells-Li2009.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/DUPLICATE of - Depletion of Resting Zone Chondrocytes During Growth Plate Senescence - Schrier et al - 2006 (2).pdf": {
+      "hash": "5b269d022488ac1b2d8e627700f11cfd",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "Depletion-Resting-Zone-Chondrocytes-Growth-Plate-Senescence",
+      "note": "Actual published Journal of Endocrinology rendering of Schrier et al. 2006, already ingested under a different PDF rendering."
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Epigenetic Modulation of Chondrocyte Homeostasis Under Hypoxia via a Long - 2025.pdf": {
+      "hash": "ab78a6eb212acb78b3aecdc1da330266",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Histone-Acetylation-Hypoxia-Chondrocyte-lncRNA-CADM1-AS1"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Cognitive Impairment and Pharmaceutical Drug Development - Beglinger et al - 2004.pdf": {
+      "hash": "2a80461fb3b46b5d13a1b7d402fb0d34",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Cognitive-Impairment-Drug-Development-Beglinger2004.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Osteoking, a Chinese Patent Medicine, for Fracture Healing - 2020.pdf": {
+      "hash": "e5da4297c8e66bfe07a4433fbeab7948",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Osteoking-Chinese-Patent-Drug-Fracture-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effect of Androgen Treatment on Bone Age and Height in Children with - 2020.pdf": {
+      "hash": "67afa2ad2a8865998b7ce9f0386ab3e2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "5AlphaReductase-Deficiency-Androgen-Treatment-Height-BoneAge"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effects of Pregnenolone on Activation and Expression of Estrogen Receptor - 2020.pdf": {
+      "hash": "4bc6baf4dd7b33c8822f8068c517af8c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Pregnenolone-ER-Uteri-Ovaries-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Nandrolone Decanoate Elongates Telomeres in Patients with Telomeropathies - Clé et al - 2023.pdf": {
+      "hash": "afdb8c105a3e2bafb0b78c2ab5a16344",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Nandrolone-Telomere-Elongation-Bone-Marrow-Failure.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Serinc5 Regulates Sequential Chondrocyte Differentiation by Inhibiting Sox9 - Hata et al - 2024.pdf": {
+      "hash": "6a1e4f4f9b7013dfb0ba8ea5b4b715fe",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Serinc5-Sox9-Chondrocyte-Differentiation-Hata2024.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Role of Sex Hormones in Cartilaginous Tissues - Hutchinson et al - 2025.pdf": {
+      "hash": "7351f4710d816e5cab5f50ab901786a7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Sex-Hormones-Cartilaginous-Tissues-Scoping-Review-Hutchinson2025.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/A Randomized Controlled Dose-Response Pilot Study of Addition of hCG to - Thuesen et al - 2012.pdf": {
+      "hash": "339f072f1c4d4db629c71939632dc6f9",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/hCG-FSH-IVF-Controlled-Ovarian-Stimulation.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Infigratinib for Achondroplasia - Savarirayan et al - 2024.pdf": {
+      "hash": "877036d503de52ddae54edc95cc548c0",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Infigratinib-FGFR-Achondroplasia-Savarirayan2024.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Long-Term Outcomes of Letrozole Treatment for Precocious Puberty in Girls - Estrada et al - 2016.pdf": {
+      "hash": "05150f63addc519c864fdcebb9485455",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Letrozole-Long-Term-McCune-Albright-Precocious-Puberty.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/GHF-1-Promoter-Targeted Immortalization of a Somatotropic Progenitor Cell - Lew et al - 1993.pdf": {
+      "hash": "04e4e8a8ca31be93e0b320a27d5fd6d0",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/GHF1-Somatotropic-Progenitor-Immortalization-Dwarfism.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effects of Local Nandrolone Decanoate on TGF-β1 and IGF-1 in the Healing - Al-Mashhadane - 2023.pdf": {
+      "hash": "c4e3e1e529655d059ca672231877fbfa",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Nandrolone-TGFbeta-IGF1-Muscle-Wound-Healing.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Receptor (ER)-β Reduces ERα-Regulated Gene Transcription, - Lindberg et al - 2003.pdf": {
+      "hash": "86bcb7001c873260f4f47a3106d21f1f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERbeta-Yin-Yang-ERalpha-Transcription-Lindberg2003"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/RUNX2 Is Essential for Maintaining Synchondrosis Chondrocytes and Cranial - Hallett et al - 2025.pdf": {
+      "hash": "7293f63c7609a3b5cdc8c46108f5afe6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "RUNX2-Synchondrosis-Cranial-Base-Growth-Hallett"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Use of Nandrolone Decanoate as Bone Growth Stimulator in Humerus Fracture - Oliveira et al - 2020.pdf": {
+      "hash": "8354b8912aa47f6b47bcf6d4ad1d7758",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Nandrolone-Humerus-Fracture-Delayed-Union-Oliveira.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Lentiviral TGF-β1 and IL-10 Gene Transfection Induces Chondrogenic - 2010.pdf": {
+      "hash": "a04baab66e12f666c017bc2aba70197e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "TGFbeta1-IL10-BMSC-Chondrogenesis-Gene-Therapy"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/DUPLICATE of - Growth Hormone and Androgen Synergy in Hypopituitary Dwarfism - 1974.pdf": {
+      "hash": "bd9c2aac1dd5a9f59e46f579baefdfe1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/Growth-Hormone-Androgen-Synergy-Hypopituitary-Dwarfs.md",
+      "note": "Same 1974 paper (Pediat. Res. 8:103-108, fluoxymesterone+GH in hypopituitary dwarfs) as the already-ingested source, different PDF rendering/hash."
+    },
+    ".raw/Studies/Off-Topic/A PAM of the α1A-Adrenergic Receptor Rescues Biomarker, LTP, and Cognitive - Papay et al - 2023.pdf": {
+      "hash": "32f345d8b2cca579631b604b938010b2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Alzheimers-Adrenergic-Receptor-PAM-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Nandrolone Decanoate Modulates Cell Cycle Regulation in Functionally - McClung et al - 2005.pdf": {
+      "hash": "c77ab7aa52fffd659448bb6241392ad6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Nandrolone-Cell-Cycle-Rat-Soleus-Muscle-McClung2005"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Metabolic Effects of Honey - Katsilambros et al - 1988.pdf": {
+      "hash": "b6e3178003ce2f7570f064adea667b14",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Metabolic-Effects-Type2-Diabetics-1988.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Hypoglycemic Mechanism.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Kartogenin's Pharmacological Mode of Action - 2020.pdf": {
+      "hash": "964a0700642a4d8695a940ac537a8a11",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Kartogenin-Mode-of-Action-4ABP-PA"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/The Morphometrical Response of the Combined Nandrolone and Testosterone - Sefa et al - 2011.pdf": {
+      "hash": "ce9bf7f9f1865342d4c0fcc97a038193",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Combined-Nandrolone-Testosterone-Femur-Morphometry-Sefa2011.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/DUPLICATE of - Depletion of Resting Zone Chondrocytes During Growth Plate Senescence - Schrier et al - 2006.pdf": {
+      "hash": "d00a6f6cce4a6e2b7cb3173b364f0507",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/Depletion-Resting-Zone-Chondrocytes-Growth-Plate-Senescence.md",
+      "note": "Same paper (Schrier et al. 2006, Depletion of resting zone chondrocytes during growth plate senescence) as already ingested, different filename/PDF rendering/hash."
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Depletion of Resting Zone Chondrocytes During Growth Plate Senescence - Schrier et al - 2006.pdf": {
+      "hash": "c2e80cbf16819c2abc70205e86e9260f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Depletion-Resting-Zone-Chondrocytes-Growth-Plate-Senescence.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Skeletal Stem Cells and Hedgehog Signaling.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone, IGF-I, and Exercise Effects on Non-Weight-Bearing Fast - Grossman et al - 1990.pdf": {
+      "hash": "ea870b17114611da0f8649f581542d43",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-IGF1-Exercise-NonWeightBearing-Muscle-Hypophysectomized.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Identification of Androgen Receptors in Normal Human Osteoblast-Like Cells - Colvard et al - 1989.pdf": {
+      "hash": "3b51f1267d26c698b61559e2aa76ab08",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Androgen-Receptors-Human-Osteoblasts-Colvard1989.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Age-Related Decline in Interferon Gamma Expression and the Geroprotective - Kuznik - 2012.pdf": {
+      "hash": "0599d271270aa18d94e8f3ed0077d334",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Peptide-AEDG-Immunosenescence-Interferon.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Increased cAMP Production After Short-Term Capacitively Coupled Electrical - Brighton et al - 1988.pdf": {
+      "hash": "5ed54d90d44fbb07b6a3113ba63fc64b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Electrical-Stimulation-cAMP-Growth-Plate-Brighton1988.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Testosterone Metabolism in Prepubertal Rabbit Cartilage - Takahashi et al - 1984.pdf": {
+      "hash": "f4bb436109c0761daecde33ca8e55fc2",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Testosterone-Metabolism-Rabbit-Cartilage.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Nanomedicine-Driven Approaches for Kartogenin Delivery - Bhuyan et al - 2020.pdf": {
+      "hash": "944cb04fd69b5d0f3c116bdf24c11a11",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Kartogenin-Nanomedicine-Cartilage-Regeneration.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Aromatase in the Human Brain - Azcoitia et al - 2021.pdf": {
+      "hash": "0d7eca52256487620ed4f53175c29b35",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Aromatase-in-the-Human-Brain.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Aromatase Across Tissues.md",
+        "wiki/comparisons/Aromatase Inhibitors - Height Therapy vs Neuro-Sensory Side Effects.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Resistance Caused by a Mutation in the Estrogen-Receptor Gene in - Smith et al - 1994.pdf": {
+      "hash": "7e52fbef9b55239d447de59bf229a269",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estrogen-Resistance-ERalpha-Mutation-Man-Smith1994-NEJM"
+      ],
+      "pages_updated": [],
+      "note": "Text extraction failed (scanned/image-only PDF); recovered by rendering pages as images and reading them directly (no OCR toolchain available)."
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Genistein and 17β-Estradiol Inhibit Extracellular Matrix Production and - Takeda et al - 2025.pdf": {
+      "hash": "b1c557e96e6637e94f901fdf63661b95",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Genistein-Estradiol-ATDC5-Chondrogenesis-TGFbeta.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - The Role of Estrogen Receptor α and Its Activation Function-1 for Growth - Börjesson et al - 2012.pdf": {
+      "hash": "bb43390413da81971ccd40d6a7f3e892",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/10.1152@ajpendo.00646.2011.pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Off-Topic/CCF219B, a Novel α1A-Adrenergic Receptor PAM, Outperforms Donepezil in - 2020.pdf": {
+      "hash": "80ee8faafe9170667dc2bce26a81bf02",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Alzheimers-Adrenergic-PAM-CCF219B-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Effectiveness of Fluoxymesterone on Linear Growth and Weight in Children - Laron - 1970.pdf": {
+      "hash": "6be1bf19dc03b689749945c8fbb9f313",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Fluoxymesterone-Linear-Growth-Weight-Laron.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Rapid, Non-Genomic Effects of 17β-Estradiol on Chondrocytes at Distinct - Schwartz et al - 1996.pdf": {
+      "hash": "eb6d3e62267a9642e55e6a814e29756c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Estradiol-Nongenomic-Chondrocyte-Maturation-Stages-Schwartz1996"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Androgens and Skeletal Homeostasis - 2000.pdf": {
+      "hash": "523a6558d551cc1b552330b0fcb87ff9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Testosterone-Estradiol-DHEA-Skeletal-Effects-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone, Growth Factors and Hematopoiesis - Kelley et al - 1996.pdf": {
+      "hash": "cbe7ae14d451c7448b7b36ebda9de47e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-IGF1-Hematopoiesis-Kelley1996"
+      ],
+      "pages_updated": [],
+      "note": "Text extraction failed (scanned/image-only PDF); recovered by rendering pages as images and reading them directly (no OCR toolchain available)."
+    },
+    ".raw/Studies/Off-Topic/Kursk State Medical University Conference Proceedings - University et al - 2020.pdf": {
+      "hash": "bde22153ce71b13695152f6be40812c4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Kursk-Medical-Conference-Proceedings-Misplaced.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Biological Effects of Androgens and Identification of Specific - Carrascosa et al - 1990.pdf": {
+      "hash": "89b7237fe48f73926affbd3e0c5d152d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "DHT-Binding-Sites-Human-Fetal-Chondrocytes-Carrascosa1990"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Sox9 Is Required to Maintain and Then Terminate Growth Plate Chondrocyte - Dy et al - 2012.pdf": {
+      "hash": "511f7ff5c933de214c2109d93f6e4f5e",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Sox9-Growth-Plate-Chondrocyte-Fate.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Molecular Regulators of Growth Plate Chondrocyte Maturation.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Dihydrotestosterone Biochemistry, Physiology, and Clinical Implications of - Swerdloff et al - 2017.pdf": {
+      "hash": "0e5bb2f7f066c80f0b801fdcee3b2109",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Dihydrotestosterone-Clinical-Implications.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Aromatase Across Tissues.md",
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/ERβ Regulates LPS-Induced Inflammation in Prostate Cancer Cell Lines via - 2019.pdf": {
+      "hash": "6755952f96f0d65577603bacf13ec94b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERbeta-Prostate-Cancer-Inflammation-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Sex-Dependent Effects of 17β-Estradiol on Chondrocyte Differentiation in - Nasatzky et al - 1993.pdf": {
+      "hash": "543807895614d6c2050a3a74319c1b1a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Sex-Dependent-Estradiol-Chondrocyte-Differentiation-Nasatzky1993"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Parathyroid Hormone Resets the Cartilage Circadian Clock of the - Okubo et al - 2015.pdf": {
+      "hash": "b6c7affc5dcf7a8db4761ef6b0fb7827",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/PTH-Cartilage-Circadian-Clock-Okubo2015.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/PTHrP-Ihh Feedback Loop.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Pubertal Growth and Epiphyseal Fusion - Shim - 2015.pdf": {
+      "hash": "e79d270c4e9e1fdeee3ecaadb10014c1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Pubertal-Growth-and-Epiphyseal-Fusion.md",
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md",
+        "wiki/domains/_index.md",
+        "wiki/domains/Endocrinology.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/cAMP and the cAMP-Dependent Protein Kinase (PKA) in Cell Growth and - Stork - 2002.pdf": {
+      "hash": "8e32c965cd38e505f1aa2372002655fa",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "cAMP-PKA-General-Cell-Growth-Review-Stork2002-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Dlx5 Positively Regulates Chondrocyte Hypertrophic Differentiation - Kosher - 2002.pdf": {
+      "hash": "a606c87de4ace826b6988a0277e78507",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Dlx5-Chondrocyte-Differentiation.md",
+        "wiki/concepts/Molecular Regulators of Growth Plate Chondrocyte Maturation.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Fulvestrant An Oestrogen Receptor Antagonist with a Novel Mechanism of - Osborne et al - 2004.pdf": {
+      "hash": "6274775723d43768437d56fc3b6a86a1",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-ER-Antagonist-Mechanism-Osborne.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Disproportional Body Growth in Poikilocytosis... [ERα and ERβ Have - Vidal et al - 1999.pdf": {
+      "hash": "251604373d4252cf5dbe920fc51c31d9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-Opposing-Effects-Longitudinal-Bone-Growth-Vidal2000"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Human Growth Hormone Enhances Chondrogenesis and Osteogenesis in a Tissue - Maor et al - 1989.pdf": {
+      "hash": "be754854d4637c1bd4a6899c9efda37c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "hGH-Chondrogenesis-Osteogenesis-Chondroprogenitor-Maor1989"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Cartilage Tissue Peptides - Myakisheva et al - 2023.pdf": {
+      "hash": "49987397570190cd8c3328707ab75aee",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Cartilage-Peptides-Chondrocyte-Proliferation-Geroprotection.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - Membrane Effects of Sex Hormones on Growth Plate Chondrocytes - labs et al - 2012.pdf": {
+      "hash": "7a3072971cf9078ec966abf5683032e5",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "Membrane-Effects-Sex-Hormones-Growth-Plate-Chondrocytes-Thesis",
+      "note": "Duplicate copy of ElBaradie's 2012 PhD thesis, already ingested under a different filename."
+    },
+    ".raw/Studies/Off-Topic/Design and Evaluation of Multitarget-Directed Ligands Against Alzheimer's - Yan et al - 2017.pdf": {
+      "hash": "44c6e6c39ed640acf2f56a9a39c966ff",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Donepezil-Curcumin-Alzheimers-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Cerebrolysin — Medical Professional Monograph - monograph - 2020.pdf": {
+      "hash": "469efd787f118703abd0b368722b8295",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Cerebrolysin-Neurotrophic-Peptide-Monograph.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Activation of Skeletal Stem and Progenitor Cells for Bone Regeneration Is - Böhm et al - 2019.pdf": {
+      "hash": "4d118c4b88fc298d84161b987c60382a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "PDGFRbeta-Skeletal-Stem-Progenitor-Cell-Activation-Bohm2019"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Effects of Dihydrotestosterone Alone and Combined with Estrogen on Bone - Coxam et al - 1996.pdf": {
+      "hash": "f7fd4fc7d7500afe2b74e22b6f03aa18",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/DHT-Estrogen-Combined-Bone-Density-Growth-Ovariectomized-Rats.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md",
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Single Cell Enzyme Activity and Proliferation in the Growth Plate - Gevers et al - 1996.pdf": {
+      "hash": "6e39f009ea317622189d90b1c4b3fa3a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Single-Cell-Enzyme-Activity-Proliferation-Gevers1996.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Receptor Knockout Mice - 2001.pdf": {
+      "hash": "9ccda925a78f08ee5ee4228e624735e7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-ERbeta-Knockout-Mice-Disease-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Induced by Pulsatile or Continuous Infusion of Human Growth Hormone - Clark et al - 1985.pdf": {
+      "hash": "76687616b68b74f7be78743dcda912eb",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Pulsatile-vs-Continuous-Infusion-Hypophysectomized-Rats-Clark1985"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - Liquiritigenin Is a Plant-Derived Highly Selective Estrogen Receptor β - Mersereau et al - 2000.html": {
+      "hash": "c2c5b7cf59d6cd785e3c0a38365bc9d6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "Liquiritigenin-ERbeta-Selective-Agonist-Mersereau",
+      "note": "Empty 'preparing to download' placeholder HTML artifact for the same paper already ingested as nihms42048 (1).pdf; contains no actual article content."
+    },
+    ".raw/Studies/Off-Topic/cAMP Elevation, Growth Factors, and Serum Components in Regulating Schwann - Stewart et al - 1991.pdf": {
+      "hash": "9e378156f0008c4348e09b4f81ae5a73",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Schwann-Cell-Growth-cAMP-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Genetic Regulation of the Growth Plate - Karimian et al - 2012.pdf": {
+      "hash": "ff64ccae7132b48d10bcad2c664b8933",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Genetic-Regulation-Growth-Plate-Karimian2012.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Receptor Action in Osteoblasts in Male Mice Is Dependent on Their - Russell et al - 2014.pdf": {
+      "hash": "75a22e42d86a98038ea291fba4120293",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/AR-Osteoblast-Stage-Dependent-Action-Russell2014.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Androgen Receptor (AR).md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/An Alternate Pathway for Androgen Regulation of Brain Function - Handa et al - 2008.pdf": {
+      "hash": "b20b7474e6e51421f6d9ff0ddebd09ab",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "DHT-Metabolite-ERbeta-Brain-Handa2008"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Rat Costochondral Chondrocytes Produce 17β-Estradiol and Regulate Its - Sylvia et al - 2002.pdf": {
+      "hash": "f1f3259fb0a61262e1a7bf42d5522e63",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Chondrocytes-Produce-Estradiol-Vitamin-D-Regulation-Sylvia2002"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Contrasting Skeletal Phenotypes in Mice with an Identical Mutation - O'Shea et al - 2005.pdf": {
+      "hash": "1c10a47a01b10c9bfb45da17705b0894",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Thyroid-Hormone-Receptor-Skeletal-Phenotypes.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/Inhibition of TGF-β-Stimulated CTGF Gene Expression and - Kothapalli et al - 1998.pdf": {
+      "hash": "139046a4936df2596a7c5bfadf8dab51",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/cAMP-TGFbeta-CTGF-Cell-Cycle-Kothapalli1998.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/High Dose Recombinant Human Growth Hormone Treatment of GH-Deficient - Mauras et al - 2000.pdf": {
+      "hash": "9df2433b4c016dd2fc8dc6959b4ea756",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "HighDose-rhGH-Puberty-NearFinalHeight-Mauras2000"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Treatment with the Aromatase Inhibitor Letrozole During Adolescence - Hero et al - 2006.pdf": {
+      "hash": "503a11e97a79b8701096b2ea16018ab2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Letrozole-Near-Final-Height-CDGP-Hero2006"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - The Effects of Trenbolone Supplementation on the Extremity Bones in - Lök - 2019 (2).pdf": {
+      "hash": "8756b201ee6678ecd39f798853a3a07f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/10.15314-tsed.555015-812541.pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone Is Secreted by Normal Breast Epithelium Upon Progesterone - Lombardi et al - 2014.pdf": {
+      "hash": "7ef0121c02846adef3b2a6b00e0a8ce1",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Breast-Epithelium-Progesterone-Stem-Cells-Lombardi2014.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/GPR30 Deficiency Causes Increased Bone Mass, Mineralization, and Growth - Ford et al - 2010.pdf": {
+      "hash": "12a51380a5d1f3c5b929ac3620c6a756",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GPR30-GPER1-Deficiency-Bone-Mass-Male-Mice-Ford"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Parkinson's Disease Study - Gruss et al - 2012.pdf": {
+      "hash": "9511cb094263acdc33ef320de60cd618",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Parkinsons-Disease-Gruss2012-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Stem Cells and Niches - Morrison et al - 2008.pdf": {
+      "hash": "0e269f67e5bb56eb1affb96ddc6946b6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Stem-Cells-Niches-Review-Morrison-Spradling2008"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Tetrapeptide KEDW Interacts with DNA and Regulates Gene Expression - Khavinson et al - 2015.pdf": {
+      "hash": "4ee3b5e7450ef24dc72585af0f1e6a51",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Peptide-KEDW-DNA-Gene-Expression.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/A Study on the Effect of Testosterone on Liver and Kidney Functions of - Elesawi et al - 2019.pdf": {
+      "hash": "e277f90006fd067412c1eb38df683744",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Testosterone-Liver-Kidney-Function-Rabbits.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/DNA Damage Checkpoint Control Proteins and S-PhaseG2 Checkpoint Regulation - 1995.pdf": {
+      "hash": "a52f19817659618a35cd34b32e2a6371",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "DNA-Damage-Checkpoint-Control-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/IGF-2 Secreted from Mesenchymal Stem Cells with High Glutathione Levels - Cho et al - 2025.pdf": {
+      "hash": "41c846f99f70942626a22534961231ea",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/IGF2-MSC-Glutathione-Osteoarthritis-Senescence-Cho2025.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Ossification of Subperiosteal Hematoma - Wang et al - 2013.pdf": {
+      "hash": "303a12199e687c1d7e58bf0da49ac050",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Subperiosteal-Hematoma-Ossification-Case-Report-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Advances in Gerontology, Vol. 36 No. 3 - Gerontology et al - 2023.pdf": {
+      "hash": "e8c3575a47366d69f8105d1fb9d82c72",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Advances-in-Gerontology-Journal-Issue-Misplaced.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Serum Concentrations of Estriol Vary Widely After Application of Vaginal - West et al - 2020.pdf": {
+      "hash": "d5d704b406ccfb6936f485910608e754",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Estriol-Vaginal-Cream-Serum-Concentration-Variability.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Differential Effects of cAMP and cGMP on In Vitro Epidermal Cell Growth - Marcelo - 1979.pdf": {
+      "hash": "e3316a4c9d9a6c41abcb12712bdac991",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "cAMP-cGMP-Epidermal-Cell-Growth-Marcelo1979-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Sexual Dimorphism of Growth Plate Prehypertrophic and Hypertrophic - Raz et al - 2005.pdf": {
+      "hash": "1c96b08bd6a4186f23bb4d24ea1c3d9e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Testosterone-Sexual-Dimorphism-5AlphaReductase-Raz2005"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/9-Methyl-β-Carboline Effects on Dopaminergic Neuron Gene Expression - Polanski et al - 2010.pdf": {
+      "hash": "86e106d8700968da85c988a40df13fc6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Beta-Carboline-Dopaminergic-Neurons-Polanski-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone (GH) Dose-Dependent IGF-I Response Relates to Pubertal - Lundberg et al - 2015.pdf": {
+      "hash": "dc679e199c45930a5f85a70c0ea5fe6b",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/GH-Dose-IGF1-Pubertal-Height-Gain.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Fulvestrant-Induced Expression of ErbB3 and ErbB4 Receptors Sensitizes - Hutcheson et al - 2010.pdf": {
+      "hash": "edbb0b520351100d9949a0c26f66a12c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-ErbB3-ErbB4-Breast-Cancer-Hutcheson.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Insulin-Like Growth Factor-1 Rescues the Mutated FGF Receptor 3 - Koike et al - 2003.pdf": {
+      "hash": "9ce0149013d133e23e9237d6c5656434",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "IGF1-Rescues-FGFR3-Mutant-Apoptosis-Koike2003"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Expression of FSHR in Chondrocytes and the Effect of FSH on Chondrocytes - Kong et al - 2018.pdf": {
+      "hash": "03947e5f9f3b62aa00514b0bd30bfd69",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "FSHR-Chondrocytes-FSH-Effect-Kong2018"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Fundamental Limits on Longitudinal Bone Growth - Baron - 2004.pdf": {
+      "hash": "2994f6bc57582f004499c53924564da5",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Growth-Plate-Senescence-Epiphyseal-Fusion-Review.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Epiphyseal Fusion Mechanisms.md",
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Sex-Specific Response of Rat Costochondral Cartilage Growth Plate - ElBaradie et al - 2013.pdf": {
+      "hash": "79e5047d168151fcc367619adf2b7ed4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Estrogen-SexSpecific-Membrane-Response-ElBaradie2013.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Intermittent PTHrP(1-34) Exposure Augments Chondrogenesis and Reduces - Fischer et al - 2015.pdf": {
+      "hash": "26c4ee9861bc9b6670b313699cec0bd5",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Intermittent-PTHrP-MSC-Chondrogenesis-Hypertrophy-Fischer2015"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Fulvestrant Treatment of Precocious Puberty in Girls with McCune-Albright - Sims et al - 2012.pdf": {
+      "hash": "78e43b1a9c5d2c88f3ce517e91da763f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Fulvestrant-Precocious-Puberty-McCune-Albright.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/FGFR3-Achondroplasia/Infigratinib (BGJ398) Treatment in an Fgfr3-Y367C Mouse Model of - 2020.pdf": {
+      "hash": "ccf997efa725c0b3f5bea7d9422df5c7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Infigratinib-FGFR-Achondroplasia-Mouse-Model-Preclinical"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/In Vitro Study to Identify Ligand-Independent Function of Estrogen - Zhang et al - 2023.pdf": {
+      "hash": "c3237c0e0783a16ee7cc1a00152d1ec1",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERalpha-DNA-Damage-Chondrocyte-Senescence-Osteoarthritis.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Three Estrogen Receptor Mechanisms in the Growth Plate.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Kartogenin Protects Against Osteoarthritis-Induced Cartilage Degradation - 2021.pdf": {
+      "hash": "00464952783c626c5b491b3c967c835c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Kartogenin-OA-Cartilage-Protection-Mechanism"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Action on the Skeleton - 2010.pdf": {
+      "hash": "2b27c26eea3cef9dd88c697ac66db44d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERalpha-Aromatase-Deficiency-Skeletal-Phenotype-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/GHIGF-1 Axis and Longevity - 2010.pdf": {
+      "hash": "a60e439bc02a9e68adf42cd8819efa8d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-IGF1-Longevity-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Toxic Impact of Anabolic Androgenic Steroids in Primary Rat Cortical Cell - Zelleroth et al - 2010.pdf": {
+      "hash": "a79e1c915862bb9aeada7d6a93828340",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "AAS-Neurotoxicity-Rat-Cortical-Cultures-Zelleroth"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Connecting Bone Remodeling and Regeneration - Mehreen et al - 2025.pdf": {
+      "hash": "393581395f950226cb749dbc72123cb7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Bone-Remodeling-Regeneration-Hormones-Review-Mehreen2025.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/A Review of Potential Beneficial Effects of Honey on Bone Health - Kamaruzzaman et al - 2019.pdf": {
+      "hash": "49b702c0f69b992e2520ffc42006e037",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-Bone-Health-Review-2019.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey and Bone Metabolism.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Estrogen Receptor Changes in TamoxifenFulvestrant Resistance - 2005.pdf": {
+      "hash": "f1685daf8218810fd9e788e7e14e38ef",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ER-Tamoxifen-Fulvestrant-Resistance-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Growth Hormone Stimulates Proliferation and Differentiation of Normal - Kassem et al - 1993.pdf": {
+      "hash": "9320e588974e5c43d0ed3a35191a19dd",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Stimulates-Human-Osteoblast-Proliferation-Kassem1993"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/On the Importance of cAMP and Ca++ in Mandibular Condylar Growth and - Kantomaa et al - 1980.pdf": {
+      "hash": "b7d584874aed433514ec0c37003bf090",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/cAMP-Calcium-Condylar-Cartilage-Growth-Kantomaa.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Growth Plate Resting Zone Chondrocytes Acquire Transient Clonal Competency - Orikasa et al - 2023.pdf": {
+      "hash": "3be826414f42587c6293e86fb66d2f03",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Hedgehog-Resting-Zone-Chondrocytes-Osteoblast-Transformation.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/Skeletal-Stem-Cells-Growth-Plate-Hedgehog-Signaling.md",
+        "wiki/domains/Endocrinology.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Modulators of Estrogen Receptors - 2010.pdf": {
+      "hash": "9792c9f4dab5cfba389c0cd908accbd3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ER-Modulators-Clinical-Applications-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Pharmacokinetics of 7α-Methyl-19-Nortestosterone - Kumar et al - 2013.pdf": {
+      "hash": "54465501aeffe0a65cb57cb9e1baf384",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/MENT-Trestolone-Pharmacokinetics-Monkeys-Kumar2013.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Testosterone.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/ERβ Overexpression and Calycosin's Effect on Human Hepatic Stellate Cells - 2020.pdf": {
+      "hash": "d335c3853ae65f992a2806186e35b3d9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERbeta-Hepatic-Stellate-Cells-Liver-Fibrosis-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Induction of Increased cAMP Levels in Articular Chondrocytes Blocks Matrix - Karsdal et al - 2007.pdf": {
+      "hash": "6fea56a1402e177224bf8fdb0c89c6c3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Induction-Increased-cAMP-Chondroprotective-Karsdal2007"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Differential Effects of Insulin-Like Growth Factor I and Growth Hormone on - Hunziker et al - 1994.pdf": {
+      "hash": "fd93f3d2d9d4094f8203f52768401bc7",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/IGF1-GH-Differential-Effects-Growth-Plate-Hunziker.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Epiphyseal Plate Injury in Pediatric Orthopedics - 2022.pdf": {
+      "hash": "c406716ae5cb1d022aab43fb4b0d5287",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Epiphyseal-Plate-Injury-Pediatric-Orthopedics-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - The Effects of Trenbolone Supplementation on the Extremity Bones in - Lök - 2019.pdf": {
+      "hash": "8756b201ee6678ecd39f798853a3a07f",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/10.15314-tsed.555015-812541.pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Off-Topic/Intranasal Glutathione - Foundation - 2020.pdf": {
+      "hash": "79d46998208b857faabf67416cffce3f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Intranasal-Glutathione-Cognitive-Vitality-Report.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Increased Bone Mass as a Result of Estrogen Therapy in a Man with - Bilezikian et al - 1998.pdf": {
+      "hash": "8f39e16e01bd67d47e230d4c9846ccf2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Aromatase-Deficient-Man-Estrogen-Therapy-Bilezikian1998.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Aromatase.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Peptide Regulation of Gene Expression - Khavinson et al - 2021.pdf": {
+      "hash": "ef0050af740a442aba1b4c8961b7b099",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Peptide-Regulation-Gene-Expression-Systematic-Review-Khavinson2021.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Plasma Growth Hormone Pulses Induce Male-Biased Pulsatile Chromatin - Rampersaud et al - 2023.pdf": {
+      "hash": "046ea7b3ceeefc6d87922bd689bf1d57",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Pulses-Chromatin-Liver-Sex-Dimorphism-Rampersaud2023.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Sex Differences in Cartilage Biology, Degeneration, and Repair - 2023.pdf": {
+      "hash": "c53530a15ffc90861277abaf9df8af89",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Sex-Differences-Cartilage-Biology-Repair-Review"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Mechanism of Longitudinal Bone Growth and Its Regulation by Growth Plate - Hunziker - 1994.pdf": {
+      "hash": "bd48be3bb7b539cdf6f26cce99080216",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Mechanism-Longitudinal-Bone-Growth-Review-Hunziker1994"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Hypoxia Enhances Proliferation and Tissue Formation of Human Mesenchymal - Grayson et al - 2007.pdf": {
+      "hash": "47f79de3fee2a84adbb418208045b774",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Hypoxia-MSC-Proliferation-Grayson2007"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Pulsatile Intravenous GH Infusion to Hypophysectomized Rats Increases - Isgaard et al - 1988.pdf": {
+      "hash": "449cbbd618aae82e2c2b877c1d401dbb",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Pulsatile-GH-IGF1-mRNA-Isgaard1988.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/APEX1, a Transcriptional Hub for Endochondral Ossification and Fracture - 2025.pdf": {
+      "hash": "306ae49c7ad429e8d811e2384955cd59",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "APEX1-Transcriptional-Hub-Endochondral-Ossification-Fracture-Repair"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Testosterone and Prostate Cancer - 2008.pdf": {
+      "hash": "85df373fe117aac97858315d579afd4b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Testosterone-Prostate-Cancer-Saturation-Model-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estradiol Binding to ERβ Affects Proliferation and Apoptosis of C28I2 - 2020.pdf": {
+      "hash": "7d6a37c7074ff21f0f4ad77041fe7286",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "ERbeta-C28I2-Chondrocyte-Apoptosis-ER-Stress"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/How to Increase Cellular Glutathione - Giustarini et al - 2023.pdf": {
+      "hash": "52ef056dbd434372624d4d679b667293",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Glutathione-Cellular-Increase-Review.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Short Peptides Regulate Cell Differentiation via Epigenetic Mechanisms - 2019.pdf": {
+      "hash": "85f10021f14a807cde5c966128c90931",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Khavinson-Peptides-Cell-Differentiation-2019-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Khavinson-Tradition Peptide Bioregulator Effects on THP-1 Monocytes - 2022.pdf": {
+      "hash": "7cf98ffb3c39f4f03d4d6d95ae56e95b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Khavinson-Peptides-THP1-Monocyte-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Dihydrotestosterone and 17β-Estradiol Modulate TMJ Osteoarthritis - Tomura et al - 2020.pdf": {
+      "hash": "13e4fcbb1b8e5b4e244d9169a9a7598f",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "DHT-Estradiol-TMJ-Osteoarthritis-Sex-Specific-Tomura"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Multiple Effects of Growth Hormone in the Body - Devesa et al - 2016.pdf": {
+      "hash": "9ac35324769807893cb90446eb53847d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Multiple-Effects-Prohormone-Review-Devesa2016.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/The Effects of Injected Testosterone Dose and Age on the Conversion of - Lakshman et al - 2010.pdf": {
+      "hash": "599d8cd774d3945dc75b3bc8802120a4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Testosterone-Dose-Age-Conversion-Estradiol-DHT-Lakshman2010"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/The Senescence-Associated Secretory Phenotype - Linkova et al - 2023.pdf": {
+      "hash": "b066e182fdc71f91c0f5371230ad3c4d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/SASP-Chondrocyte-Osteoarthritis-Peptide-Chondroprotection-Linkova.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Sox9.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Histone Modifications and Chondrocyte Fate - Wan et al - 2021.pdf": {
+      "hash": "cffeea41c20a98ae8591b66ce48be8bf",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Histone-Modifications-Chondrocyte-Fate-Wan2021.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Positive Influence of Long-Term Growth Hormone Therapy on Circulating Stem - Wędrychowicz et al - 2025.pdf": {
+      "hash": "8edceff69731ea81a30c3538222d86cd",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/GH-Therapy-Circulating-Stem-Cells-VSELs-Wedrychowicz.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Off-Topic/Transport of Biologically Active Ultrashort Peptides Using POT and LAT - Khavinson et al - 2022.pdf": {
+      "hash": "928a586fca1a94fb92cb0ea985813f1d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Ultrashort-Peptide-Transport-POT-LAT-Khavinson2022.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effects of Letrozole on Serum Estradiol and Estrone in Postmenopausal - Faltinová et al - 2023.pdf": {
+      "hash": "185cb2d509ea939a09b43e26f022e836",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Letrozole-Serum-Estradiol-Estrone-Breast-Cancer-PK.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Near Final Height in Males Treated with Aromatase Inhibitors - Bouliari et al - 2026.pdf": {
+      "hash": "d2c51370590d759e643ab41d07d54666",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Aromatase-Inhibitors-Near-Final-Height-Males.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Aromatase Across Tissues.md",
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md",
+        "wiki/comparisons/Aromatase Inhibitors - Height Therapy vs Neuro-Sensory Side Effects.md"
+      ]
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Differential Expression of Phenotype by Resting Zone and Growth Region - Boyan et al - 1988.pdf": {
+      "hash": "332d14e463486eba06dbe2a843b64ea8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Resting-Zone-Growth-Region-Chondrocyte-Phenotype-Boyan1988.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Results of Combined Human Growth Hormone and Anabolic Steroid Therapy in a - Yüksel et al - 1984.pdf": {
+      "hash": "33e087bcefd014dd0db7311812e30e41",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Anabolic-Steroids-Family-IsolatedGHD-Yuksel1984"
+      ],
+      "pages_updated": [],
+      "note": "Text extraction failed (scanned/image-only PDF); recovered by rendering pages as images and reading them directly (no OCR toolchain available)."
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/The Role of Growth Hormone in Mesenchymal Stem Cell Commitment - Bolamperti et al - 2019.pdf": {
+      "hash": "f6b4168b9a60784fbb04c8d7999010ba",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Mesenchymal-Stem-Cell-Commitment-Review-Bolamperti2019.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Localization and Regulation of the Growth Hormone Receptor and Growth - Gevers et al - 2002.pdf": {
+      "hash": "5dcfb99047d404f291a0d7314a4ce6a9",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Receptor-GHBP-Localization-Rat-Growth-Plate-Gevers2002"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Interactions Between the Thyroid Hormones and the Hormones of the Growth - Laron - 2003.pdf": {
+      "hash": "875a6e5c5adebb37a22e4f71bd8df8e4",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Thyroid-GH-Axis-Interactions-Review-Laron2003"
+      ],
+      "pages_updated": [],
+      "note": "Text extraction failed (scanned/image-only PDF); recovered by rendering pages as images and reading them directly (no OCR toolchain available)."
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Honey and Diabetes Natural Simple Sugars in Diabetes Prevention and - Bobiş et al - 2018.pdf": {
+      "hash": "1c4e32127d67c235f11aebcae314e4de",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-and-Diabetes.md",
+        "wiki/entities/Honey.md",
+        "wiki/concepts/Honey Hypoglycemic Mechanism.md",
+        "wiki/concepts/Honey in Diabetic Wound Healing.md",
+        "wiki/domains/_index.md",
+        "wiki/domains/Health and Nutrition.md"
+      ],
+      "pages_updated": [
+        "wiki/sources/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/concepts/_index.md",
+        "wiki/index.md",
+        "wiki/log.md",
+        "wiki/hot.md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Growth Hormone and Androgen Synergy in Hypopituitary Dwarfism - 1974.pdf": {
+      "hash": "672233d45c1a25dfe9d8f70d942fd885",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Growth-Hormone-Androgen-Synergy-Hypopituitary-Dwarfs.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Anti-Inflammatory Effects of Liquiritigenin via Inhibition of - Kim et al - 2010.pdf": {
+      "hash": "8c1211dc2bcde562e4aafed22fc60c54",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Liquiritigenin-Anti-Inflammatory-NFkB-iNOS.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Estrogen Receptor Alpha and Bone Growth - Iravani et al - 2016.pdf": {
+      "hash": "53113def2b4669e0f602725ed124f23e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/ERalpha-ERbeta-Selective-Agonists-Ovariectomized-Mice-Iravani2016.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Estrogen Receptor (ER).md"
+      ]
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Metabolic Effects of Hormonal Doping Patterns in Recreational Bodybuilders - 2024.pdf": {
+      "hash": "e3edb566f738c21eedfdd3302e664336",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Hormonal-Doping-Detection-Bodybuilders-AthleteBiologicalPassport"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Honey-Nutrition-Domain/Honey Extracts Inhibit PTP1B and Enhance Insulin Signaling in HepG2 Cells - Lori et al - 2019.pdf": {
+      "hash": "2aef4c6c9dcd06ff77a2d4bdf1061b21",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Honey-PTP1B-Insulin-Signaling.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/Honey Hypoglycemic Mechanism.md"
+      ]
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/GH Direct and Indirect Action on Longitudinal Growth - Loveridge et al - 1995.pdf": {
+      "hash": "7d23e2bd337240217ce918eb9133eb17",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "GH-Direct-Indirect-Action-Longitudinal-Growth-Loveridge1995"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Direct Effects of Growth Hormone Replacement Therapy on Hematopoiesis in - Kawa et al - 2014.pdf": {
+      "hash": "d8bd782b3c8bd01cf361e96a7033374b",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/GH-Replacement-Hematopoiesis-GHD-Children-Kawa2014.md"
+      ],
+      "pages_updated": [
+        "wiki/concepts/vocabulary/Growth Hormone-IGF-1 Axis.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/DUPLICATE of - The Role of Estrogen Receptor α and Its Activation Function-1 for Growth - Börjesson et al - 2012 (2).pdf": {
+      "hash": "8ce176a4647eec4f72c77df6b7ae6107",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/ERalpha-AF1-Growth-Plate-Closure-Female-Mice.md",
+      "note": "Same paper as already-ingested Börjesson et al. 2012, different filename/rendering/hash."
+    },
+    ".raw/Studies/Off-Topic/Short Peptides Regulate Gene Expression - Khavinson et al - 2016.pdf": {
+      "hash": "e5730ad8c62300a8803eabb4c888dbce",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Khavinson-Peptides-Gene-Expression-2016-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Neurosteroid Pregnenolone and LearningMemory - 2010.pdf": {
+      "hash": "d2b19bb8dd5362460973973fb8520008",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Pregnenolone-Schizophrenia-NMDA-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Fluoxymesterone Treatment Accelerates Growth and Pubertal Development in - 1982.pdf": {
+      "hash": "6a0af8ada82dbad896e4eac77b6d609e",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Fluoxymesterone-Accelerates-Delayed-Growth-Puberty-1982"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Effectiveness of Polypeptide Drugs on Metabolic Parameters of Oral Fluid - Bandrivsky et al - 2022.pdf": {
+      "hash": "113a25a9681c41d16b38a38abd55026c",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Polypeptide-Drugs-Periodontitis-Oral-Fluid.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/Subcutaneous Injection of Drugs - Usach et al - 2019.pdf": {
+      "hash": "c597798f1ca4edf58ac7c8e195f30da0",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/Subcutaneous-Injection-Pain-Factors-Review.md"
+      ],
+      "pages_updated": [],
+      "note": "unrelated to Endocrinology domain, flagged not cross-linked"
+    },
+    ".raw/Studies/Skeletal-Stem-Cells-Epigenetics/Osteocyte and Osteoblast Regulatory Cues Influence Osteogenic - 2010.pdf": {
+      "hash": "ac9d098d856d8b6b3f70b006a60cdce8",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "MSC-Osteogenic-Differentiation-Osteocyte-Osteoblast-Niche-Cues"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Stimulation of Skeletal Stem Cells in the Growth Plate Promotes Linear - lab) - 2024.pdf": {
+      "hash": "c5500f7b9d307a4acc54c72f35944028",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/165226.1-20240423133422-covered-e0fd13ba177f913fd3156f593ead4cfd.pdf",
+      "note": "content-duplicate (same paper, different PDF rendering/hash) of already-ingested Trompet et al. 2024 -- caught manually since hash-based dedup missed it"
+    },
+    ".raw/Studies/Off-Topic/Effect of Age and Single vs. Multiple Dose Pharmacokinetics of Letrozole - Pfister et al - 2001.pdf": {
+      "hash": "b5b32a85e552bdea16ac82ce30baa234",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Letrozole-PK-Age-Single-Multiple-Dose-Pfister2001.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/DHT Prevents Glucocorticoid Effects on Fetal Rat Metatarsal Bone - Picherit et al - 2000.pdf": {
+      "hash": "a1e0f1599d2f81956d023c0bb512acbc",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/DHT-Prevents-Glucocorticoid-Effects-Fetal-Bone.md"
+      ],
+      "pages_updated": [
+        "wiki/comparisons/Estrogen vs Androgen in Male Bone Health.md"
+      ]
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Growth Plate-Specific Aromatase Expression in the Human Growth Plate - 1990.pdf": {
+      "hash": "fa6c0aaf4c81549a341e949968ca5bc2",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Aromatase-Transcripts-Human-Growth-Plate-Nawata"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Estrogen-Aromatase-Signaling/Evidence for a Direct In Vitro Action of Sex Steroids on Rabbit Cartilage - Corvol et al - 1987.pdf": {
+      "hash": "7f5ebc131cf852e59829b72909635de3",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "wiki/sources/Sex-Steroids-Rabbit-Cartilage-Corvol1987.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Chondrocyte-Cartilage-Bone/Endocrine Regulation of the Growth Plate - Nilsson et al - 2005.pdf": {
+      "hash": "d3423995a2177751fd9427374c16724a",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Longitudinal-Bone-Growth-Endocrine-Network-Review-Nilsson2005"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Off-Topic/DUPLICATE of - Analysis of Musculoskeletal System Disease as a Factor Influencing - Bidarova et al - 2012.pdf": {
+      "hash": "74cdd1279ac1f5188ff77d9c5cb8bc44",
+      "ingested_at": "2026-07-27",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": "wiki/sources/Musculoskeletal-Disease-Chondroprotector-Consumption-Stavropol.md",
+      "note": "Same paper (Bidarova et al. 2012, chondroprotector consumption in Stavropol) as analiz-zabolevaemosti-...pdf already flagged off-topic, different filename/rendering/hash."
+    },
+    ".raw/Studies/Off-Topic/P2Y2 Inhibition Modifies the Anabolic Response to Exercise in Adult Mice - Chougule et al - 2025.pdf": {
+      "hash": "5ee820fd6d1631c7fc75545a1426e54a",
+      "ingested_at": "2026-07-26",
+      "pages_created": [
+        "wiki/sources/P2Y2-Purinergic-Bone-Anabolic-Response-Exercise.md"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Fulvestrant An Oestrogen Receptor Antagonist with a Novel Mechanism of - Osborne et al - 2004.pdf": {
+      "hash": "56a92fe759c806387f62f48230db7787",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies yet to analyze/6601629.pdf",
+      "note": "Identical extracted text to 6601629.pdf (Osborne et al. 2004 fulvestrant review), different hash due to different PDF rendering."
+    },
+    ".raw/Studies/Off-Topic/The ERβ Agonist Liquiritigenin Enhances Growth Inhibition of - 2020.pdf": {
+      "hash": "85a5585423d8db4f73f2ffad4b7f0c16",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Liquiritigenin-Cholesterol-TNBC-Offtopic"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Growth-Hormone-IGF1-Axis/Once Versus Twice Daily Injections of Growth Hormone in Children with - Phillip et al - 1997.pdf": {
+      "hash": "b56d55737643c77b2f333bc66e2885c6",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Letrozole-Delayed-Puberty-Boys-Once-Twice-Daily-GH"
+      ],
+      "pages_updated": []
+    },
+    ".raw/Studies/Miscellaneous-Endocrinology/DUPLICATE of - Effects of Androgen Receptor Overexpression on Chondrogenic Ability of - Hui et al - 2021.pdf": {
+      "hash": "1e32dd5c3ce4d8732d24d46c8f8a0552",
+      "ingested_at": "2026-07-26",
+      "pages_created": [],
+      "pages_updated": [],
+      "duplicate_of": ".raw/Studies/13770_2021_Article_358 (1).pdf",
+      "note": "exact duplicate found during queue dedup cleanup pass"
+    },
+    ".raw/Studies/Androgen-Testosterone-DHT/Androgen Metabolism by Human Fetal Epiphyseal Cartilage and Its - Audi et al - 1984.pdf": {
+      "hash": "917b353a6985f40173c978c8f47dff0d",
+      "ingested_at": "2026-07-27",
+      "pages_created": [
+        "Androgen-Metabolism-Human-Fetal-Epiphyseal-Cartilage-Audi1984"
+      ],
+      "pages_updated": []
+    }
+  },
   "address_map": {
     "wiki/concepts/DragonScale Memory.md": "c-000001"
   }

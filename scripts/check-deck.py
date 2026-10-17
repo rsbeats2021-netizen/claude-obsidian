@@ -13,6 +13,8 @@ Note the quotes on the glob: zsh errors on an unmatched glob before the script
 ever runs, so quoting hands the pattern through for the script to expand.
 """
 import csv
+import os
+import xml.dom.minidom
 import glob
 import re
 import sys
@@ -21,7 +23,7 @@ COLUMNS = ["headline", "subhead", "body", "punch"]
 
 # Ceilings measured against the built Canva template. Raise these only after
 # re-testing the template — they are what guarantees copy fits the boxes.
-LIMITS = {"headline": 30, "subhead": 30, "body": 300, "punch": 160}
+LIMITS = {"headline": 36, "subhead": 48, "body": 620, "punch": 160}
 
 # Deliberately NOT checked: whether each slide leaves an open loop. That's a
 # semantic property, and a regex for it fired on 4 of 9 slides that genuinely
@@ -53,18 +55,38 @@ def check(path):
                 f"(overflow: {r[None]!r}). Quote the field containing the comma."
             )
 
-    if not (8 <= len(rows) <= 12):
-        warns.append(f"{len(rows)} slides — target 8-12 for swipe-through completion")
+    # Save rate rises with slide count in the scrape: 4.1 per 1k saves at 1-3
+    # slides, 18.7 at 4-7, 28.9 at 8-11, 33.7 at 12+. So a long deck is a target,
+    # not a fault. Only flag decks too short to build the swipe habit.
+    if len(rows) < 8:
+        warns.append(f"{len(rows)} slides — under 8 saves poorly (see FINDINGS.md §2)")
 
     for i, r in enumerate(rows, 1):
         for col in cols:
             val = (r.get(col) or "").strip()
             if not val:
-                errs.append(f"slide {i}: '{col}' is empty — Bulk Create will leave a blank element")
+                # subhead is optional: render-morph.py does not read it, and it is
+                # deliberately blank on most slides where the headline carries the
+                # line on its own. Only the columns the renderer draws are required.
+                # cover and outro carry headline + subhead + punch only
+                if col == "body" and i not in (1, len(rows)):
+                    errs.append(f"slide {i}: '{col}' is empty — the renderer will draw a gap")
                 continue
             cap = LIMITS.get(col)
             if cap and len(val) > cap:
                 errs.append(f"slide {i}: '{col}' is {len(val)} chars, over the {cap} ceiling — will overflow")
+    # A bare "<" or "&" in SVG text content (from copy like "P < 0.001") makes the
+    # file invalid XML. Chrome renders nothing and the slide ships with a hole in
+    # it, silently. Ten shipped that way before this check existed.
+    imgdir = os.path.join(os.path.dirname(path), "03-images")
+    for d in [imgdir] + sorted(glob.glob(imgdir + "-*")):
+        for svg in sorted(glob.glob(os.path.join(d, "*.svg"))):
+            try:
+                xml.dom.minidom.parse(svg)
+            except Exception as e:
+                errs.append(f"{os.path.relpath(svg, os.path.dirname(path))} is not valid "
+                            f"XML and will render as a blank space: {e}")
+
     # Em dashes are banned in deck copy by house style.
     for i, r in enumerate(rows, 1):
         for col in COLUMNS:

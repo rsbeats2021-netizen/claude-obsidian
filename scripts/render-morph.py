@@ -93,6 +93,11 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
         display:flex;flex-direction:column;align-items:center;text-align:center;}}
  .body{{flex:1;display:flex;flex-direction:column;align-items:center;
         justify-content:center;width:100%;}}
+ /* Slide 1 carries one short hook. Letting .body eat the leftover height strands
+    it halfway down the frame, so the cover centres headline and hook together. */
+ .wrap.cover{{justify-content:center;}}
+ .wrap.cover .body{{flex:0 0 auto;}}
+ .wrap.cover .blocks{{margin-top:{covtop}px;}}
  .brand{{font-family:Poppins,sans-serif;font-weight:800;font-size:{brandsize}px;
         letter-spacing:{brandls}px;color:{brand};margin-bottom:{brandgap}px;}}
  .headline{{font-family:Poppins,sans-serif;font-weight:900;font-size:{hsize}px;
@@ -124,7 +129,7 @@ TPL = """<!doctype html><html><head><meta charset="utf-8">
     text-decoration-color:{acc};}}
  mark{{background:{hl};color:inherit;padding:2px 9px;border-radius:4px;}}
 </style></head><body>
-<div class="wrap">
+<div class="wrap {covercls}">
  <div class="brand">{brandtext}</div>
  <div class="headline">{headline}</div>
  <div class="divider"><div class="ln"></div><div class="dot"></div><div class="ln"></div></div>
@@ -210,7 +215,8 @@ def main():
             brandtext=html.escape(a.brand), headline=marks(r["headline"]),
             blocks=blocks,
             punch=f'<div class="punch">{marks(punch)}</div>' if punch else "",
-            imgblock=img,
+            imgblock=img, covercls="cover" if i == 1 else "",
+            covtop=int(46 * k),
             arrow='<div class="arrow">&#10148;</div>' if i == 1 else "",
             foot=html.escape(credits.get(f"slide-{i:02d}", "")),
             padtop=int(30 * k), brandsize=int(30 * k), brandls=int(7 * k),

@@ -1,41 +1,39 @@
-# Video script — "Stimulants and the growth plate"
+# Video script — One of the most
 
-60s · 178 words · ~178 wpm. Same research as `04-slides.csv`.
-**Only `SPOKEN:` lines are read aloud.**
-⚠️ The safety beat at 0:48 is non-negotiable. Cut mechanism before cutting it.
+159 words, ~53s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:06] HOOK
-SPOKEN: One of the most prescribed medications in children affects the growth
-        plate. It isn't a hormone and it isn't a steroid, and almost nobody in
-        this space has looked at it.
-  [VISUAL: pill bottle → growth plate]
+Spoken lines only. Visual cue in brackets.
 
-### [0:06–0:14] PROBLEM
-SPOKEN: Everything in this niche assumes hormones. Estrogen, androgens, growth
-        hormone, IGF-1. That's the whole framework people think with.
-  [ON-SCREEN: "THE FRAMEWORK HAS A HOLE"]
+---
 
-### [0:14–0:34] EVIDENCE
-SPOKEN: Methylphenidate, applied to growth plate tissue in culture, promoted
-        premature closure — the same endpoint estrogen drives, reached by a
-        completely different route. Then the clinical side: four hundred and
-        ten children and adolescents on central stimulants, some followed
-        sixteen years, showed reduced body weight and a temporary halt in
-        growth.
-  [ON-SCREEN: "410 PATIENTS · UP TO 16 YEARS"]
+One of the most. Almost nobody in this space has looked at it.
 
-### [0:34–0:48] PAYOFF
-SPOKEN: Note the word temporary. A halt isn't depletion — suppression that
-        slows the division rate can conserve capacity rather than spend it.
-        Real signal, unsettled magnitude.
-  [ON-SCREEN: "SUPPRESSED ≠ SPENT"]
+[cover card]
 
-### [0:48–0:60] SAFETY + CTA
-SPOKEN: And to be completely clear: do not stop prescribed medication over
-        this. Untreated ADHD does real documented harm. If it concerns you, the
-        move is a conversation with the prescriber, and nothing else. Don't
-        forget, it's never over.
-  [ON-SCREEN: "TALK TO THE PRESCRIBER"]
+Estrogen, androgens, growth hormone, IGF-1. That's the whole framework people use to think about height.
 
-## Sources
-Pazos-Pérez 2023 (doi:10.3390/ijms24044175) · 410-patient longitudinal study
+[assumes hormones]
+
+Applied to growth plate tissue in vitro it promoted premature growth plate closure. Same endpoint estrogen drives, reached a completely different way.
+
+[in cell culture]
+
+Kids and teenagers on central stimulants for up to 16 years showed reduced body weight and a temporary halt in growth, with implications for final stature.
+
+[in 410 patients]
+
+A halt isn't depletion. Growth suppression that slows the division rate can conserve proliferative capacity, which is the mechanism behind catch-up growth.
+
+[temporary]
+
+A real signal from two independent directions. Not a settled quantified effect on adult height, and the in vitro dose may not reflect real prescribing.
+
+[on this]
+
+It shows the growth plate reacts to drug classes nobody thought to check. The hormone only framework this niche runs on is incomplete.
+
+[takeaway card]
+
+The interesting question is what else nobody has looked at.
+
+DM for source

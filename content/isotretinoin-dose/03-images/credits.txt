@@ -1,0 +1,6 @@
+slide-02: Goldstein et al. 1982, Arch Dermatol. Seven men.
+slide-03: Goldstein et al. 1982, Arch Dermatol.
+slide-04: Goldstein et al. 1982, Arch Dermatol.
+slide-07: Lai & Barbieri 2025, JAMA Dermatology. n = 19,907.
+slide-08: Lai & Barbieri 2025, JAMA Dermatology.
+slide-10: Lai & Barbieri 2025, JAMA Dermatology.

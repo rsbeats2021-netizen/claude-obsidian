@@ -1,0 +1,373 @@
+<title>Four Creator Recipes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{--pg:#F3F3F1;--pg2:#FFF;--tx:#161619;--tx2:#68686F;--rule:#DCDCD8;--mark:#1F6FA8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#6FB4E8}}
+:root[data-theme="dark"]{
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#6FB4E8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font-family:"Public Sans",Arial,sans-serif}
+.wrap{max-width:1300px;margin:0 auto;padding:44px 20px 90px;display:flex;flex-direction:column;gap:26px}
+.masthead{display:flex;flex-direction:column;gap:12px;max-width:72ch}
+.masthead .eb{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mark);margin:0}
+.masthead h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.03em;line-height:1;margin:0}
+.masthead .sf{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.55;color:var(--tx2)}
+
+table{width:100%;border-collapse:collapse;font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+caption{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mark);padding-bottom:8px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--rule);text-align:right}
+th:first-child,td:first-child{text-align:left;color:var(--tx2)}
+thead th{color:var(--tx);font-weight:700;border-bottom:2px solid var(--rule)}
+td.hi{color:var(--mark);font-weight:600}
+.tw{overflow-x:auto}
+
+.rec{border-top:1px solid var(--rule);padding-top:22px;display:flex;flex-direction:column;gap:14px}
+.rh{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px}
+.rh b{font-size:20px;font-weight:900;letter-spacing:-.02em}
+.rh .pill{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:#fff;background:var(--mark);padding:4px 8px;border-radius:3px}
+.rh span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tx2)}
+.cols{display:grid;grid-template-columns:minmax(230px,300px) 1fr;gap:22px}
+@media (max-width:820px){.cols{grid-template-columns:1fr}}
+.moves{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;
+  font-size:13.5px;line-height:1.5}
+.moves li{padding-left:16px;position:relative;color:var(--tx2)}
+.moves li::before{content:"·";position:absolute;left:3px;color:var(--mark);font-weight:800}
+.moves b{color:var(--tx);font-weight:600}
+.seq{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:5px;
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.45;color:var(--tx2)}
+.seq li{display:grid;grid-template-columns:26px 1fr;gap:8px}
+.seq li b{color:var(--mark);font-weight:600}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:800px}
+
+/* ===== slide shells, one per creator ===== */
+.sl{aspect-ratio:9/16;container-type:inline-size;overflow:hidden;position:relative;border-radius:10px;
+  display:flex;flex-direction:column}
+.sl svg{display:block;width:100%;height:auto}
+.sl p{margin:0}
+.sl .mid{flex:0 1 auto;display:flex;flex-direction:column;justify-content:center;min-height:0}
+
+/* --- SOX9: dense paper walkthrough, plain ground, low caps --- */
+.sox{background:#EFEFEA;color:#15150F;padding:5cqi 4.4cqi;gap:2.4cqi}
+.sox .mid{gap:2.4cqi}
+.sox .t{font-family:"IBM Plex Mono",monospace;font-size:2.5cqi;color:#8A8A7E;margin-bottom:auto}
+.sox .h{font-family:"Archivo",sans-serif;font-weight:800;font-size:5.8cqi;line-height:1.06;letter-spacing:-.02em}
+.sox .p{font-family:"Source Serif 4",Georgia,serif;font-size:2.75cqi;line-height:1.42;color:#33332A;text-align:justify}
+.sox .paper{background:#FBFBF6;border:1px solid #C9C9BC;padding:2.4cqi;display:flex;flex-direction:column;gap:1.4cqi}
+.sox .paper .j{font-family:"Public Sans",sans-serif;font-size:2.1cqi;font-weight:700;color:#1668C4}
+.sox .paper .a{font-family:"Source Serif 4",Georgia,serif;font-size:2.2cqi;line-height:1.34;color:#2A2A22;text-align:justify}
+.sox .paper .a b{background:#FFE9A8;font-weight:600}
+.sox .f{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#8A8A7E;margin:auto 0 0}
+
+/* --- DOCTOR MORPH: branded plate, huge text blocks, caps section heads --- */
+.morph{background:#0D1014;color:#EDF2F6;padding:0;gap:0}
+.morph .plate{background:#1B8FB8;color:#04121A;font-family:"Archivo",sans-serif;font-weight:900;
+  font-size:3.4cqi;letter-spacing:.1em;padding:2.6cqi 4.4cqi}
+.morph .body{padding:4.4cqi;display:flex;flex-direction:column;gap:2.6cqi;flex:1}
+.morph .mid{gap:2.6cqi}
+.morph .t{font-family:"IBM Plex Mono",monospace;font-size:2.5cqi;color:#5D7F92;margin-bottom:auto}
+.morph .h{font-family:"Archivo",sans-serif;font-weight:900;font-size:6.4cqi;line-height:1.02;
+  letter-spacing:-.03em;text-transform:uppercase}
+.morph .q{font-family:"Archivo",sans-serif;font-weight:900;font-size:5.4cqi;line-height:1.06;letter-spacing:-.025em}
+.morph .p{font-size:3cqi;line-height:1.45;color:#A9BFCC}
+.morph .p b{color:#EDF2F6;font-weight:700}
+.morph .p em{font-style:normal;color:#5FD0F0}
+.morph .f{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#5D7F92;margin:auto 0 0}
+
+/* --- RPO: all-caps headers, long sentences, diagram-forward --- */
+.rpo{background:#FAFAF7;color:#111;padding:5cqi 4.4cqi;gap:2.6cqi}
+.rpo .mid{gap:2.8cqi}
+.rpo .t{font-family:"IBM Plex Mono",monospace;font-size:2.4cqi;color:#9A9A90;margin-bottom:auto}
+.rpo .h{font-family:"Anton",sans-serif;font-size:7.4cqi;line-height:.96;text-transform:uppercase}
+.rpo .h em{font-style:normal;color:#C63B1E}
+.rpo .p{font-family:"Archivo",sans-serif;font-weight:600;font-size:3cqi;line-height:1.38;color:#2A2A26}
+.rpo .p b{color:#C63B1E}
+.rpo .f{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#9A9A90;margin:auto 0 0}
+
+/* --- SY: many short slides, minimal text, credit line --- */
+.sy{background:#111;color:#F2F2F2;padding:5cqi 4.4cqi;gap:2.4cqi}
+.sy .mid{gap:3cqi}
+.sy .t{font-family:"IBM Plex Mono",monospace;font-size:2.4cqi;color:#6E6E6E;margin-bottom:auto}
+.sy .h{font-family:"Archivo",sans-serif;font-weight:900;font-size:7.2cqi;line-height:1.02;letter-spacing:-.03em}
+.sy .p{font-family:"Archivo",sans-serif;font-weight:600;font-size:3.2cqi;line-height:1.36;color:#B4B4B4}
+.sy .f{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#6E6E6E;margin:auto 0 0}
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eb">Creator recipes · measured from their own slideshows</p>
+  <h1>Four Creator Recipes</h1>
+  <p class="sf">What each account's slideshow formula actually is, measured from their posts rather than described from impression. Then the same subject written four ways, so the difference between the recipes is the only thing changing.</p>
+</header>
+
+<div class="tw">
+<table>
+  <caption>Measured per slide, across every slideshow each account has in the set</caption>
+  <thead><tr><th>Metric</th><th>_sox9</th><th>doctor.morph</th><th>rpo3212</th><th>sy934821</th><th>bpedpremed</th></tr></thead>
+  <tbody>
+    <tr><td>slideshows in set</td><td>24</td><td>21</td><td>44</td><td>14</td><td>173</td></tr>
+    <tr><td>median views</td><td>14,650</td><td class="hi">31,800</td><td>18,550</td><td>24,100</td><td>4,899</td></tr>
+    <tr><td>save rate</td><td>3.61%</td><td>3.18%</td><td>3.54%</td><td class="hi">4.05%</td><td>1.33%</td></tr>
+    <tr><td>median slides</td><td>9</td><td>8</td><td>9</td><td class="hi">17</td><td>2</td></tr>
+    <tr><td>characters per slide</td><td>418</td><td class="hi">740</td><td>394</td><td>327</td><td>159</td></tr>
+    <tr><td>slide-1 length</td><td>66</td><td class="hi">241</td><td>68</td><td>46</td><td>64</td></tr>
+    <tr><td>words per sentence</td><td>14</td><td>14</td><td class="hi">18</td><td>14</td><td>12</td></tr>
+    <tr><td>you / your</td><td>0.23</td><td class="hi">0.77</td><td>0.20</td><td>0.35</td><td>0.16</td></tr>
+    <tr><td>I / we</td><td>1.07</td><td class="hi">2.18</td><td>0.87</td><td>0.68</td><td>0.88</td></tr>
+    <tr><td>questions</td><td>0.39</td><td class="hi">0.52</td><td>0.22</td><td>0.17</td><td>0.16</td></tr>
+    <tr><td>ALL-CAPS runs</td><td>1.22</td><td>2.98</td><td class="hi">4.53</td><td>0.59</td><td>1.07</td></tr>
+    <tr><td>numerals</td><td>15.3</td><td class="hi">29.9</td><td>15.9</td><td>6.1</td><td>12.4</td></tr>
+    <tr><td>study words</td><td>0.44</td><td class="hi">0.76</td><td>0.65</td><td>0.09</td><td>0.20</td></tr>
+  </tbody>
+</table>
+</div>
+
+<!-- ============ SOX9 ============ -->
+<section class="rec">
+  <div class="rh"><b>_sox9</b><span class="pill">Paper walkthrough</span>
+    <span>24 slideshows · 9 slides · 418 chars/slide · 3.61% save rate</span></div>
+  <div class="cols">
+    <div>
+      <ul class="moves">
+        <li><b>Walks papers in sequence.</b> The spine is literally "second study… third study… another we learn… in conclusion". The post is a reading list with commentary.</li>
+        <li><b>Short hook, 66 characters.</b> Names the mechanism and stops. No scope-setting.</li>
+        <li><b>Pastes real abstract text</b> and annotates over it. Highest ratio of journal text to own text of the four.</li>
+        <li><b>Low ALL-CAPS (1.22).</b> The authority comes from the papers, not from shouting.</li>
+        <li><b>Ends on a practical leap</b> plus a community link.</li>
+      </ul>
+      <ol class="seq" style="margin-top:14px">
+        <li><b>1</b><span>mechanism named, 1 line</span></li>
+        <li><b>2</b><span>study 1 abstract + annotation</span></li>
+        <li><b>3</b><span>study 2, "the second study"</span></li>
+        <li><b>4</b><span>study 3, deeper mechanism</span></li>
+        <li><b>5-7</b><span>figures, knockouts, pathway detail</span></li>
+        <li><b>8</b><span>"in conclusion we…"</span></li>
+        <li><b>9</b><span>the practical leap</span></li>
+      </ol>
+    </div>
+    <div class="trio">
+      <div class="sl sox">
+        <p class="t">01</p>
+        <div class="mid">
+          <p class="h">Bone reads the speed of a load, not the size</p>
+          <p class="p">Three papers on why the same force does different things depending on how fast it arrives.</p>
+        </div>
+        <p class="f">EPIPHYX</p>
+      </div>
+      <div class="sl sox">
+        <p class="t">02 · first study</p>
+        <div class="mid">
+          <div class="paper">
+            <p class="j">Journal of Bone and Mineral Research</p>
+            <p class="a">Osteocytes convert mechanical strain into chemical signals. <b>Strain rate, not peak strain, predicted the osteogenic response</b> across loading conditions in the tested model.</p>
+          </div>
+          <p class="p">So it is the rate of change that the cell detects. A slow heavy load and a fast light load are not the same input, and this is where most training advice goes wrong.</p>
+        </div>
+        <p class="f">STRAIN RATE</p>
+      </div>
+      <div class="sl sox">
+        <p class="t">03 · second study</p>
+        <div class="mid">
+          <p class="h">Cells desensitise</p>
+          <svg viewBox="0 0 300 96" aria-label="Bone formation response falling as loading cycles continue within one session.">
+            <path d="M8,84 C40,26 70,20 110,26 C150,32 190,64 292,78" fill="none" stroke="#15150F" stroke-width="2.6"></path>
+            <line x1="8" y1="88" x2="292" y2="88" stroke="#8A8A7E" stroke-width="1.2"></line>
+            <circle cx="110" cy="26" r="4" fill="#C63B1E"></circle>
+            <text x="118" y="24" font-family="IBM Plex Mono,monospace" font-size="9" fill="#C63B1E">plateau</text>
+            <text x="8" y="96" font-family="IBM Plex Mono,monospace" font-size="8" fill="#8A8A7E">cycles within one session →</text>
+          </svg>
+          <p class="p">The response saturates early. Continuing past the plateau adds load without adding signal, which is why the papers keep recommending rest between bouts rather than more repetitions.</p>
+        </div>
+        <p class="f">SATURATION</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCTOR MORPH ============ -->
+<section class="rec">
+  <div class="rh"><b>doctor.morph</b><span class="pill">Branded lecture</span>
+    <span>21 slideshows · 8 slides · 740 chars/slide · highest median views, 31,800</span></div>
+  <div class="cols">
+    <div>
+      <ul class="moves">
+        <li><b>Branded name plate</b> on slide 1, every time. The account name is part of the design.</li>
+        <li><b>Long hook, 241 characters.</b> Alone among the four, it sets scope before starting: "Lets talk about X and if it actually works. We will primarily be looking at studies where i will explain…"</li>
+        <li><b>740 characters a slide.</b> Nearly double _sox9 and rpo. Genuine walls of text, and it has the highest median views of the four.</li>
+        <li><b>ALL-CAPS section headers</b> as slide titles: THE MECHANISM, THE NUANCES.</li>
+        <li><b>"Everyone gets this COMPLETELY WRONG"</b> repeated across slides. The correction is the engine.</li>
+        <li><b>Question headers</b> (0.52/slide, highest): "How long should you smash?", "How do we use this to our advantage?"</li>
+        <li><b>Named studies with numbers.</b> 29.9 numerals a slide, double _sox9.</li>
+        <li><b>Summary slide, then a CTA</b> to a paid blueprint.</li>
+      </ul>
+      <ol class="seq" style="margin-top:14px">
+        <li><b>1</b><span>name plate + title + scope</span></li>
+        <li><b>2</b><span>THE MECHANISM (longest slide)</span></li>
+        <li><b>3</b><span>THE NUANCES + "everyone does it wrong"</span></li>
+        <li><b>4</b><span>question header + named study</span></li>
+        <li><b>5</b><span>"how do we use this?"</span></li>
+        <li><b>6-7</b><span>more corrections, more studies</span></li>
+        <li><b>8</b><span>summary bullets</span></li>
+        <li><b>9</b><span>CTA to paid product</span></li>
+      </ol>
+    </div>
+    <div class="trio">
+      <div class="sl morph">
+        <p class="plate">DOCTOR MORPH</p>
+        <div class="body">
+          <p class="t">01</p>
+          <div class="mid">
+            <p class="h">Bone loading</p>
+            <p class="p">Lets talk about mechanical loading and if it actually works. We will primarily be looking at studies where <b>i will explain what they say</b> so you can have the most in depth understanding of how it works and what <b>you</b> should actually do.</p>
+          </div>
+          <p class="f">SWIPE</p>
+        </div>
+      </div>
+      <div class="sl morph">
+        <div class="body">
+          <p class="t">02</p>
+          <div class="mid">
+            <p class="h">The mechanism</p>
+            <p class="p">Bone has osteocytes, which are cells that convert mechanical stress into chemical signals. When they sense strain they release <em>nitric oxide</em> and <em>PGE2</em>, and those signals recruit the cells that actually build bone. Everyone stops at "load builds bone" and misses that the cell is measuring <b>rate</b>, not weight.</p>
+          </div>
+          <p class="f">OSTEOCYTES</p>
+        </div>
+      </div>
+      <div class="sl morph">
+        <div class="body">
+          <p class="t">03</p>
+          <div class="mid">
+            <p class="q">How many reps should you do?</p>
+            <p class="p">Everyone gets this <b>COMPLETELY WRONG</b>. The classic loading studies compared 40, 120 and 400 cycles. 120 produced almost the same response as 400, so the last 280 did close to nothing. After roughly <b>12 weeks</b> the tissue adapts, which is why the authors suggested raising the load every <b>6 weeks</b> instead of adding volume.</p>
+          </div>
+          <p class="f">120 ≈ 400</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RPO ============ -->
+<section class="rec">
+  <div class="rh"><b>rpo3212</b><span class="pill">Capitalised thesis</span>
+    <span>44 slideshows · 9 slides · 394 chars/slide · top post 304,900 views</span></div>
+  <div class="cols">
+    <div>
+      <ul class="moves">
+        <li><b>4.53 ALL-CAPS runs a slide</b>, triple _sox9. Headers, emphasis, whole clauses.</li>
+        <li><b>Longest sentences of the four (18 words).</b> Dense, clause-stacked, technical.</li>
+        <li><b>Short hook, 68 characters</b>, usually a promise or a contrarian parenthetical: "HOW TO INHIBIT FGFR3 (Not Erda, not Tyra)".</li>
+        <li><b>Invents a named framework</b> and gives it an acronym, which makes a post feel like a system rather than a summary. This is the single most copyable move, and the most abusable.</li>
+        <li><b>Numbered protocol steps</b> in the back half.</li>
+        <li><b>Objection handling</b> as the last content slide, then a Discord CTA.</li>
+      </ul>
+      <ol class="seq" style="margin-top:14px">
+        <li><b>1</b><span>promise or contrarian claim</span></li>
+        <li><b>2</b><span>names the single lever</span></li>
+        <li><b>3</b><span>mechanism + figure</span></li>
+        <li><b>4</b><span>the obstacle, as a question</span></li>
+        <li><b>5</b><span>THE NAMED FRAMEWORK</span></li>
+        <li><b>6</b><span>numbered steps</span></li>
+        <li><b>7-8</b><span>why it works, quantified</span></li>
+        <li><b>9</b><span>objection + CTA</span></li>
+      </ol>
+    </div>
+    <div class="trio">
+      <div class="sl rpo">
+        <p class="t">01</p>
+        <div class="mid">
+          <p class="h">Want stronger bone <em>fast?</em></p>
+          <p class="p">You need to manipulate STRAIN RATE. Everything else is downstream of that one variable.</p>
+        </div>
+        <p class="f">SWIPE</p>
+      </div>
+      <div class="sl rpo">
+        <p class="t">02</p>
+        <div class="mid">
+          <p class="h">The <em>real</em> variable</p>
+          <svg viewBox="0 0 300 110" aria-label="Two loading curves of equal peak force but different rise times.">
+            <path d="M10,96 C30,92 44,20 70,16 C96,12 130,90 290,96" fill="none" stroke="#C63B1E" stroke-width="3"></path>
+            <path d="M10,96 C60,90 96,40 150,36 C204,32 240,90 290,96" fill="none" stroke="#7A7A70"
+                  stroke-width="2.4" stroke-dasharray="6 4"></path>
+            <line x1="10" y1="100" x2="290" y2="100" stroke="#9A9A90" stroke-width="1.2"></line>
+            <text x="74" y="14" font-family="IBM Plex Mono,monospace" font-size="9" fill="#C63B1E">FAST</text>
+            <text x="154" y="32" font-family="IBM Plex Mono,monospace" font-size="9" fill="#7A7A70">SLOW</text>
+          </svg>
+          <p class="p">SAME peak force, completely different signal, because the osteocyte responds to how quickly the strain arrives rather than to how large it eventually gets.</p>
+        </div>
+        <p class="f">STRAIN RATE</p>
+      </div>
+      <div class="sl rpo">
+        <p class="t">03</p>
+        <div class="mid">
+          <p class="h">Distributed loading</p>
+          <p class="p">Instead of ONE long session you split the same total across the day, because the cells resensitise between bouts and the second bout then lands on a receptive tissue rather than a saturated one.</p>
+        </div>
+        <p class="f">SPLIT IT UP</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SY ============ -->
+<section class="rec">
+  <div class="rh"><b>sy934821</b><span class="pill">Long, light, credited</span>
+    <span>14 slideshows · 17 slides · 327 chars/slide · best save rate of the four, 4.05%</span></div>
+  <div class="cols">
+    <div>
+      <ul class="moves">
+        <li><b>17 slides, by far the longest.</b> Sits in the 13-15+ band that has the best median in the whole corpus.</li>
+        <li><b>Shortest hooks, 46 characters.</b> Almost a title card.</li>
+        <li><b>Lowest study-word count (0.09) and fewest numerals (6.1).</b> Visual-led rather than citation-led.</li>
+        <li><b>Credits other accounts in the caption</b> — "Credit: @sox9 for images". Curation as a format.</li>
+        <li><b>Best save rate of the four</b> despite the least research density, which suggests length and scannability drive saves more than citations do.</li>
+      </ul>
+      <ol class="seq" style="margin-top:14px">
+        <li><b>1</b><span>title card, very short</span></li>
+        <li><b>2-15</b><span>one idea per slide, image-led</span></li>
+        <li><b>16</b><span>recap</span></li>
+        <li><b>17</b><span>credit + follow</span></li>
+      </ol>
+    </div>
+    <div class="trio">
+      <div class="sl sy">
+        <p class="t">01</p>
+        <div class="mid">
+          <p class="h">Load and bone</p>
+          <p class="p">17 slides. Save it.</p>
+        </div>
+        <p class="f">→</p>
+      </div>
+      <div class="sl sy">
+        <p class="t">04</p>
+        <div class="mid">
+          <p class="h">Fast beats heavy</p>
+          <svg viewBox="0 0 300 90" aria-label="Two bars comparing the response to fast loading against slow loading.">
+            <rect x="0" y="14" width="230" height="22" fill="#F2F2F2"></rect>
+            <rect x="0" y="52" width="96" height="22" fill="#6E6E6E"></rect>
+            <text x="238" y="30" font-family="IBM Plex Mono,monospace" font-size="10" fill="#F2F2F2">fast</text>
+            <text x="104" y="68" font-family="IBM Plex Mono,monospace" font-size="10" fill="#6E6E6E">slow</text>
+          </svg>
+          <p class="p">Same weight. Different signal.</p>
+        </div>
+        <p class="f">04 / 17</p>
+      </div>
+      <div class="sl sy">
+        <p class="t">17</p>
+        <div class="mid">
+          <p class="h">That's it</p>
+          <p class="p">Credit to the accounts whose figures I used. Follow for more.</p>
+        </div>
+        <p class="f">SAVE + FOLLOW</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>

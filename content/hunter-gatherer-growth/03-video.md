@@ -1,38 +1,39 @@
-# Video script — "Four ancient populations, four different skeletons"
+# Video script — Four ancient populations
 
-60s · 174 words · ~178 wpm. **Only `SPOKEN:` lines are read aloud.**
+156 words, ~52s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:07] HOOK
-SPOKEN: Four ancient populations grew measurably different skeletons. Same
-        species, same biology. And the explanation isn't genetics.
-  [VISUAL: four bone silhouettes, different proportions]
+Spoken lines only. Visual cue in brackets.
 
-### [0:07–0:16] PROBLEM
-SPOKEN: Modern height discussion is all hormones. Receptors, signalling,
-        supplements, drugs — a framework built entirely on what's happening
-        inside one body.
-  [ON-SCREEN: "ONE BODY vs A POPULATION"]
+---
 
-### [0:16–0:36] EVIDENCE
-SPOKEN: Researchers compared four hunter-gatherer groups — Late Stone Age,
-        Sadlermiut, Indian Knoll, Point Hope — measuring femur and humerus
-        cortical thickness and shaft length. The differences were significant.
-        Not noise. And the best explanation was population-level growth
-        environment: nutrition, activity load, disease burden. Not ancestry.
-  [ON-SCREEN: "ENVIRONMENT > INHERITANCE"]
+Four ancient populations. And the biggest lever on height in history wasn't genetic.
 
-### [0:36–0:50] PAYOFF
-SPOKEN: Which is a useful correction to this entire topic. At population scale,
-        the things that actually moved skeletal growth were load, food and
-        illness. It's the same reason populations gained enormous height across
-        a few generations with no genetic change at all.
-  [ON-SCREEN: "GENETICS SETS A RANGE"]
+[cover card]
 
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: The limits: skeletal remains can't tell you diet directly, that's
-        inferred. And population findings don't predict any individual. Useful
-        for perspective, useless as a personal protocol. Don't forget, it's
-        never over.
+Late Stone Age, Sadlermiut, Indian Knoll and Point Hope. They measured femur and humerus cortical thickness and shaft length across the populations.
 
-## Sources
-Vault: [[Childhood-Growth-Hunter-Gatherer-Societies-Anthropology]]
+[four hunter gatherer groups]
+
+Not measurement noise. Real variation in how long bones got and how thick their walls became, between groups of the same species.
+
+[were significant]
+
+Population level differences in nutrition, mechanical loading and disease burden accounted for the variation better than ancestry did.
+
+[was environment]
+
+Populations gained substantial adult height across a few generations with no genetic change at all. The Dutch went from among Europe's shorter populations to its tallest inside a century.
+
+[in living memory]
+
+Nutritional adequacy, disease burden and mechanical loading during growth moved height by more than any pharmacology in this topic has ever demonstrated.
+
+[where the big levers are]
+
+Diet and activity are inferred from skeletal remains rather than measured directly, and population averages don't predict any single person.
+
+[takeaway card]
+
+Strong at population scale, silent about individuals.
+
+DM for source

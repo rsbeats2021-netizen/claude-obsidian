@@ -101,3 +101,35 @@ It also catches errors. Running it on the mandible paper surfaced "No
 statistical group difference existed" sitting immediately after the juvenile
 numbers, which had been presented as a finding in two earlier versions of that
 deck.
+
+## 03 — classic (the original restingzone look)
+
+Measured from the first Canva decks. Grey ground `#D9D9D9`, Anton headline in
+black, Montserrat 800 subhead in `#004AAD` caps, Poppins body, one white image
+card mid-slide, bold punch. Light blue `#9ACEE8` for highlights. Outro is the
+boxer, `03-classic-assets/outro-boxer.png`.
+
+```bash
+.venv/bin/python scripts/render-classic.py content/<deck> --size orig
+```
+
+Unlike morph, this style reads the `subhead` column. Headline + subhead is the
+sentence, body explains, image shows, punch lands. Image on nearly every slide:
+a study figure cropped from the PDF, a generated diagram, or a receipt with the
+sentence highlighted. Same `03-images/` conventions as morph, plus
+`slide-NN-a` / `slide-NN-b` for two images side by side.
+
+### Image sets (same deck, different image folders)
+
+`render-classic.py --images <folder>` swaps the image folder, so one deck can
+carry several sets for A/B testing:
+
+- `03-images-copy` — only what the top creators use: PubMed page screenshots
+  (bpedpremed), paper text with a highlighted sentence (_sox9), figures cropped
+  from the PDF, one flat icon (rpo3212)
+- `03-images-best` — a figure where the claim is visual, a graph where it is
+  numeric, a receipt where it is a sentence
+- `03-images` — generated graphs + quote receipts + pathway figures
+
+Layout keeps everything inside TikTok's safe zone: top 11.5% and bottom 19%
+are empty, right margin is wider for the button column.

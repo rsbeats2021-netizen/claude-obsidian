@@ -1,0 +1,423 @@
+<title>No Blood Supply</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+/* ===== page chrome ===== */
+:root{--pg:#F3F3F1;--pg2:#FFF;--tx:#161619;--tx2:#68686F;--rule:#DCDCD8;--mark:#C0392B}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#F0705E}}
+:root[data-theme="dark"]{
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#F0705E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font-family:"Public Sans",Arial,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:44px 20px 90px;display:flex;flex-direction:column;gap:20px}
+.masthead{display:flex;flex-direction:column;gap:12px;max-width:72ch}
+.masthead .eb{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mark);margin:0}
+.masthead h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.03em;line-height:1;margin:0}
+.masthead .sf{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.55;color:var(--tx2)}
+.note{background:var(--pg2);border:1px solid var(--rule);border-left:3px solid var(--mark);
+  border-radius:8px;padding:14px 16px;font-size:13.5px;line-height:1.6;color:var(--tx2)}
+.note b{color:var(--tx)}
+.track{display:flex;gap:14px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;
+  scrollbar-color:var(--rule) transparent}
+.track .sl{flex:0 0 auto;width:clamp(250px,66vw,300px);scroll-snap-align:center}
+.cap{background:var(--pg2);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;line-height:1.6}
+.cap .tags{color:var(--mark)}
+.cap i{color:var(--tx2);font-style:normal}
+
+/* ===== slide system: annotated research screenshot ===== */
+.sl{aspect-ratio:9/16;container-type:inline-size;overflow:hidden;position:relative;border-radius:12px;
+  display:flex;flex-direction:column;background:#E9E9E5;color:#141414;padding:5cqi 4.4cqi;gap:2.6cqi}
+.sl svg{display:block;width:100%;height:auto}
+.sl p{margin:0}
+/* .sl .tag / .sl .foot need .sl in the selector to outrank `.sl p{margin:0}`,
+   which would otherwise cancel the auto margins that centre the content block. */
+.sl .tag{font-family:"IBM Plex Mono",monospace;font-size:2.5cqi;letter-spacing:.14em;
+  color:#8A8A82;display:flex;justify-content:space-between;margin-bottom:auto}
+.sl .tag b{color:#C0392B;font-weight:600}
+/* all-caps overlay header, the niche's signature */
+.sl .hd{font-family:"Anton",sans-serif;font-size:8.6cqi;line-height:.94;letter-spacing:.005em;
+  text-transform:uppercase;color:#111}
+.sl .hd em{font-style:normal;color:#C0392B}
+.sl .hd--big{font-size:11cqi}
+/* creator annotation: overlaid, informal, high contrast */
+.sl .an{font-family:"Archivo",sans-serif;font-weight:800;font-size:3.5cqi;line-height:1.32;color:#1A1A1A}
+.sl .an em{font-style:normal;color:#C0392B}
+.sl .an--red{color:#C0392B}
+/* pasted study panel */
+.sl .paper{background:#FCFCFA;border:1px solid #C8C8C0;box-shadow:.6cqi .6cqi 0 #00000012;
+  padding:2.8cqi 3cqi;display:flex;flex-direction:column;gap:1.8cqi}
+.sl .jrnl{font-family:"Public Sans",sans-serif;font-size:2.3cqi;font-weight:700;color:#1668C4;
+  letter-spacing:.01em}
+.sl .jmeta{font-family:"Public Sans",sans-serif;font-size:2.1cqi;color:#6A6A62}
+.sl .ttl{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:2.9cqi;line-height:1.24;color:#111}
+.sl .abs{font-family:"Source Serif 4",Georgia,serif;font-size:2.35cqi;line-height:1.38;color:#2A2A26;
+  text-align:justify;hyphens:auto}
+.sl .abs b{background:#FFE9A8;font-weight:600}
+.sl .hl{background:#FFE9A8}
+.sl .foot{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#8A8A82;margin:auto 0 0}
+.sl .mid{flex:0 1 auto;display:flex;flex-direction:column;justify-content:center;gap:2.6cqi;min-height:0}
+.sl--title{background:#DEDED8}
+.sl--end{background:#E4E8E2}
+.ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2.2cqi;
+  font-family:"Archivo",sans-serif;font-weight:600;font-size:3.2cqi;line-height:1.3;color:#1A1A1A}
+/* Absolute marker rather than a grid column: a grid li would split every
+   inline child (<em>, bare text) into its own grid item and collapse the prose. */
+.ol li{position:relative;padding-left:7cqi}
+.ol li::before{content:"→";position:absolute;left:0;top:0;color:#C0392B;font-weight:800}
+.ol li em{font-style:normal;color:#C0392B}
+.srcs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2.6cqi;
+  font-family:"IBM Plex Mono",monospace;font-size:2.6cqi;line-height:1.4;color:#2A2A26}
+.srcs li{border-bottom:1px solid #C8C8C0;padding-bottom:2.2cqi}
+.srcs li:last-child{border:0;padding:0}
+.srcs b{display:block;color:#111;margin-bottom:.8cqi}
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eb">Native-format deck · 13 slides · annotated research screenshot</p>
+  <h1>No Blood Supply</h1>
+  <p class="sf">Built to match how the corpus winners actually look and read, not how a designer would lay them out: plain screenshot ground, pasted study panels with journal headers, highlighter on the key sentence, all-caps overlay headers, and a sequential study-by-study walkthrough. Same information territory as the two biggest height posts in your set (oxygen and the growth plate), with the citations checked and upgraded.</p>
+</header>
+
+<div class="note">
+  <b>What was substituted.</b> Both viral posts on this topic end by converting the science into a breathing routine or a compound list. That leap is the unsupported part, so slide 09 states plainly what the papers do and do not license. It reads as the stronger contrarian angle anyway: everyone in this niche has the mechanism roughly right and the conclusion wrong.
+</div>
+
+<div class="track">
+
+  <!-- 01 TITLE -->
+  <div class="sl sl--title">
+    <p class="tag"><b>01</b><span>SLIDE 1 OF 13</span></p>
+    <div class="mid">
+      <p class="hd hd--big">Your growth plate has <em>no blood supply</em></p>
+      <svg viewBox="0 0 300 128" aria-label="Bone with vessels reaching the shaft but stopping at the cartilage plate.">
+        <rect x="96" y="0" width="108" height="30" rx="6" fill="#C4C4BC" stroke="#8A8A82" stroke-width="1.2"></rect>
+        <rect x="96" y="30" width="108" height="34" fill="#F2F0E6" stroke="#8A8A82" stroke-width="1.2"></rect>
+        <rect x="96" y="64" width="108" height="62" rx="6" fill="#C4C4BC" stroke="#8A8A82" stroke-width="1.2"></rect>
+        <g stroke="#C0392B" stroke-width="2.2" fill="none">
+          <path d="M8,104 C40,100 62,92 88,86"></path>
+          <path d="M8,118 C44,114 66,106 90,100"></path>
+          <path d="M292,104 C260,100 238,92 212,86"></path>
+        </g>
+        <g stroke="#C0392B" stroke-width="2.2">
+          <line x1="86" y1="72" x2="98" y2="60"></line><line x1="98" y1="72" x2="86" y2="60"></line>
+          <line x1="202" y1="72" x2="214" y2="60"></line><line x1="214" y1="72" x2="202" y2="60"></line>
+        </g>
+        <text x="8" y="26" font-family="Archivo,sans-serif" font-weight="800" font-size="11" fill="#C0392B">vessels stop here</text>
+        <text x="210" y="50" font-family="IBM Plex Mono,monospace" font-size="9" fill="#4A4A44">cartilage</text>
+      </svg>
+      <p class="an">And that's <em>not a flaw</em>. It's how the tissue is built. Let me show you the papers.</p>
+    </div>
+    <p class="foot">SWIPE →</p>
+  </div>
+
+  <!-- 02 SETUP -->
+  <div class="sl">
+    <p class="tag"><b>02</b><span>WHY THIS MATTERS</span></p>
+    <div class="mid">
+      <p class="hd">Before we start</p>
+      <p class="an">I kept seeing hypoxia posts and none of them showed me the actual papers, so I went and read them. The mechanism is real and it's stranger than what gets summarised.</p>
+      <p class="an">Two studies, in order, with the sentence that matters highlighted on each one. Then what I think it does and doesn't tell us.</p>
+      <ul class="ol">
+        <li>Educational. <em>Not medical advice.</em></li>
+        <li>Every claim is cited at the end.</li>
+        <li>No protocol at the end. I'll explain why.</li>
+      </ul>
+    </div>
+    <p class="foot">3 PAPERS · 1 CONCLUSION</p>
+  </div>
+
+  <!-- 03 STUDY 1 PANEL -->
+  <div class="sl">
+    <p class="tag"><b>03</b><span>PAPER 1</span></p>
+    <div class="mid">
+      <p class="an an--red">FIRST, THE CLASSIC. 2001.</p>
+      <div class="paper">
+        <p class="jrnl">Genes &amp; Development</p>
+        <p class="jmeta">Vol. 15 · Research Article · 2001</p>
+        <p class="ttl">Hypoxia in cartilage: HIF-1α is essential for chondrocyte growth arrest and survival</p>
+        <p class="jmeta">Schipani E, Ryan HE, Didrickson S, Kobayashi T, Knight M, Johnson RS</p>
+        <p class="abs">The growth plate is an avascular tissue. Cells in its centre therefore sit furthest from any oxygen supply. <b>Deleting HIF-1α from chondrocytes caused massive cell death in the interior of the growth plate</b>, establishing that the hypoxia response is not incidental to cartilage but required for the tissue to survive its own architecture.</p>
+      </div>
+      <p class="an">Put simply: the cells in the middle of your plate sit further from a blood vessel than almost anything else in your body. They need their own way to stay alive down there.</p>
+    </div>
+    <p class="foot">SCHIPANI 2001</p>
+  </div>
+
+  <!-- 04 STUDY 1 FIGURE -->
+  <div class="sl">
+    <p class="tag"><b>04</b><span>WHAT HAPPENED</span></p>
+    <div class="mid">
+      <p class="hd">Remove the switch, kill the centre</p>
+      <svg viewBox="0 0 300 176" aria-label="Comparison of a normal growth plate against one lacking HIF-1 alpha, with central cell death.">
+        <rect x="8" y="10" width="128" height="132" fill="#FCFCFA" stroke="#C8C8C0" stroke-width="1"></rect>
+        <rect x="164" y="10" width="128" height="132" fill="#FCFCFA" stroke="#C8C8C0" stroke-width="1"></rect>
+        <g fill="#8FA8B8">
+          <circle cx="34" cy="36" r="5"></circle><circle cx="58" cy="34" r="5"></circle><circle cx="82" cy="36" r="5"></circle>
+          <circle cx="106" cy="34" r="5"></circle><circle cx="34" cy="60" r="5"></circle><circle cx="58" cy="58" r="5"></circle>
+          <circle cx="82" cy="60" r="5"></circle><circle cx="106" cy="58" r="5"></circle><circle cx="34" cy="84" r="5"></circle>
+          <circle cx="58" cy="82" r="5"></circle><circle cx="82" cy="84" r="5"></circle><circle cx="106" cy="82" r="5"></circle>
+          <circle cx="34" cy="108" r="5"></circle><circle cx="58" cy="106" r="5"></circle><circle cx="82" cy="108" r="5"></circle>
+          <circle cx="106" cy="106" r="5"></circle>
+        </g>
+        <g fill="#8FA8B8">
+          <circle cx="190" cy="36" r="5"></circle><circle cx="214" cy="34" r="5"></circle>
+          <circle cx="238" cy="36" r="5"></circle><circle cx="262" cy="34" r="5"></circle>
+          <circle cx="190" cy="108" r="5"></circle><circle cx="214" cy="106" r="5"></circle>
+          <circle cx="238" cy="108" r="5"></circle><circle cx="262" cy="106" r="5"></circle>
+        </g>
+        <g stroke="#C0392B" stroke-width="1.6">
+          <line x1="186" y1="56" x2="196" y2="66"></line><line x1="196" y1="56" x2="186" y2="66"></line>
+          <line x1="210" y1="54" x2="220" y2="64"></line><line x1="220" y1="54" x2="210" y2="64"></line>
+          <line x1="234" y1="56" x2="244" y2="66"></line><line x1="244" y1="56" x2="234" y2="66"></line>
+          <line x1="258" y1="54" x2="268" y2="64"></line><line x1="268" y1="54" x2="258" y2="64"></line>
+          <line x1="186" y1="80" x2="196" y2="90"></line><line x1="196" y1="80" x2="186" y2="90"></line>
+          <line x1="210" y1="78" x2="220" y2="88"></line><line x1="220" y1="78" x2="210" y2="88"></line>
+          <line x1="234" y1="80" x2="244" y2="90"></line><line x1="244" y1="80" x2="234" y2="90"></line>
+          <line x1="258" y1="78" x2="268" y2="88"></line><line x1="268" y1="78" x2="258" y2="88"></line>
+        </g>
+        <ellipse cx="228" cy="72" rx="52" ry="26" fill="none" stroke="#C0392B" stroke-width="2.4"></ellipse>
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#1A1A1A">
+          <text x="8" y="158">WILD TYPE</text><text x="164" y="158" fill="#C0392B">HIF-1α DELETED</text>
+        </g>
+        <text x="164" y="172" font-family="Archivo,sans-serif" font-weight="800" font-size="9.5" fill="#C0392B">
+          interior dies first</text>
+      </svg>
+      <p class="an">Notice the dying is <em>central</em>, not spread out. That's the signature of an oxygen problem, and it's the clue that sent people looking for how the tissue normally copes.</p>
+    </div>
+    <p class="foot">AVASCULAR BY DESIGN</p>
+  </div>
+
+  <!-- 05 STUDY 2 PANEL -->
+  <div class="sl">
+    <p class="tag"><b>05</b><span>PAPER 2</span></p>
+    <div class="mid">
+      <p class="an an--red">NOW THE 2023 ONE. THIS IS IN NATURE.</p>
+      <div class="paper">
+        <p class="jrnl">Nature</p>
+        <p class="jmeta">Article · 2023 · s41586-023-06611-6</p>
+        <p class="ttl">An extra-erythrocyte role of haemoglobin body in chondrocyte hypoxia adaption</p>
+        <p class="jmeta">Zhang F, et al.</p>
+        <p class="abs">Chondrocytes were found to express haemoglobin at high levels and to condense it into membraneless cytoplasmic bodies, termed <b>Hedy</b>, by phase separation. <b>Hedy functions as a localised intracellular oxygen reservoir</b>, enabling chondrocyte adaptation to hypoxia and the survival of developing cartilage.</p>
+      </div>
+      <p class="an">Cartilage cells make <em>their own haemoglobin</em>. Not borrowed from your blood. Made right there, and kept as a droplet inside the cell.</p>
+    </div>
+    <p class="foot">ZHANG 2023 · NATURE</p>
+  </div>
+
+  <!-- 06 MECHANISM -->
+  <div class="sl">
+    <p class="tag"><b>06</b><span>MECHANISM</span></p>
+    <div class="mid">
+      <p class="hd">It builds its own oxygen tank</p>
+      <svg viewBox="0 0 300 168" aria-label="Haemoglobin subunits condensing by phase separation into a membraneless body inside a chondrocyte.">
+        <ellipse cx="150" cy="84" rx="140" ry="76" fill="#F2F0E6" stroke="#8A8A82" stroke-width="1.2"></ellipse>
+        <g fill="#C0392B">
+          <circle cx="52" cy="42" r="3.4"></circle><circle cx="72" cy="30" r="3.4"></circle>
+          <circle cx="40" cy="64" r="3.4"></circle><circle cx="66" cy="58" r="3.4"></circle>
+          <circle cx="248" cy="46" r="3.4"></circle><circle cx="232" cy="32" r="3.4"></circle>
+          <circle cx="258" cy="68" r="3.4"></circle><circle cx="60" cy="118" r="3.4"></circle>
+          <circle cx="240" cy="120" r="3.4"></circle><circle cx="88" cy="132" r="3.4"></circle>
+        </g>
+        <g stroke="#C0392B" stroke-width="1" stroke-dasharray="3 3" fill="none">
+          <path d="M74,36 C100,50 116,62 128,72"></path>
+          <path d="M238,40 C214,54 194,64 176,72"></path>
+          <path d="M70,112 C96,102 116,94 130,88"></path>
+        </g>
+        <circle cx="152" cy="80" r="34" fill="#C0392B" opacity=".22"></circle>
+        <circle cx="152" cy="80" r="24" fill="#C0392B" opacity=".38"></circle>
+        <circle cx="152" cy="80" r="13" fill="#C0392B"></circle>
+        <text x="152" y="84" text-anchor="middle" font-family="Archivo,sans-serif"
+          font-weight="900" font-size="10" fill="#FCFCFA">Hedy</text>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4A4A44">
+          <text x="8" y="18">free haemoglobin</text>
+          <text x="292" y="160" text-anchor="end">chondrocyte</text>
+        </g>
+        <text x="196" y="118" font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#C0392B">
+          no membrane</text>
+      </svg>
+      <p class="an">It's phase separation. The haemoglobin clumps itself into a droplet with <em>no membrane around it</em>, held together by a floppy tail on the beta subunit.</p>
+    </div>
+    <p class="foot">LIQUID-LIQUID PHASE SEPARATION</p>
+  </div>
+
+  <!-- 07 THE NUMBER -->
+  <div class="sl">
+    <p class="tag"><b>07</b><span>THE NUMBER</span></p>
+    <div class="mid">
+      <p class="hd">It holds oxygen <em>tighter</em> than your blood</p>
+      <svg viewBox="0 0 300 186" aria-label="Oxygen dissociation curves comparing chondrocyte haemoglobin against red blood cells.">
+        <g stroke="#CFCFC6" stroke-width="1">
+          <line x1="34" y1="20" x2="292" y2="20"></line><line x1="34" y1="58" x2="292" y2="58"></line>
+          <line x1="34" y1="96" x2="292" y2="96"></line><line x1="34" y1="134" x2="292" y2="134"></line>
+        </g>
+        <path d="M34,150 C58,128 74,74 108,48 C142,24 200,18 292,16"
+              fill="none" stroke="#C0392B" stroke-width="3"></path>
+        <path d="M34,150 C74,144 108,118 148,86 C196,48 244,26 292,18"
+              fill="none" stroke="#1668C4" stroke-width="3" stroke-dasharray="7 4"></path>
+        <line x1="34" y1="150" x2="292" y2="150" stroke="#8A8A82" stroke-width="1.4"></line>
+        <line x1="34" y1="96" x2="292" y2="96" stroke="#8A8A82" stroke-width="1" stroke-dasharray="2 4"></line>
+        <g><circle cx="90" cy="96" r="5" fill="#C0392B"></circle><circle cx="160" cy="96" r="5" fill="#1668C4"></circle></g>
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10.5">
+          <text x="58" y="86" fill="#C0392B">27.85</text>
+          <text x="168" y="86" fill="#1668C4">58.2 mmHg</text>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#6A6A62">
+          <text x="0" y="24">100%</text><text x="0" y="100">50%</text>
+          <text x="34" y="168">low O₂</text><text x="292" y="168" text-anchor="end">high O₂</text>
+        </g>
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10">
+          <text x="34" y="184" fill="#C0392B">■ chondrocyte Hb</text>
+          <text x="180" y="184" fill="#1668C4">■ red blood cells</text>
+        </g>
+      </svg>
+      <p class="an">P50 of <em>27.85 mmHg</em> against 58.2 for red cells. The curve sits to the left, which means it grabs oxygen and hangs onto it. That's a storage tank, not a delivery van.</p>
+    </div>
+    <p class="foot">SAVE THIS SLIDE</p>
+  </div>
+
+  <!-- 08 KNOCKOUT -->
+  <div class="sl">
+    <p class="tag"><b>08</b><span>PROOF</span></p>
+    <div class="mid">
+      <p class="an an--red">SO WHAT IF YOU TAKE IT AWAY?</p>
+      <div class="paper">
+        <p class="jmeta">Zhang et al. 2023 · results</p>
+        <p class="abs">Chondrocyte-specific deletion of haemoglobin abolished Hedy. <b>Massive cell death occurred in the inner zones of the developing growth plate</b>, accompanied by a delay in cartilage hypertrophy. Homozygous animals became hydropic and died between embryonic days 16.5 and 18.5.</p>
+      </div>
+      <svg viewBox="0 0 300 74" aria-label="Pathway from deleting haemoglobin to growth plate cell death and delayed hypertrophy.">
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="9.5" fill="#1A1A1A" text-anchor="middle">
+          <rect x="0" y="18" width="72" height="34" fill="#FCFCFA" stroke="#8A8A82" stroke-width="1"></rect>
+          <text x="36" y="32">no Hb</text><text x="36" y="45">in cartilage</text>
+          <rect x="88" y="18" width="72" height="34" fill="#FCFCFA" stroke="#8A8A82" stroke-width="1"></rect>
+          <text x="124" y="32">no Hedy</text><text x="124" y="45">reservoir</text>
+          <rect x="176" y="18" width="72" height="34" fill="#FCFCFA" stroke="#8A8A82" stroke-width="1"></rect>
+          <text x="212" y="32">interior</text><text x="212" y="45">cells die</text>
+        </g>
+        <g stroke="#C0392B" stroke-width="2" fill="none" marker-end="url(#a8)">
+          <line x1="74" y1="35" x2="84" y2="35"></line><line x1="162" y1="35" x2="172" y2="35"></line>
+          <line x1="250" y1="35" x2="262" y2="35"></line>
+        </g>
+        <defs><marker id="a8" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill="#C0392B"></path></marker></defs>
+        <text x="268" y="39" font-family="Archivo,sans-serif" font-weight="900" font-size="11" fill="#C0392B">✕</text>
+      </svg>
+      <p class="an">This isn't a subtle effect. Take the oxygen store away and the tissue that makes you taller dies from the inside out.</p>
+    </div>
+    <p class="foot">EMBRYONIC LETHAL</p>
+  </div>
+
+  <!-- 09 THE HONEST READ -->
+  <div class="sl">
+    <p class="tag"><b>09</b><span>WHERE I GET STUCK</span></p>
+    <div class="mid">
+      <p class="hd">The jump I <em>can't make</em></p>
+      <p class="an">This is the point where I expected to find a protocol, and I couldn't get there. Here's what kept stopping me.</p>
+      <ul class="ol">
+        <li>The plate is low-oxygen <em>because nothing plumbs into it</em>. That's about distance from a vessel, not about how much oxygen is in your blood.</li>
+        <li>Hedy looks like a <em>buffer</em>, and a buffer's whole job is keeping things steady. Hard to see it responding to how you breathe.</li>
+        <li>All of this is <em>embryo knockout work</em>. Nobody has tested any of it in a teenager who is actually growing.</li>
+      </ul>
+      <p class="an an--red">So I'd love to be shown otherwise. If someone has a study that closes that gap, put it in the comments and I'll read it.</p>
+    </div>
+    <p class="foot">STILL LOOKING</p>
+  </div>
+
+  <!-- 10 THE DELIVERY PROBLEM -->
+  <div class="sl">
+    <p class="tag"><b>10</b><span>IF YOU RUN ANYTHING</span></p>
+    <div class="mid">
+      <p class="hd">Nothing you take gets there <em>easily</em></p>
+      <svg viewBox="0 0 300 176" aria-label="Concentration of a systemic compound falling steeply across avascular cartilage away from the nearest vessel.">
+        <rect x="0" y="10" width="52" height="96" fill="#D8C4C0" stroke="#8A8A82" stroke-width="1"></rect>
+        <rect x="52" y="10" width="248" height="96" fill="#F2F0E6" stroke="#8A8A82" stroke-width="1"></rect>
+        <g stroke="#C0392B" stroke-width="2.4" fill="none">
+          <path d="M0,34 C18,32 34,38 50,40"></path>
+          <path d="M0,80 C18,78 34,72 50,68"></path>
+        </g>
+        <g fill="#C0392B">
+          <circle cx="60" cy="30" r="3.2"></circle><circle cx="60" cy="52" r="3.2"></circle>
+          <circle cx="60" cy="76" r="3.2"></circle><circle cx="60" cy="94" r="3.2"></circle>
+          <circle cx="86" cy="38" r="3.2"></circle><circle cx="86" cy="66" r="3.2"></circle>
+          <circle cx="86" cy="88" r="3.2"></circle>
+          <circle cx="118" cy="46" r="3.2"></circle><circle cx="118" cy="78" r="3.2"></circle>
+          <circle cx="152" cy="58" r="3.2"></circle>
+          <circle cx="192" cy="68" r="3.2"></circle>
+        </g>
+        <path d="M52,26 C86,44 128,86 300,100" fill="none" stroke="#1668C4" stroke-width="2.4" stroke-dasharray="6 4"></path>
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#C0392B">
+          <text x="0" y="124">vessel</text>
+        </g>
+        <text x="196" y="124" font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#1668C4">
+          middle of the plate</text>
+        <text x="56" y="146" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4A4A44">
+          concentration falls with distance, not with dose</text>
+        <g stroke="#8A8A82" stroke-width="1">
+          <line x1="52" y1="106" x2="52" y2="114"></line><line x1="300" y1="106" x2="300" y2="114"></line>
+        </g>
+      </svg>
+      <p class="an">Whatever is in your blood has to cross the vessels at the edge and then <em>diffuse</em> the rest of the way in. The middle of the plate is the last place anything arrives and the first place it runs out.</p>
+    </div>
+    <p class="foot">DIFFUSION, NOT PERFUSION</p>
+  </div>
+
+  <!-- 11 THE PRACTICAL READ -->
+  <div class="sl">
+    <p class="tag"><b>11</b><span>THE USEFUL PART</span></p>
+    <div class="mid">
+      <p class="hd">What I actually take from this</p>
+      <p class="an">If you track bloods or think about compounds at all, these three follow directly from the papers.</p>
+      <ul class="ol">
+        <li>Your <em>serum number is not the plate's number</em>. An IGF-1 reading tells you what your liver did, not what arrived at the cartilage.</li>
+        <li>A delivery bottleneck doesn't care how many inputs you add. More items in a stack raises the <em>side-effect load</em>, not the concentration at the target.</li>
+        <li>The oxygen system in there is <em>locally set</em>. KLF1 responds to the cell's own environment, and there's no version of that you take.</li>
+      </ul>
+      <p class="an an--red">Which is the boring answer, but it's the one the anatomy gives you.</p>
+    </div>
+    <p class="foot">THE LIMIT IS THE TISSUE</p>
+  </div>
+
+  <!-- 12 WHAT IT IS GOOD FOR -->
+  <div class="sl">
+    <p class="tag"><b>12</b><span>WHAT IT'S ACTUALLY FOR</span></p>
+    <div class="mid">
+      <p class="hd">Why I still think it's worth knowing</p>
+      <p class="an">Everything anyone tries to do about height has to work through this tissue. Once you know it's running on its own little oxygen store with no blood supply, a lot of the category makes more sense.</p>
+      <ul class="ol">
+        <li>It's why growth is <em>slow</em>. You can't rush something that runs on diffusion.</li>
+        <li>It's why most things you swallow reach it <em>badly</em>. No vessels, no direct route in.</li>
+        <li>It's why <em>timing</em> matters more than effort. Check my coming posts, that one needs its own slideshow.</li>
+      </ul>
+    </div>
+    <p class="foot">DIFFUSION-LIMITED</p>
+  </div>
+
+  <!-- 11 SOURCES -->
+  <div class="sl sl--end">
+    <p class="tag"><b>13</b><span>SOURCES</span></p>
+    <div class="mid">
+      <p class="hd">Check it yourself</p>
+      <ul class="srcs">
+        <li><b>Zhang F et al. (2023)</b>An extra-erythrocyte role of haemoglobin body in chondrocyte hypoxia adaption. <i>Nature.</i> Hedy, the phase separation, the P50 numbers, the knockout.</li>
+        <li><b>Schipani E et al. (2001)</b>Hypoxia in cartilage: HIF-1α is essential for chondrocyte growth arrest and survival. <i>Genes &amp; Dev.</i></li>
+        <li><b>KLF1, not HIF</b>Chondrocyte haemoglobin is driven by KLF1 via KDM5A inactivation, independent of the HIF pathway. Same Nature paper.</li>
+      </ul>
+      <p class="an an--red">Search the titles, both are free to read. Don't take my word for any of it.</p>
+    </div>
+    <p class="foot">FOLLOW FOR THE REST OF THE SERIES</p>
+  </div>
+
+</div>
+
+<div class="cap">
+  Your growth plate has no blood supply, and cartilage makes its own haemoglobin to cope. Sources at the end.<br><br>
+  <span class="tags">#fyp #foryoupage #height #heightmaxxing #growthplate #biology</span><br>
+  <i>18 words · 13 slides · slide 7 is the save-driver · slide 9 is the contrarian hook that gets quoted</i>
+</div>
+
+</div>

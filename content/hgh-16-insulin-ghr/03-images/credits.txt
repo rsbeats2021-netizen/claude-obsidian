@@ -1,0 +1,5 @@
+slide-02: Ly et al. 2020, Front Endocrinol.
+slide-05: 17 adults with type 1 diabetes, 8 hours off basal insulin.
+slide-06: Same cohort, after a single 0.2 U/kg dose.
+slide-07: Subcutaneous vs continuous intraperitoneal insulin delivery.
+slide-10: Patients with hypopituitarism on GH treatment.

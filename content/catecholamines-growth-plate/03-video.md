@@ -1,39 +1,35 @@
-# Video script — "The nervous system input nobody covers"
+# Video script — Adrenaline
 
-60s · 175 words · ~178 wpm. **Only `SPOKEN:` lines are read aloud.**
+147 words, ~49s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:08] HOOK
-SPOKEN: Your nervous system talks to your growth plate through the same
-        receptor adrenaline uses. And knocking that receptor out increases bone
-        mass.
-  [VISUAL: nerve → bone, receptor highlighted]
+Spoken lines only. Visual cue in brackets.
 
-### [0:08–0:18] PROBLEM
-SPOKEN: This entire field thinks in hormones. Estrogen, androgens, growth
-        hormone, IGF-1, thyroid. The sympathetic nervous system is a completely
-        separate input and nobody includes it.
-  [ON-SCREEN: "OUTSIDE THE FRAMEWORK"]
+---
 
-### [0:18–0:38] EVIDENCE
-SPOKEN: Bone and cartilage cells carry beta-2 adrenergic receptors — the same
-        class that responds to adrenaline and noradrenaline. Catecholamines act
-        directly on those cells, not just on blood flow to them. Delete the
-        receptor in mice, systemically or just in osteoblasts, and bone mass
-        goes up. Removing a nervous system signal built more bone.
-  [ON-SCREEN: "β2-AR KNOCKOUT → MORE BONE"]
+Adrenaline. And deleting that receptor increases bone mass.
 
-### [0:38–0:50] PAYOFF
-SPOKEN: It also touches cell fate — catecholamines influence chondrocyte to
-        osteoblast transdifferentiation, which is one of the four competing
-        theories for how growth plates actually close.
-  [VISUAL: four theories, one highlighted]
+[cover card]
 
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: To be clear: mouse genetics and cell work. No human height data at all.
-        This is a mechanism worth knowing, not a lever worth pulling. But the
-        gaps in a field usually sit exactly where its categories are. Don't
-        forget, it's never over.
-  [ON-SCREEN: "MECHANISM ≠ LEVER"]
+The same receptor class that responds to adrenaline and noradrenaline. Catecholamines act on these cells directly, not just by changing blood flow to them.
 
-## Sources
-Vault: [[Beta2-Adrenergic-Receptor-Chondrocyte-Osteoblast-Transdifferentiation-Catecholamines]]
+[carry beta 2 receptors]
+
+Mice lacking beta 2 adrenergic receptors, either everywhere or only in osteoblasts, show increased bone mass. Removing a nervous system signal built more bone, which means the normal signal was restraining it.
+
+[and bone mass rises]
+
+Catecholamines influence chondrocyte to osteoblast transdifferentiation. That's one of the four proposed routes by which growth plate cartilage converts into bone at closure.
+
+[cell fate]
+
+If beta 2 signalling restrains bone formation, blocking it should do the opposite. That prediction is why this receptor is studied in osteoporosis at all.
+
+[beta blockers get studied]
+
+Stimulant medication raises catecholamine signalling directly. That gives a concrete pathway linking it to the growth effects seen in paediatric data, separate from appetite.
+
+[takeaway card]
+
+Two findings that looked unrelated share a receptor.
+
+DM for source

@@ -1,0 +1,8 @@
+slide-03: Clark 1985, Isgaard 1988, Bick 1992. Hypophysectomised rats.
+slide-04: Clark et al. 1985, J Endocrinol.
+slide-05: Isgaard et al. 1988, Endocrinology.
+slide-06: Isgaard et al. 1988, Endocrinology.
+slide-07: Bick et al. 1992, Endocrinology.
+slide-08: Bick et al. 1992, Endocrinology.
+slide-10: Lundberg et al. 2015, BMC Endocrine Disorders. Human.
+slide-11: Clark 1985 vs Lundberg 2015.

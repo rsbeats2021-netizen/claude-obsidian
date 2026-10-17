@@ -210,3 +210,16 @@ which is why it is worth acting on despite contradicting the official spec.
 
 Test 4:5 (1080x1350). Both renderers now take `--size 4:5`. Keep the ratio
 consistent within a single carousel; TikTok handles mixed ratios badly.
+
+
+## 6. Voice, measured (14 Sep)
+
+Top play-count quartile vs rest, per 1,000 words, 188 decks with 80+ words of
+OCR text. Full table and quotes in `content/FORMATS.md` §Voice. Short version:
+winners use "we" more, "you" and "I" less, name studies inline, gloss jargon in
+the same sentence, number their studies, and use fewer shock words. Density
+scales with plays: ~60 words per slide at the top, 21 at the bottom.
+
+Caveat: rpo3212 and _sox9 use outlined text that OCR scrambles, so their word
+counts are unreliable and their prose could not be scored. doctor.morph and
+bio.science transcribe cleanly and drive most of the signal.

@@ -1,0 +1,600 @@
+<title>Three More, Native Format</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{--pg:#F3F3F1;--pg2:#FFF;--tx:#161619;--tx2:#68686F;--rule:#DCDCD8;--mark:#C0392B}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#F0705E}}
+:root[data-theme="dark"]{
+  --pg:#101013;--pg2:#18181E;--tx:#ECECF0;--tx2:#8F8F9A;--rule:#292930;--mark:#F0705E}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font-family:"Public Sans",Arial,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:44px 20px 90px;display:flex;flex-direction:column;gap:20px}
+.masthead{display:flex;flex-direction:column;gap:12px;max-width:72ch}
+.masthead .eb{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mark);margin:0}
+.masthead h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.03em;line-height:1;margin:0}
+.masthead .sf{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.55;color:var(--tx2)}
+.spec{background:var(--pg2);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;
+  font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.7;color:var(--tx2)}
+.spec b{color:var(--mark)}
+.dh{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;border-top:1px solid var(--rule);padding-top:20px}
+.dh b{font-size:18px;font-weight:900;letter-spacing:-.02em}
+.dh span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tx2)}
+.track{display:flex;gap:14px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;
+  scrollbar-color:var(--rule) transparent}
+.track .sl{flex:0 0 auto;width:clamp(250px,66vw,300px);scroll-snap-align:center}
+.cap{background:var(--pg2);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;line-height:1.6;margin-bottom:12px}
+.cap .tags{color:var(--mark)}
+.cap i{color:var(--tx2);font-style:normal}
+
+/* ===== native annotated-screenshot slide system ===== */
+.sl{aspect-ratio:9/16;container-type:inline-size;overflow:hidden;position:relative;border-radius:12px;
+  display:flex;flex-direction:column;background:#E9E9E5;color:#141414;padding:5cqi 4.4cqi;gap:2.4cqi;
+  --ac:#C0392B}
+.sl svg{display:block;width:100%;height:auto}
+.sl p{margin:0}
+/* .sl in the selector so `.sl p{margin:0}` can't cancel the centring auto margins */
+.sl .tag{font-family:"IBM Plex Mono",monospace;font-size:2.5cqi;letter-spacing:.14em;
+  color:#8A8A82;display:flex;justify-content:space-between;margin-bottom:auto}
+.sl .tag b{color:var(--ac);font-weight:600}
+.sl .hd{font-family:"Anton",sans-serif;font-size:8.2cqi;line-height:.96;text-transform:uppercase;color:#111}
+.sl .hd em{font-style:normal;color:var(--ac)}
+.sl .hd--big{font-size:10.4cqi}
+.sl .an{font-family:"Archivo",sans-serif;font-weight:800;font-size:3.3cqi;line-height:1.34;color:#1A1A1A}
+.sl .an em{font-style:normal;color:var(--ac)}
+.sl .an--red{color:var(--ac)}
+.sl .paper{background:#FCFCFA;border:1px solid #C8C8C0;box-shadow:.6cqi .6cqi 0 #00000012;
+  padding:2.6cqi 2.8cqi;display:flex;flex-direction:column;gap:1.6cqi}
+.sl .jrnl{font-family:"Public Sans",sans-serif;font-size:2.2cqi;font-weight:700;color:#1668C4}
+.sl .jmeta{font-family:"Public Sans",sans-serif;font-size:2cqi;color:#6A6A62}
+.sl .ttl{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:2.7cqi;line-height:1.24;color:#111}
+.sl .abs{font-family:"Source Serif 4",Georgia,serif;font-size:2.25cqi;line-height:1.38;color:#2A2A26;
+  text-align:justify;hyphens:auto}
+.sl .abs b{background:#FFE9A8;font-weight:600}
+.sl .foot{font-family:"IBM Plex Mono",monospace;font-size:2.3cqi;color:#8A8A82;margin:auto 0 0}
+.sl .mid{flex:0 1 auto;display:flex;flex-direction:column;justify-content:center;gap:2.4cqi;min-height:0}
+.ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2cqi;
+  font-family:"Archivo",sans-serif;font-weight:600;font-size:3.05cqi;line-height:1.32;color:#1A1A1A}
+/* absolute marker, not a grid column: grid would split every inline child into its own item */
+.ol li{position:relative;padding-left:6.6cqi}
+.ol li::before{content:"→";position:absolute;left:0;top:0;color:var(--ac);font-weight:800}
+.ol li em{font-style:normal;color:var(--ac)}
+.srcs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2.4cqi;
+  font-family:"IBM Plex Mono",monospace;font-size:2.5cqi;line-height:1.4;color:#2A2A26}
+.srcs li{border-bottom:1px solid #C8C8C0;padding-bottom:2cqi}
+.srcs li:last-child{border:0;padding:0}
+.srcs b{display:block;color:#111;margin-bottom:.7cqi}
+/* per-deck accents */
+.d-hair{--ac:#1F7A8C}
+.d-noot{--ac:#3F7A2E}
+.d-ped{--ac:#9B2417}
+.sl--t{background:#DEDED8}
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eb">Batch 2 · 3 decks · 27 slides · written to the measured profile</p>
+  <h1>Three More, Native Format</h1>
+  <p class="sf">Three new decks in the format the corpus winners actually use, with the copy written against a measured target rather than an impression. I profiled the 40 highest-viewed slideshows against the low performers and wrote to the gaps between them.</p>
+</header>
+
+<div class="spec">
+  MEASURED TARGET (top 40 slideshows vs low performers, per slide)<br>
+  characters <b>316</b> vs 98 &nbsp;·&nbsp; first person <b>1.20</b> vs 0.76 &nbsp;·&nbsp;
+  ALL-CAPS runs <b>2.69</b> vs 1.27<br>
+  study words <b>0.46</b> vs 0.15 &nbsp;·&nbsp; demonstratives <b>1.12</b> vs 0.57 &nbsp;·&nbsp;
+  numerals <b>15.2</b> vs 10.5<br>
+  slide 1 length <b>62 chars</b> &nbsp;·&nbsp; sentence length <b>14 words</b> &nbsp;·&nbsp;
+  a question roughly every 4 slides
+</div>
+
+<!-- ==================== DECK A · HAIR ==================== -->
+<div class="dh"><b>Deck A — Hair</b><span>308k views across 14 posts · 22,024 avg · 8/13 accounts cover it</span></div>
+<div class="track" data-deck="A">
+
+  <div class="sl d-hair sl--t">
+    <p class="tag"><b>01</b><span>1 / 9</span></p>
+    <div class="mid">
+      <p class="hd hd--big">Can a dead follicle come back?</p>
+      <svg viewBox="0 0 300 100" aria-label="A thick terminal hair beside a thin miniaturised one, both with intact roots.">
+        <line x1="80" y1="92" x2="80" y2="18" stroke="#141414" stroke-width="7" stroke-linecap="round"></line>
+        <ellipse cx="80" cy="94" rx="16" ry="9" fill="none" stroke="#1F7A8C" stroke-width="2.4"></ellipse>
+        <line x1="200" y1="92" x2="200" y2="66" stroke="#8A8A82" stroke-width="2" stroke-linecap="round"></line>
+        <ellipse cx="200" cy="94" rx="14" ry="8" fill="none" stroke="#1F7A8C" stroke-width="2.4"></ellipse>
+        <text x="200" y="40" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="800"
+          font-size="11" fill="#1F7A8C">still there</text>
+      </svg>
+      <p class="an">It was never dead. JCI, 2011.</p>
+    </div>
+    <p class="foot">SWIPE →</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>02</b><span>WHAT WE KNOW</span></p>
+    <div class="mid">
+      <p class="hd">Read this first</p>
+      <p class="an">I see MPB explained wrong constantly. People say the follicle DIES and that after 5 years it is GONE. Is that true? I went through 3 papers, 1 of them from 2011 using paired biopsies from the same men, and this is what they actually found.</p>
+      <ul class="ol">
+        <li>Educational only. <em>NOT medical advice.</em></li>
+        <li>Every claim is cited on slide 9.</li>
+        <li>I flag where the evidence is weak.</li>
+      </ul>
+    </div>
+    <p class="foot">3 PAPERS</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>03</b><span>PAPER 1</span></p>
+    <div class="mid">
+      <p class="an an--red">THIS IS THE ONE THAT MATTERS. JCI, 2011.</p>
+      <div class="paper">
+        <p class="jrnl">Journal of Clinical Investigation</p>
+        <p class="jmeta">Vol. 121 · 2011 · Garza LA, Yang CC, Zhao T, et al.</p>
+        <p class="ttl">Bald scalp in men with androgenetic alopecia retains hair follicle stem cells but lacks CD200-rich and CD34-positive progenitor cells</p>
+        <p class="abs">Paired biopsies were taken from bald and haired scalp in the same men. <b>KRT15-high stem cells were maintained in bald scalp</b>, while CD200hi ITGA6hi and CD34hi progenitor populations were markedly diminished.</p>
+      </div>
+      <p class="an">So the STEM CELLS are still there at year 10 and year 20. What has gone is the step that turns them into working cells, and only 2 of the 3 markers dropped.</p>
+    </div>
+    <p class="foot">GARZA 2011</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>04</b><span>THE ACTUAL DEFECT</span></p>
+    <div class="mid">
+      <p class="hd">The <em>conversion</em> is what breaks</p>
+      <svg viewBox="0 0 300 116" aria-label="Stem cells present in both samples, progenitor cells present only in haired scalp.">
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#141414">
+          <text x="0" y="12">HAIRED</text><text x="0" y="72">BALD</text>
+        </g>
+        <g fill="#1F7A8C">
+          <circle cx="66" cy="26" r="7"></circle><circle cx="90" cy="26" r="7"></circle>
+          <circle cx="114" cy="26" r="7"></circle><circle cx="66" cy="86" r="7"></circle>
+          <circle cx="90" cy="86" r="7"></circle><circle cx="114" cy="86" r="7"></circle>
+        </g>
+        <g fill="#C0392B">
+          <circle cx="196" cy="26" r="7"></circle><circle cx="220" cy="26" r="7"></circle>
+          <circle cx="244" cy="26" r="7"></circle>
+        </g>
+        <g stroke="#C0392B" stroke-width="1.8">
+          <line x1="190" y1="80" x2="202" y2="92"></line><line x1="202" y1="80" x2="190" y2="92"></line>
+          <line x1="214" y1="80" x2="226" y2="92"></line><line x1="226" y1="80" x2="214" y2="92"></line>
+          <line x1="238" y1="80" x2="250" y2="92"></line><line x1="250" y1="80" x2="238" y2="92"></line>
+        </g>
+        <g stroke="#8A8A82" stroke-width="1.6" fill="none" marker-end="url(#ah1)">
+          <line x1="130" y1="26" x2="180" y2="26"></line>
+        </g>
+        <line x1="130" y1="86" x2="180" y2="86" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="4 4"></line>
+        <defs><marker id="ah1" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M0,0 L7,3.5 L0,7 Z" fill="#8A8A82"></path></marker></defs>
+        <g font-family="IBM Plex Mono,monospace" font-size="8" fill="#4A4A44">
+          <text x="60" y="108">KRT15 stem</text><text x="190" y="108">CD34 progenitor</text>
+        </g>
+      </svg>
+      <p class="an">Both scalps have the stem cells. Only the haired one still makes progenitors. THAT is the broken step, and this is why the field talks about reactivation rather than replacement.</p>
+    </div>
+    <p class="foot">NOT A DEAD FOLLICLE</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>05</b><span>WHY IT SHRINKS</span></p>
+    <div class="mid">
+      <p class="hd">Every cycle comes back <em>thinner</em></p>
+      <svg viewBox="0 0 300 108" aria-label="Four successive hair cycles with progressively thinner shafts and shorter growth phases.">
+        <g stroke="#141414" stroke-linecap="round">
+          <line x1="40" y1="94" x2="40" y2="16" stroke-width="8"></line>
+          <line x1="110" y1="94" x2="110" y2="32" stroke-width="5.5"></line>
+          <line x1="180" y1="94" x2="180" y2="54" stroke-width="3"></line>
+          <line x1="250" y1="94" x2="250" y2="78" stroke-width="1.6" stroke="#8A8A82"></line>
+        </g>
+        <g fill="none" stroke="#1F7A8C" stroke-width="2">
+          <ellipse cx="40" cy="97" rx="15" ry="8"></ellipse><ellipse cx="110" cy="97" rx="12" ry="7"></ellipse>
+          <ellipse cx="180" cy="97" rx="9" ry="5.5"></ellipse><ellipse cx="250" cy="97" rx="7" ry="4.5"></ellipse>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="8" fill="#4A4A44" text-anchor="middle">
+          <text x="40" y="15">100%</text><text x="110" y="31">70%</text>
+          <text x="180" y="53">40%</text><text x="250" y="77">15%</text>
+        </g>
+      </svg>
+      <p class="an">A normal anagen phase runs 2 to 6 years. DHT shortens it a little each round, so by the time you see it in a mirror you have already lost 3 or 4 cycles of shaft thickness.</p>
+    </div>
+    <p class="foot">MINIATURISATION</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>06</b><span>THE NUMBERS</span></p>
+    <div class="mid">
+      <p class="hd">What the trials actually show</p>
+      <svg viewBox="0 0 300 122" aria-label="Bar comparison of hair count response across finasteride, minoxidil and combination.">
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#141414">
+          <text x="0" y="12">FIN 1mg</text><text x="0" y="46">MINOX 5%</text>
+          <text x="0" y="80">BOTH</text><text x="0" y="114">NOTHING</text>
+        </g>
+        <g><rect x="96" y="2" width="128" height="12" fill="#1F7A8C"></rect>
+           <rect x="96" y="36" width="104" height="12" fill="#1F7A8C"></rect>
+           <rect x="96" y="70" width="176" height="12" fill="#1F7A8C"></rect>
+           <rect x="96" y="104" width="20" height="12" fill="#C0392B"></rect></g>
+        <text x="122" y="114" font-family="IBM Plex Mono,monospace" font-size="8" fill="#C0392B">keeps falling</text>
+      </svg>
+      <p class="an">Both are MAINTENANCE first, regrowth second. Over 5 years the 1mg group held roughly stable while placebo kept falling, so most of that gap is loss you avoided, not hair you grew back.</p>
+    </div>
+    <p class="foot">MAINTENANCE FIRST</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>07</b><span>WHERE I'M UNSURE</span></p>
+    <div class="mid">
+      <p class="hd">The part I <em>can't</em> promise you</p>
+      <p class="an">Retained stem cells means reversal is BIOLOGICALLY plausible. Does that mean anything on the market does it today? No. Here is where I keep landing after 3 papers.</p>
+      <ul class="ol">
+        <li>Nobody has shown a reliable way to restart that <em>conversion</em> step in humans.</li>
+        <li>Longer miniaturisation means more <em>fibrosis</em> around the bulge, which is harder to undo.</li>
+        <li>The 2011 finding is about <em>tissue</em>, not about a product you can buy.</li>
+      </ul>
+    </div>
+    <p class="foot">PLAUSIBLE ≠ AVAILABLE</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>08</b><span>WHAT I'D DO</span></p>
+    <div class="mid">
+      <p class="hd">Time is the whole variable</p>
+      <p class="an">If the defect is a conversion step and fibrosis makes it harder, then EARLY is doing most of the work. At Norwood 2 you have far more to protect than at Norwood 5.</p>
+      <ul class="ol">
+        <li>Photograph the same 2 areas monthly, same light.</li>
+        <li>Compare the vertex against the back of your head, that region is your control.</li>
+        <li>Decide with a clinician, not with a comment section.</li>
+      </ul>
+    </div>
+    <p class="foot">MEASURE, DON'T GUESS</p>
+  </div>
+
+  <div class="sl d-hair">
+    <p class="tag"><b>09</b><span>SOURCES</span></p>
+    <div class="mid">
+      <p class="hd">Check it yourself</p>
+      <ul class="srcs">
+        <li><b>Garza LA et al. (2011)</b>Bald scalp retains hair follicle stem cells but lacks CD200-rich and CD34-positive progenitors. <i>J Clin Invest</i> 121.</li>
+        <li><b>JAAD (2021)</b>Association of bulge fibrosis with follicle miniaturisation in androgenetic alopecia.</li>
+        <li><b>Finasteride 5-year data</b>Long-term maintenance versus placebo in male pattern hair loss.</li>
+      </ul>
+      <p class="an an--red">Search the titles. Don't take my word for any of it.</p>
+    </div>
+    <p class="foot">FOLLOW FOR THE REST</p>
+  </div>
+
+</div>
+<div class="cap">
+  Your bald scalp still has the stem cells. The 2011 paper that showed it, and what it does not mean. Sources on slide 9.<br><br>
+  <span class="tags">#fyp #foryoupage #hairloss #hair #balding #biology</span><br>
+  <i>slide 4 is the save-driver · slide 7 is the honesty slide that gets quoted</i>
+</div>
+
+<!-- ==================== DECK B · NOOTROPICS ==================== -->
+<div class="dh"><b>Deck B — Nootropics</b><span>294k views across 14 posts · 20,971 avg · 7/13 accounts cover it</span></div>
+<div class="track" data-deck="B">
+
+  <div class="sl d-noot sl--t">
+    <p class="tag"><b>01</b><span>1 / 9</span></p>
+    <div class="mid">
+      <p class="hd hd--big">The truth about your stack</p>
+      <svg viewBox="0 0 300 96" aria-label="Inverted-U curve with the optimum marked and the overshoot marked in red.">
+        <path d="M10,84 C54,80 76,20 150,16 C224,12 250,66 290,86"
+              fill="none" stroke="#3F7A2E" stroke-width="3"></path>
+        <circle cx="150" cy="16" r="5" fill="#3F7A2E"></circle>
+        <circle cx="248" cy="62" r="5" fill="#C0392B"></circle>
+        <line x1="10" y1="88" x2="290" y2="88" stroke="#8A8A82" stroke-width="1.2"></line>
+        <text x="256" y="52" font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#C0392B">you</text>
+      </svg>
+      <p class="an">Most people sit right of the peak and think they need more.</p>
+    </div>
+    <p class="foot">SWIPE →</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>02</b><span>WHAT WE KNOW</span></p>
+    <div class="mid">
+      <p class="hd">Read this first</p>
+      <p class="an">I ranked all 11 things in my stack by how much HUMAN evidence sits behind them. 4 survived. The rest was animal work, in vitro work, or 1 small trial that nobody replicated.</p>
+      <ul class="ol">
+        <li>Educational only. <em>NOT medical advice.</em></li>
+        <li>Ranked by human RCTs, not by how it feels.</li>
+        <li>I name what I dropped and why.</li>
+      </ul>
+    </div>
+    <p class="foot">4 SURVIVE</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>03</b><span>THE CURVE</span></p>
+    <div class="mid">
+      <p class="hd">More is not <em>more</em></p>
+      <svg viewBox="0 0 300 128" aria-label="Dose response curve showing performance peaking then declining past the optimum.">
+        <g stroke="#D6D6CE" stroke-width="1">
+          <line x1="24" y1="20" x2="290" y2="20"></line><line x1="24" y1="56" x2="290" y2="56"></line>
+        </g>
+        <path d="M24,102 C60,98 84,26 150,20 C216,14 244,72 290,104"
+              fill="none" stroke="#3F7A2E" stroke-width="3"></path>
+        <line x1="150" y1="14" x2="150" y2="108" stroke="#3F7A2E" stroke-width="1" stroke-dasharray="4 3"></line>
+        <line x1="230" y1="14" x2="230" y2="108" stroke="#C0392B" stroke-width="1" stroke-dasharray="4 3"></line>
+        <line x1="24" y1="108" x2="290" y2="108" stroke="#8A8A82" stroke-width="1.2"></line>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5">
+          <text x="150" y="12" text-anchor="middle" fill="#3F7A2E">200mg</text>
+          <text x="230" y="12" text-anchor="middle" fill="#C0392B">400mg</text>
+          <text x="24" y="124" fill="#6A6A62">dose →</text>
+        </g>
+      </svg>
+      <p class="an">This is an INVERTED U, described in 1908, and it applies to nearly every stimulant. Past your own peak, 400mg puts you lower than the 200mg you started with.</p>
+    </div>
+    <p class="foot">YERKES-DODSON</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>04</b><span>WHAT SURVIVES</span></p>
+    <div class="mid">
+      <p class="hd">Ranked by human trials</p>
+      <svg viewBox="0 0 300 124" aria-label="Compounds ranked by volume of human randomised trial evidence.">
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="10" fill="#141414">
+          <text x="0" y="12">CAFFEINE</text><text x="0" y="46">CREATINE</text>
+          <text x="0" y="80">L-THEANINE</text><text x="0" y="114">EVERYTHING ELSE</text>
+        </g>
+        <g><rect x="120" y="2" width="168" height="12" fill="#3F7A2E"></rect>
+           <rect x="120" y="36" width="140" height="12" fill="#3F7A2E"></rect>
+           <rect x="120" y="70" width="76" height="12" fill="#6E9E52"></rect>
+           <rect x="120" y="104" width="18" height="12" fill="#C0392B"></rect></g>
+      </svg>
+      <p class="an">Caffeine has HUNDREDS of human trials. Creatine has hundreds at 3 to 5g, with a smaller but real cognition set. Theanine has maybe 20. After that the line falls off a cliff.</p>
+    </div>
+    <p class="foot">SAVE THIS SLIDE</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>05</b><span>THE BASELINE</span></p>
+    <div class="mid">
+      <p class="hd">Sleep sets the ceiling</p>
+      <svg viewBox="0 0 300 116" aria-label="Clean signal when rested against a noisy degraded signal when sleep deprived.">
+        <rect x="0" y="4" width="300" height="44" fill="#E2E6DE"></rect>
+        <polyline fill="none" stroke="#3F7A2E" stroke-width="2.2"
+          points="6,40 34,12 62,40 90,12 118,40 146,12 174,40 202,12 230,40 258,12 292,40"></polyline>
+        <rect x="0" y="60" width="300" height="44" fill="#E2E6DE"></rect>
+        <polyline fill="none" stroke="#C0392B" stroke-width="2.2"
+          points="6,96 20,72 34,90 50,68 64,94 80,76 94,98 110,70 124,92 140,78 154,100 170,68 186,90 202,80 216,96 232,74 248,92 264,82 280,98 292,76"></polyline>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5">
+          <text x="6" y="58" fill="#3F7A2E">8h SLEEP</text><text x="6" y="114" fill="#C0392B">5h SLEEP</text>
+        </g>
+      </svg>
+      <p class="an">Every compound is measured against a baseline that sleep sets. Running 5 hours instead of 8? Then you are paying for something 3 extra hours gives you free, at a bigger effect size.</p>
+    </div>
+    <p class="foot">THE BIGGEST EFFECT SIZE</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>06</b><span>TOLERANCE</span></p>
+    <div class="mid">
+      <p class="hd">Receptors answer <em>back</em></p>
+      <svg viewBox="0 0 300 112" aria-label="Receptor density falling across twelve weeks of sustained stimulation.">
+        <g fill="none" stroke-width="6">
+          <circle cx="52" cy="52" r="34" stroke="#3F7A2E"></circle>
+          <circle cx="52" cy="52" r="20" stroke="#3F7A2E"></circle>
+          <circle cx="52" cy="52" r="8" stroke="#3F7A2E"></circle>
+          <circle cx="150" cy="52" r="34" stroke="#6E9E52"></circle>
+          <circle cx="150" cy="52" r="17" stroke="#6E9E52"></circle>
+          <circle cx="248" cy="52" r="34" stroke="#C0392B"></circle>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4A4A44" text-anchor="middle">
+          <text x="52" y="104">WEEK 1</text><text x="150" y="104">WEEK 6</text><text x="248" y="104">WEEK 12</text>
+        </g>
+      </svg>
+      <p class="an">Sustained stimulation reduces receptor density. The 200mg that worked in week 1 does nothing by week 12, and the fix most people reach for is 400mg, which restarts the same loop.</p>
+    </div>
+    <p class="foot">THIS IS WHY YOU CYCLE</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>07</b><span>WHAT I DROPPED</span></p>
+    <div class="mid">
+      <p class="hd">Things I stopped buying</p>
+      <p class="an">Am I saying these do NOTHING? No. I am saying the human evidence did not justify the 60 or so per month I was spending, which is a different claim.</p>
+      <ul class="ol">
+        <li>Anything sold as a <em>proprietary blend</em>, because you cannot check the dose.</li>
+        <li>Compounds where every citation is <em>rodent</em> work at doses nobody takes.</li>
+        <li>Stacks of 8+ items, where you can no longer tell <em>which</em> thing did what.</li>
+      </ul>
+    </div>
+    <p class="foot">DOSE OR IT DIDN'T HAPPEN</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>08</b><span>HOW TO TEST</span></p>
+    <div class="mid">
+      <p class="hd">Run it like a study</p>
+      <p class="an">If you want to know whether something works FOR YOU, test it like a trial. This is boring, and across 4 compounds it is the only thing that ever changed my mind.</p>
+      <ul class="ol">
+        <li>One variable at a time, for at least 3 weeks.</li>
+        <li>Pick 1 measure before you start, not after.</li>
+        <li>Stop it and see if the measure moves back.</li>
+      </ul>
+    </div>
+    <p class="foot">N=1 STILL BEATS VIBES</p>
+  </div>
+
+  <div class="sl d-noot">
+    <p class="tag"><b>09</b><span>SOURCES</span></p>
+    <div class="mid">
+      <p class="hd">Check it yourself</p>
+      <ul class="srcs">
+        <li><b>Yerkes &amp; Dodson (1908)</b>The original inverted-U relation between arousal and performance.</li>
+        <li><b>Caffeine + L-theanine</b>Repeated human RCTs on attention and reaction time.</li>
+        <li><b>Creatine and cognition</b>Human trials, with the largest effects under sleep deprivation.</li>
+      </ul>
+      <p class="an an--red">Search the titles. Don't take my word for any of it.</p>
+    </div>
+    <p class="foot">FOLLOW FOR THE REST</p>
+  </div>
+
+</div>
+<div class="cap">
+  I ranked my whole stack by human evidence and only 4 things survived. Here they are. Sources on slide 9.<br><br>
+  <span class="tags">#fyp #foryoupage #nootropics #cognition #biohacking #health</span><br>
+  <i>slide 4 is the save-driver · slide 5 is the one people argue with</i>
+</div>
+
+<!-- ==================== DECK C · PEDs ==================== -->
+<div class="dh"><b>Deck C — PEDs</b><span>1.37M views across 68 posts · 20,149 avg · 9/13 accounts cover it</span></div>
+<div class="track" data-deck="C">
+
+  <div class="sl d-ped sl--t">
+    <p class="tag"><b>01</b><span>1 / 9</span></p>
+    <div class="mid">
+      <p class="hd hd--big">Let's talk about what transformations hide</p>
+      <svg viewBox="0 0 300 92" aria-label="Redacted lines standing for the details omitted from transformation posts.">
+        <g fill="#141414">
+          <rect x="0" y="10" width="212" height="11"></rect><rect x="0" y="30" width="176" height="11"></rect>
+          <rect x="0" y="50" width="238" height="11"></rect><rect x="0" y="70" width="140" height="11"></rect>
+        </g>
+      </svg>
+      <p class="an">I read 4 properly. The same 4 things are missing.</p>
+    </div>
+    <p class="foot">SWIPE →</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>02</b><span>WHAT WE KNOW</span></p>
+    <div class="mid">
+      <p class="hd">Read this first</p>
+      <p class="an">This is HARM REDUCTION, not encouragement. So what does a post need before it counts as information? These 4 things, and I checked 4 popular posts against them.</p>
+      <ul class="ol">
+        <li>Educational only. <em>NOT medical advice.</em></li>
+        <li>No doses, no compounds, no sources to buy.</li>
+        <li>Nothing here is a recommendation.</li>
+      </ul>
+    </div>
+    <p class="foot">HARM REDUCTION</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>03</b><span>THE 4 GAPS</span></p>
+    <div class="mid">
+      <p class="hd">What gets left out</p>
+      <ul class="ol">
+        <li>The <em>actual dose</em>, and how it changed across the 12 weeks.</li>
+        <li>What ELSE was run alongside it, which is nearly always more than 1 thing.</li>
+        <li><em>Bloodwork</em> before and after, with the panel named.</li>
+        <li>What STOPPED working, and what they did when it did.</li>
+      </ul>
+      <p class="an">A post missing all 4 is a testimonial. That is not an insult, it is a different kind of document, and 4 of the 4 I checked were missing every one.</p>
+    </div>
+    <p class="foot">4 OF 4 MISSING</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>04</b><span>THE AXIS</span></p>
+    <div class="mid">
+      <p class="hd">Shutdown is the <em>expected</em> result</p>
+      <svg viewBox="0 0 300 122" aria-label="Endogenous testosterone falling to near zero during use and recovering slowly and incompletely.">
+        <line x1="10" y1="98" x2="292" y2="98" stroke="#8A8A82" stroke-width="1.2"></line>
+        <path d="M10,26 L70,26 C84,26 90,80 104,88 C124,98 172,96 196,94 C230,90 258,64 292,46"
+              fill="none" stroke="#9B2417" stroke-width="2.6"></path>
+        <rect x="70" y="12" width="126" height="86" fill="#9B2417" opacity=".1"></rect>
+        <line x1="10" y1="26" x2="292" y2="26" stroke="#8A8A82" stroke-width="1" stroke-dasharray="3 4"></line>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4A4A44">
+          <text x="10" y="20">BASELINE</text>
+          <text x="133" y="116" text-anchor="middle">ON</text>
+          <text x="244" y="116" text-anchor="middle">RECOVERY?</text>
+        </g>
+      </svg>
+      <p class="an">Your own production shuts down within about 2 weeks. That is not a side effect, it is the MECHANISM working. Recovery is usual but past 12 months of exposure it gets far less predictable.</p>
+    </div>
+    <p class="foot">HPTA SUPPRESSION</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>05</b><span>NOT LOCAL</span></p>
+    <div class="mid">
+      <p class="hd">Receptors are <em>everywhere</em></p>
+      <svg viewBox="0 0 300 132" aria-label="Body outline with four organ systems flagged as affected.">
+        <path d="M150,6 C160,6 167,14 167,24 C167,31 164,36 161,39 C180,45 192,56 196,74
+                 L202,110 L188,114 L182,90 L181,128 L119,128 L118,90 L112,114 L98,110
+                 L104,74 C108,56 120,45 139,39 C136,36 133,31 133,24 C133,14 140,6 150,6 Z"
+              fill="none" stroke="#141414" stroke-width="1.5"></path>
+        <g fill="#9B2417">
+          <circle cx="150" cy="22" r="4.5"></circle><circle cx="150" cy="58" r="4.5"></circle>
+          <circle cx="150" cy="80" r="4.5"></circle><circle cx="150" cy="106" r="4.5"></circle>
+        </g>
+        <g stroke="#9B2417" stroke-width=".9">
+          <line x1="155" y1="22" x2="214" y2="22"></line><line x1="155" y1="58" x2="214" y2="58"></line>
+          <line x1="155" y1="80" x2="214" y2="80"></line><line x1="155" y1="106" x2="214" y2="106"></line>
+        </g>
+        <g font-family="Archivo,sans-serif" font-weight="800" font-size="9" fill="#141414">
+          <text x="218" y="25">MOOD</text><text x="218" y="61">HEART</text>
+          <text x="218" y="83">LIVER</text><text x="218" y="109">FERTILITY</text>
+        </g>
+      </svg>
+      <p class="an">Androgen receptors sit in nearly every tissue you have. Whatever effect you want at 1 site arrives at all 4 of these too, which is why this is never a local decision.</p>
+    </div>
+    <p class="foot">SYSTEMIC BY DEFINITION</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>06</b><span>THE AGE PROBLEM</span></p>
+    <div class="mid">
+      <p class="hd">If your plates are open</p>
+      <p class="an">This is the ONE case where I will be blunt. Aromatised oestrogen drives plate closure. Under 18, using them can end the 4 or 5cm you were trying to protect, permanently.</p>
+      <ul class="ol">
+        <li>Plate closure is <em>permanent</em>. There is no version of undoing it.</li>
+        <li>A hand x-ray tells you your status in about 10 minutes.</li>
+        <li>Under 18, this is a conversation with a doctor. Full stop.</li>
+      </ul>
+    </div>
+    <p class="foot">IRREVERSIBLE</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>07</b><span>WHAT TO ASK</span></p>
+    <div class="mid">
+      <p class="hd">How to read any post</p>
+      <p class="an">I use these 3 questions on every claim in this space now. Of the 4 posts I checked, all 4 failed at question 1, which saves a lot of time.</p>
+      <ul class="ol">
+        <li>What was the <em>dose</em>, and over how many weeks?</li>
+        <li>What does the <em>bloodwork</em> show, before and after?</li>
+        <li>Who benefits if I believe this?</li>
+      </ul>
+    </div>
+    <p class="foot">3 QUESTIONS</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>08</b><span>THE HONEST BIT</span></p>
+    <div class="mid">
+      <p class="hd">Why I post this</p>
+      <p class="an">People are going to do this whether or not anyone explains it. Would I rather they find accurate risk information, or a before and after with 0 numbers attached? That is the whole reason I post.</p>
+      <p class="an an--red">If you think I have any of this wrong, say so in the comments with a source and I will read it.</p>
+    </div>
+    <p class="foot">ARGUE WITH ME, WITH SOURCES</p>
+  </div>
+
+  <div class="sl d-ped">
+    <p class="tag"><b>09</b><span>SOURCES</span></p>
+    <div class="mid">
+      <p class="hd">Check it yourself</p>
+      <ul class="srcs">
+        <li><b>HPTA suppression and recovery</b>Reviews of endogenous testosterone recovery after androgen use.</li>
+        <li><b>Oestrogen and epiphyseal fusion</b>Aromatised oestrogen as the driver of growth plate closure.</li>
+        <li><b>Cardiac effects of long-term AAS</b>Structural and functional changes in long-term users.</li>
+      </ul>
+      <p class="an an--red">Search the titles. Don't take my word for any of it.</p>
+    </div>
+    <p class="foot">FOLLOW FOR THE REST</p>
+  </div>
+
+</div>
+<div class="cap">
+  I read 4 transformation posts properly and the same 4 things are missing every time. Sources on slide 9.<br><br>
+  <span class="tags">#fyp #foryoupage #peds #bloodwork #health #education</span><br>
+  <i>slide 3 is the save-driver · slide 6 is the one that matters most</i>
+</div>
+
+</div>

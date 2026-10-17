@@ -1,0 +1,420 @@
+<title>The Knowledge Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+:root{
+  --ground:#F7F7F4; --panel:#FFFFFF; --sunk:#EFEFEA;
+  --ink:#14181C; --slate:#5A6670; --faint:#8B949B;
+  --rule:#DEDDD6; --rule-2:#C9C8BF;
+  --stamp:#B23A2E; --tag:#1F6E7A; --gold:#9A7A22;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#101316; --panel:#171B1F; --sunk:#1C2126;
+  --ink:#E9EDF0; --slate:#9AA5AD; --faint:#6E7981;
+  --rule:#262C31; --rule-2:#333A41;
+  --stamp:#E0705F; --tag:#5FB3BE; --gold:#D6B45A;
+}}
+:root[data-theme="dark"]{
+  --ground:#101316; --panel:#171B1F; --sunk:#1C2126;
+  --ink:#E9EDF0; --slate:#9AA5AD; --faint:#6E7981;
+  --rule:#262C31; --rule-2:#333A41;
+  --stamp:#E0705F; --tag:#5FB3BE; --gold:#D6B45A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,serif;font-size:16.5px;line-height:1.62;
+  -webkit-font-smoothing:antialiased}
+.page{max-width:1180px;margin:0 auto;padding:52px 24px 110px}
+
+h1,h2,h3,.mono,.eyebrow,th,.chip,.pill{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+.mono,.eyebrow,.path,td.n,.tick{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+/* masthead */
+header.top{display:flex;flex-direction:column;gap:14px;max-width:64ch;margin-bottom:16px}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--stamp);margin:0}
+h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.035em;line-height:.98;
+  margin:0;text-wrap:balance}
+.dek{margin:0;font-size:18px;line-height:1.55;color:var(--slate)}
+
+/* audit strip */
+.audit{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule);margin:34px 0 8px}
+.audit div{background:var(--panel);padding:14px 16px;display:flex;flex-direction:column;gap:3px}
+.audit .k{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--faint)}
+.audit .v{font-family:"Bricolage Grotesque",sans-serif;font-size:25px;font-weight:700;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.audit .v.warn{color:var(--stamp)}
+.audit .s{font-size:12.5px;color:var(--slate);line-height:1.35}
+
+/* phases: the numbering is a real dependency order */
+section.ph{display:grid;grid-template-columns:74px 1fr;gap:26px;
+  border-top:1px solid var(--rule);padding-top:26px;margin-top:38px}
+@media (max-width:760px){section.ph{grid-template-columns:1fr;gap:12px}}
+.ph .gut{display:flex;flex-direction:column;gap:8px;position:sticky;top:22px;align-self:start}
+.ph .no{font-family:"Bricolage Grotesque",sans-serif;font-size:37px;font-weight:800;
+  line-height:.9;letter-spacing:-.04em;color:var(--stamp);font-variant-numeric:tabular-nums}
+.ph .when{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--faint);line-height:1.5}
+.ph .bd{min-width:0;display:flex;flex-direction:column;gap:16px}
+h2{font-size:27px;font-weight:700;letter-spacing:-.025em;margin:0;line-height:1.12;text-wrap:balance}
+h3{font-size:15px;font-weight:700;letter-spacing:.01em;margin:0;color:var(--ink)}
+p{margin:0;max-width:66ch}
+p.lead{font-size:17px;color:var(--slate)}
+strong{font-weight:600}
+em.t{font-style:normal;color:var(--tag);font-weight:600}
+a{color:var(--tag)}
+
+/* generic blocks */
+.block{display:flex;flex-direction:column;gap:9px}
+ul.list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;max-width:66ch}
+ul.list li{position:relative;padding-left:19px;color:var(--slate)}
+ul.list li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:1.5px;
+  background:var(--rule-2)}
+ul.list li b{color:var(--ink);font-weight:600}
+
+/* file tree */
+.tree{background:var(--sunk);border:1px solid var(--rule);padding:16px 18px;overflow-x:auto;
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.72;color:var(--slate);
+  white-space:pre;margin:0}
+.tree b{color:var(--ink);font-weight:600}
+.tree i{font-style:normal;color:var(--faint)}
+.tree u{text-decoration:none;color:var(--stamp)}
+
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:9px 13px;text-align:left;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);
+  font-weight:600;background:var(--sunk);white-space:nowrap}
+td{font-family:"Source Serif 4",Georgia,serif;color:var(--slate)}
+td b{color:var(--ink);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-size:12.5px}
+tbody tr:last-child td{border-bottom:0}
+
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(158px,1fr));gap:1px;
+  background:var(--rule);border:1px solid var(--rule)}
+.pipe div{background:var(--panel);padding:13px 15px;display:flex;flex-direction:column;gap:5px}
+.pipe .st{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--tag)}
+.pipe .w{font-size:13.5px;line-height:1.4;color:var(--slate)}
+.pipe .w b{color:var(--ink);font-weight:600}
+
+/* frontmatter sample */
+.fm{background:var(--sunk);border-left:2px solid var(--tag);padding:14px 17px;overflow-x:auto;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;line-height:1.68;color:var(--slate);
+  white-space:pre;margin:0}
+.fm b{color:var(--ink);font-weight:600}
+.fm u{text-decoration:none;color:var(--stamp)}
+
+/* callout: my additions */
+.add{background:var(--panel);border:1px solid var(--rule);border-top:2px solid var(--gold);
+  padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.add .lbl{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--gold)}
+.add p{max-width:64ch}
+
+.chip{display:inline-block;font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+  font-weight:700;padding:3px 7px;border:1px solid var(--rule-2);color:var(--slate)}
+.chip.now{border-color:var(--stamp);color:var(--stamp)}
+.chip.next{border-color:var(--tag);color:var(--tag)}
+
+footer{border-top:1px solid var(--rule);margin-top:46px;padding-top:20px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);max-width:66ch;line-height:1.7}
+</style>
+
+<div class="page">
+
+<header class="top">
+  <p class="eyebrow">Build plan · vault + accounts + content</p>
+  <h1>The Knowledge Engine</h1>
+  <p class="dek">Eight workstreams that turn a pile of PDFs, a 6.5&nbsp;GB competitor scrape and a set of new accounts into one system where every slide you post traces back to a quote, a figure and a DOI.</p>
+</header>
+
+<div class="audit">
+  <div><span class="k">Source pages</span><span class="v">398</span><span class="s">already in <span class="path">wiki/sources/</span></span></div>
+  <div><span class="k">Concept pages</span><span class="v warn">23</span><span class="s">the imbalance to fix</span></div>
+  <div><span class="k">Raw files</span><span class="v">559</span><span class="s">74 still unsorted</span></div>
+  <div><span class="k">Competitor videos</span><span class="v warn">1,445</span><span class="s">zero transcribed</span></div>
+  <div><span class="k">Slide images</span><span class="v">2,402</span><span class="s">2,353 OCR'd</span></div>
+  <div><span class="k">Post metadata</span><span class="v">1,973</span><span class="s">JSON, per post</span></div>
+</div>
+<p style="font-size:13.5px;color:var(--slate);margin-top:12px;max-width:66ch">
+  <strong>The one number that matters:</strong> 398 sources against 23 concepts. You have been collecting, not synthesising. A source page is a receipt; a concept page is a thing you can actually use. Almost everything below is aimed at inverting that ratio.
+</p>
+
+<!-- ============ 1 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">01</span><span class="when">Week 1<br>Foundation</span></div>
+  <div class="bd">
+    <h2>Fix the spine before you pour anything in</h2>
+    <p class="lead">Every later workstream writes into this structure. Getting it wrong now means re-filing thousands of pages later, and you already have 52 unverified duplicates as a preview of that pain.</p>
+
+    <div class="block">
+      <h3>Three additions to the folder scheme</h3>
+      <pre class="tree">wiki/
+  concepts/        <i>23 → this is what should grow</i>
+  entities/        <i>compounds, hormones, proteins, people</i>
+  sources/         <i>398 · one page per study, stays a receipt</i>
+  comparisons/     <i>9 · X vs Y, already working well</i>
+  <b>pathways/</b>        <u>NEW</u> <i>one page per signalling cascade</i>
+  <b>quotes/</b>          <u>NEW</u> <i>verbatim extracts, filed by topic</i>
+  <b>figures/</b>         <u>NEW</u> <i>study images, filed by what they show</i>
+  <b>claims/</b>          <u>NEW</u> <i>one page per contested claim</i>
+  <b>creators/</b>        <u>NEW</u> <i>what each account has asserted</i>
+  <b>decks/</b>           <u>NEW</u> <i>one page per post you publish</i></pre>
+    </div>
+
+    <div class="block">
+      <h3>One canonical ID, everywhere</h3>
+      <p>Use the <strong>DOI</strong> as the filename stem for every study, with a readable slug after it. Your duplicate problem exists because filenames came from whatever the download was called. A DOI-keyed name makes a duplicate impossible to create by accident and lets any page cite a study by an address rather than a title.</p>
+      <pre class="fm">wiki/sources/<b>10.1038-s41586-023-06611-6</b>--haemoglobin-body-chondrocyte.md</pre>
+    </div>
+
+    <div class="add">
+      <p class="lbl">Addition — provenance tiers</p>
+      <p>This is the one I would not skip. You are about to mix peer-reviewed papers with claims scraped off TikTok in the same vault. If those look alike in six months, the vault is worse than useless, because you will cite a creator's guess as though it were a finding.</p>
+      <p>Put a <span class="path">evidence_tier</span> on every claim-bearing page and never let it be blank:</p>
+      <div class="tw" style="margin-top:4px">
+        <table>
+          <thead><tr><th>Tier</th><th>Means</th><th>Can it go on a slide?</th></tr></thead>
+          <tbody>
+            <tr><td class="n">A</td><td><b>Human RCT or meta-analysis</b></td><td>Yes, state it plainly</td></tr>
+            <tr><td class="n">B</td><td><b>Human observational / cohort</b></td><td>Yes, with the design named</td></tr>
+            <tr><td class="n">C</td><td><b>Animal or in vitro</b></td><td>Only if labelled as such on the slide</td></tr>
+            <tr><td class="n">D</td><td><b>Mechanistic inference</b> — plausible, untested</td><td>Only as an open question</td></tr>
+            <tr><td class="n">X</td><td><b>Creator assertion</b> from the scrape</td><td>Never as fact. It is data about the niche.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">02</span><span class="when">Week 1–2<br>Accounts</span></div>
+  <div class="bd">
+    <h2>Split the accounts by audience, not by topic</h2>
+    <p class="lead">Topics that share an audience belong together. Topics that don't will drag each other's distribution down, because the algorithm is learning who to show you to and mixed signals slow that down.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Account</th><th>Carries</th><th>Corpus evidence</th><th>Style from your library</th></tr></thead>
+        <tbody>
+          <tr><td><b>Growth</b></td><td>Height, bone age, growth plate, GH/IGF-1</td><td class="n">3.39M / 25.3k avg</td><td>Auxology chart + radiology reading room</td></tr>
+          <tr><td><b>Skin &amp; hair</b></td><td>Photoageing, retinoids, DHT, follicles</td><td class="n">979k / <b>134k avg</b></td><td>Clinical luxe + microscopy</td></tr>
+          <tr><td><b>Cognition</b></td><td>Nootropics, sleep, circadian, dopamine</td><td class="n">311k / 21k avg</td><td>Signal routing + celestial chart</td></tr>
+          <tr><td><b>Harm reduction</b></td><td>PEDs, peptides, bloodwork, risk</td><td class="n">1.41M / 20.1k avg</td><td>Evidence dossier</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <ul class="list">
+      <li><b>Skin is the sleeper.</b> Five posts in the whole corpus, 134k average. It is the highest views-per-post topic anyone in your set has touched and almost nobody is touching it.</li>
+      <li><b>Keep harm reduction separate.</b> Different risk profile, different moderation exposure, and you do not want a takedown on that account to cost you the other three.</li>
+      <li><b>Sleep and peptides are open ground.</b> Sleep is covered by 2 of 13 accounts; peptides by 3 and badly. Both are cheap to own.</li>
+    </ul>
+
+    <div class="block">
+      <h3>Warming up, the version that actually works</h3>
+      <p>Warm-up here means giving each account a coherent identity before it starts publishing, so the recommender has something to work with. It does not mean engagement pods, bought interaction, or anything that fakes a signal — those get accounts limited, and on a health-adjacent topic that limitation tends to be permanent.</p>
+      <ul class="list">
+        <li><b>Days 1–7:</b> use the account like a person. Watch the niche, follow 20–40 relevant accounts, comment where you have something real to say. No posting.</li>
+        <li><b>Days 8–14:</b> post 3–4 low-stakes pieces on the account's single topic. Consistency of subject matters more than quality here; you are teaching the classifier.</li>
+        <li><b>Day 15 on:</b> normal cadence. Now the deck library earns its keep.</li>
+        <li><b>One topic per account, visibly.</b> Bio, first three posts and pinned post should all say the same thing about what this account is.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">03</span><span class="when">Week 2–4<br>Ingest</span></div>
+  <div class="bd">
+    <h2>Four pipelines, run in this order</h2>
+    <p class="lead">Each one feeds the next. Running them out of order means synthesising from an incomplete base and redoing it.</p>
+
+    <div class="pipe">
+      <div><span class="st">Pipeline A</span><span class="w"><b>Finish the study backlog.</b> 74 unsorted files, 52 of them duplicates. Dedupe by DOI first, then ingest the real papers into <span class="path">sources/</span>.</span></div>
+      <div><span class="st">Pipeline B</span><span class="w"><b>Slideshows → creator pages.</b> 2,353 OCR'd slides you already have. Extract every claim, tier it <b>X</b>, file under <span class="path">creators/</span>.</span></div>
+      <div><span class="st">Pipeline C</span><span class="w"><b>Videos → transcripts.</b> 1,445 mp4s, none transcribed. This is your largest untapped input by far.</span></div>
+      <div><span class="st">Pipeline D</span><span class="w"><b>Acquire what's missing.</b> Once B and C name the compounds and pathways, go find the papers that actually cover them.</span></div>
+    </div>
+
+    <div class="block">
+      <h3>B and C: what a creator page should be</h3>
+      <p>You asked for a well-written paper per video. The useful shape is not one document per video — it is <strong>one page per topic, assembled from every video that touched it</strong>, with the overlaps preserved rather than merged away. That is exactly the case where two creators disagreeing becomes visible, and disagreement is your best content.</p>
+      <pre class="fm">---
+type: creator-claim
+topic: "Growth plate hypoxia"
+<b>evidence_tier: X</b>            <u># creator assertion, never fact</u>
+creators:
+  - acct: _sox9
+    posts: ["7631636275824430368"]
+    position: "Hypoxia is beneficial; breath-holding may extend growth"
+    views: 149300
+  - acct: rpo3212
+    posts: ["7592703587365555464"]
+    position: "ATP limitation is the constraint; hypoxic/hyperoxic training"
+    views: 304900
+<b>overlap_with:</b> ["[[Hypoxia and the Growth Plate]]"]
+<b>verified_against:</b> ["10.1038-s41586-023-06611-6"]
+<b>verdict:</b> "Mechanism sound. Intervention claim unsupported."
+---</pre>
+    </div>
+
+    <div class="add">
+      <p class="lbl">Addition — the disagreement index</p>
+      <p>Once B and C are done you will have, for the first time, a queryable record of <em class="t">what this entire niche believes</em> and where it splits. Nobody else has that. Two things fall out of it for free: a list of claims where the top accounts contradict each other, which is a content pipeline on its own, and a list of claims everybody repeats that nobody has ever cited — which is the more interesting list.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">04</span><span class="when">Week 3–6<br>Synthesis</span></div>
+  <div class="bd">
+    <h2>The enumerated review pages</h2>
+    <p class="lead">This is the "every growth factor, with footnotes" format you described, and it is the single highest-value thing in the plan. It is also where the 398→23 ratio gets fixed.</p>
+
+    <p>Three page types, each with a fixed skeleton so they stay comparable and so I can generate and extend them without asking you what shape to use.</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Page type</th><th>Folder</th><th>Fixed sections</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><b>Compound monograph</b></td>
+            <td><span class="path">entities/</span></td>
+            <td>Identity &amp; class · Mechanism · What it does in humans · Dose used in trials · Kinetics · Adverse effects · Interactions · Evidence tier per claim · Open questions · Sources</td>
+          </tr>
+          <tr>
+            <td><b>Pathway page</b></td>
+            <td><span class="path">pathways/</span></td>
+            <td>One-line summary · Upstream inputs · Node-by-node cascade · Downstream effects · Cross-talk · Where it is measured · Known modulators (with tiers) · Sources</td>
+          </tr>
+          <tr>
+            <td><b>Enumerated review</b></td>
+            <td><span class="path">concepts/</span></td>
+            <td>Scope · A numbered entry per member of the family · Per entry: what it is, where it acts, what the evidence is, footnote to source · Comparison table · Gaps</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Concrete first targets, chosen because you already hold the sources and they anchor the biggest accounts: <em class="t">Growth factors of the growth plate</em> (IGF-1, FGF/FGFR3, PTHrP, IHH, BMPs, VEGF, TGF-β, CNP), <em class="t">Androgen pathway end to end</em>, <em class="t">The GH/IGF-1 axis</em>, <em class="t">Hair follicle cycling</em>, <em class="t">Photoageing</em>.</p>
+
+    <div class="add">
+      <p class="lbl">Addition — every claim carries its footnote inline</p>
+      <p>Write the footnote as a wikilink to the source page plus the exact quote ID, not as a bare citation. Then a broken link is a broken claim, and <span class="path">wiki-lint</span> will find it for you. That is what makes this a web rather than a filing cabinet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">05</span><span class="when">Ongoing<br>Quotes</span></div>
+  <div class="bd">
+    <h2>The quote library</h2>
+    <p class="lead">One folder, one file per topic, verbatim extracts only. This is the layer that makes a deck defensible in ten minutes instead of an afternoon.</p>
+
+    <pre class="fm">wiki/quotes/growth-plate-hypoxia.md
+
+<b>> "Massive cell death occurred in the inner zones of the
+> developing growth plates."</b>
+  — Zhang F et al., <i>Nature</i> 2023 · [[10.1038-s41586-023-06611-6]]
+  <b>tier:</b> C (mouse knockout) · <b>fig:</b> [[fig-2023-zhang-04]]
+  <b>used_in:</b> [[deck-no-blood-supply]] slide 08</pre>
+
+    <ul class="list">
+      <li><b>Verbatim or nothing.</b> A paraphrase in the quote library defeats its purpose. Paraphrase belongs on the concept page.</li>
+      <li><b>Every quote gets a tier and a figure link</b> if the paper has one that shows it.</li>
+      <li><b>Every quote records where you used it.</b> When a paper is retracted or superseded you can find every slide that leaned on it.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 6 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">06</span><span class="when">Week 6+<br>Figures</span></div>
+  <div class="bd">
+    <h2>The figure library, filed by what it displays</h2>
+    <p class="lead">You said organise by what they show, and that is the right axis — you will search for "a dose-response curve I can put on slide 4", never for "figure 3 of the Zhang paper".</p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th>Display type</th><th>What you reach for it for</th></tr></thead>
+        <tbody>
+          <tr><td><b>mechanism-schematic</b></td><td>A pathway slide. The most reusable class you will own.</td></tr>
+          <tr><td><b>dose-response</b></td><td>Any "more is not better" argument.</td></tr>
+          <tr><td><b>time-course</b></td><td>Onset, decay, recovery, cycles.</td></tr>
+          <tr><td><b>histology / micrograph</b></td><td>Tissue-level claims. High credibility per pixel.</td></tr>
+          <tr><td><b>anatomical</b></td><td>Where a thing physically is.</td></tr>
+          <tr><td><b>comparison-bars</b></td><td>Group A vs group B outcomes.</td></tr>
+          <tr><td><b>survival / KM curve</b></td><td>Long-run risk.</td></tr>
+          <tr><td><b>forest plot</b></td><td>Meta-analysis. The strongest single image in an argument.</td></tr>
+          <tr><td><b>blot / gel / flow</b></td><td>Molecular evidence. Looks technical, rarely reads on a phone.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="add">
+      <p class="lbl">Addition — describe each figure in words when you file it</p>
+      <p>Store a one-line <span class="path">shows:</span> field written as you would say it out loud: <em class="t">"chondrocyte death concentrated in the central zone after HIF-1α deletion"</em>. That line is what makes the library searchable by me, and it doubles as the alt text and the slide caption when you use it.</p>
+      <p><strong>On reuse:</strong> file the figure with its licence status. Original journal figures are the author's or publisher's; most are not yours to republish on a slide. In practice the library's job is to tell you <em class="t">what to draw</em> — you have a renderer that makes better slide graphics than a screenshotted PDF panel anyway.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">07</span><span class="when">Continuous<br>Output</span></div>
+  <div class="bd">
+    <h2>Vault to deck, in one chain</h2>
+    <p class="lead">The point of all of it. Every slide should be traceable backwards without you remembering anything.</p>
+
+    <div class="pipe">
+      <div><span class="st">Step 1</span><span class="w"><b>Pick a claim</b> from <span class="path">claims/</span> that is tier A–C and has an unused quote.</span></div>
+      <div><span class="st">Step 2</span><span class="w"><b>Pull the quote and the figure spec</b> it points to.</span></div>
+      <div><span class="st">Step 3</span><span class="w"><b>Draw the graphic</b> from the figure's <span class="path">shows:</span> line, in the account's style.</span></div>
+      <div><span class="st">Step 4</span><span class="w"><b>Render and post</b>, then write the deck page back into <span class="path">decks/</span> with the claim IDs it used.</span></div>
+    </div>
+
+    <p>Step 4 is what closes the loop: the deck page updates every quote's <span class="path">used_in</span>, so the vault always knows what you have already said, on which account, and on what evidence. That kills accidental repetition across four accounts, which is otherwise inevitable.</p>
+
+    <div class="add">
+      <p class="lbl">Addition — the receipts chain, and what it is worth</p>
+      <p>slide → claim → quote → figure → DOI. When someone argues with you in the comments, you answer in under a minute with the exact sentence and the exact study. Your corpus analysis says <strong>only 17% of claims in this niche cite anything at all</strong>. Being the account that can always produce the receipt is a defensible position, and this chain is what makes it cheap enough to sustain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8 ============ -->
+<section class="ph">
+  <div class="gut"><span class="no">08</span><span class="when">Guardrails</span></div>
+  <div class="bd">
+    <h2>Failure modes worth designing against</h2>
+    <p class="lead">Every one of these has already happened to a vault this size. Cheap to prevent now, expensive later.</p>
+    <ul class="list">
+      <li><b>The dumping ground.</b> 398 sources and 23 concepts is the early stage of it. Rule: no ingest session ends without at least one concept page created or extended. Collecting without synthesising feels productive and compounds nothing.</li>
+      <li><b>Tier drift.</b> A mouse study quoted often enough starts to feel like a human finding. The tier field on every claim is the fix, and it only works if it is never blank.</li>
+      <li><b>Orphan sprawl.</b> Run <span class="path">wiki-lint</span> every 10–15 ingests, not every 100. Orphans are trivial to fix the week they appear.</li>
+      <li><b>Silent supersession.</b> A 2011 paper you built three decks on gets overturned in 2024 and nothing tells you. The <span class="path">used_in</span> field is the tripwire.</li>
+      <li><b>Cross-account repetition.</b> Four accounts, one brain, same three favourite facts. The <span class="path">decks/</span> ledger is the only reliable guard.</li>
+      <li><b>Transcription debt.</b> 1,445 videos is a weekend of compute and a month of manual. Batch it once, properly, rather than dipping in.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  Counts are from the vault and scrape as they stand today: 398 source pages, 23 concept pages,
+  559 raw files, 1,445 videos, 2,402 slide images, 1,973 post records.
+  Performance figures are from the 507-post joined analysis in <span class="path">content/_style-analysis/</span>.
+</footer>
+
+</div>

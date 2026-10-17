@@ -1,0 +1,7 @@
+slide-03: Dolan et al., PLOS Biology. Mouse and rat.
+slide-05: Dolan et al., PLOS Biology. Mouse, 1 week.
+slide-12: Kvist et al. 2021, Acta Paediatrica. MRI, 958 subjects.
+slide-13: Kvist et al. 2021, Acta Paediatrica.
+slide-06: Dolan et al., PLOS Biology, Fig 2. Mouse growth plates, E17.5 to 12 weeks.
+slide-07: Dolan et al., PLOS Biology, Fig 5.
+slide-08: Dolan et al., PLOS Biology.

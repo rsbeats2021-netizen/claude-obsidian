@@ -1,36 +1,39 @@
-# Video script — "What actually drives bone age"
+# Video script — Bone age
 
-60s · 177 words · ~178 wpm. **Only `SPOKEN:` lines are read aloud.**
+150 words, ~50s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:07] HOOK
-SPOKEN: Bone age isn't one hormone's job. It's five axes pulling on the same
-        clock, which is why single-hormone thinking keeps getting predictions
-        wrong.
-  [VISUAL: five arrows onto one clock face]
+Spoken lines only. Visual cue in brackets.
 
-### [0:07–0:32] EVIDENCE
-SPOKEN: Growth hormone and IGF-1 drive proliferation — they move your height
-        fast and your bone age comparatively slowly. Thyroid hormone is
-        required for normal chondrocyte maturation; it sets the tempo. Estrogen
-        is the dominant driver of skeletal maturation and eventual fusion. And
-        androgens do both things at once — they raise growth velocity and
-        accelerate maturation simultaneously.
-  [ON-SCREEN: each axis appearing as named]
+---
 
-### [0:32–0:48] PAYOFF
-SPOKEN: Which is why bone age beats birthdays. Chronological age tells you how
-        long you've existed. Bone age tells you how much growth capacity you
-        have left. Two people the same age can have completely different
-        amounts of runway.
-  [ON-SCREEN: "SAME AGE. DIFFERENT RUNWAY."]
+Bone age. Which is why single hormone thinking keeps getting predictions wrong.
 
-### [0:48–0:60] THE TRADEOFF + CTA
-SPOKEN: And here's the part people skip: anything that speeds growth velocity
-        through the androgen axis also spends skeletal maturation. Growing
-        faster and growing longer are competing goals. Optimising one and
-        ignoring the other is how people end up shorter. Don't forget, it's
-        never over.
-  [ON-SCREEN: "FASTER vs LONGER"]
+[cover card]
 
-## Sources
-Satoh 2022 · vault: [[Bone-Age-Progression-Factors-Review-Satoh2022]]
+It's growth hormone. Each one is describing a single input to a system with several, then generalising from it.
+
+[pick a favourite]
+
+Growth hormone and IGF-1 drive proliferation and the growth velocity you actually see. They move height fast and bone age comparatively slowly.
+
+[with gh and igf-1]
+
+Thyroid hormone is required for normal chondrocyte maturation. Too little and maturation stalls.
+
+[which sets the pace]
+
+Estrogen is the dominant driver of skeletal maturation and eventual fusion, and androgens contribute a lot by getting converted into it.
+
+[advance the clock]
+
+They raise growth velocity and accelerate skeletal maturation at the same time. You get taller faster while having less time left to do it in.
+
+[do both at once]
+
+Anything that speeds up growth velocity through the androgen axis also spends skeletal maturation. Optimising one number while ignoring the other is how people end up shorter.
+
+[takeaway card]
+
+Growing faster and growing longer are competing goals.
+
+DM for source

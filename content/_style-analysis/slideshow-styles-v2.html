@@ -1,0 +1,1009 @@
+<title>Ten More Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Jost:wght@300;400;500;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;700;900&family=Shippori+Mincho:wght@400;600;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap">
+
+<style>
+/* ===== page chrome ===== */
+:root{--pg:#F3F3F1;--pg2:#FFF;--tx:#161619;--tx2:#68686F;--rule:#DADAD6;--mark:#2F5FD0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --pg:#111114;--pg2:#191920;--tx:#ECECF0;--tx2:#90909B;--rule:#2A2A32;--mark:#8FA8F0}}
+:root[data-theme="dark"]{
+  --pg:#111114;--pg2:#191920;--tx:#ECECF0;--tx2:#90909B;--rule:#2A2A32;--mark:#8FA8F0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font-family:"Archivo",Arial,sans-serif}
+.wrap{max-width:1500px;margin:0 auto;padding:44px 22px 90px;display:flex;flex-direction:column;gap:46px}
+.masthead{display:flex;flex-direction:column;gap:12px;max-width:70ch}
+.masthead .eb{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mark);margin:0}
+.masthead h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.025em;
+  line-height:1;margin:0;text-wrap:balance}
+.masthead .sf{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:16px;
+  line-height:1.55;color:var(--tx2)}
+.set{display:flex;flex-direction:column;gap:12px}
+.set-hd{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;
+  border-top:1px solid var(--rule);padding-top:12px}
+.set-hd b{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.set-hd .tag{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:#fff;background:var(--mark);padding:3px 7px;border-radius:3px}
+.set-hd .tag.perf{background:#C6402E}
+.set-hd span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--tx2)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:840px}
+
+/* ===== slide scaffold ===== */
+.sl{width:100%;aspect-ratio:9/16;container-type:inline-size;overflow:hidden;position:relative;
+  display:flex;flex-direction:column}
+.sl svg,.sl canvas{display:block;width:100%;height:auto}
+.sl .num{font-family:"IBM Plex Mono",monospace;letter-spacing:.14em;margin:0;
+  display:flex;justify-content:space-between;align-items:baseline}
+.sl .mid{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.sl p{margin:0}
+
+/* ===== 01 TABLOID · skin ===== */
+.t1{background:#FCFCFA;color:#0C0C0C;padding:6.5cqi;gap:3.6cqi;font-family:"Archivo",sans-serif}
+.t1 .num{font-size:3.1cqi;color:#9A9A94}
+.t1 .num b{color:#D91E18;font-weight:600}
+.t1 .mid{gap:4cqi}
+.t1 .h{font-size:12.5cqi;font-weight:900;line-height:.9;letter-spacing:-.045em;margin:0}
+.t1 .h em{font-style:normal;color:#D91E18}
+.t1 .b{font-size:4.3cqi;line-height:1.42;font-family:"Source Serif 4",Georgia,serif;color:#3A3A38}
+.t1 .f{font-family:"IBM Plex Mono",monospace;font-size:2.9cqi;color:#9A9A94;letter-spacing:.06em;margin:auto 0 0}
+
+/* ===== 02 DATA DROP · height ===== */
+.t2{background:#08090C;color:#F0F2F5;padding:6.5cqi;gap:3.4cqi;font-family:"Archivo",sans-serif}
+.t2 .num{font-size:3.1cqi;color:#4E5560}
+.t2 .num b{color:#00E5A0;font-weight:600}
+.t2 .mid{gap:4cqi}
+.t2 .h{font-size:8.4cqi;font-weight:900;line-height:.98;letter-spacing:-.035em;margin:0}
+.t2 .big{font-family:"Archivo",sans-serif;font-weight:900;font-size:30cqi;line-height:.82;
+  letter-spacing:-.06em;color:#00E5A0;margin:0}
+.t2 .b{font-size:4.1cqi;line-height:1.45;color:#A8B0BC}
+.t2 .b b{color:#F0F2F5;font-weight:600}
+.t2 .f{font-family:"IBM Plex Mono",monospace;font-size:2.8cqi;color:#4E5560;letter-spacing:.06em;margin:auto 0 0}
+
+/* ===== 03 SPLIT · myth vs mechanism ===== */
+.t3{background:#15161A;color:#fff;padding:0;font-family:"Archivo",sans-serif}
+.t3 .top{background:#B4231F;padding:6cqi 5.5cqi 5cqi;display:flex;flex-direction:column;gap:2.2cqi}
+.t3 .bot{background:#0E1D2E;padding:5cqi 5.5cqi 6cqi;display:flex;flex-direction:column;gap:2.2cqi;flex:1}
+.t3 .lbl{font-family:"IBM Plex Mono",monospace;font-size:2.8cqi;letter-spacing:.2em;margin:0;opacity:.8}
+.t3 .h{font-size:6.4cqi;font-weight:900;line-height:1;letter-spacing:-.03em;margin:0}
+.t3 .b{font-size:3.5cqi;line-height:1.42;margin:0;opacity:.9}
+
+/* ===== 04 BAUHAUS · dopamine ===== */
+.t4{background:#EFEBE2;color:#161616;padding:6.5cqi;gap:3.4cqi;font-family:"Jost",sans-serif}
+.t4 .num{font-size:3cqi;color:#7A7568;font-family:"Jost",sans-serif;letter-spacing:.2em}
+.t4 .num b{color:#D8322A;font-weight:500}
+.t4 .mid{gap:4cqi}
+.t4 .h{font-size:9cqi;font-weight:700;line-height:.98;letter-spacing:-.02em;margin:0}
+.t4 .b{font-size:3.9cqi;line-height:1.45;font-weight:300;color:#3A3730}
+.t4 .f{font-size:2.8cqi;color:#7A7568;letter-spacing:.14em;text-transform:uppercase;margin:auto 0 0}
+
+/* ===== 05 UKIYO-E · circadian ===== */
+.t5{background:#F2E9D8;color:#1E2A38;padding:6.5cqi;gap:3.4cqi;font-family:"Shippori Mincho",serif}
+.t5 .num{font-size:2.9cqi;color:#8A7F6C;font-family:"IBM Plex Mono",monospace}
+.t5 .num b{color:#C1452E;font-weight:500}
+.t5 .mid{gap:4cqi}
+.t5 .h{font-size:7.8cqi;font-weight:800;line-height:1.08;margin:0;letter-spacing:.01em}
+.t5 .b{font-size:3.7cqi;line-height:1.62;color:#4A5464}
+.t5 .f{font-family:"IBM Plex Mono",monospace;font-size:2.7cqi;color:#8A7F6C;letter-spacing:.08em;margin:auto 0 0}
+
+/* ===== 06 SWISS · evidence ===== */
+.t6{background:#fff;color:#000;padding:7cqi 6cqi;gap:3cqi;font-family:"Public Sans",Helvetica,Arial,sans-serif}
+.t6 .num{font-size:2.8cqi;color:#000;letter-spacing:.1em;font-family:"Public Sans",sans-serif;
+  border-bottom:2px solid #000;padding-bottom:2cqi}
+.t6 .num b{color:#E8342A;font-weight:900}
+.t6 .mid{gap:4cqi;justify-content:flex-start;padding-top:5cqi}
+.t6 .h{font-size:8.2cqi;font-weight:900;line-height:.96;letter-spacing:-.04em;margin:0}
+.t6 .b{font-size:3.5cqi;line-height:1.44;font-weight:400;color:#333;max-width:26ch}
+.t6 .f{font-size:2.6cqi;color:#8A8A8A;letter-spacing:.08em;margin:auto 0 0}
+
+/* ===== 07 BIOLUMINESCENT · melatonin ===== */
+.t7{background:#01060B;color:#CFEFF0;padding:6.5cqi;gap:3.4cqi;font-family:"Jost",sans-serif}
+.t7 .num{font-size:2.9cqi;color:#3E6B72;font-family:"IBM Plex Mono",monospace;letter-spacing:.16em}
+.t7 .num b{color:#4FF0D0;font-weight:500}
+.t7 .mid{gap:4cqi}
+.t7 .h{font-size:8.6cqi;font-weight:300;line-height:1.02;letter-spacing:-.02em;margin:0;color:#EAFBFB}
+.t7 .h b{font-weight:700;color:#4FF0D0}
+.t7 .b{font-size:3.8cqi;line-height:1.5;font-weight:300;color:#8FB6BA}
+.t7 .f{font-family:"IBM Plex Mono",monospace;font-size:2.7cqi;color:#3E6B72;letter-spacing:.08em;margin:auto 0 0}
+
+/* ===== 08 TOPOGRAPHIC · bone ===== */
+.t8{background:#F4F1E9;color:#20261F;padding:6.5cqi;gap:3.2cqi;font-family:"Newsreader",Georgia,serif}
+.t8 .num{font-size:2.7cqi;color:#7C8474;font-family:"IBM Plex Mono",monospace;letter-spacing:.16em}
+.t8 .num b{color:#A85C22;font-weight:500}
+.t8 .mid{gap:3.6cqi}
+.t8 .h{font-size:7.6cqi;font-weight:600;line-height:1.04;letter-spacing:-.02em;margin:0}
+.t8 .b{font-size:3.6cqi;line-height:1.55;color:#4C5449}
+.t8 .f{font-family:"IBM Plex Mono",monospace;font-size:2.6cqi;color:#7C8474;letter-spacing:.08em;margin:auto 0 0}
+
+/* ===== 09 THERMAL · metabolism ===== */
+.t9{background:#0A0207;color:#FFE9D6;padding:6.5cqi;gap:3.2cqi;font-family:"JetBrains Mono",monospace}
+.t9 .num{font-size:2.8cqi;color:#8A5A4A;letter-spacing:.14em}
+.t9 .num b{color:#FFB020;font-weight:700}
+.t9 .mid{gap:3.8cqi}
+.t9 .h{font-family:"Archivo",sans-serif;font-size:8cqi;font-weight:900;line-height:1;
+  letter-spacing:-.03em;margin:0;color:#FFF0E0}
+.t9 .b{font-size:3.3cqi;line-height:1.5;color:#C79582}
+.t9 .f{font-size:2.6cqi;color:#8A5A4A;letter-spacing:.08em;margin:auto 0 0}
+
+/* ===== 10 TRANSIT · GH axis ===== */
+.t10{background:#FBFAF7;color:#141414;padding:6.5cqi;gap:3.2cqi;font-family:"Public Sans",Helvetica,sans-serif}
+.t10 .num{font-size:2.8cqi;color:#8A8A85;letter-spacing:.16em;font-family:"IBM Plex Mono",monospace}
+.t10 .num b{color:#0B6FB4;font-weight:600}
+.t10 .mid{gap:3.8cqi}
+.t10 .h{font-size:7.8cqi;font-weight:900;line-height:1;letter-spacing:-.035em;margin:0}
+.t10 .b{font-size:3.6cqi;line-height:1.46;color:#44443F}
+.t10 .f{font-family:"IBM Plex Mono",monospace;font-size:2.6cqi;color:#8A8A85;letter-spacing:.08em;margin:auto 0 0}
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eb">Style library II · 10 systems · 3 slides each</p>
+  <h1>Ten More Systems</h1>
+  <p class="sf">Ten new design languages, each running across a three-slide sequence with one purpose-built graphic per slide. Three are engineered for reach and marked accordingly; the other seven are chosen on design merit. Every chart is drawn to its own scale, in the visual language of its system.</p>
+</header>
+
+<!-- ==================== 01 TABLOID ==================== -->
+<section class="set">
+  <div class="set-hd"><b>01 · Tabloid contrast</b><span class="tag perf">Built for reach</span>
+    <span>Skin &amp; ageing — highest views-per-post in the set (134k avg)</span></div>
+  <div class="trio">
+
+    <div class="sl t1">
+      <p class="num"><b>01</b><span>HOOK</span></p>
+      <div class="mid">
+        <p class="h">Sun does <em>80%</em> of it.</p>
+        <svg viewBox="0 0 300 150" aria-label="Donut showing photoageing as the dominant share of visible skin ageing.">
+          <circle cx="150" cy="75" r="58" fill="none" stroke="#EAE7E0" stroke-width="26"></circle>
+          <circle cx="150" cy="75" r="58" fill="none" stroke="#D91E18" stroke-width="26"
+            stroke-dasharray="291.6 72.9" stroke-dashoffset="91" transform="rotate(-90 150 75)"></circle>
+          <text x="150" y="70" text-anchor="middle" font-family="Archivo,sans-serif" font-weight="900"
+            font-size="30" fill="#0C0C0C">80%</text>
+          <text x="150" y="90" text-anchor="middle" font-family="IBM Plex Mono,monospace"
+            font-size="10" fill="#9A9A94">PHOTOAGEING</text>
+        </svg>
+        <p class="b">Most of what people read as “ageing” on a face is cumulative UV damage, not the calendar.</p>
+      </div>
+      <p class="f">SKIN · 01/03</p>
+    </div>
+
+    <div class="sl t1">
+      <p class="num"><b>02</b><span>THE CURVE</span></p>
+      <div class="mid">
+        <p class="h">Two faces, one age.</p>
+        <svg viewBox="0 0 300 175" aria-label="Collagen density by decade, protected skin against sun-exposed skin.">
+          <g stroke="#E4E1DA" stroke-width="1">
+            <line x1="34" y1="20" x2="292" y2="20"></line><line x1="34" y1="58" x2="292" y2="58"></line>
+            <line x1="34" y1="96" x2="292" y2="96"></line><line x1="34" y1="134" x2="292" y2="134"></line>
+          </g>
+          <line x1="34" y1="134" x2="292" y2="134" stroke="#0C0C0C" stroke-width="1.5"></line>
+          <polyline fill="none" stroke="#0C0C0C" stroke-width="3"
+            points="34,26 86,36 138,50 190,66 242,84 292,102"></polyline>
+          <polyline fill="none" stroke="#D91E18" stroke-width="3"
+            points="34,26 86,48 138,74 190,98 242,116 292,128"></polyline>
+          <circle cx="292" cy="102" r="4" fill="#0C0C0C"></circle>
+          <circle cx="292" cy="128" r="4" fill="#D91E18"></circle>
+          <text x="284" y="96" text-anchor="end" font-family="Archivo,sans-serif" font-weight="800"
+            font-size="11" fill="#0C0C0C">protected</text>
+          <text x="284" y="122" text-anchor="end" font-family="Archivo,sans-serif" font-weight="800"
+            font-size="11" fill="#D91E18">exposed</text>
+          <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#9A9A94">
+            <text x="34" y="150">20s</text><text x="138" y="150">40s</text><text x="292" y="150" text-anchor="end">60s</text>
+            <text x="0" y="24">collagen</text><text x="0" y="138">low</text>
+          </g>
+        </svg>
+        <p class="b">Same decade, different exposure history. The gap opens early and never closes.</p>
+      </div>
+      <p class="f">SKIN · 02/03</p>
+    </div>
+
+    <div class="sl t1">
+      <p class="num"><b>03</b><span>RANKED</span></p>
+      <div class="mid">
+        <p class="h">What actually works.</p>
+        <svg viewBox="0 0 300 212" aria-label="Interventions ranked by strength of human evidence.">
+          <g font-family="Archivo,sans-serif" font-weight="800" font-size="12" fill="#0C0C0C">
+            <text x="0" y="18">Sunscreen</text><text x="0" y="60">Retinoids</text>
+            <text x="0" y="102">Not smoking</text><text x="0" y="144">Sleep</text>
+            <text x="0" y="186" fill="#9A9A94">Collagen drinks</text>
+          </g>
+          <g>
+            <rect x="0" y="26" width="292" height="14" fill="#D91E18"></rect>
+            <rect x="0" y="68" width="248" height="14" fill="#D91E18"></rect>
+            <rect x="0" y="110" width="212" height="14" fill="#0C0C0C"></rect>
+            <rect x="0" y="152" width="128" height="14" fill="#0C0C0C"></rect>
+            <rect x="0" y="194" width="30" height="14" fill="#D6D3CC"></rect>
+          </g>
+        </svg>
+        <p class="b">Ranked by weight of human evidence, not by margin. The cheapest item is the strongest.</p>
+      </div>
+      <p class="f">SKIN · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 02 DATA DROP ==================== -->
+<section class="set">
+  <div class="set-hd"><b>02 · Data drop</b><span class="tag perf">Built for reach</span>
+    <span>Height &amp; GH — largest topic by total views (3.39M)</span></div>
+  <div class="trio">
+
+    <div class="sl t2">
+      <p class="num"><b>01</b><span>HOOK</span></p>
+      <div class="mid">
+        <p class="big">80%</p>
+        <p class="h">of your height was decided before you were born.</p>
+        <svg viewBox="0 0 300 76" aria-label="Grid of one hundred dots with eighty filled to show heritability.">
+          <g>
+            <!-- 40 dots, 32 lit -->
+            <g fill="#00E5A0">
+              <circle cx="8" cy="8" r="5"></circle><circle cx="37" cy="8" r="5"></circle><circle cx="66" cy="8" r="5"></circle>
+              <circle cx="95" cy="8" r="5"></circle><circle cx="124" cy="8" r="5"></circle><circle cx="153" cy="8" r="5"></circle>
+              <circle cx="182" cy="8" r="5"></circle><circle cx="211" cy="8" r="5"></circle><circle cx="240" cy="8" r="5"></circle>
+              <circle cx="269" cy="8" r="5"></circle>
+              <circle cx="8" cy="30" r="5"></circle><circle cx="37" cy="30" r="5"></circle><circle cx="66" cy="30" r="5"></circle>
+              <circle cx="95" cy="30" r="5"></circle><circle cx="124" cy="30" r="5"></circle><circle cx="153" cy="30" r="5"></circle>
+              <circle cx="182" cy="30" r="5"></circle><circle cx="211" cy="30" r="5"></circle><circle cx="240" cy="30" r="5"></circle>
+              <circle cx="269" cy="30" r="5"></circle>
+              <circle cx="8" cy="52" r="5"></circle><circle cx="37" cy="52" r="5"></circle><circle cx="66" cy="52" r="5"></circle>
+              <circle cx="95" cy="52" r="5"></circle><circle cx="124" cy="52" r="5"></circle><circle cx="153" cy="52" r="5"></circle>
+              <circle cx="182" cy="52" r="5"></circle><circle cx="211" cy="52" r="5"></circle><circle cx="240" cy="52" r="5"></circle>
+              <circle cx="269" cy="52" r="5"></circle>
+            </g>
+            <!-- final row: 2 lit + 8 dark, so 32 of 40 dots are lit = 80% -->
+            <g fill="#00E5A0">
+              <circle cx="8" cy="74" r="5"></circle><circle cx="37" cy="74" r="5"></circle>
+            </g>
+            <g fill="#1E2630">
+              <circle cx="66" cy="74" r="5"></circle>
+              <circle cx="95" cy="74" r="5"></circle><circle cx="124" cy="74" r="5"></circle><circle cx="153" cy="74" r="5"></circle>
+              <circle cx="182" cy="74" r="5"></circle><circle cx="211" cy="74" r="5"></circle><circle cx="240" cy="74" r="5"></circle>
+              <circle cx="269" cy="74" r="5"></circle>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <p class="f">HEIGHT · 01/03</p>
+    </div>
+
+    <div class="sl t2">
+      <p class="num"><b>02</b><span>THE RANGE</span></p>
+      <div class="mid">
+        <p class="h">Genetics sets a band, not a number.</p>
+        <svg viewBox="0 0 300 170" aria-label="Normal distribution with a shaded target-height band.">
+          <defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#00E5A0" stop-opacity=".55"></stop>
+            <stop offset="100%" stop-color="#00E5A0" stop-opacity="0"></stop></linearGradient></defs>
+          <path d="M10,140 C60,140 70,20 150,20 C230,20 240,140 290,140 Z" fill="#12181F"></path>
+          <clipPath id="band"><rect x="112" y="0" width="76" height="150"></rect></clipPath>
+          <path d="M10,140 C60,140 70,20 150,20 C230,20 240,140 290,140 Z" fill="url(#g2)" clip-path="url(#band)"></path>
+          <path d="M10,140 C60,140 70,20 150,20 C230,20 240,140 290,140" fill="none" stroke="#3E4A58" stroke-width="2"></path>
+          <line x1="112" y1="12" x2="112" y2="140" stroke="#00E5A0" stroke-width="1.5" stroke-dasharray="4 4"></line>
+          <line x1="188" y1="12" x2="188" y2="140" stroke="#00E5A0" stroke-width="1.5" stroke-dasharray="4 4"></line>
+          <line x1="10" y1="140" x2="290" y2="140" stroke="#3E4A58" stroke-width="1.5"></line>
+          <text x="150" y="158" text-anchor="middle" font-family="IBM Plex Mono,monospace"
+            font-size="11" fill="#00E5A0">target range ±8cm</text>
+        </svg>
+        <p class="b">Mid-parental height predicts a <b>range</b>. Everything modifiable moves you inside it, not past it.</p>
+      </div>
+      <p class="f">HEIGHT · 02/03</p>
+    </div>
+
+    <div class="sl t2">
+      <p class="num"><b>03</b><span>THE WINDOW</span></p>
+      <div class="mid">
+        <p class="h">The window is narrower than the content suggests.</p>
+        <svg viewBox="0 0 300 175" aria-label="Growth velocity by age with the pubertal peak and plate closure marked.">
+          <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#00E5A0" stop-opacity=".4"></stop>
+            <stop offset="100%" stop-color="#00E5A0" stop-opacity="0"></stop></linearGradient></defs>
+          <path d="M12,52 C34,96 52,116 78,120 C110,124 130,116 150,74 C164,44 172,34 184,40
+                   C198,48 206,96 222,124 C238,146 262,142 288,142 L288,150 L12,150 Z" fill="url(#g3)"></path>
+          <path d="M12,52 C34,96 52,116 78,120 C110,124 130,116 150,74 C164,44 172,34 184,40
+                   C198,48 206,96 222,124 C238,146 262,142 288,142" fill="none" stroke="#00E5A0" stroke-width="2.6"></path>
+          <line x1="12" y1="150" x2="288" y2="150" stroke="#3E4A58" stroke-width="1.5"></line>
+          <circle cx="180" cy="37" r="4.5" fill="#00E5A0"></circle>
+          <text x="190" y="34" font-family="IBM Plex Mono,monospace" font-size="10" fill="#00E5A0">peak velocity</text>
+          <line x1="252" y1="24" x2="252" y2="150" stroke="#C6402E" stroke-width="1.5" stroke-dasharray="4 3"></line>
+          <text x="246" y="22" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C6402E">plates close</text>
+          <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#4E5560">
+            <text x="12" y="166">birth</text><text x="150" y="166" text-anchor="middle">12</text>
+            <text x="288" y="166" text-anchor="end">18+</text>
+          </g>
+        </svg>
+      </div>
+      <p class="f">HEIGHT · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 03 SPLIT ==================== -->
+<section class="set">
+  <div class="set-hd"><b>03 · Split verdict</b><span class="tag perf">Built for reach</span>
+    <span>Looksmaxxing — 102 posts, 1.71M views</span></div>
+  <div class="trio">
+
+    <div class="sl t3">
+      <div class="top">
+        <p class="lbl">THE CLAIM</p>
+        <p class="h">Chewing hard builds your jaw</p>
+        <svg viewBox="0 0 260 60" aria-label="Upward arrow implying rapid jaw growth from chewing.">
+          <path d="M10,50 L90,50 L90,30 L170,30 L170,14 L250,14" fill="none" stroke="#fff"
+            stroke-width="4" stroke-linejoin="round"></path>
+          <path d="M238,4 L252,14 L238,24 Z" fill="#fff"></path>
+        </svg>
+      </div>
+      <div class="bot">
+        <p class="lbl">WHAT HAPPENS</p>
+        <p class="h">Masseter, not bone</p>
+        <svg viewBox="0 0 260 60" aria-label="Muscle thickens while the underlying bone stays unchanged.">
+          <rect x="10" y="34" width="240" height="16" fill="#2C4A66"></rect>
+          <text x="14" y="46" font-family="IBM Plex Mono,monospace" font-size="9" fill="#9DBBD6">BONE — unchanged</text>
+          <rect x="10" y="12" width="96" height="14" fill="#4FA8E8"></rect>
+          <text x="112" y="23" font-family="IBM Plex Mono,monospace" font-size="9" fill="#4FA8E8">MUSCLE — hypertrophies</text>
+        </svg>
+        <p class="b">Muscle bulk changes the silhouette. The skeleton underneath is doing nothing.</p>
+      </div>
+    </div>
+
+    <div class="sl t3">
+      <div class="top">
+        <p class="lbl">THE CLAIM</p>
+        <p class="h">Bone smashing works</p>
+        <svg viewBox="0 0 260 60" aria-label="Impact symbol representing deliberate facial trauma.">
+          <g stroke="#fff" stroke-width="4" stroke-linecap="round">
+            <line x1="130" y1="8" x2="130" y2="26"></line><line x1="104" y1="16" x2="116" y2="30"></line>
+            <line x1="156" y1="16" x2="144" y2="30"></line><line x1="86" y1="34" x2="106" y2="40"></line>
+            <line x1="174" y1="34" x2="154" y2="40"></line>
+          </g>
+          <rect x="96" y="44" width="68" height="10" fill="#fff"></rect>
+        </svg>
+      </div>
+      <div class="bot">
+        <p class="lbl">WHAT HAPPENS</p>
+        <p class="h">Microfracture, then scar</p>
+        <svg viewBox="0 0 260 60" aria-label="Bar comparison of intended remodelling against actual scarring risk.">
+          <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#9DBBD6">
+            <text x="0" y="16">intended</text><text x="0" y="46">actual</text>
+          </g>
+          <rect x="66" y="6" width="24" height="14" fill="#2C4A66"></rect>
+          <rect x="66" y="36" width="188" height="14" fill="#C6402E"></rect>
+        </svg>
+        <p class="b">Bone responds to sustained load, not to blunt trauma. The reliable outcome is soft-tissue damage.</p>
+      </div>
+    </div>
+
+    <div class="sl t3">
+      <div class="top">
+        <p class="lbl">THE PATTERN</p>
+        <p class="h">Fast, free, dramatic</p>
+        <svg viewBox="0 0 260 60" aria-label="Three warning markers common to unsupported claims.">
+          <g fill="none" stroke="#fff" stroke-width="3">
+            <circle cx="46" cy="30" r="18"></circle><circle cx="130" cy="30" r="18"></circle><circle cx="214" cy="30" r="18"></circle>
+          </g>
+          <g fill="#fff" font-family="Archivo,sans-serif" font-weight="900" font-size="18" text-anchor="middle">
+            <text x="46" y="37">!</text><text x="130" y="37">!</text><text x="214" y="37">!</text>
+          </g>
+        </svg>
+      </div>
+      <div class="bot">
+        <p class="lbl">THE TEST</p>
+        <p class="h">Ask for the outcome measured</p>
+        <svg viewBox="0 0 260 60" aria-label="Checklist separating proxy measures from real endpoints.">
+          <g font-family="IBM Plex Mono,monospace" font-size="10">
+            <text x="20" y="18" fill="#C6402E">✗ &nbsp;“people noticed”</text>
+            <text x="20" y="36" fill="#C6402E">✗ &nbsp;a proxy marker</text>
+            <text x="20" y="54" fill="#4FA8E8">✓ &nbsp;the endpoint itself</text>
+          </g>
+        </svg>
+        <p class="b">If a claim only ever reports the proxy, the endpoint was probably measured and disappointing.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 04 BAUHAUS ==================== -->
+<section class="set">
+  <div class="set-hd"><b>04 · Bauhaus</b><span class="tag">Design pick</span>
+    <span>Dopamine &amp; nootropics — 14 posts, 21k avg</span></div>
+  <div class="trio">
+
+    <div class="sl t4">
+      <p class="num"><b>01</b><span>REWARD</span></p>
+      <div class="mid">
+        <p class="h">Three systems, one feeling</p>
+        <svg viewBox="0 0 300 200" aria-label="Circle, triangle and square standing for dopamine, serotonin and noradrenaline.">
+          <circle cx="82" cy="70" r="62" fill="#D8322A"></circle>
+          <path d="M212,16 L282,132 L142,132 Z" fill="#F0B32B"></path>
+          <rect x="96" y="120" width="112" height="72" fill="#1D51A8"></rect>
+          <circle cx="82" cy="70" r="62" fill="none" stroke="#161616" stroke-width="2"></circle>
+          <g font-family="Jost,sans-serif" font-weight="500" font-size="13" fill="#161616">
+            <text x="10" y="196">wanting</text>
+            <text x="212" y="150" text-anchor="middle">alerting</text>
+            <text x="290" y="196" text-anchor="end">liking</text>
+          </g>
+        </svg>
+        <p class="b">Dopamine drives pursuit. It is not the molecule of pleasure, and the distinction is the whole story.</p>
+      </div>
+      <p class="f">Dopamine · 01/03</p>
+    </div>
+
+    <div class="sl t4">
+      <p class="num"><b>02</b><span>BASELINE</span></p>
+      <div class="mid">
+        <p class="h">Every spike is borrowed</p>
+        <svg viewBox="0 0 300 180" aria-label="Reward spike above baseline followed by an equal dip below it.">
+          <line x1="0" y1="96" x2="300" y2="96" stroke="#161616" stroke-width="2"></line>
+          <rect x="30" y="34" width="34" height="62" fill="#D8322A"></rect>
+          <rect x="76" y="96" width="34" height="46" fill="#1D51A8"></rect>
+          <rect x="122" y="52" width="34" height="44" fill="#D8322A"></rect>
+          <rect x="168" y="96" width="34" height="58" fill="#1D51A8"></rect>
+          <rect x="214" y="70" width="34" height="26" fill="#D8322A"></rect>
+          <rect x="260" y="96" width="34" height="68" fill="#1D51A8"></rect>
+          <text x="0" y="26" font-family="Jost,sans-serif" font-size="12" fill="#D8322A">above baseline</text>
+          <text x="300" y="176" text-anchor="end" font-family="Jost,sans-serif" font-size="12" fill="#1D51A8">below it</text>
+        </svg>
+        <p class="b">The dip is the price of the peak, and it grows as the peak repeats. That is tolerance drawn honestly.</p>
+      </div>
+      <p class="f">Dopamine · 02/03</p>
+    </div>
+
+    <div class="sl t4">
+      <p class="num"><b>03</b><span>DENSITY</span></p>
+      <div class="mid">
+        <p class="h">Receptors answer back</p>
+        <svg viewBox="0 0 300 180" aria-label="Receptor density falling across three concentric-ring stages.">
+          <g fill="none" stroke-width="7">
+            <circle cx="52" cy="90" r="42" stroke="#1D51A8"></circle>
+            <circle cx="52" cy="90" r="26" stroke="#1D51A8"></circle>
+            <circle cx="52" cy="90" r="11" stroke="#1D51A8"></circle>
+            <circle cx="150" cy="90" r="42" stroke="#F0B32B"></circle>
+            <circle cx="150" cy="90" r="22" stroke="#F0B32B"></circle>
+            <circle cx="248" cy="90" r="42" stroke="#D8322A"></circle>
+          </g>
+          <g font-family="Jost,sans-serif" font-size="12" fill="#161616" text-anchor="middle">
+            <text x="52" y="156">week 1</text><text x="150" y="156">week 6</text><text x="248" y="156">week 12</text>
+          </g>
+        </svg>
+        <p class="b">Sustained stimulation reduces density. The dose stops working, and more of it restarts the same loop.</p>
+      </div>
+      <p class="f">Dopamine · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 05 UKIYO-E ==================== -->
+<section class="set">
+  <div class="set-hd"><b>05 · Flat plane woodblock</b><span class="tag">Design pick</span>
+    <span>Circadian rhythm — the whitespace topic</span></div>
+  <div class="trio">
+
+    <div class="sl t5">
+      <p class="num"><b>01</b><span>夜 · NIGHT</span></p>
+      <div class="mid">
+        <p class="h">The tide goes<br>out every night</p>
+        <svg viewBox="0 0 300 190" aria-label="Stylised wave layers standing for the nightly hormonal fall.">
+          <rect x="0" y="0" width="300" height="190" fill="#1E4E6B"></rect>
+          <path d="M0,74 C40,54 66,54 100,74 C134,94 160,94 196,74 C230,55 258,55 300,74 L300,190 L0,190 Z" fill="#2E7899"></path>
+          <path d="M0,108 C42,88 70,88 104,108 C138,128 164,128 200,108 C232,90 262,90 300,108 L300,190 L0,190 Z" fill="#59A8BF"></path>
+          <path d="M0,142 C44,124 72,124 108,142 C142,160 168,160 204,142 C236,126 264,126 300,142 L300,190 L0,190 Z" fill="#F2E9D8"></path>
+          <circle cx="234" cy="40" r="20" fill="#F2E9D8"></circle>
+          <circle cx="226" cy="35" r="18" fill="#1E4E6B"></circle>
+        </svg>
+        <p class="b">Cortisol falls, melatonin rises, core temperature drops. The night is a coordinated withdrawal, not an absence.</p>
+      </div>
+      <p class="f">CIRCADIAN · 01/03</p>
+    </div>
+
+    <div class="sl t5">
+      <p class="num"><b>02</b><span>日 · DAY</span></p>
+      <div class="mid">
+        <p class="h">Light is the<br>only clock</p>
+        <svg viewBox="0 0 300 190" aria-label="Sun arc across the day over flat ground planes.">
+          <rect x="0" y="0" width="300" height="190" fill="#F5D9A8"></rect>
+          <circle cx="150" cy="86" r="44" fill="#C1452E"></circle>
+          <path d="M0,120 C60,96 100,96 150,112 C200,128 246,128 300,110 L300,190 L0,190 Z" fill="#D9A05B"></path>
+          <path d="M0,150 C58,134 106,134 156,148 C204,162 250,160 300,148 L300,190 L0,190 Z" fill="#8C5A34"></path>
+          <g stroke="#C1452E" stroke-width="2.5" opacity=".55">
+            <line x1="150" y1="14" x2="150" y2="30"></line><line x1="88" y1="34" x2="98" y2="47"></line>
+            <line x1="212" y1="34" x2="202" y2="47"></line>
+          </g>
+        </svg>
+        <p class="b">Morning light sets the phase for the following night. Nothing you swallow substitutes for going outside.</p>
+      </div>
+      <p class="f">CIRCADIAN · 02/03</p>
+    </div>
+
+    <div class="sl t5">
+      <p class="num"><b>03</b><span>波 · RHYTHM</span></p>
+      <div class="mid">
+        <p class="h">Two curves,<br>opposed</p>
+        <svg viewBox="0 0 300 190" aria-label="Cortisol and melatonin plotted in counterphase across a day.">
+          <rect x="0" y="0" width="300" height="190" fill="#EADBBE"></rect>
+          <path d="M0,150 C30,60 60,46 96,60 C136,76 156,140 190,158 C226,176 266,168 300,150 L300,190 L0,190 Z"
+                fill="#C1452E" opacity=".75"></path>
+          <path d="M0,120 C40,150 92,172 140,166 C190,160 226,104 260,64 C274,48 288,40 300,36 L300,190 L0,190 Z"
+                fill="#1E4E6B" opacity=".62"></path>
+          <line x1="0" y1="190" x2="300" y2="190" stroke="#1E2A38" stroke-width="2"></line>
+          <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#3B4A5A">
+            <text x="8" y="22">cortisol</text><text x="292" y="22" text-anchor="end">melatonin</text>
+          </g>
+        </svg>
+        <p class="b">They mirror each other. Flatten one and you have moved the other, whether or not you meant to.</p>
+      </div>
+      <p class="f">CIRCADIAN · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 06 SWISS ==================== -->
+<section class="set">
+  <div class="set-hd"><b>06 · Swiss international</b><span class="tag">Design pick</span>
+    <span>Evidence quality — 17% of corpus claims cite anything</span></div>
+  <div class="trio">
+
+    <div class="sl t6">
+      <p class="num"><b>01</b> &nbsp;EVIDENCE</p>
+      <div class="mid">
+        <p class="h">17%</p>
+        <svg viewBox="0 0 300 120" aria-label="Proportional block showing the evidenced share of claims.">
+          <rect x="0" y="0" width="300" height="44" fill="#E8342A"></rect>
+          <rect x="51" y="0" width="249" height="44" fill="#EDEDED"></rect>
+          <rect x="0" y="70" width="300" height="4" fill="#000"></rect>
+          <g font-family="Public Sans,sans-serif" font-size="11" font-weight="700">
+            <text x="0" y="96" fill="#E8342A">cited</text>
+            <text x="300" y="96" text-anchor="end" fill="#8A8A8A">asserted</text>
+          </g>
+        </svg>
+        <p class="b">Of 812 claim statements measured across 14 accounts, 140 appear alongside any study, dataset or citation.</p>
+      </div>
+      <p class="f">n = 812 · 507 posts</p>
+    </div>
+
+    <div class="sl t6">
+      <p class="num"><b>02</b> &nbsp;REPEATED</p>
+      <div class="mid">
+        <p class="h">The same six claims</p>
+        <svg viewBox="0 0 300 180" aria-label="Claims ranked by how many separate accounts repeat them.">
+          <g font-family="Public Sans,sans-serif" font-size="11" font-weight="700" fill="#000">
+            <text x="0" y="14">GH increases</text><text x="0" y="46">growth plate</text>
+            <text x="0" y="78">DHT increases</text><text x="0" y="110">IGF-1 increases</text>
+            <text x="0" y="142">cAMP increases</text><text x="0" y="174">osteoblast</text>
+          </g>
+          <g fill="#000">
+            <rect x="150" y="4" width="140" height="12"></rect><rect x="150" y="36" width="120" height="12"></rect>
+            <rect x="150" y="68" width="100" height="12"></rect><rect x="150" y="100" width="100" height="12"></rect>
+            <rect x="150" y="132" width="100" height="12"></rect><rect x="150" y="164" width="100" height="12"></rect>
+          </g>
+          <rect x="150" y="4" width="140" height="12" fill="#E8342A"></rect>
+        </svg>
+        <p class="b">Ranked by number of separate accounts repeating them. The top claim appears in seven of fourteen.</p>
+      </div>
+      <p class="f">Cross-account frequency</p>
+    </div>
+
+    <div class="sl t6">
+      <p class="num"><b>03</b> &nbsp;SOURCES</p>
+      <div class="mid">
+        <p class="h">No shared canon</p>
+        <svg viewBox="0 0 300 150" aria-label="Citation counts showing a flat distribution with no dominant source.">
+          <g stroke="#DDD" stroke-width="1">
+            <line x1="0" y1="40" x2="300" y2="40"></line><line x1="0" y1="80" x2="300" y2="80"></line>
+          </g>
+          <g fill="#000">
+            <rect x="0" y="12" width="26" height="108"></rect><rect x="34" y="12" width="26" height="108"></rect>
+            <rect x="68" y="48" width="26" height="72"></rect><rect x="102" y="48" width="26" height="72"></rect>
+          </g>
+          <g fill="#C9C9C9">
+            <rect x="136" y="84" width="26" height="36"></rect><rect x="170" y="84" width="26" height="36"></rect>
+            <rect x="204" y="84" width="26" height="36"></rect><rect x="238" y="84" width="26" height="36"></rect>
+            <rect x="272" y="84" width="26" height="36"></rect>
+          </g>
+          <rect x="0" y="120" width="300" height="3" fill="#000"></rect>
+          <text x="0" y="142" font-family="Public Sans,sans-serif" font-size="10" fill="#8A8A8A">Kaplowitz · Bierich · Kawai · Isgaard · then a long tail of single mentions</text>
+        </svg>
+        <p class="b">Twenty-plus studies cited once each. Creators draw on different literature rather than a common set.</p>
+      </div>
+      <p class="f">Citation distribution</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 07 BIOLUMINESCENT ==================== -->
+<section class="set">
+  <div class="set-hd"><b>07 · Bioluminescent</b><span class="tag">Design pick</span>
+    <span>Melatonin &amp; light — generative canvas</span></div>
+  <div class="trio">
+
+    <div class="sl t7">
+      <p class="num"><b>01</b><span>DARKNESS</span></p>
+      <div class="mid">
+        <canvas class="glow" width="600" height="440" data-mode="orb" aria-label="Glowing orb dimming as ambient light rises."></canvas>
+        <p class="h">Melatonin is a <b>darkness</b> signal.</p>
+        <p class="b">It does not make you sleepy on command. It tells the body what time it is, and light overrides it instantly.</p>
+      </div>
+      <p class="f">MELATONIN · 01/03</p>
+    </div>
+
+    <div class="sl t7">
+      <p class="num"><b>02</b><span>LUX</span></p>
+      <div class="mid">
+        <canvas class="glow" width="600" height="440" data-mode="curve" aria-label="Melatonin suppression curve falling as illuminance increases."></canvas>
+        <p class="h">Suppression starts low.</p>
+        <p class="b">Ordinary room lighting is enough to blunt the rise. You do not need a screen an inch from your face.</p>
+      </div>
+      <p class="f">MELATONIN · 02/03</p>
+    </div>
+
+    <div class="sl t7">
+      <p class="num"><b>03</b><span>PHASE</span></p>
+      <div class="mid">
+        <canvas class="glow" width="600" height="440" data-mode="field" aria-label="Particle field showing the nightly phase drift of sleep onset."></canvas>
+        <p class="h">Late light moves<br>the whole night.</p>
+        <p class="b">Delay the rise and everything downstream shifts with it, including the deep-sleep block you were counting on.</p>
+      </div>
+      <p class="f">MELATONIN · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 08 TOPOGRAPHIC ==================== -->
+<section class="set">
+  <div class="set-hd"><b>08 · Topographic</b><span class="tag">Design pick</span>
+    <span>Bone mass across a lifetime</span></div>
+  <div class="trio">
+
+    <div class="sl t8">
+      <p class="num"><b>01</b><span>CONTOUR</span></p>
+      <div class="mid">
+        <p class="h">Peak bone mass is a summit</p>
+        <svg viewBox="0 0 300 200" aria-label="Contour map with a single summit representing peak bone mass.">
+          <rect x="0" y="0" width="300" height="200" fill="#EDE8DC"></rect>
+          <g fill="none" stroke="#C3BCA6" stroke-width="1.2">
+            <path d="M12,188 C40,150 44,120 92,104 C150,84 190,96 236,74 C262,62 280,44 292,20"></path>
+            <path d="M12,196 C48,166 60,140 108,126 C168,108 204,116 246,96 C270,84 286,66 296,44"></path>
+          </g>
+          <g fill="none" stroke="#A8A088" stroke-width="1.4">
+            <ellipse cx="150" cy="104" rx="112" ry="62"></ellipse>
+            <ellipse cx="150" cy="102" rx="88" ry="48"></ellipse>
+            <ellipse cx="150" cy="100" rx="64" ry="35"></ellipse>
+          </g>
+          <g fill="none" stroke="#A85C22" stroke-width="1.8">
+            <ellipse cx="150" cy="98" rx="42" ry="23"></ellipse>
+            <ellipse cx="150" cy="97" rx="22" ry="12"></ellipse>
+          </g>
+          <circle cx="150" cy="96" r="4" fill="#A85C22"></circle>
+          <text x="160" y="92" font-family="IBM Plex Mono,monospace" font-size="10" fill="#A85C22">~age 30</text>
+        </svg>
+        <p class="b">Density climbs through the twenties, peaks, then declines. Everything after the summit is slope management.</p>
+      </div>
+      <p class="f">BONE · 01/03</p>
+    </div>
+
+    <div class="sl t8">
+      <p class="num"><b>02</b><span>PROFILE</span></p>
+      <div class="mid">
+        <p class="h">The same hill,<br>in section</p>
+        <svg viewBox="0 0 300 180" aria-label="Cross-section profile of bone density rising to a peak then declining.">
+          <defs><linearGradient id="t8g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#A85C22" stop-opacity=".38"></stop>
+            <stop offset="100%" stop-color="#A85C22" stop-opacity=".04"></stop></linearGradient></defs>
+          <g stroke="#D8D2C2" stroke-width="1">
+            <line x1="14" y1="40" x2="292" y2="40"></line><line x1="14" y1="80" x2="292" y2="80"></line>
+            <line x1="14" y1="120" x2="292" y2="120"></line>
+          </g>
+          <path d="M14,146 C56,120 90,58 134,44 C160,36 176,38 200,54 C232,76 258,112 292,140 L292,150 L14,150 Z"
+                fill="url(#t8g)"></path>
+          <path d="M14,146 C56,120 90,58 134,44 C160,36 176,38 200,54 C232,76 258,112 292,140"
+                fill="none" stroke="#A85C22" stroke-width="2.4"></path>
+          <line x1="14" y1="150" x2="292" y2="150" stroke="#20261F" stroke-width="1.4"></line>
+          <line x1="167" y1="34" x2="167" y2="150" stroke="#20261F" stroke-width="1" stroke-dasharray="3 3"></line>
+          <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#7C8474">
+            <text x="14" y="166">10</text><text x="167" y="166" text-anchor="middle">30</text>
+            <text x="292" y="166" text-anchor="end">70</text>
+          </g>
+        </svg>
+        <p class="b">The area under the early part of this curve is the only part you get to negotiate.</p>
+      </div>
+      <p class="f">BONE · 02/03</p>
+    </div>
+
+    <div class="sl t8">
+      <p class="num"><b>03</b><span>LOAD</span></p>
+      <div class="mid">
+        <p class="h">Bone reads force,<br>not supplements</p>
+        <svg viewBox="0 0 300 170" aria-label="Density response ranked by mechanical loading type.">
+          <g font-family="Newsreader,serif" font-size="12" fill="#20261F">
+            <text x="0" y="16">Impact + load</text><text x="0" y="56">Resistance</text>
+            <text x="0" y="96">Walking</text><text x="0" y="136">Calcium alone</text>
+          </g>
+          <g>
+            <rect x="0" y="24" width="284" height="10" fill="#A85C22"></rect>
+            <rect x="0" y="64" width="216" height="10" fill="#A85C22"></rect>
+            <rect x="0" y="104" width="104" height="10" fill="#8A9179"></rect>
+            <rect x="0" y="144" width="38" height="10" fill="#C3BCA6"></rect>
+          </g>
+          <line x1="0" y1="164" x2="300" y2="164" stroke="#20261F" stroke-width="1.2"></line>
+          <text x="0" y="178" font-family="IBM Plex Mono,monospace" font-size="9" fill="#7C8474">relative density response</text>
+        </svg>
+        <p class="b">Loading is the signal. Nutrition is permissive, which is a different job from being causal.</p>
+      </div>
+      <p class="f">BONE · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 09 THERMAL ==================== -->
+<section class="set">
+  <div class="set-hd"><b>09 · Thermal imaging</b><span class="tag">Design pick</span>
+    <span>Metabolism &amp; brown fat</span></div>
+  <div class="trio">
+
+    <div class="sl t9">
+      <p class="num"><b>01</b><span>IR / 8–14µm</span></p>
+      <div class="mid">
+        <p class="h">Brown fat burns to make heat</p>
+        <svg viewBox="0 0 300 210" aria-label="Thermal silhouette with hot depots at the neck and shoulders.">
+          <defs>
+            <radialGradient id="hot1"><stop offset="0%" stop-color="#FFF3B0"></stop>
+              <stop offset="45%" stop-color="#FF8A1E"></stop><stop offset="100%" stop-color="#7A1B4A" stop-opacity="0"></stop></radialGradient>
+            <linearGradient id="body9" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#B23A6B"></stop><stop offset="100%" stop-color="#2B1050"></stop></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="300" height="210" fill="#12031C"></rect>
+          <path d="M150,18 C166,18 176,30 176,44 C176,54 172,60 168,64 C196,72 214,86 220,110
+                   L228,168 L206,172 L198,132 L196,206 L104,206 L102,132 L94,172 L72,168 L80,110
+                   C86,86 104,72 132,64 C128,60 124,54 124,44 C124,30 134,18 150,18 Z" fill="url(#body9)"></path>
+          <ellipse cx="150" cy="72" rx="34" ry="20" fill="url(#hot1)"></ellipse>
+          <ellipse cx="106" cy="98" rx="22" ry="16" fill="url(#hot1)" opacity=".85"></ellipse>
+          <ellipse cx="194" cy="98" rx="22" ry="16" fill="url(#hot1)" opacity=".85"></ellipse>
+          <g font-family="JetBrains Mono,monospace" font-size="9" fill="#FFB020">
+            <text x="8" y="16">MAX 37.4</text><text x="292" y="16" text-anchor="end">MIN 29.1</text>
+          </g>
+        </svg>
+        <p class="b">Brown adipose tissue sits at the neck and upper back. It exists to convert fuel straight into warmth.</p>
+      </div>
+      <p class="f">THERMOGENESIS · 01/03</p>
+    </div>
+
+    <div class="sl t9">
+      <p class="num"><b>02</b><span>RESPONSE</span></p>
+      <div class="mid">
+        <p class="h">Cold switches it on</p>
+        <svg viewBox="0 0 300 175" aria-label="Heatmap of thermogenic activity against ambient temperature and exposure time.">
+          <g>
+            <rect x="40" y="8" width="42" height="30" fill="#FFE08A"></rect><rect x="84" y="8" width="42" height="30" fill="#FFB020"></rect>
+            <rect x="128" y="8" width="42" height="30" fill="#FF7A1E"></rect><rect x="172" y="8" width="42" height="30" fill="#E8452F"></rect>
+            <rect x="216" y="8" width="42" height="30" fill="#B4265C"></rect>
+            <rect x="40" y="40" width="42" height="30" fill="#FFB020"></rect><rect x="84" y="40" width="42" height="30" fill="#FF7A1E"></rect>
+            <rect x="128" y="40" width="42" height="30" fill="#E8452F"></rect><rect x="172" y="40" width="42" height="30" fill="#B4265C"></rect>
+            <rect x="216" y="40" width="42" height="30" fill="#6E1A5C"></rect>
+            <rect x="40" y="72" width="42" height="30" fill="#FF7A1E"></rect><rect x="84" y="72" width="42" height="30" fill="#E8452F"></rect>
+            <rect x="128" y="72" width="42" height="30" fill="#B4265C"></rect><rect x="172" y="72" width="42" height="30" fill="#6E1A5C"></rect>
+            <rect x="216" y="72" width="42" height="30" fill="#3A1252"></rect>
+            <rect x="40" y="104" width="42" height="30" fill="#E8452F"></rect><rect x="84" y="104" width="42" height="30" fill="#B4265C"></rect>
+            <rect x="128" y="104" width="42" height="30" fill="#6E1A5C"></rect><rect x="172" y="104" width="42" height="30" fill="#3A1252"></rect>
+            <rect x="216" y="104" width="42" height="30" fill="#220C3A"></rect>
+          </g>
+          <g font-family="JetBrains Mono,monospace" font-size="8" fill="#C79582">
+            <text x="34" y="26" text-anchor="end">4°C</text><text x="34" y="58" text-anchor="end">10°C</text>
+            <text x="34" y="90" text-anchor="end">16°C</text><text x="34" y="122" text-anchor="end">22°C</text>
+            <text x="61" y="148" text-anchor="middle">5m</text><text x="149" y="148" text-anchor="middle">30m</text>
+            <text x="237" y="148" text-anchor="middle">2h</text>
+            <text x="40" y="168">bright = greater thermogenic activation</text>
+          </g>
+        </svg>
+        <p class="b">Colder and longer means more activation, up to the point where you are simply uncomfortable and shivering.</p>
+      </div>
+      <p class="f">THERMOGENESIS · 02/03</p>
+    </div>
+
+    <div class="sl t9">
+      <p class="num"><b>03</b><span>SCALE</span></p>
+      <div class="mid">
+        <p class="h">Real, and small</p>
+        <svg viewBox="0 0 300 160" aria-label="Daily energy expenditure split, with brown fat as a thin slice.">
+          <text x="0" y="12" font-family="JetBrains Mono,monospace" font-size="9" fill="#C79582">DAILY ENERGY EXPENDITURE</text>
+          <rect x="0" y="22" width="300" height="34" fill="#3A1252"></rect>
+          <rect x="0" y="22" width="192" height="34" fill="#6E1A5C"></rect>
+          <rect x="0" y="22" width="96" height="34" fill="#E8452F"></rect>
+          <rect x="0" y="22" width="8" height="34" fill="#FFE08A"></rect>
+          <g font-family="JetBrains Mono,monospace" font-size="9">
+            <text x="0" y="78" fill="#FFE08A">▌ brown fat</text>
+            <text x="0" y="96" fill="#E8452F">▌ activity</text>
+            <text x="0" y="114" fill="#6E1A5C">▌ digestion</text>
+            <text x="0" y="132" fill="#8A5A4A">▌ basal metabolic rate</text>
+          </g>
+        </svg>
+        <p class="b">The mechanism is genuine. Its share of daily burn is a sliver, which is why cold exposure is not a weight-loss plan.</p>
+      </div>
+      <p class="f">THERMOGENESIS · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== 10 TRANSIT ==================== -->
+<section class="set">
+  <div class="set-hd"><b>10 · Transit diagram</b><span class="tag">Design pick</span>
+    <span>The GH → IGF-1 axis drawn as a network</span></div>
+  <div class="trio">
+
+    <div class="sl t10">
+      <p class="num"><b>01</b><span>THE LINE</span></p>
+      <div class="mid">
+        <p class="h">One line,<br>four stops</p>
+        <svg viewBox="0 0 300 200" aria-label="Transit-style line from hypothalamus to growth plate.">
+          <line x1="46" y1="26" x2="46" y2="174" stroke="#0B6FB4" stroke-width="9" stroke-linecap="round"></line>
+          <g fill="#FBFAF7" stroke="#141414" stroke-width="3">
+            <circle cx="46" cy="26" r="9"></circle><circle cx="46" cy="75" r="9"></circle>
+            <circle cx="46" cy="124" r="9"></circle><circle cx="46" cy="174" r="9"></circle>
+          </g>
+          <g font-family="Public Sans,sans-serif" font-weight="700" font-size="13" fill="#141414">
+            <text x="70" y="31">Hypothalamus</text><text x="70" y="80">Pituitary</text>
+            <text x="70" y="129">Liver</text><text x="70" y="179">Growth plate</text>
+          </g>
+          <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#8A8A85">
+            <text x="70" y="46">GHRH</text><text x="70" y="95">GH</text><text x="70" y="144">IGF-1</text>
+          </g>
+        </svg>
+        <p class="b">Each stop hands off a different molecule. Skipping one and naming the whole route after GH is where the confusion starts.</p>
+      </div>
+      <p class="f">GH AXIS · 01/03</p>
+    </div>
+
+    <div class="sl t10">
+      <p class="num"><b>02</b><span>INTERCHANGE</span></p>
+      <div class="mid">
+        <p class="h">The return<br>service</p>
+        <svg viewBox="0 0 300 200" aria-label="Network diagram adding the negative feedback line back to the pituitary.">
+          <line x1="46" y1="26" x2="46" y2="174" stroke="#0B6FB4" stroke-width="9" stroke-linecap="round"></line>
+          <path d="M232,124 L232,50 L60,50" fill="none" stroke="#C6402E" stroke-width="9"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+          <line x1="46" y1="124" x2="232" y2="124" stroke="#C6402E" stroke-width="9" stroke-linecap="round"></line>
+          <g fill="#FBFAF7" stroke="#141414" stroke-width="3">
+            <circle cx="46" cy="26" r="9"></circle>
+            <rect x="34" y="38" width="24" height="24" rx="4"></rect>
+            <circle cx="46" cy="124" r="9"></circle><circle cx="46" cy="174" r="9"></circle>
+            <circle cx="232" cy="124" r="9"></circle>
+          </g>
+          <g font-family="Public Sans,sans-serif" font-weight="700" font-size="12" fill="#141414">
+            <text x="70" y="31">Hypothalamus</text><text x="70" y="86">Pituitary</text>
+            <text x="70" y="118">Liver</text><text x="70" y="179">Growth plate</text>
+            <text x="232" y="150" text-anchor="middle" fill="#C6402E">IGF-1</text>
+          </g>
+          <text x="150" y="42" text-anchor="middle" font-family="IBM Plex Mono,monospace"
+            font-size="9" fill="#C6402E">suppresses release</text>
+        </svg>
+        <p class="b">Circulating IGF-1 travels back and shuts the pituitary down. The axis regulates itself, which is what makes it hard to push.</p>
+      </div>
+      <p class="f">GH AXIS · 02/03</p>
+    </div>
+
+    <div class="sl t10">
+      <p class="num"><b>03</b><span>CLOSURE</span></p>
+      <div class="mid">
+        <p class="h">End of<br>the line</p>
+        <svg viewBox="0 0 300 200" aria-label="Transit line terminating at a closed terminus representing plate fusion.">
+          <line x1="46" y1="20" x2="46" y2="120" stroke="#0B6FB4" stroke-width="9" stroke-linecap="round"></line>
+          <line x1="46" y1="120" x2="46" y2="156" stroke="#C9C9C4" stroke-width="9"
+            stroke-linecap="round" stroke-dasharray="2 16"></line>
+          <g fill="#FBFAF7" stroke="#141414" stroke-width="3">
+            <circle cx="46" cy="20" r="9"></circle><circle cx="46" cy="70" r="9"></circle>
+            <circle cx="46" cy="120" r="9"></circle>
+          </g>
+          <g stroke="#141414" stroke-width="4">
+            <line x1="30" y1="170" x2="62" y2="170"></line>
+          </g>
+          <g font-family="Public Sans,sans-serif" font-weight="700" font-size="13" fill="#141414">
+            <text x="70" y="25">GH</text><text x="70" y="75">IGF-1</text><text x="70" y="125">Plate</text>
+            <text x="70" y="175" fill="#8A8A85">Fused — no service</text>
+          </g>
+        </svg>
+        <p class="b">Once the plates ossify the route is closed. Everything upstream still runs; it just no longer reaches this destination.</p>
+      </div>
+      <p class="f">GH AXIS · 03/03</p>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<script>
+// Bioluminescent canvases. Each paints a complete composition immediately, then
+// animates gently unless the viewer has asked for reduced motion.
+(function () {
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('canvas.glow').forEach(function (cv) {
+    const ctx = cv.getContext('2d');
+    const W = cv.width, H = cv.height, mode = cv.dataset.mode;
+    const seeds = Array.from({ length: 46 }, (_, i) => ({
+      x: (i * 97.3) % W, y: (i * 61.7) % H,
+      r: 1 + ((i * 13) % 7) * 0.5, p: (i % 11) / 11
+    }));
+
+    function ground() {
+      const g = ctx.createLinearGradient(0, 0, 0, H);
+      g.addColorStop(0, '#02131A'); g.addColorStop(1, '#01060B');
+      ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    }
+    function halo(x, y, r, a) {
+      const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+      g.addColorStop(0, 'rgba(120,255,230,' + a + ')');
+      g.addColorStop(0.4, 'rgba(60,200,220,' + (a * 0.35) + ')');
+      g.addColorStop(1, 'rgba(0,40,60,0)');
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, 6.2832); ctx.fill();
+    }
+
+    function draw(t) {
+      ground();
+      if (mode === 'orb') {
+        halo(W * 0.5, H * 0.46, 210 + Math.sin(t) * 10, 0.5);
+        halo(W * 0.5, H * 0.46, 96, 0.55);
+        ctx.strokeStyle = 'rgba(140,255,235,0.5)'; ctx.lineWidth = 2;
+        for (let i = 0; i < 3; i++) {
+          ctx.beginPath();
+          ctx.arc(W * 0.5, H * 0.46, 120 + i * 44 + Math.sin(t + i) * 6, 0, 6.2832);
+          ctx.globalAlpha = 0.32 - i * 0.09; ctx.stroke();
+        }
+        ctx.globalAlpha = 1;
+      } else if (mode === 'curve') {
+        ctx.beginPath();
+        for (let x = 0; x <= W; x += 4) {
+          const k = x / W;
+          const y = H * (0.22 + 0.62 / (1 + Math.exp(-(k - 0.42) * 12)));
+          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.lineTo(W, H); ctx.lineTo(0, H); ctx.closePath();
+        const g = ctx.createLinearGradient(0, 0, 0, H);
+        g.addColorStop(0, 'rgba(79,240,208,0.30)'); g.addColorStop(1, 'rgba(79,240,208,0)');
+        ctx.fillStyle = g; ctx.fill();
+        ctx.beginPath();
+        for (let x = 0; x <= W; x += 4) {
+          const k = x / W;
+          const y = H * (0.22 + 0.62 / (1 + Math.exp(-(k - 0.42) * 12)));
+          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.strokeStyle = '#4FF0D0'; ctx.lineWidth = 4; ctx.stroke();
+        halo(W * 0.42, H * 0.5, 90 + Math.sin(t) * 8, 0.4);
+        ctx.fillStyle = '#3E6B72'; ctx.font = '20px "IBM Plex Mono", monospace';
+        ctx.fillText('0 lux', 12, H - 16);
+        ctx.textAlign = 'right'; ctx.fillText('1000 lux', W - 12, H - 16); ctx.textAlign = 'left';
+      } else {
+        seeds.forEach(function (s, i) {
+          const drift = Math.sin(t * 0.6 + s.p * 6.28) * 14;
+          halo(s.x, s.y + drift, 20 + s.r * 9, 0.16 + (i % 4) * 0.05);
+          ctx.fillStyle = 'rgba(200,255,246,0.85)';
+          ctx.beginPath(); ctx.arc(s.x, s.y + drift, s.r, 0, 6.2832); ctx.fill();
+        });
+        ctx.strokeStyle = 'rgba(79,240,208,0.5)'; ctx.lineWidth = 3;
+        ctx.beginPath();
+        for (let x = 0; x <= W; x += 6) {
+          const y = H * 0.62 + Math.sin(x / 70 + t * 0.5) * 26;
+          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+    }
+
+    draw(0);
+    if (!reduced) {
+      let t0 = null;
+      requestAnimationFrame(function loop(ts) {
+        if (t0 === null) t0 = ts;
+        draw((ts - t0) / 1000);
+        requestAnimationFrame(loop);
+      });
+    }
+  });
+})();
+</script>

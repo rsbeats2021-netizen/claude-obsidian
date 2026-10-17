@@ -1,0 +1,4 @@
+slide-04: Lundberg et al. 2015, BMC Endocrine Disorders.
+slide-05: Hunziker et al. 1994, J Clin Invest. Rat.
+slide-06: Hunziker et al. 1994, J Clin Invest.
+slide-07: Hunziker et al. 1994. Rat.

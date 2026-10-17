@@ -1,0 +1,6 @@
+slide-05: Olney et al. 2006, JCEM. 39 family members.
+slide-06: Olney et al. 2006, JCEM.
+slide-08: Cartilage-specific knockout mice. Sci Rep 2015.
+slide-09: Sci Rep 2015. Cartilage-specific CNP or GC-B knockout.
+slide-11: Savarirayan et al. 2020, Lancet. Phase 3, n=121.
+slide-12: Savarirayan et al. 2020, Lancet.

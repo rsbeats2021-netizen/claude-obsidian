@@ -1,38 +1,39 @@
-# Video script — "Late bloomers"
+# Video script — Late bloomers
 
-60s · 174 words · ~178 wpm. **Only `SPOKEN:` lines are read aloud.**
+162 words, ~54s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:07] HOOK
-SPOKEN: Nineteen treated boys, twenty-one untreated controls, followed all the
-        way to final height. A study from 1973 is still the most useful thing
-        on this topic.
-  [ON-SCREEN: "19 TREATED · 21 CONTROLS"]
+Spoken lines only. Visual cue in brackets.
 
-### [0:07–0:18] SETUP
-SPOKEN: Constitutional delay isn't a disorder. Growth and puberty arrive late,
-        bone age lags behind chronological age, and adult height usually lands
-        in the normal range anyway. The runway is longer, not shorter.
-  [VISUAL: two growth curves, one shifted right, same endpoint]
+---
 
-### [0:18–0:36] EVIDENCE
-SPOKEN: In that study the treated boys got androgens — low doses, averaging
-        about five and a half months. And crucially there was a real untreated
-        comparison group, which is more than most of what gets discussed in
-        this space ever has.
-  [ON-SCREEN: "A REAL CONTROL ARM"]
+Late bloomers. The result is still the most useful thing on this topic.
 
-### [0:36–0:50] PAYOFF
-SPOKEN: Here's what to understand about androgen treatment here. Androgens
-        accelerate growth velocity and skeletal maturation together. You grow
-        faster now and you close sooner. Which is exactly why the design was
-        low dose and short duration — the restraint is the treatment, not the
-        androgen.
-  [ON-SCREEN: "THE RESTRAINT IS THE TREATMENT"]
+[cover card]
 
-### [0:50–0:60] CTA
-SPOKEN: And the failure mode of this drug class is doing more of it. If you're
-        simply developing late, waiting is an active choice with real evidence
-        behind it. Don't forget, it's never over.
+Growth and puberty arrive late, bone age lags chronological age, and adult height usually lands in the normal range anyway. The runway is longer, not shorter.
 
-## Sources
-Vault: [[Androgens-Constitutional-Delay-Growth-1973]]
+[is not a disorder]
+
+Methyltestosterone, fluoxymesterone or testosterone enanthate. Low doses, averaging about five and a half months of treatment.
+
+[gave androgens]
+
+21 boys with the same condition, untreated, followed to final height. That control arm is what makes a small 1973 study still worth citing.
+
+[got nothing]
+
+Androgens accelerate growth velocity and skeletal maturation together. You grow faster now and you close sooner — the two effects arrive as a package.
+
+[about androgen treatment here]
+
+Low dose and short duration is the entire design logic: enough to start puberty moving, not enough to burn the remaining bone age.
+
+[and duration decide it]
+
+Constitutional delay usually resolves into normal adult height on its own. The intervention question is about distress and timing, not about final centimetres.
+
+[takeaway card]
+
+Waiting is an active choice with real evidence behind it.
+
+DM for source

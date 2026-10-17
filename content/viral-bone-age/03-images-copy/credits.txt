@@ -1,0 +1,9 @@
+slide-03: Dolan et al., PLOS Biology, Fig 2.
+slide-05: Dolan et al., PLOS Biology.
+slide-06: Dolan et al., PLOS Biology.
+slide-07: Dolan et al., PLOS Biology, Fig 5.
+slide-08: Dolan et al., PLOS Biology.
+slide-10: Kvist et al. 2021, PubMed.
+slide-11: Kvist et al. 2021, Table 3.
+slide-12: Kvist et al. 2021, PubMed abstract.
+slide-13: Kvist et al. 2021.

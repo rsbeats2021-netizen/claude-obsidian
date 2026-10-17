@@ -1,0 +1,11 @@
+slide-02: Isaksson, Jansson & Gause 1982, Science 216:1237-9. PubMed.
+slide-03: Isaksson et al. 1982. Hypophysectomised rats.
+slide-04: Loveridge et al. 1995, J Endocrinol.
+slide-05: Loveridge et al. 1995, J Endocrinol. Rat.
+slide-06: Lui et al. 2010.
+slide-07: Lui et al. 2010. Mouse.
+slide-09: Hunziker et al. 1994, J Clin Invest. Rat.
+slide-11: Hunziker et al. 1994, J Clin Invest.
+slide-12: Nwosu et al. 2021, J Endocr Soc. 71 children.
+slide-13: Maghnie et al. 2022, JCEM. Full KIGS cohort. PubMed.
+slide-14: Maghnie et al. 2022, JCEM. N = 83,803.

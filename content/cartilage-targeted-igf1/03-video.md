@@ -1,38 +1,31 @@
-# Video script — "Why systemic IGF-1 isn't the lever"
+# Video script — Your blood IGF-1
 
-60s · 175 words · ~178 wpm. **Only `SPOKEN:` lines are read aloud.**
+144 words, ~48s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:07] HOOK
-SPOKEN: More IGF-1 in your blood doesn't mean more height. The growth plate
-        only responds to what actually reaches it, which is why delivery
-        matters more than levels.
-  [VISUAL: blood level high, tissue level unchanged]
+Spoken lines only. Visual cue in brackets.
 
-### [0:07–0:16] PROBLEM
-SPOKEN: The standard assumption is a dose-response. Raise systemic IGF-1, get
-        more growth. That's the logic behind most of what gets sold here.
-  [ON-SCREEN: "SYSTEMIC ≠ LOCAL"]
+---
 
-### [0:16–0:36] EVIDENCE
-SPOKEN: IGF-1 acts on growth plate chondrocytes locally — the cells produce it
-        themselves and respond to what's made in the tissue. Autocrine and
-        paracrine signalling, not just what arrives by blood. Which is why
-        researchers built cartilage-targeted IGF-1 as an explicit strategy. If
-        systemic levels were sufficient, targeting it would be pointless.
-  [ON-SCREEN: "TARGETED DELIVERY EXISTS FOR A REASON"]
+Your blood IGF-1. Which is why the number on your bloodwork is close to meaningless here.
 
-### [0:36–0:50] PAYOFF
-SPOKEN: And systemic has a ceiling. Raise it everywhere and you raise it in
-        every other IGF-1-responsive tissue — the dose-limiting problem isn't
-        the growth plate, it's everything else. Meanwhile growth hormone acts
-        directly on growth plate stem cells, independent of the liver IGF-1
-        pathway everyone actually measures.
-  [ON-SCREEN: "THE MEASURED NUMBER ISN'T THE ONE THAT MATTERS"]
+[cover card]
 
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: Targeted delivery is compelling and it is not an available
-        intervention. A better idea that doesn't exist yet still isn't a thing
-        you can use. Don't forget, it's never over.
+Growth plate chondrocytes produce IGF-1 themselves and respond to what's made in the tissue next to them. Liver IGF-1 arrives by blood on top of that, but it isn't the main signal at the plate.
 
-## Sources
-Wang 2013 · Lui & Baron · Chu 2025
+[autocrine and paracrine]
+
+Growth hormone acts directly on human growth plate stem cells through JAK/STAT and local TGF beta. That was shown in single cell sequencing of human pubertal growth plate biopsies.
+
+[gh has a second route]
+
+Infused separately into rats with the pituitary removed, GH recruited resting zone chondrocytes into the proliferative pool. IGF-1 expanded cells already dividing.
+
+[also do different jobs]
+
+If the limiting factor is local concentration and local receptor availability, adding more circulating hormone stops helping past a point. That's a delivery problem, not a dose problem.
+
+[takeaway card]
+
+More of a signal that can't reach the tissue changes nothing.
+
+DM for source

@@ -1,0 +1,2 @@
+slide-03: Length vs width. Schematic.
+slide-06: Cool et al. 2005.

@@ -1,51 +1,43 @@
-# Video script — "Estrogen, not testosterone, sets final height"
+# Video script — This guy's testosterone
 
-Runtime target: 60s · 176 words · ~178 wpm
-Same research as `04-slides.csv`, reworded for speech.
+158 words, ~53s at 178 wpm. Target band 45-90s.
 
-**Format rule:** only `SPOKEN:` lines get read aloud.
-
----
-
-### [0:00–0:06] HOOK
-SPOKEN: This man had completely normal testosterone. Slightly above normal,
-        actually. And he never stopped growing.
-  [VISUAL: height chart continuing past adulthood]
-
-### [0:06–0:14] PROBLEM
-SPOKEN: Everyone credits testosterone for male height. It's the puberty
-        hormone, so people assume it's also what ends your growth. That's
-        backwards.
-  [ON-SCREEN: "TESTOSTERONE ≠ THE OFF SWITCH"]
-
-### [0:14–0:36] EVIDENCE
-SPOKEN: In 1994 the New England Journal described a 28-year-old man with a
-        mutation that broke his estrogen receptor. Androgens worked fine. He
-        was fully masculinised. But his growth plates never fused and he was
-        still growing as an adult. Then they gave him estrogen for six months.
-        His estradiol went up roughly tenfold and nothing happened — because
-        the receptor reading that signal was broken.
-  [VISUAL: receptor diagram with the binding site crossed out]
-
-### [0:36–0:50] PAYOFF
-SPOKEN: Testosterone is the precursor. Aromatase converts it into estrogen,
-        including inside growth plate cartilage itself, and estrogen is what
-        closes the plate. Run it forward and it holds: block aromatase in boys
-        and bone maturation slows while adult height goes up.
-  [ON-SCREEN: "PRECURSOR, NOT AGENT"]
-
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: But block the estrogen receptor completely in mice and testosterone
-        still speeds up bone maturation. So androgens are doing something
-        estrogen can't explain, and that part is not settled. Don't forget,
-        it's never over.
-  [ON-SCREEN: "STILL CONTESTED"]
+Spoken lines only. Visual cue in brackets.
 
 ---
 
-## Word budget
-176 words ÷ ~178 wpm ≈ 60s. To cut: drop "Slightly above normal, actually."
+This guy's testosterone. At 28 his growth plates were still wide open.
 
-## Sources
-Smith et al. 1994 NEJM · Bouliari 2026 · Shim 2015 · Gunther 2001 (caveat)
-Vault: [[Estrogen vs Androgen in Male Bone Health]]
+[cover card]
+
+It's the hormone people tie to male puberty, male bone, male height. So they assume it's also what ends your growth.
+
+[testosterone]
+
+A 28 year old man had a mutation that broke his estrogen receptor. His testosterone was normal, slightly high even.
+
+[who couldn't stop growing]
+
+They gave him estrogen for six months. His free estradiol went up about tenfold.
+
+[built into the case]
+
+Aromatase converts androgens into estrogen, including inside growth plate cartilage itself. Testosterone doesn't close your plates directly.
+
+[testosterone is the precursor]
+
+Block aromatase with letrozole or anastrozole in boys and bone maturation slows down and adult height goes up. Same idea tested forwards, in humans.
+
+[in real patients]
+
+Block the estrogen receptor completely with fulvestrant in mice, so aromatisation is irrelevant, and testosterone still speeds up skeletal maturation.
+
+[the story has a crack]
+
+Estrogen is the dominant lever on growth plate closure. Human genetics and clinical trials both settle that.
+
+[takeaway card]
+
+Anyone giving you one clean sentence is skipping the argument.
+
+DM for source

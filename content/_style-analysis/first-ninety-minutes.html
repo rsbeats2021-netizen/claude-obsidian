@@ -1,0 +1,615 @@
+<title>The First Ninety Minutes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+
+<style>
+  :root {
+    --ink:      #0B0E1A;
+    --ink-2:    #141A2E;
+    --ink-3:    #1D2440;
+    --line:     #2A3252;
+    --n3:       #5A4BB8;
+    --n2:       #3E5FA8;
+    --rem:      #2E8C9E;
+    --pulse:    #E8A33D;
+    --pulse-dk: #B8791F;
+    --paper:    #E9E7F2;
+    --muted:    #8E8CAE;
+
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body:    "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  /* ---------- masthead ---------- */
+  .masthead { display: flex; flex-direction: column; gap: 14px; }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--pulse);
+    margin: 0;
+  }
+
+  .masthead h1 {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: clamp(30px, 6vw, 52px);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: 62ch;
+    margin: 0;
+  }
+  .standfirst strong { color: var(--paper); font-weight: 600; }
+
+  /* ---------- carousel ---------- */
+  .deck { display: flex; flex-direction: column; gap: 16px; }
+
+  .track {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 4px 4px 18px;
+    scrollbar-color: var(--line) transparent;
+  }
+
+  .slide {
+    flex: 0 0 auto;
+    width: clamp(286px, 74vw, 348px);
+    aspect-ratio: 9 / 16;
+    scroll-snap-align: center;
+    container-type: inline-size;
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 7cqi;
+    display: flex;
+    flex-direction: column;
+    gap: 4cqi;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slide-num {
+    font-family: var(--mono);
+    font-size: 3.35cqi;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .slide-num b { color: var(--pulse); font-weight: 500; }
+
+  .slide h2 {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: 9.5cqi;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .slide h3 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 6.9cqi;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .slide p {
+    font-size: 4.6cqi;
+    line-height: 1.5;
+    margin: 0;
+    color: #CFCCE2;
+  }
+  .slide p em { color: var(--pulse); font-style: italic; }
+  .slide p b  { color: var(--paper); font-weight: 600; }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: 3.5cqi;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--rem);
+    margin: 0;
+  }
+
+  /* Header pins to the top, footer to the bottom, and the auto margins split
+     the remaining space evenly so the content block sits centred between them. */
+  /* These need .slide in the selector to outrank `.slide p { margin: 0 }`,
+     which would otherwise cancel the auto margins that do the centring. */
+  .spacer { display: none; }
+  .slide .slide-num { margin-bottom: auto; }
+
+  .slide .foot {
+    font-family: var(--mono);
+    font-size: 3.15cqi;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    margin: auto 0 0;
+  }
+
+  /* hook slide */
+  .slide--hook { background: linear-gradient(168deg, #1A1240 0%, #0D1024 62%, #0B0E1A 100%); }
+  .slide--hook h2 { font-size: 11.3cqi; }
+  .hook-rule {
+    height: 3px;
+    width: 26cqi;
+    background: var(--pulse);
+    border: 0;
+    margin: 0;
+  }
+
+  /* frame / disclaimer slide */
+  .frame-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6cqi;
+    font-family: var(--mono);
+    font-size: 4cqi;
+    line-height: 1.35;
+    color: #CFCCE2;
+  }
+  .frame-list li { display: flex; gap: 2.4cqi; align-items: flex-start; }
+  .frame-list span[aria-hidden] { color: var(--pulse); }
+
+  /* blunt-list slide */
+  .blunt {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2cqi;
+  }
+  .blunt li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9cqi;
+    padding-left: 3.4cqi;
+    border-left: 2px solid var(--n3);
+  }
+  .blunt b {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 4.95cqi;
+    letter-spacing: -0.01em;
+  }
+  .blunt span {
+    font-family: var(--mono);
+    font-size: 3.5cqi;
+    line-height: 1.4;
+    color: var(--muted);
+  }
+
+  /* protocol slide */
+  .protocol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3cqi;
+    counter-reset: step;
+  }
+  .protocol li {
+    counter-increment: step;
+    display: grid;
+    grid-template-columns: 7cqi 1fr;
+    gap: 2.6cqi;
+    align-items: baseline;
+    font-size: 4.45cqi;
+    line-height: 1.35;
+    color: #CFCCE2;
+  }
+  .protocol li::before {
+    content: counter(step, decimal-leading-zero);
+    font-family: var(--mono);
+    font-size: 3.5cqi;
+    color: var(--pulse);
+  }
+
+  /* sources slide */
+  .sources {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.4cqi;
+  }
+  .sources li {
+    font-family: var(--mono);
+    font-size: 3.6cqi;
+    line-height: 1.45;
+    color: #CFCCE2;
+    padding-bottom: 3.2cqi;
+    border-bottom: 1px solid var(--line);
+  }
+  .sources li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .sources b { color: var(--paper); font-weight: 600; }
+  .sources i { color: var(--muted); font-style: normal; display: block; margin-top: 0.8cqi; }
+
+  /* chart slide */
+  .chart-slide { gap: 3cqi; }
+  .chart-slide svg { width: 100%; height: auto; display: block; }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.6cqi;
+    font-family: var(--mono);
+    font-size: 3.15cqi;
+    color: var(--muted);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .legend li { display: flex; align-items: center; gap: 1.2cqi; }
+  .swatch { width: 2.6cqi; height: 2.6cqi; border-radius: 2px; display: inline-block; }
+
+  /* cta slide */
+  .slide--cta { background: linear-gradient(196deg, #16123A 0%, #0D1024 58%, #0B0E1A 100%); }
+
+  /* ---------- controls ---------- */
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+  .controls button {
+    font: inherit;
+    letter-spacing: inherit;
+    color: var(--paper);
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .controls button:hover { background: var(--ink-3); border-color: var(--n3); }
+  .controls button:focus-visible { outline: 2px solid var(--pulse); outline-offset: 2px; }
+  #counter b { color: var(--pulse); font-weight: 500; }
+
+  /* ---------- lower panels ---------- */
+  .panels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+    gap: 22px;
+    align-items: start;
+  }
+
+  .panel { display: flex; flex-direction: column; gap: 12px; }
+  .panel h2 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--paper);
+  }
+  .panel p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); }
+  .panel p b { color: var(--paper); font-weight: 600; }
+
+  .caption-box {
+    background: var(--ink-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-family: var(--mono);
+    font-size: 13px;
+    line-height: 1.6;
+    color: #CFCCE2;
+  }
+  .tags { color: var(--rem); word-spacing: 0.2em; }
+
+  .stats { display: flex; flex-direction: column; gap: 0; margin: 0; }
+  .stats div {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: baseline;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .stats div:last-child { border-bottom: 0; }
+  .stats dt { font-size: 14px; color: var(--muted); }
+  .stats dd {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 15px;
+    font-variant-numeric: tabular-nums;
+    color: var(--pulse);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .track { scroll-behavior: smooth; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Slideshow concept · 9 slides · 9:16</p>
+    <h1>The First Ninety Minutes</h1>
+    <p class="standfirst">Built from the competitor set: sleep is the <strong>whitespace</strong>, touched by only 2 of 13 accounts, while growth-hormone content is the single largest topic by views. This deck sits on top of that demand with the one GH lever that needs no compound, and cites its sources, which <strong>83% of claims in the corpus don't</strong>.</p>
+  </header>
+
+  <section class="deck" aria-label="Slideshow">
+    <div class="track" id="track" tabindex="0" aria-label="Slides, use arrow keys">
+
+      <!-- 01 -->
+      <article class="slide slide--hook">
+        <p class="slide-num"><b>01</b><span>HOOK</span></p>
+        <div class="spacer"></div>
+        <h2>Your biggest GH pulse of the day fires in the first 90 minutes of sleep.</h2>
+        <hr class="hook-rule">
+        <p>Most people wreck it before midnight and then blame their genetics.</p>
+        <div class="spacer"></div>
+        <p class="foot">SWIPE →</p>
+      </article>
+
+      <!-- 02 -->
+      <article class="slide">
+        <p class="slide-num"><b>02</b><span>FRAME</span></p>
+        <p class="kicker">Read this first</p>
+        <h3>No compounds. No injections. No dosing.</h3>
+        <ul class="frame-list">
+          <li><span aria-hidden="true">→</span><span>Educational, not medical advice.</span></li>
+          <li><span aria-hidden="true">→</span><span>Nothing here is off-label anything.</span></li>
+          <li><span aria-hidden="true">→</span><span>This is sleep architecture: the only GH lever that is free, legal, and available tonight.</span></li>
+        </ul>
+        <div class="spacer"></div>
+        <p class="foot">SOURCES ON SLIDE 08</p>
+      </article>
+
+      <!-- 03 -->
+      <article class="slide">
+        <p class="slide-num"><b>03</b><span>MECHANISM</span></p>
+        <p class="kicker">How GH is actually released</p>
+        <h3>It's pulsatile, not continuous.</h3>
+        <p>Growth hormone isn't a steady drip. It's released in discrete bursts across the day, and in healthy adults the largest share of 24-hour output arrives in pulses <b>locked to slow-wave sleep</b>.</p>
+        <p>The dominant pulse of the night lands <em>shortly after you fall asleep</em>, riding your first block of N3.</p>
+        <div class="spacer"></div>
+        <p class="foot">TAKAHASHI 1968 · VAN CAUTER 1996</p>
+      </article>
+
+      <!-- 04: hypnogram -->
+      <article class="slide chart-slide">
+        <p class="slide-num"><b>04</b><span>THE CHART</span></p>
+        <h3>Your night, mapped.</h3>
+        <svg viewBox="0 0 620 620" role="img" aria-label="Hypnogram showing sleep stages across eight hours, with N3 deep sleep concentrated in the first two cycles, and a growth hormone concentration curve below peaking during the first N3 block.">
+          <!-- stage gridlines -->
+          <g stroke="#2A3252" stroke-width="1">
+            <line x1="60" y1="60"  x2="596" y2="60"></line>
+            <line x1="60" y1="130" x2="596" y2="130"></line>
+            <line x1="60" y1="200" x2="596" y2="200"></line>
+            <line x1="60" y1="270" x2="596" y2="270"></line>
+            <line x1="60" y1="350" x2="596" y2="350"></line>
+          </g>
+          <!-- stage labels -->
+          <g fill="#8E8CAE" font-family="IBM Plex Mono, monospace" font-size="15" text-anchor="end">
+            <text x="50" y="65">Wake</text>
+            <text x="50" y="135" fill="#2E8C9E">REM</text>
+            <text x="50" y="205">N1</text>
+            <text x="50" y="275" fill="#3E5FA8">N2</text>
+            <text x="50" y="355" fill="#5A4BB8">N3</text>
+          </g>
+          <!-- highlight band: first N3 block -->
+          <rect x="96" y="45" width="55" height="320" fill="#5A4BB8" opacity="0.16"></rect>
+          <!-- hypnogram trace -->
+          <polyline fill="none" stroke="#7C8CD6" stroke-width="2.8" stroke-linejoin="round"
+            points="60,60 70,60 70,200 80,200 80,270 96,270 96,350 151,350 151,270 164,270 164,130 184,130 184,270 203,270 203,350 249,350 249,270 268,270 268,130 301,130 301,270 340,270 340,350 359,350 359,270 385,270 385,130 431,130 431,270 463,270 463,130 515,130 515,270 535,270 535,130 574,130 574,60 580,60"></polyline>
+
+          <!-- GH panel -->
+          <text x="596" y="398" fill="#8E8CAE" font-family="IBM Plex Mono, monospace" font-size="15" text-anchor="end">GH plasma concentration (ng/mL)</text>
+          <defs>
+            <linearGradient id="ghfill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#E8A33D" stop-opacity="0.55"></stop>
+              <stop offset="100%" stop-color="#E8A33D" stop-opacity="0.04"></stop>
+            </linearGradient>
+          </defs>
+          <path fill="url(#ghfill)" stroke="none"
+            d="M60,560 L96,560 C110,560 112,453 122,450 C134,447 140,516 152,541 L160,551 L200,560 C210,560 214,503 226,497 C238,494 244,541 254,554 L300,560 L338,560 C346,560 350,529 358,525 C366,522 370,551 378,560 L430,560 L470,560 C476,560 480,544 486,543 C492,541 496,555 500,560 L580,560 L580,562 L60,562 Z"></path>
+          <path fill="none" stroke="#E8A33D" stroke-width="2.8" stroke-linejoin="round"
+            d="M60,560 L96,560 C110,560 112,453 122,450 C134,447 140,516 152,541 L160,551 L200,560 C210,560 214,503 226,497 C238,494 244,541 254,554 L300,560 L338,560 C346,560 350,529 358,525 C366,522 370,551 378,560 L430,560 L470,560 C476,560 480,544 486,543 C492,541 496,555 500,560 L580,560"></path>
+          <line x1="60" y1="562" x2="596" y2="562" stroke="#2A3252" stroke-width="1"></line>
+
+          <!-- peak annotation -->
+          <circle cx="122" cy="450" r="6" fill="#E8A33D"></circle>
+          <line x1="122" y1="441" x2="122" y2="404" stroke="#E8A33D" stroke-width="1" stroke-dasharray="3 3"></line>
+          <text x="132" y="399" fill="#E8A33D" font-family="IBM Plex Mono, monospace" font-size="15" font-weight="500">largest pulse</text>
+
+          <!-- time axis -->
+          <g fill="#8E8CAE" font-family="IBM Plex Mono, monospace" font-size="15" text-anchor="middle">
+            <text x="60"  y="595">23:00</text>
+            <text x="190" y="595">01:00</text>
+            <text x="320" y="595">03:00</text>
+            <text x="450" y="595">05:00</text>
+            <text x="580" y="595">07:00</text>
+          </g>
+        </svg>
+        <ul class="legend">
+          <li><span class="swatch" style="background:#7C8CD6"></span>sleep stage</li>
+          <li><span class="swatch" style="background:#E8A33D"></span>GH pulses</li>
+          <li><span class="swatch" style="background:#5A4BB8;opacity:.5"></span>first N3 block</li>
+        </ul>
+        <div class="spacer"></div>
+        <p class="foot">N3 IS FRONT-LOADED. SO IS YOUR GH.</p>
+      </article>
+
+      <!-- 05 -->
+      <article class="slide">
+        <p class="slide-num"><b>05</b><span>THE TWIST</span></p>
+        <p class="kicker">Everyone gets this backwards</p>
+        <h3>Losing the end of your night is not the expensive part.</h3>
+        <p>Deep sleep is front-loaded; REM stacks toward morning. So an alarm that steals <b>06:00–08:00</b> mostly costs you REM.</p>
+        <p>A fragmented, alcohol-soaked, scrolling <em>23:00–01:00</em> costs you the pulse itself, and you can't make it up by sleeping in.</p>
+        <div class="spacer"></div>
+        <p class="foot">FIX THE FRONT OF THE NIGHT</p>
+      </article>
+
+      <!-- 06 -->
+      <article class="slide">
+        <p class="slide-num"><b>06</b><span>WHAT BLUNTS IT</span></p>
+        <h3>Four things that flatten the first pulse</h3>
+        <ul class="blunt">
+          <li><b>Alcohol</b><span>Suppresses slow-wave sleep and fragments the back half, even when you "slept through".</span></li>
+          <li><b>A big meal near bed</b><span>Elevated glucose and insulin blunt GH secretion. Give it ~3 hours.</span></li>
+          <li><b>Bright light late</b><span>Delays melatonin onset, pushing sleep onset and the whole architecture later.</span></li>
+          <li><b>Irregular bedtime</b><span>The pulse is tied to sleep onset. A moving onset is a moving pulse.</span></li>
+        </ul>
+        <p class="foot">ALL FOUR ARE FREE TO FIX</p>
+      </article>
+
+      <!-- 07 -->
+      <article class="slide">
+        <p class="slide-num"><b>07</b><span>PROTOCOL</span></p>
+        <p class="kicker">Tonight, free</p>
+        <h3>The five-step version</h3>
+        <ol class="protocol">
+          <li>Same wake time daily, weekends included.</li>
+          <li>Last real meal ~3h before lights out.</li>
+          <li>Dry nights when you're actually optimizing.</li>
+          <li>Dim everything 60–90 min before bed.</li>
+          <li>Cool, dark, boring room. 18–19°C.</li>
+        </ol>
+        <div class="spacer"></div>
+        <p class="foot">PROTECT THE FIRST CYCLE</p>
+      </article>
+
+      <!-- 08 -->
+      <article class="slide">
+        <p class="slide-num"><b>08</b><span>SOURCES</span></p>
+        <p class="kicker">Because nobody else posts them</p>
+        <ul class="sources">
+          <li><b>Takahashi, Kipnis &amp; Daughaday (1968)</b><i>J Clin Invest. The original description of GH secretion during sleep, tied to slow-wave onset.</i></li>
+          <li><b>Van Cauter &amp; Plat (1996)</b><i>J Pediatr. Review of GH secretion physiology across the sleep period.</i></li>
+          <li><b>Prinz et al.</b><i>On alcohol's suppression of slow-wave sleep and the associated GH release.</i></li>
+        </ul>
+        <div class="spacer"></div>
+        <p class="foot">READ THEM. DON'T TRUST A SLIDE.</p>
+      </article>
+
+      <!-- 09 -->
+      <article class="slide slide--cta">
+        <p class="slide-num"><b>09</b><span>NEXT</span></p>
+        <div class="spacer"></div>
+        <h3>Part 2: why your watch's "deep sleep" score is lying to you.</h3>
+        <p>Wrist trackers infer sleep stages from movement and heart rate. The lab uses electrodes. The gap is bigger than the marketing suggests.</p>
+        <hr class="hook-rule">
+        <p><b>Follow for the rest of the series.</b></p>
+        <div class="spacer"></div>
+        <p class="foot">SAVE THIS FOR TONIGHT</p>
+      </article>
+
+    </div>
+
+    <div class="controls">
+      <button type="button" id="prev">← PREV</button>
+      <button type="button" id="next">NEXT →</button>
+      <span id="counter"><b>01</b> / 09</span>
+    </div>
+  </section>
+
+  <div class="panels">
+    <section class="panel">
+      <h2>Why this concept</h2>
+      <dl class="stats">
+        <div><dt>Sleep/Recovery coverage in the set</dt><dd>2 / 13</dd></div>
+        <div><dt>Height &amp; GH total views</dt><dd>3,389,809</dd></div>
+        <div><dt>Height &amp; GH avg per post</dt><dd>25,297</dd></div>
+        <div><dt>Claims paired with evidence</dt><dd>17%</dd></div>
+      </dl>
+      <p>It borrows the audience of the biggest topic in the niche, lands in the emptiest one, and needs no compound to be actionable, so it travels past the enhancement audience into general fitness.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Caption</h2>
+      <div class="caption-box">
+        Your biggest GH pulse fires in the first 90 minutes of sleep. Sources on slide 8.<br><br>
+        <span class="tags">#fyp #foryoupage #sleep #height #biohacking #health</span>
+      </div>
+      <p><b>Length:</b> 15 words. The 6&ndash;15 word band is the best-performing caption bucket in the corpus (median 17,300 views, against 10,600 for 1&ndash;5 words).</p>
+      <p><b>Tags:</b> hashtag choice is mostly noise. Tags that look strong corpus-wide collapse within a single account (#skin runs 4.21x for one account and 1.09x for another; #sleep is 1.01x). Only #fyp and #foryoupage hold up inside accounts, so the topical tags here are labelling, not strategy.</p>
+      <p><b>Sound:</b> not answerable from this dataset, which carries no music field. Reasoning only: use something ambient and wordless, because these slides are read, and a vocal track competes with the text.</p>
+      <p><b>Format warning:</b> slideshows lose to video in every account with enough of both (bigonial_ 0.23x, rpo3212 0.67x, doctor.morph 0.81x). The top 50 posts are 46 video to 4 slideshow. Consider a voiceover cut with the hypnogram on screen as the primary, this carousel as the secondary.</p>
+    </section>
+  </div>
+
+</div>
+
+<script>
+  const track = document.getElementById('track');
+  const slides = [...track.querySelectorAll('.slide')];
+  const counter = document.getElementById('counter');
+
+  const current = () => {
+    const mid = track.scrollLeft + track.clientWidth / 2;
+    let best = 0, bestDist = Infinity;
+    slides.forEach((s, i) => {
+      const c = s.offsetLeft + s.offsetWidth / 2;
+      const d = Math.abs(c - mid);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  };
+
+  const go = (i) => {
+    const t = slides[Math.max(0, Math.min(slides.length - 1, i))];
+    track.scrollTo({ left: t.offsetLeft - (track.clientWidth - t.offsetWidth) / 2 });
+  };
+
+  document.getElementById('prev').addEventListener('click', () => go(current() - 1));
+  document.getElementById('next').addEventListener('click', () => go(current() + 1));
+
+  track.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(current() + 1); }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); go(current() - 1); }
+  });
+
+  track.addEventListener('scroll', () => {
+    counter.innerHTML = '<b>' + String(current() + 1).padStart(2, '0') + '</b> / 09';
+  }, { passive: true });
+</script>

@@ -1,39 +1,39 @@
-# Video script — "The cells you actually run out of"
+# Video script — Your final height
 
-60s · 176 words · ~178 wpm. Same research as `04-slides.csv`.
-**Only `SPOKEN:` lines are read aloud.**
+151 words, ~50s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:06] HOOK
-SPOKEN: Your final height is decided by a thin layer of stem cells at the very
-        top of the growth plate. Everything below them is just the assembly
-        line they feed.
-  [VISUAL: growth plate zones, resting zone highlighted]
+Spoken lines only. Visual cue in brackets.
 
-### [0:06–0:14] PROBLEM
-SPOKEN: People picture the growth plate as one slab of cartilage that closes.
-        It's a hierarchy, and only the top layer is the reserve.
-  [ON-SCREEN: "RESTING ZONE = THE RESERVE"]
+---
 
-### [0:14–0:36] EVIDENCE
-SPOKEN: In rabbits, over ninety-five percent of resting zone cells were
-        dividing at birth. By seventeen weeks, under ten percent — and the cell
-        count had dropped too. So the reserve depletes both ways: fewer cells,
-        and less active. In 2025 single-cell sequencing of human growth plate
-        biopsies confirmed the same populations exist in people. This stopped
-        being a mouse story.
-  [VISUAL: proliferation decline chart]
+Your final height. Everything under them is just the production line they feed.
 
-### [0:36–0:50] PAYOFF
-SPOKEN: And you can push them. A single Hedgehog agonist bead implanted in one
-        rat femur produced progressively increasing leg length compared to the
-        untreated leg on the same animal. Same genetics, one leg longer.
-  [ON-SCREEN: "SAME ANIMAL. ONE LEG LONGER."]
+[cover card]
 
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: But whether normal fusion is these cells exhausting themselves has
-        never been directly tested. Best available model, still inference.
-        Don't forget, it's never over.
-  [ON-SCREEN: "BEST MODEL ≠ DEMONSTRATED"]
+The name is misleading. They're not resting, they're the reserve.
 
-## Sources
-Schrier 2006 · Chu 2025 · Trompet 2024 · vault: [[Epiphyseal Skeletal Stem Cells and Hedgehog Signaling]]
+[resting zone cells]
+
+In rabbits, over 95% of resting zone cells were dividing at birth. By 17 weeks that dropped under 10%.
+
+[fast]
+
+They're marked by PTHrP. Single cell sequencing of human pubertal growth plate biopsies confirmed the same two populations exist in people, not just mice.
+
+[exactly which cells]
+
+One Hedgehog agonist bead implanted in a single rat femur produced a measurable, growing length difference against the untreated leg on the same animal.
+
+[and bone gets longer]
+
+These cells only stay stem like in a low Wnt environment. Force canonical Wnt signalling on and they lose the ability to form columns at all.
+
+[a very specific niche]
+
+Nobody has directly tested whether normal fusion is these cells clonally exhausting themselves. It's the best model we have and it's still inference.
+
+[takeaway card]
+
+Best available explanation is not the same as proven.
+
+DM for source

@@ -118,6 +118,153 @@ studies found oxandrolone produced 4.5 to 9.6 cm/year growth velocity and 2.3
 to 4.6 cm additional adult height in paediatric growth disorders. The organ
 culture null result does not override the clinical record.
 
+## Voice (measured 14 Sep from the corpus)
+
+Compared the top play-count quartile of competitor slideshows (81 decks,
+32,000+ plays) against the rest, per 1,000 words. The winners are not louder.
+They are more like a good teacher walking a class through papers.
+
+| move | top / rest |
+|---|---|
+| "we / our / us" | 1.6x |
+| "the study showed that / found that" | 1.9x |
+| jargon used, then glossed in the same sentence | 2.2x |
+| "first study / second study / third study" | 2.7x |
+| spoken connectors: so, but, lets, now | 1.4x |
+| shock words: shocking, crazy, insane, wrong | **0.8x** |
+| "you" | **0.9x** |
+| "I" | **0.7x** |
+
+Density also rises with plays: top quartile decks run ~60 words per slide over
+7+ slides. The bottom quartile is 2 slides and 39 words. A wall of text does
+not hurt. A thin deck does.
+
+### What the winners actually sound like
+
+doctor.morph, 186k plays, cleanest transcription in the set:
+
+> "So there are a lot of mechanisms and pathways that play into this but lets
+> go with the main one. Bones have osteocytes which are cells that can convert
+> mechanical stressors into cellular signals..."
+
+> "A very important study, Cullen 2001, compared soft vs hard loads and 40,
+> 120 and 400 loads. The results showed that hitting hard = more bone
+> formation. But the most shocking part was that 120 loads was almost as good
+> if not better than the group that received 400 loads. This means that..."
+
+> "How do we use this to our advantage? So from the previous studies there
+> seems to be a mechanism that... To use this mechanism to our advantage we
+> will not do all our smashing at once but instead..."
+
+_sox9, 149k: "many of you will think this is bad, which is wrong because...",
+"And now with the third study we learn that..."
+
+### The rules that replace "second person, absolute, stacked, no connectors"
+
+That rule was mine and the corpus does not support it. Replace with:
+
+1. **Guide voice.** "We" and "lets" when walking through evidence. "You" for
+   the payoff. "I" rarely.
+2. **Name the study inline, then report it.** "Kvist 2021 imaged 958 people
+   and found that..." beats a bare number with a citation in the footer.
+3. **Use the real term, then gloss it in the same breath.** "growth plate
+   senescence, which is the plate running out of divisions". Never dumb the
+   term out. Never leave it unexplained.
+4. **Connectors are allowed.** So, but, now, what this means is, the shocking
+   part is. They are how a person talks. Sentences can run 20+ words.
+5. **Number the studies** when there is more than one. "The first study...",
+   "the second study..." Viewers track it.
+6. **Pre-empt the objection** once per deck. "You might think X. That is wrong
+   because..."
+7. **End on application.** "So how do we use this?" then the answer.
+8. **No hype vocabulary.** Shock words score below average. Confidence comes
+   from "the study showed", not from "insane".
+
+### Text per slide, by position (measured 14 Sep, top quartile, all text on the slide)
+
+| slide | words | what it is |
+|---|---|---|
+| 1 | **8-12** | the hook. rpo3212, _sox9, sy934821 run 8. never more than 15 |
+| 2 | ~50 | setup, where the number comes from |
+| 3-4 | 100-120 | the peak. argue hardest here |
+| 5 | ~75 | the receipt. the screenshot carries it |
+| 6-8 | 95-110 | mechanism and second study |
+| 9-10 | 50-65 | payoff, thinning out |
+| last | ~45 | CTA |
+
+Cover is 10% of the deck's peak. The shape is a ramp, not a plateau. My first
+drafts were the inverse (covers 25-60 words, middles 55-85). Fixed 15 Sep.
+
+## Density, measured against the top 12 (3 Oct)
+
+Compared my slideshows with the 12 highest-play competitor slideshows that have
+5+ slides and 200+ words. The gaps were large and all in one direction.
+
+| metric | theirs | mine (before) | fix |
+|---|---|---|---|
+| **words per slide** | **101** | 50 | roughly double the body |
+| sentence length | 19.4 | 13.3 | let sentences run |
+| questions per post | 2.5 | 0 | use question headlines |
+| numeric words | 10.7% | 3.8% | put the comparison values in |
+| "I" per 1k words | 7.7 | 0 | occasional first person |
+| "we" per 1k | 2.5 | 0 | "we" for the application step |
+| "you" per 1k | 4.8 | 9.6 | ease off |
+
+### The moves doctor.morph makes on a 113-188 word slide
+
+1. **Define the term inline.** "Loading frequency = how often does the bone get hit."
+2. **Study, design and result in one flow.** "Cullen 2001, compared soft vs hard
+   loads and 40 - 120 - 400 loads. The results showed..."
+3. **Translate after every technical sentence.** "What this means is that you want
+   a pulsatile and thus a rapid load and not a continuous load."
+4. **Stakes in the headline.** "Everyone bone smashes COMPLETELY WRONG."
+5. **Question headlines.** "How long should you smash?", "How do we use this to
+   our advantage?"
+6. **"we" for application.** "we will not do all our smashing at once but instead,
+   we will spread it out throughout the day."
+7. **Each slide teaches one complete sub-lesson** rather than carrying a fragment.
+
+Target: ~100 words of body per content slide, 2-3 question headlines per post.
+
+### The numeric-density gap was an artifact, and the real finding is better
+
+Their text measured 10.7% numeric against my 3.8%, which looked like a 3x gap.
+Separating OCR'd figure text from actual prose:
+
+| | numeric words |
+|---|---|
+| their prose lines only | **4.7%** |
+| their full on-slide text | 11.1% |
+| mine | 3.2% |
+
+So their prose is only slightly more number-dense than mine. The gap was coming
+from somewhere else: **26% of all the text on their slides is the study figure
+itself** — axis labels, p-values, sample sizes, legible enough that OCR reads
+them. Their screenshots are large and show DATA.
+
+Mine crop a highlighted sentence, which is a stronger receipt for one claim but
+puts far less on the slide. Worth testing a larger figure crop that shows the
+actual plot, not only the sentence.
+
+### Renderer change this forced
+At ~100 words the fit pass used to starve the diagram down to a stamp, because
+the image yielded before the copy did. `render-classic.py` now shrinks copy to a
+19px floor FIRST and only then squeezes the image, with a hard minimum of 30% of
+frame height. Dense copy and a legible diagram now coexist.
+
+## Standing rules added 2 Oct
+
+- **Never use the word "deck" on a slide.** It is production vocabulary. Viewers
+  see a slideshow, a post, or nothing at all. Say "here", "in this", or rewrite
+  the sentence.
+- **The last slide says only `DM for source`.** No sources line, no hashtags, no
+  "comment SOURCES". One instruction.
+- **The cover is a hook, never a CTA.** 8-15 words, headline + subhead + one punch
+  line, no body. "DM for source" belongs on the last slide only.
+- **Layout is vertically centred.** `render-classic.py` centres headline and body
+  as one block in the middle of the frame, so a TikTok crop eats empty margin
+  instead of the headline.
+
 ## Rule added 7 Sep: no exhaustiveness claims
 
 The aromatase inhibitor deck said "the entire evidence base is four randomised
@@ -158,3 +305,19 @@ literature, not against the file count in `.raw/Studies`.
 
 Where a claim cannot be verified, leave the question open rather than closing it
 in the direction that sounds stronger.
+
+## Image rule (added 2 Oct, after an audit)
+
+**Every content slide carries an image.** Cover and outro are the only text-only
+slides. The top creators run one on nearly every slide; six of the ten HGH
+slideshows shipped with images on 2 of 9 before this was caught.
+
+Three kinds, mixed:
+- a generated diagram (bars, flow, two-column compare, checklist, quote card)
+- a figure cropped from the source PDF
+- one highlighted-sentence receipt per slideshow
+
+`scripts/check-deck.py` now parses every SVG in the slideshow's image folder. A
+bare `<` or `&` in copy like "P < 0.001" makes the file invalid XML; Chrome then
+renders **nothing** and the slide ships with a hole in it, silently. Ten files
+were broken that way, one of them in a slideshow from weeks earlier.

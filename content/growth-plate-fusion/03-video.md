@@ -1,54 +1,43 @@
-# Video script — "Fusion is the receipt, not the cause"
+# Video script — Your growth plates
 
-Runtime target: 60s · 178 words · ~178 wpm (matches your delivery pace)
-Same topic as `02-slideshow.md`, reworded for speech — longer sentences,
-spoken rhythm, the transplant experiment carried by voice instead of diagram.
+155 words, ~52s at 178 wpm. Target band 45-90s.
 
-**Format rule:** only `SPOKEN:` lines get read aloud. Everything bracketed is direction.
+Spoken lines only. Visual cue in brackets.
 
 ---
 
-### [0:00–0:05] HOOK
-SPOKEN: Your growth plates closing is not what stops you from growing.
-        It is the other way around. And almost nobody gets this right.
-  [VISUAL: growth plate cross-section, causal arrow flipping direction]
+Your growth plates. And the experiment that proved it is 20 years old.
 
-### [0:05–0:13] PROBLEM
-SPOKEN: Everybody treats fusion like a deadline. Stay open longer, beat the
-        clock, get taller. That entire model is backwards.
-  [ON-SCREEN: "FUSION ≠ DEADLINE"]
+[cover card]
 
-### [0:13–0:33] EVIDENCE
-SPOKEN: Nilsson and Baron transplanted growth plates between animals of
-        different ages. A young plate placed into an old animal still grew
-        fast. An old plate placed into a young animal stayed slow. The growth
-        rate followed the donor every time, never the recipient. Which tells
-        you the clock is not somewhere in your body. It is inside the plate
-        itself.
-  [VISUAL: two-panel transplant animation — young→old, old→young]
+Stay open longer, beat the clock, get taller. That's what basically every height protocol is built on.
 
-### [0:33–0:48] PAYOFF
-SPOKEN: Your growth plate holds a finite number of divisions. It is a bank
-        account, not a timer. And your growth slows down for years before
-        anything actually fuses. Parfitt pointed this out back in 2002.
-        Fusion is the receipt. It is not the cause.
-  [ON-SCREEN: "BANK ACCOUNT, NOT A TIMER"]
+[like a deadline]
 
-### [0:48–0:60] CAVEAT + CTA
-SPOKEN: As for how fusion actually happens at the cellular level — there are
-        four competing theories and not one of them is confirmed in humans.
-        Anyone telling you they know for certain has not read the papers.
-        Don't forget, it's never over.
-  [ON-SCREEN: "4 THEORIES · 0 CONFIRMED"]
+They transplanted growth plates between animals of different ages. If your body set the growth rate, a transplanted plate would grow at the recipient's pace.
 
----
+[that settled it]
 
-## Word budget check
-178 words ÷ ~178 wpm = ~60s. If you run long, cut the second half of the
-EVIDENCE block ("Which tells you the clock is not somewhere in your body")
-— the next line already carries it.
+It's inside the plate itself. Not your hormones, not your age, not some signal from your brain telling your bones to quit.
 
-## Sources
-- Nilsson & Baron 2004 — growth plate senescence; transplantation experiments
-- Parfitt 2002 — "Misconceptions: Epiphyseal Fusion Causes Cessation of Growth"
-- Vault: [[Epiphyseal Fusion Mechanisms]]
+[isn't in your body]
+
+Resting zone chondrocytes have a finite replicative capacity. Every division spends a bit of it.
+
+[is cell divisions]
+
+Deceleration comes first. Fusion follows it, sometimes way later.
+
+[years before fusion]
+
+Suppress growth for a while and plates grow faster than expected afterwards. If fusion ran on a clock, lost time would be gone forever.
+
+[that proves it]
+
+Four competing theories for how fusion actually happens in the cell: apoptosis, autophagy, hypoxia, transdifferentiation. None confirmed in humans.
+
+[takeaway card]
+
+Anyone certain about this hasn't read the papers.
+
+DM for source

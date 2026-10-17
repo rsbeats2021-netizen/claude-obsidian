@@ -1,0 +1,177 @@
+Joined posts: 507 (missing meta for 21)
+Total slide-text posts: 528, total CSV posts: 1951
+
+======================================================================
+Q1: TOPICS BY VIEWS
+======================================================================
+
+-- Overall (all 14 accounts) --
+Topic                     Posts   Total Views   Avg Views
+Height/Growth               134     3,389,809      25,297
+Looksmaxxing                102     1,713,220      16,796
+Other/Uncategorized         133     1,425,290      10,716
+Steroids/PEDs                68     1,370,149      20,149
+Skin/Anti-aging               5       670,575     134,115
+Diet/Supplements             27       452,875      16,773
+Hair                         14       308,340      22,024
+Nootropics/Cognition         14       293,595      20,971
+Peptides                      7        37,326       5,332
+Sleep/Recovery                3        16,623       5,541
+
+-- Per account: top topic by total views --
+bigonial_                total= 3,504,497  top: Looksmaxxing (1,236,108), Other/Uncategorized (623,080), Skin/Anti-aging (506,600)
+bpedpremed               total= 2,001,144  top: Other/Uncategorized (679,753), Height/Growth (641,144), Looksmaxxing (395,723)
+rpo3212                  total= 1,322,703  top: Height/Growth (965,160), Diet/Supplements (127,330), Steroids/PEDs (93,100)
+doctor.morph             total=   928,048  top: Height/Growth (271,712), Steroids/PEDs (185,600), Skin/Anti-aging (120,900)
+_sox9                    total=   759,658  top: Height/Growth (665,765), Hair (43,113), Diet/Supplements (31,264)
+sy934821                 total=   379,226  top: Height/Growth (150,726), Steroids/PEDs (141,400), Hair (71,800)
+bio.science              total=   292,386  top: Height/Growth (131,686), Steroids/PEDs (118,200), Nootropics/Cognition (42,500)
+enhancements.explained   total=   255,627  top: Height/Growth (119,039), Steroids/PEDs (68,400), Diet/Supplements (60,790)
+ntluccy                  total=   185,448  top: Nootropics/Cognition (88,967), Diet/Supplements (55,381), Steroids/PEDs (29,400)
+750tren                  total=    29,702  top: Steroids/PEDs (22,900), Height/Growth (6,802)
+biomaxxer                total=     8,176  top: Nootropics/Cognition (8,176)
+seaniracetam             total=     6,913  top: Other/Uncategorized (6,913)
+enhancementsexplainedold total=     4,274  top: Diet/Supplements (4,274)
+
+======================================================================
+Q3: MOST-CITED STUDIES
+======================================================================
+
+Study citation                  # posts  # accounts
+Bierich 1992                          3           3
+Kaplowitz 1995                        3           3
+Kawai 1997                            2           2
+Isgaard 1998                          2           1
+Loche 1994                            1           1
+Tanaka et al. 2006                    1           1
+Loche et al. 1994                     1           1
+Kawai et al. 1998                     1           1
+Pediatr 1998                          1           1
+Gool et al. 2010                      1           1
+Kawai et al. 1997                     1           1
+Kim et al. 2011                       1           1
+Isgaard et al 1988                    1           1
+Clark et al 1985                      1           1
+Aufrufe 2025                          1           1
+AUG 2021                              1           1
+Weber et al 2021                      1           1
+Bortolin et al. 2017                  1           1
+Bikle et al. 2001                     1           1
+Chavarro et al 2008                   1           1
+EJhrnborg et al. 2005                 1           1
+Luo et al 2019                        1           1
+LaForgia et al. 2006                  1           1
+Donelly et al. 2009                   1           1
+Feb 2026                              1           1
+
+======================================================================
+Q2: RECURRING CLAIMS (entity + claim-verb pairs) & EVIDENCE RATE
+======================================================================
+
+Distinct entity+verb claims total: 334
+Claims appearing across >=2 accounts: 114
+
+Entity                Verb           #accts #mentions w/evidence
+gh                    increase            7        18          3
+growth plate          increase            6        22          3
+dht                   increase            5        19          2
+igf-1                 increase            5        18          5
+camp                  increase            5        16          2
+osteoblast            increase            5        14          2
+gh                    cause               5         8          5
+gh                    lower               5         6          2
+insulin               increase            5         6          3
+metabolism            increase            5         5          1
+chondrocyte           increase            4        12          4
+cartilage             increase            4        11          3
+gh                    decrease            4        10          3
+collagen              increase            4        10          0
+camp                  activate            4        10          0
+growth plate          reduce              4         8          2
+testosterone          reduce              4         7          2
+pth                   increase            4         6          0
+osteoblast            stimulate           4         4          0
+chondrocyte           inhibit             3         9          3
+estrogen              increase            3         9          1
+growth plate          delay               3         7          0
+osteoblast            promote             3         6          1
+chondrocyte           reduce              3         6          2
+gh                    stimulate           3         5          0
+runx2                 increase            3         5          0
+chondrocyte           enhance             3         5          0
+final adult height    decrease            3         4          3
+final adult height    increase            3         4          2
+gh                    improve             3         4          0
+
+Examples for top 10 recurring claims:
+
+- [gh increases] (7 accounts, 18 mentions, 3 with study/data evidence markers)
+    "Higher-than-normal HGH levels may increase growth velocity when growth plates remain open."
+    "and results indicated that the expre55lOn levels of negative regulaiors of cyiokine proteins,which switch off 5ignaling (such as the 5uppiessoi of cyt"
+    "The GH Increase wa5 s1giifKaMty dtffererit Sn thètwtsgro￿ ()Jrfe5uts suggest that cefebral serotonergic lunction5 medlaied by 5-HT1D receptors ¥e not "
+
+- [growth plate increases] (6 accounts, 22 mentions, 3 with study/data evidence markers)
+    "Notably, supplementing metastable ESCS with aKG is suff icient to facilitate DNA and histone growth plate stem as it can be used for demethylation and"
+    "is able to extend this further by delaying the final conversion, which increases its potency by roughly three orders of magnitude what makes it furthe"
+    "The length of the growth plate on the tibia bone and the levels of circulating IGF-I were significantly increased by 25.6% and 13.60/0, respectively, "
+
+- [dht increases] (5 accounts, 19 mentions, 2 with study/data evidence markers)
+    "and andr.ogen androgen 5alpha-dihydrotestosterone (DHT) increased specific androgen binding 2-to 4-fold."
+    "Steady-state AR messenger RNA levels were also increased by DHT."
+    "When AR concentrations in osteoblastic cells were elevated with exogenous receptor, there was an enhancement of DHT responsiveness, measured by increa"
+
+- [igf-1 increases] (5 accounts, 18 mentions, 5 with study/data evidence markers)
+    "Conclusions The significant increase in both growth rate and IGF-1 levels in the experimental group of this study was due to the effect of PEMF."
+    "Wha,t' s act,ufally interesting are ,mechanisms of the catch-up growt,h: (mechanotransduction terras t,his witihoutlt.he compensatory increase estric "
+    ",'ng IGF-1 can tihe day and G,H at increased du:ri4ng nigh ."
+
+- [camp increases] (5 accounts, 16 mentions, 2 with study/data evidence markers)
+    "easily, "(steroids Then blood flow becomes the limiting step Well would ,first step that increase implementing things blood flow via different such pa"
+    "The down stored antagonistic effect of caffeine on Al Rs leads triglycerides into free to the activation of adenylate cyclase (AC), followed by the in"
+    "phosphodiesterase Agonists of A Rs and A Rs can increase 2B lipolysis and BAT thermogenesis, and in and that raises CAMP brown adÉpocytes, the express"
+
+- [osteoblast increases] (5 accounts, 14 mentions, 2 with study/data evidence markers)
+    "Anabolic Catabolic Actions ex.ample intermit,tent anabolic it st,rongly increases osteoblast number resorption by osteoclasts."
+    "athway os,teoblast,s difference timing °duration of the.signal osteoblasts on act,ivat,ing surfac.e sustained or periosteal repea,ted CAMP signaling c"
+    "MoIpovei,' it hag been shoii'n that FFAR4 ig iniplitated in Osteoblast proliferation Royal jelly can also increase osteoblast proliferation and ollage"
+
+- [gh causes] (5 accounts, 8 mentions, 5 with study/data evidence markers)
+    "How to maximize height in adolescence Part 1 In this series I'm making I'll be going over every pathway that can cause height gain and each day I'll g"
+    "However below replacement (0.07 mg/kg) will cause slight GH deficiency and can even cause you to see a decrease in final adult height but I recommend "
+    "continuous GH becomes inferior because it causes I SOCS2 receptor desensitization, whereas pulses preserve sensitivity while the negative feedback exi"
+
+- [gh lowers] (5 accounts, 6 mentions, 2 with study/data evidence markers)
+    "Massoter hypertrophy and gh for lower third development for hair-and Oral minoxidil brows (cruciali) Dye them black if"needed: Basics: Water intake Re"
+    "R 5-HTIA R VDCC (PIQ) NMDAR AMPAR so we are basiclaly intercepting the feedback node that regulates Somatostatin release which would otherwise lower G"
+    "basically, pulsatile GH can likely be considered superior at efficient evoking effects, so more effect/molecule simply because adaptation is still exi"
+
+- [insulin increases] (5 accounts, 6 mentions, 3 with study/data evidence markers)
+    "itiionally Teilen S eichern -Hollenfeuer has even more mechanisms: -300 I African Mango extract which 12 kg weight loss in 10 weeks, 'mproves Insulin "
+    "Intranasal insulin restores Ansulin signallng Intranasal Insulin for Alzheimer's Disease Increases synaptic protetns, and reduces AF level and .anfred"
+    "The result was an increase in story recall meaning memory and this was tested 15 minutes after giving them IN insulin meaning it can also act quite fa"
+
+- [metabolism increases] (5 accounts, 5 mentions, 1 with study/data evidence markers)
+    "increased productivity - increased metabolism and fat loss support (anecdotal) - e.nhanced mood."
+    "Agonizes sympathetic HPT, alpha-cells of Pancreas and lo ti4 Cardiomyocytes -> Increased metabolism ."
+    "On the other hand, MAO-A inhibition by clorgiline significantly increased the levels of phasic and basal DA, which could be attributed to a blockade o"
+
+Overall: 140/812 claim-mentions (17%) co-occur with a study/data/citation marker in the same sentence.
+
+======================================================================
+Q4: WHITESPACE - topic x account coverage matrix
+======================================================================
+
+Topic                       750tren      _sox9  bigonial_ bio.scienc  biomaxxer bpedpremed doctor.mor enhancemen enhancemen    ntluccy    rpo3212 seaniracet   sy934821
+Height/Growth                     X          X          X          X          .          X          X          X          .          .          X          .          X   (9/13 accounts)
+Peptides                          .          .          X          .          .          X          .          .          .          .          X          .          .   (3/13 accounts)
+Steroids/PEDs                     X          .          X          X          .          X          X          X          .          X          X          .          X   (9/13 accounts)
+Nootropics/Cognition              .          X          X          X          X          X          X          .          .          X          .          .          .   (7/13 accounts)
+Looksmaxxing                      .          X          X          .          .          X          .          .          .          .          X          .          X   (5/13 accounts)
+Hair                              .          X          X          .          .          X          X          X          .          X          X          .          X   (8/13 accounts)
+Skin/Anti-aging                   .          X          X          .          .          .          X          .          .          .          X          .          .   (4/13 accounts)
+Sleep/Recovery                    .          .          X          .          .          .          X          .          .          .          .          .          .   (2/13 accounts)
+Diet/Supplements                  .          X          X          .          .          X          X          X          X          X          X          .          .   (8/13 accounts)
+Other/Uncategorized               .          .          X          .          .          X          X          .          .          .          .          X          .   (4/13 accounts)
+
+Topics covered by only 1-2 accounts (potential whitespace/niche):
+  Sleep/Recovery: only ['bigonial_', 'doctor.morph']

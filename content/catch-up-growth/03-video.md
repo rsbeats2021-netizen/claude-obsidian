@@ -1,40 +1,43 @@
-# Video script — "Catch-up growth"
+# Video script — Slow a kid's growth down
 
-60s · 174 words · ~178 wpm. Same research as `04-slides.csv`, reworded for speech.
-**Only `SPOKEN:` lines are read aloud.**
+148 words, ~49s at 178 wpm. Target band 45-90s.
 
-### [0:00–0:06] HOOK
-SPOKEN: Slow a child's growth down and they grow faster afterward. That
-        shouldn't be possible, and the fact that it is tells you what height
-        actually runs on.
-  [VISUAL: growth curve dipping, then overshooting baseline]
+Spoken lines only. Visual cue in brackets.
 
-### [0:06–0:14] PROBLEM
-SPOKEN: If growth ran on a clock, months lost to illness or medication would
-        be lost permanently. Everyone assumes that's how it works.
-  [ON-SCREEN: "LOST TIME ≠ LOST HEIGHT"]
+---
 
-### [0:14–0:34] EVIDENCE
-SPOKEN: It isn't. Release the suppression and growth rate exceeds what's normal
-        for that age. And it isn't specific to one hormone — hypothyroidism,
-        glucocorticoids, unrelated inhibitors, all delay growth plate
-        senescence the same way. Infuse an inhibitor into one rabbit's tibia
-        and only that plate slows, then only that plate overshoots. The other
-        leg does nothing.
-  [VISUAL: two-limb comparison]
+Slow a kid's growth down. The fact it happens tells you what height actually runs on.
 
-### [0:34–0:50] PAYOFF
-SPOKEN: Because suppressing growth also suppresses spending. The plate has a
-        finite number of divisions, and slowing the division rate slows how
-        fast you burn through them. You didn't lose time. You spent the
-        account slower.
-  [ON-SCREEN: "SPENT SLOWER, NOT LOST"]
+[cover card]
 
-### [0:50–0:60] CAVEAT + CTA
-SPOKEN: But estrogen does two things — suppresses growth rate, reversibly, and
-        depletes the progenitor pool, permanently. A growth chart can't tell you
-        which one happened. Don't forget, it's never over.
-  [ON-SCREEN: "REVERSIBLE vs SPENT"]
+Illness, malnutrition, glucocorticoids. Anything that suppresses growth for months should cost you those months permanently.
 
-## Sources
-Baron 2004 · Nilsson 2014 · vault: [[Epiphyseal Fusion Mechanisms]]
+[lost time would be lost]
+
+Growth plates hold a finite number of cell divisions. Slow the division rate down and you slow how fast that reserve depletes.
+
+[also suppresses spending]
+
+It's not specific to one hormone. Hypothyroidism, glucocorticoid excess and other unrelated growth inhibitors all delay growth plate senescence the same way.
+
+[across different causes]
+
+Infuse a growth inhibitor into one rabbit tibia and only that plate slows down. Then only that plate overshoots afterwards.
+
+[locally]
+
+Estrogen does two separate things. It suppresses growth rate, which is fully reversible.
+
+[and it matters]
+
+Slowed growth can be recovered. Spent cells can't.
+
+[worth understanding]
+
+It's well documented after temporary suppression. Whether it fully restores predicted adult height depends on how long, how severe and when.
+
+[takeaway card]
+
+Partial recovery is the normal outcome, not full.
+
+DM for source

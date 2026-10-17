@@ -1,0 +1,466 @@
+<title>How Much Is Left</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;600;700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+
+<style>
+/* ===== page chrome ===== */
+:root{--pg:#F3F3F1;--pg2:#FFF;--tx:#161619;--tx2:#68686F;--rule:#DCDCD8;--mark:#0F7C90}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --pg:#0F1113;--pg2:#171A1D;--tx:#ECEFF2;--tx2:#8B959C;--rule:#262B2F;--mark:#4FD6E8}}
+:root[data-theme="dark"]{
+  --pg:#0F1113;--pg2:#171A1D;--tx:#ECEFF2;--tx2:#8B959C;--rule:#262B2F;--mark:#4FD6E8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--pg);color:var(--tx);font-family:"Public Sans",Arial,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:44px 20px 90px;display:flex;flex-direction:column;gap:22px}
+.masthead{display:flex;flex-direction:column;gap:12px;max-width:72ch}
+.masthead .eb{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--mark);margin:0}
+.masthead h1{font-size:clamp(28px,5vw,46px);font-weight:900;letter-spacing:-.03em;line-height:1;margin:0}
+.masthead .sf{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.55;color:var(--tx2)}
+.tmpl{background:var(--pg2);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.tmpl div{display:flex;flex-direction:column;gap:3px}
+.tmpl b{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mark)}
+.tmpl span{font-size:12.5px;line-height:1.45;color:var(--tx2)}
+.track{display:flex;gap:14px;overflow-x:auto;padding:2px 2px 16px;scroll-snap-type:x mandatory;
+  scrollbar-color:var(--rule) transparent}
+.track .sl{flex:0 0 auto;width:clamp(250px,66vw,300px);scroll-snap-align:center}
+.cap{background:var(--pg2);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;
+  font-family:"IBM Plex Mono",monospace;font-size:12px;line-height:1.6}
+.cap .tags{color:var(--mark)}
+.cap i{color:var(--tx2);font-style:normal}
+
+/* ===== slide system: radiology reading room ===== */
+.sl{aspect-ratio:9/16;container-type:inline-size;overflow:hidden;position:relative;border-radius:12px;
+  display:flex;flex-direction:column;background:#06090C;color:#E4EDF2;padding:6.5cqi 6cqi;gap:3.4cqi}
+.sl svg{display:block;width:100%;height:auto}
+.sl p{margin:0}
+.sl .num{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:auto;
+  font-family:"IBM Plex Mono",monospace;font-size:3cqi;letter-spacing:.16em;color:#5E7A88}
+.sl .num b{color:#FFB020;font-weight:600}
+.sl .mid{flex:0 1 auto;display:flex;flex-direction:column;justify-content:center;gap:3.6cqi;min-height:0}
+.sl .ft{margin:auto 0 0;font-family:"IBM Plex Mono",monospace;font-size:2.9cqi;
+  color:#5E7A88;letter-spacing:.06em}
+.sl .h{font-family:"Archivo",sans-serif;font-weight:900;font-size:9.6cqi;line-height:.98;
+  letter-spacing:-.038em;text-wrap:balance;color:#F2F8FB}
+.sl .h2{font-family:"Archivo",sans-serif;font-weight:900;font-size:7.2cqi;line-height:1.02;
+  letter-spacing:-.032em;text-wrap:balance;color:#F2F8FB}
+.sl .big{font-family:"Archivo",sans-serif;font-weight:900;font-size:26cqi;line-height:.8;
+  letter-spacing:-.06em;color:#FFB020}
+.sl .b{font-size:3.9cqi;line-height:1.48;color:#A9BCC6}
+.sl .b b{color:#F2F8FB;font-weight:700}
+.sl .b em{font-style:normal;color:#4FD6E8}
+.sl .kick{font-family:"IBM Plex Mono",monospace;font-size:3.1cqi;letter-spacing:.14em;
+  text-transform:uppercase;color:#4FD6E8}
+.sl--hook{background:radial-gradient(120% 90% at 50% 18%,#0E1C24,#06090C 70%)}
+.sl--cta{background:radial-gradient(120% 90% at 50% 82%,#101C14,#06090C 70%)}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3cqi;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:7cqi 1fr;gap:2.8cqi;
+  align-items:baseline;font-size:3.7cqi;line-height:1.36;color:#A9BCC6}
+.steps li b{color:#F2F8FB;font-weight:700}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:"IBM Plex Mono",monospace;
+  font-size:3cqi;color:#FFB020}
+.src{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:3.2cqi;
+  font-family:"IBM Plex Mono",monospace;font-size:3.1cqi;line-height:1.42;color:#A9BCC6}
+.src li{border-bottom:1px solid #1C2A32;padding-bottom:2.8cqi}
+.src li:last-child{border:0;padding:0}
+.src b{color:#F2F8FB;display:block;margin-bottom:1cqi}
+</style>
+
+<div class="wrap">
+<header class="masthead">
+  <p class="eb">One deck · 14 slides · built on the corpus winner's structure</p>
+  <h1>How Much Is Left</h1>
+  <p class="sf">Structurally reverse-engineered from the highest-performing height slideshow in your corpus — 304,900 views at a 5.06% save rate — and rebuilt on verified research. The slide count follows the corpus band with the best median performance (13–15 slides, median 48,300 against 18,900 at nine).</p>
+</header>
+
+<div class="tmpl">
+  <div><b>Hook</b><span>Ultra-short, second person, one specific promise. The winner's slide 1 was 59 characters.</span></div>
+  <div><b>Name the lever fast</b><span>Slide 2 states the single mechanism. No warm-up.</span></div>
+  <div><b>A named framework</b><span>The winner invented an acronym. This deck uses a real published scale instead.</span></div>
+  <div><b>Hard numbers + citation</b><span>Effect sizes and journal names on the slide, not in the caption.</span></div>
+  <div><b>Numbered steps</b><span>An actionable block the viewer can execute.</span></div>
+  <div><b>Objection handling</b><span>Second-to-last slide answers the obvious rebuttal.</span></div>
+</div>
+
+<div class="track">
+
+  <!-- 01 HOOK -->
+  <div class="sl sl--hook">
+    <p class="num"><b>01</b><span>HOOK</span></p>
+    <div class="mid">
+      <p class="h">One x-ray tells you how much height you have left.</p>
+      <svg viewBox="0 0 300 128" aria-label="Hand radiograph schematic with one growth plate highlighted.">
+        <defs><radialGradient id="glow"><stop offset="0%" stop-color="#FFB020" stop-opacity=".75"></stop>
+          <stop offset="100%" stop-color="#FFB020" stop-opacity="0"></stop></radialGradient></defs>
+        <g fill="#26424E" stroke="#3E6373" stroke-width="1">
+          <rect x="66" y="26" width="15" height="44" rx="7"></rect>
+          <rect x="92" y="14" width="15" height="56" rx="7"></rect>
+          <rect x="118" y="10" width="15" height="60" rx="7"></rect>
+          <rect x="144" y="18" width="15" height="52" rx="7"></rect>
+          <rect x="170" y="34" width="14" height="36" rx="7"></rect>
+          <rect x="78" y="76" width="96" height="30" rx="12"></rect>
+          <rect x="86" y="108" width="80" height="16" rx="8"></rect>
+        </g>
+        <ellipse cx="125" cy="30" rx="34" ry="22" fill="url(#glow)"></ellipse>
+        <g stroke="#FFB020" stroke-width="2">
+          <line x1="118" y1="30" x2="133" y2="30"></line>
+        </g>
+        <line x1="196" y1="30" x2="234" y2="30" stroke="#FFB020" stroke-width="1"></line>
+        <text x="238" y="33" font-family="IBM Plex Mono,monospace" font-size="9" fill="#FFB020">open</text>
+      </svg>
+      <p class="b">Not a guess. Not a calculator. An actual measurement, and it takes ten minutes.</p>
+    </div>
+    <p class="ft">SWIPE →</p>
+  </div>
+
+  <!-- 02 THE LEVER -->
+  <div class="sl">
+    <p class="num"><b>02</b><span>THE LEVER</span></p>
+    <div class="mid">
+      <p class="h2">Your age is the wrong number</p>
+      <svg viewBox="0 0 300 140" aria-label="Two individuals of the same age with different skeletal maturity and remaining growth.">
+        <g font-family="Public Sans,sans-serif" font-weight="900" font-size="12" fill="#F2F8FB">
+          <text x="0" y="18">A</text><text x="0" y="86">B</text>
+        </g>
+        <rect x="20" y="8" width="176" height="14" fill="#2E6E80"></rect>
+        <rect x="20" y="28" width="240" height="14" fill="#FFB020"></rect>
+        <rect x="260" y="28" width="18" height="14" fill="#4A3A1C"></rect>
+        <rect x="20" y="76" width="176" height="14" fill="#2E6E80"></rect>
+        <rect x="20" y="96" width="142" height="14" fill="#FFB020"></rect>
+        <rect x="162" y="96" width="116" height="14" fill="#4FD6E8"></rect>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#5E7A88">
+          <text x="20" y="58">14 years old · skeletally 16 · nearly done</text>
+          <text x="20" y="126">14 years old · skeletally 12 · years of runway</text>
+        </g>
+      </svg>
+      <p class="b">Two boys, same birthday, opposite situations. <b>Skeletal maturity</b> decides what is still available, and it can run years ahead of or behind the calendar.</p>
+    </div>
+    <p class="ft">SKELETAL ≠ CHRONOLOGICAL</p>
+  </div>
+
+  <!-- 03 THE FRAMEWORK -->
+  <div class="sl">
+    <p class="num"><b>03</b><span>THE SCALE</span></p>
+    <div class="mid">
+      <p class="kick">The framework</p>
+      <p class="h2">Eight stages, read off one hand</p>
+      <svg viewBox="0 0 300 118" aria-label="Eight-stage skeletal maturity scale shown as progressively fusing bone ends.">
+        <g stroke="#3E6373" stroke-width="1" fill="#26424E">
+          <rect x="4" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="41" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="78" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="115" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="152" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="189" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="226" y="42" width="22" height="34" rx="4"></rect>
+          <rect x="263" y="42" width="22" height="34" rx="4"></rect>
+        </g>
+        <!-- epiphysis caps, narrow -> wide -> capping -> fused -->
+        <g fill="#4FD6E8">
+          <rect x="10" y="34" width="10" height="6" rx="3"></rect>
+          <rect x="45" y="34" width="14" height="6" rx="3"></rect>
+          <rect x="79" y="34" width="20" height="6" rx="3"></rect>
+        </g>
+        <g fill="#FFB020">
+          <path d="M114,40 h24 a4,4 0 0 0 -4,-8 h-16 a4,4 0 0 0 -4,8 z"></path>
+          <path d="M151,40 h24 a5,5 0 0 0 -5,-9 h-14 a5,5 0 0 0 -5,9 z"></path>
+        </g>
+        <g fill="#6E8894">
+          <rect x="190" y="36" width="20" height="5" rx="2"></rect>
+          <rect x="227" y="38" width="20" height="3" rx="1.5"></rect>
+        </g>
+        <rect x="263" y="40" width="22" height="2" fill="#3E6373"></rect>
+        <g font-family="IBM Plex Mono,monospace" font-size="8" fill="#5E7A88" text-anchor="middle">
+          <text x="15" y="92">1</text><text x="52" y="92">2</text><text x="89" y="92">3</text>
+          <text x="126" y="92">4</text><text x="163" y="92">5</text><text x="200" y="92">6</text>
+          <text x="237" y="92">7</text><text x="274" y="92">8</text>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5">
+          <text x="4" y="112" fill="#4FD6E8">widening</text>
+          <text x="126" y="112" fill="#FFB020">capping</text>
+          <text x="285" y="112" fill="#6E8894" text-anchor="end">fused</text>
+        </g>
+      </svg>
+      <p class="b">The <em>Sanders scale</em> reads the shape of the bone ends in your fingers. Each stage maps to a known percentage of your final height.</p>
+    </div>
+    <p class="ft">SANDERS MATURITY SCALE</p>
+  </div>
+
+  <!-- 04 THE STUDY -->
+  <div class="sl">
+    <p class="num"><b>04</b><span>THE EVIDENCE</span></p>
+    <div class="mid">
+      <p class="h2">Where these numbers come from</p>
+      <svg viewBox="0 0 300 150" aria-label="Study card showing two longitudinal cohorts and their composition.">
+        <rect x="0" y="0" width="300" height="150" rx="6" fill="#0E161C" stroke="#1F323C" stroke-width="1"></rect>
+        <text x="14" y="24" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#4FD6E8">SCIENTIFIC REPORTS · 2017</text>
+        <text x="14" y="44" font-family="Public Sans,sans-serif" font-weight="700" font-size="11" fill="#F2F8FB">Sanders, Qiu, Lu, Duren, Liu,</text>
+        <text x="14" y="58" font-family="Public Sans,sans-serif" font-weight="700" font-size="11" fill="#F2F8FB">Dang, Menendez, Hans, Weber,</text>
+        <text x="14" y="72" font-family="Public Sans,sans-serif" font-weight="700" font-size="11" fill="#F2F8FB">Cooperman</text>
+        <line x1="14" y1="84" x2="286" y2="84" stroke="#1F323C" stroke-width="1"></line>
+        <text x="14" y="100" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#8B9EA8">BRUSH FOUNDATION · n=54</text>
+        <g fill="#FFB020">
+          <circle cx="160" cy="97" r="2.6"></circle><circle cx="170" cy="97" r="2.6"></circle>
+          <circle cx="180" cy="97" r="2.6"></circle><circle cx="190" cy="97" r="2.6"></circle>
+          <circle cx="200" cy="97" r="2.6"></circle><circle cx="210" cy="97" r="2.6"></circle>
+        </g>
+        <g fill="#2E6E80">
+          <circle cx="222" cy="97" r="2.6"></circle><circle cx="232" cy="97" r="2.6"></circle>
+          <circle cx="242" cy="97" r="2.6"></circle>
+        </g>
+        <text x="14" y="120" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#8B9EA8">BERKELEY GUIDANCE · n=135</text>
+        <g fill="#FFB020">
+          <circle cx="160" cy="117" r="2.6"></circle><circle cx="170" cy="117" r="2.6"></circle>
+          <circle cx="180" cy="117" r="2.6"></circle><circle cx="190" cy="117" r="2.6"></circle>
+          <circle cx="200" cy="117" r="2.6"></circle><circle cx="210" cy="117" r="2.6"></circle>
+        </g>
+        <g fill="#2E6E80">
+          <circle cx="222" cy="117" r="2.6"></circle><circle cx="232" cy="117" r="2.6"></circle>
+          <circle cx="242" cy="117" r="2.6"></circle><circle cx="252" cy="117" r="2.6"></circle>
+          <circle cx="262" cy="117" r="2.6"></circle><circle cx="272" cy="117" r="2.6"></circle>
+        </g>
+        <text x="14" y="140" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#5E7A88">serial x-rays + measurements, childhood → adult height</text>
+      </svg>
+      <p class="b">Two <b>longitudinal</b> cohorts, followed from childhood to final height with serial radiographs. Not a cross-section, not a survey.</p>
+    </div>
+    <p class="ft">FULL CITATION ON SLIDE 13</p>
+  </div>
+
+  <!-- 05 STAGE 2 -->
+  <div class="sl">
+    <p class="num"><b>05</b><span>STAGE 2</span></p>
+    <div class="mid">
+      <p class="kick">Epiphysis as wide as the shaft</p>
+      <p class="big">85%</p>
+      <svg viewBox="0 0 300 96" aria-label="Bone end where the epiphysis has widened to match the metaphysis.">
+        <rect x="112" y="34" width="76" height="58" rx="6" fill="#26424E" stroke="#3E6373" stroke-width="1.2"></rect>
+        <rect x="112" y="20" width="76" height="10" rx="5" fill="#4FD6E8"></rect>
+        <rect x="112" y="30" width="76" height="4" fill="#FFB020"></rect>
+        <g stroke="#4FD6E8" stroke-width="1">
+          <line x1="112" y1="12" x2="188" y2="12"></line>
+          <line x1="112" y1="8" x2="112" y2="16"></line><line x1="188" y1="8" x2="188" y2="16"></line>
+        </g>
+        <line x1="196" y1="32" x2="236" y2="32" stroke="#FFB020" stroke-width="1"></line>
+        <text x="240" y="35" font-family="IBM Plex Mono,monospace" font-size="9" fill="#FFB020">plate</text>
+        <text x="10" y="16" font-family="IBM Plex Mono,monospace" font-size="9" fill="#4FD6E8">equal width</text>
+      </svg>
+      <p class="b">Of adult height, already reached. You are <b>two years out</b> from your peak growth rate, and the spurt has begun.</p>
+    </div>
+    <p class="ft">SPURT STARTING</p>
+  </div>
+
+  <!-- 06 STAGE 3 -->
+  <div class="sl">
+    <p class="num"><b>06</b><span>STAGE 3</span></p>
+    <div class="mid">
+      <p class="kick">All digits capping</p>
+      <p class="big">90%</p>
+      <svg viewBox="0 0 300 96" aria-label="Bone end where the epiphysis caps over the shaft like a lid.">
+        <rect x="112" y="38" width="76" height="54" rx="6" fill="#26424E" stroke="#3E6373" stroke-width="1.2"></rect>
+        <path d="M106,36 h88 a10,10 0 0 0 -10,-16 h-68 a10,10 0 0 0 -10,16 z" fill="#FFB020"></path>
+        <rect x="112" y="36" width="76" height="3" fill="#06090C"></rect>
+        <line x1="200" y1="26" x2="238" y2="26" stroke="#FFB020" stroke-width="1"></line>
+        <text x="242" y="29" font-family="IBM Plex Mono,monospace" font-size="9" fill="#FFB020">caps over</text>
+      </svg>
+      <p class="b">This is <em>peak height velocity</em>. The fastest you will ever grow again is happening right now, and from here the rate only falls.</p>
+    </div>
+    <p class="ft">THE PEAK</p>
+  </div>
+
+  <!-- 07 STAGE 4-5 -->
+  <div class="sl">
+    <p class="num"><b>07</b><span>STAGE 4–5</span></p>
+    <div class="mid">
+      <p class="kick">Distal phalanges begin to fuse</p>
+      <p class="big">96%</p>
+      <svg viewBox="0 0 300 96" aria-label="Bone end where the growth plate has largely closed, leaving a faint scar.">
+        <rect x="112" y="26" width="76" height="66" rx="7" fill="#26424E" stroke="#3E6373" stroke-width="1.2"></rect>
+        <g stroke="#6E8894" stroke-width="1.6" stroke-dasharray="5 6">
+          <line x1="114" y1="42" x2="186" y2="42"></line>
+        </g>
+        <line x1="196" y1="42" x2="236" y2="42" stroke="#6E8894" stroke-width="1"></line>
+        <text x="240" y="45" font-family="IBM Plex Mono,monospace" font-size="9" fill="#6E8894">closing</text>
+      </svg>
+      <p class="b">One and a half years past the peak. Roughly <b>four percent</b> of your height is still outstanding, and it arrives slowly over the next two years.</p>
+    </div>
+    <p class="ft">ALMOST DONE</p>
+  </div>
+
+  <!-- 08 THE CHART -->
+  <div class="sl">
+    <p class="num"><b>08</b><span>THE CHART</span></p>
+    <div class="mid">
+      <p class="h2">The whole thing on one curve</p>
+      <svg viewBox="0 0 300 200" aria-label="Percentage of final height against years from peak growth, with skeletal stages marked.">
+        <g stroke="#182831" stroke-width="1">
+          <line x1="34" y1="24" x2="292" y2="24"></line><line x1="34" y1="62" x2="292" y2="62"></line>
+          <line x1="34" y1="100" x2="292" y2="100"></line><line x1="34" y1="138" x2="292" y2="138"></line>
+        </g>
+        <defs><linearGradient id="ar" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFB020" stop-opacity=".26"></stop>
+          <stop offset="100%" stop-color="#FFB020" stop-opacity="0"></stop></linearGradient></defs>
+        <path d="M34,150 C70,142 96,116 128,86 C158,58 186,38 220,30 C248,24 272,22 292,21 L292,158 L34,158 Z" fill="url(#ar)"></path>
+        <path d="M34,150 C70,142 96,116 128,86 C158,58 186,38 220,30 C248,24 272,22 292,21"
+              fill="none" stroke="#FFB020" stroke-width="3"></path>
+        <line x1="34" y1="158" x2="292" y2="158" stroke="#2E4A57" stroke-width="1.4"></line>
+        <!-- stage markers -->
+        <g stroke="#4FD6E8" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="80" y1="18" x2="80" y2="158"></line>
+          <line x1="128" y1="18" x2="128" y2="158"></line>
+          <line x1="186" y1="18" x2="186" y2="158"></line>
+        </g>
+        <g fill="#4FD6E8">
+          <circle cx="80" cy="139" r="4"></circle><circle cx="128" cy="86" r="5"></circle>
+          <circle cx="186" cy="38" r="4"></circle>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#4FD6E8">
+          <text x="84" y="134">85% · st.2</text>
+          <text x="132" y="80">90% · st.3 · PEAK</text>
+          <text x="190" y="32">96% · st.4–5</text>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#5E7A88">
+          <text x="34" y="176">−2y</text><text x="128" y="176" text-anchor="middle">peak</text>
+          <text x="292" y="176" text-anchor="end">+3.5y</text>
+          <text x="0" y="26">100%</text><text x="0" y="154">80%</text>
+        </g>
+      </svg>
+      <p class="b">Find your stage, read your percentage, divide your current height by it. That is your projection.</p>
+    </div>
+    <p class="ft">SAVE THIS SLIDE</p>
+  </div>
+
+  <!-- 09 THE TWIST -->
+  <div class="sl">
+    <p class="num"><b>09</b><span>THE TWIST</span></p>
+    <div class="mid">
+      <p class="h2">Boys and girls run the identical curve</p>
+      <svg viewBox="0 0 300 170" aria-label="Two separate growth curves collapsing onto one when normalised to final height and peak timing.">
+        <text x="0" y="12" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#5E7A88">by age — different</text>
+        <path d="M8,58 C40,52 58,34 84,26 C110,18 128,16 142,15" fill="none" stroke="#4FD6E8" stroke-width="2"></path>
+        <path d="M8,64 C46,60 76,44 108,32 C130,24 142,22 142,21" fill="none" stroke="#E86A9E" stroke-width="2"></path>
+        <text x="164" y="12" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#FFB020">normalised — identical</text>
+        <path d="M164,60 C196,54 216,32 244,24 C268,17 284,16 296,15" fill="none" stroke="#4FD6E8" stroke-width="3.4"></path>
+        <path d="M164,60 C196,54 216,32 244,24 C268,17 284,16 296,15" fill="none" stroke="#E86A9E"
+              stroke-width="1.6" stroke-dasharray="5 5"></path>
+        <line x1="153" y1="8" x2="153" y2="76" stroke="#1F323C" stroke-width="1"></line>
+        <g font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#5E7A88">
+          <text x="0" y="108">Standardise to peak growth age and express height as a</text>
+          <text x="0" y="122">share of final height, and the two sexes superimpose.</text>
+          <text x="0" y="146" fill="#FFB020">Girls just arrive earlier. The shape is the same.</text>
+        </g>
+      </svg>
+      <p class="b">The stages mean the same thing regardless of sex. That is what makes a hand film readable without knowing anything else about you.</p>
+    </div>
+    <p class="ft">SEX-INDEPENDENT</p>
+  </div>
+
+  <!-- 10 STEPS -->
+  <div class="sl">
+    <p class="num"><b>10</b><span>HOW TO READ IT</span></p>
+    <div class="mid">
+      <p class="h2">What to look at on the film</p>
+      <ol class="steps">
+        <li><span><b>The finger epiphyses.</b> Narrower than the shaft, equal to it, or capping over it?</span></li>
+        <li><span><b>The thumb.</b> Its plate closes on a predictable schedule relative to the fingers.</span></li>
+        <li><span><b>The distal phalanges.</b> Any fusion here puts you past 96%.</span></li>
+        <li><span><b>The wrist.</b> If only radius and ulna remain open, growth is nearly finished.</span></li>
+      </ol>
+    </div>
+    <p class="ft">ASK FOR A HAND RADIOGRAPH</p>
+  </div>
+
+  <!-- 11 WHAT IT MEANS -->
+  <div class="sl">
+    <p class="num"><b>11</b><span>THE MATH</span></p>
+    <div class="mid">
+      <p class="h2">Worked example</p>
+      <svg viewBox="0 0 300 156" aria-label="Worked projection dividing current height by the percentage for a given stage.">
+        <rect x="0" y="0" width="300" height="156" rx="6" fill="#0E161C" stroke="#1F323C" stroke-width="1"></rect>
+        <g font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#A9BCC6">
+          <text x="16" y="30">current height</text><text x="284" y="30" text-anchor="end" fill="#F2F8FB">170 cm</text>
+          <text x="16" y="54">stage</text><text x="284" y="54" text-anchor="end" fill="#F2F8FB">3 (capping)</text>
+          <text x="16" y="78">share reached</text><text x="284" y="78" text-anchor="end" fill="#FFB020">90%</text>
+        </g>
+        <line x1="16" y1="92" x2="284" y2="92" stroke="#2E4A57" stroke-width="1.4"></line>
+        <g font-family="IBM Plex Mono,monospace" font-size="10.5">
+          <text x="16" y="114" fill="#A9BCC6">170 / 0.90</text>
+          <text x="284" y="114" text-anchor="end" fill="#4FD6E8">≈ 189 cm</text>
+        </g>
+        <text x="16" y="140" font-family="IBM Plex Mono,monospace" font-size="9" fill="#5E7A88">
+          ≈ 19 cm still to come, most of it within 18 months</text>
+      </svg>
+      <p class="b">One division. The whole reason to know your stage is that it converts a hope into an arithmetic problem.</p>
+    </div>
+    <p class="ft">DO IT WITH YOUR OWN NUMBER</p>
+  </div>
+
+  <!-- 12 OBJECTION -->
+  <div class="sl">
+    <p class="num"><b>12</b><span>THE CATCH</span></p>
+    <div class="mid">
+      <p class="h2">Predictions drift, and they drift predictably</p>
+      <svg viewBox="0 0 300 150" aria-label="Prediction error direction for accelerated and delayed skeletal maturity.">
+        <line x1="150" y1="14" x2="150" y2="118" stroke="#2E4A57" stroke-width="1.4"></line>
+        <text x="150" y="134" text-anchor="middle" font-family="IBM Plex Mono,monospace"
+          font-size="9" fill="#5E7A88">true adult height</text>
+        <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#A9BCC6">
+          <text x="0" y="34">bone age ahead</text><text x="0" y="88">bone age behind</text>
+        </g>
+        <rect x="150" y="42" width="104" height="14" fill="#C6503A"></rect>
+        <path d="M254,42 l14,7 l-14,7 z" fill="#C6503A"></path>
+        <text x="150" y="70" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#C6503A">over-predicted</text>
+        <rect x="52" y="96" width="98" height="14" fill="#4FD6E8"></rect>
+        <path d="M52,96 l-14,7 l14,7 z" fill="#4FD6E8"></path>
+        <text x="52" y="124" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#4FD6E8">under-predicted</text>
+      </svg>
+      <p class="b">Older prediction tables <b>overestimate</b> when the bone age is advanced and <b>underestimate</b> when it is delayed. Treat the output as a range, and get it read by someone who does this.</p>
+    </div>
+    <p class="ft">A RANGE, NOT A PROMISE</p>
+  </div>
+
+  <!-- 13 SOURCES -->
+  <div class="sl">
+    <p class="num"><b>13</b><span>SOURCES</span></p>
+    <div class="mid">
+      <p class="h2">Read them yourself</p>
+      <ul class="src">
+        <li><b>Sanders JO et al. (2017)</b>“The Uniform Pattern of Growth and Skeletal Maturation during the Human Adolescent Growth Spurt.” Scientific Reports. Brush + Berkeley cohorts. All percentages in this deck.</li>
+        <li><b>Sanders JO et al.</b>Validation of the Sanders skeletal maturity staging system for predicting curve progression.</li>
+        <li><b>Bayley &amp; Pinneau (1952)</b>Adult height prediction from skeletal age — the original tables, and the source of the known drift.</li>
+      </ul>
+    </div>
+    <p class="ft">DON'T TRUST A SLIDE. CHECK IT.</p>
+  </div>
+
+  <!-- 14 CTA -->
+  <div class="sl sl--cta">
+    <p class="num"><b>14</b><span>NEXT</span></p>
+    <div class="mid">
+      <p class="h2">Part 2: what actually changes the number, and what cannot</p>
+      <svg viewBox="0 0 300 106" aria-label="Interventions ranked by effect on final adult height.">
+        <g font-family="IBM Plex Mono,monospace" font-size="9" fill="#A9BCC6">
+          <text x="0" y="12">treating real disease</text><text x="0" y="42">food and sleep</text>
+          <text x="0" y="72">everything sold to you</text>
+        </g>
+        <rect x="0" y="18" width="272" height="10" fill="#FFB020"></rect>
+        <rect x="0" y="48" width="150" height="10" fill="#2E6E80"></rect>
+        <rect x="0" y="78" width="16" height="10" fill="#2A3A42"></rect>
+        <line x1="0" y1="100" x2="300" y2="100" stroke="#1F323C" stroke-width="1"></line>
+      </svg>
+      <p class="b">Save this and check your own stage first. Follow for the rest.</p>
+    </div>
+    <p class="ft">SAVE · THEN BOOK THE X-RAY</p>
+  </div>
+
+</div>
+
+<div class="cap">
+  One x-ray tells you how much height you have left. Here's how to read it. Sources on slide 13.<br><br>
+  <span class="tags">#fyp #foryoupage #heightmaxxing #height #boneage #growth</span><br>
+  <i>16 words · 14 slides (corpus best-median band) · slide 8 is the save-driver · slide 11 makes people do the maths in the comments</i>
+</div>
+
+</div>

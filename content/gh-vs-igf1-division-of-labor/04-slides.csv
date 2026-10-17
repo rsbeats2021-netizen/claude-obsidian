@@ -1,10 +1,10 @@
-headline,subhead,body,punch,tag
-Growth hormone and IGF-1,DO DIFFERENT JOBS,"People treat them as one axis with two names.","They act on different stages of the same cell lineage.",@metroraz
-The simple model,SAYS GH WORKS VIA IGF-1,"Growth hormone hits the liver, the liver makes IGF-1, IGF-1 does the growing. Clean, popular, and incomplete.","There's direct in vivo evidence against it, from 1994.",@metroraz
-The experiment,REMOVED THE PITUITARY,"Hypophysectomised rats — no endogenous pituitary hormone at all — then infused either GH or IGF-1 separately. No confounds, one variable at a time.","The cleanest possible separation of the two.",TIER 1 · Hunziker
-Growth hormone,RECRUITS,"GH primarily pulls resting-zone chondrocytes into the proliferative pool. It decides how many cells enter the production line.","GH sets how many start.",TIER 1
-IGF-1,AMPLIFIES,"IGF-1 acts on cells already proliferating, driving their expansion. It decides how much each recruited cell produces.","IGF-1 sets how far each one goes.",TIER 1
-Which is why,THEY AREN'T INTERCHANGEABLE,"Recruiting more cells and expanding existing ones are different operations. Maximising one does not substitute for the other, and neither alone reproduces normal growth.","Two levers, two functions, one lineage.",TIER 1
-And it broke,THE LIVER-ONLY MODEL,"This was among the earliest direct in vivo evidence that GH acts locally at the growth plate, not merely by raising circulating IGF-1 from the liver.","A dual local-action model, demonstrated in 1994.",TIER 1
-Which modern work,CONFIRMED,"GH acts directly on human growth plate stem cells through JAK/STAT and local TGF-beta, independent of the liver IGF-1 axis. Same conclusion, thirty years later.","Old result. Newly explained.",TIER 2 · Chu 2025
-It's never over,FOLLOW FOR MORE,"Real mechanisms, real citations, no protocols.",Link in bio.,@metroraz
+headline,subhead,body,punch
+Growth hormone and IGF-1,DO DIFFERENT JOBS,People treat them as one axis with two names.,They act on different stages of the same cell lineage.
+The simple model,SAYS GH WORKS VIA IGF-1,"Growth hormone hits the liver, the liver makes IGF-1, IGF-1 does the growing. Clean, popular, and incomplete.","There's direct in vivo evidence against it, from 1994."
+The experiment,REMOVED THE PITUITARY,"Hypophysectomised rats — no endogenous pituitary hormone at all — then infused either GH or IGF-1 separately. No confounds, one variable at a time.",The cleanest possible separation of the two.
+Growth hormone,RECRUITS,GH primarily pulls resting-zone chondrocytes into the proliferative pool. It decides how many cells enter the production line.,GH sets how many start.
+IGF-1,AMPLIFIES,"IGF-1 acts on cells already proliferating, driving their expansion. It decides how much each recruited cell produces.",IGF-1 sets how far each one goes.
+Which is why,THEY AREN'T INTERCHANGEABLE,"Recruiting more cells and expanding existing ones are different operations. Maximising one does not substitute for the other, and neither alone reproduces normal growth.","Two levers, two functions, one lineage."
+And it broke,THE LIVER-ONLY MODEL,"This was among the earliest direct in vivo evidence that GH acts locally at the growth plate, not merely by raising circulating IGF-1 from the liver.","A dual local-action model, demonstrated in 1994."
+Which modern work,CONFIRMED,"GH acts directly on human growth plate stem cells through JAK/STAT and local TGF-beta, independent of the liver IGF-1 axis. Same conclusion, thirty years later.",Old result. Newly explained.
+It's never over,FOLLOW FOR MORE,,DM for source

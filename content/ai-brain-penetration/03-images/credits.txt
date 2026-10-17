@@ -1,0 +1,4 @@
+slide-03: Miyajima et al. 2013, J Pharm Sci. Mouse.
+slide-04: Miyajima et al. 2013, J Pharm Sci.
+slide-06: Miyajima et al. 2013. In situ mouse brain perfusion.
+slide-09: Rat cerebral ischemia model.

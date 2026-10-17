@@ -79,7 +79,9 @@ Write the deck for content/<deck>/ from its 01-research.md.
 - markers: *term* mechanism, **number** figure, _phrase_ conclusion,
   ==phrase== the thing to remember
 - slide 1 is a promise with no content
-- second person, absolute, statements stacked, no connectors
+- guide voice per FORMATS.md §Voice: we/lets through the evidence, you for the
+  payoff, study named inline, term then gloss, connectors allowed, 40-70 words
+  of body per slide
 - no em dashes, no literature commentary, no "nobody knows" endings
 - every number must already exist in 07-claims.md
 

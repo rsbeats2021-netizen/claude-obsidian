@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520">
+<rect width="600" height="520" fill="#fff"/>
+<rect x="150" y="40" width="300" height="380" rx="18" fill="#111"/>
+<g stroke="#fff" stroke-width="16" stroke-linecap="round" fill="none">
+ <path d="M300 400 V300"/><path d="M300 300 L230 190 M300 300 L275 160 M300 300 L325 160 M300 300 L370 190"/>
+ <path d="M230 190 L215 130 M275 160 L268 95 M325 160 L332 95 M370 190 L385 135"/>
+ <path d="M300 300 L215 260"/><path d="M215 260 L185 225"/>
+</g>
+<text x="300" y="490" font-family="Poppins,Arial" font-weight="800" font-size="46" text-anchor="middle" fill="#111">HAND X-RAY</text>
+</svg>

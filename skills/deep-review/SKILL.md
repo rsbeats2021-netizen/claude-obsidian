@@ -1,23 +1,6 @@
 ---
 name: deep-review
-description: >
-  Build a rigorously cited, visually designed, single-page HTML reference document
-  on a scientific, pharmacological, or mechanism-heavy topic — the style used for
-  "The Growth Plate Axis" / "The IGF-1 Circuit" (GH/IGF-1, receptor biology, compound
-  comparisons). Verifies every mechanistic claim against real primary literature via
-  web search before writing it down, keeps proper technical vocabulary while glossing
-  it inline for readability, and researches until no further verifiable primary
-  sources turn up rather than stopping at a fixed length. Can also start from an
-  existing document — the user's own research or a document Claude already
-  produced — verify and extend it further, and add a fast-scan "Key Quotes" section
-  (verbatim excerpt immediately followed by its source) for quick reference.
-  Triggers on: "deep review", "make a review document", "research this compound",
-  "research this topic in depth", "pharmacology review", "mechanism review with
-  citations", "like the IGF-1 circuit document", "summarize these studies into a
-  document", "build a reference doc on <compound/pathway/receptor>", "extend this
-  document with more research", "add a quotes section", "pull key quotes with
-  sources", "research this document further".
-allowed-tools: Read Write Edit Glob Grep Bash WebSearch WebFetch Artifact
+description: "Build a rigorously cited, single-page HTML reference document on a scientific, pharmacological or mechanism-heavy topic. Verifies every mechanistic claim against primary literature via web search before writing it, keeps technical vocabulary while glossing it inline, and researches until no further verifiable primary sources turn up rather than stopping at a fixed length. Can start from an existing document, verify and extend it, and add a fast-scan Key Quotes section. Triggers on: deep review, make a review document, research this compound, research this topic in depth, pharmacology review, mechanism review with citations, summarize these studies into a document, build a reference doc, extend this document with more research, add a quotes section, pull key quotes with sources."
 ---
 
 # deep-review: Cited Mechanism/Pharmacology Reference Documents

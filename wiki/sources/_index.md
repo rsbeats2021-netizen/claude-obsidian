@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Sources Index"
-updated: 2026-04-07
+updated: 2026-07-26
 tags:
   - meta
   - index
@@ -35,7 +35,381 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 
 ## Papers
 
-<!-- Add paper source pages here -->
+- [[Honey-and-Diabetes|Honey and Diabetes]] — Bobiş et al. 2018, review of honey as an antidiabetic/wound-healing agent
+- [[Honey-PTP1B-Insulin-Signaling|Honey Inhibits PTP1B]] — Lori et al. 2019, molecular mechanism for honey's insulin-sensitizing effect
+- [[Honey-vs-Glucose-Fructose-Solution|Honey vs. Matched Glucose-Fructose Solution]] — Münstedt et al. 2008, crossover trial isolating honey's non-sugar effect
+- [[Honey-Metabolic-Effects-Type2-Diabetics-1988|Metabolic Effects of Honey in Type II Diabetics]] — Katsilambros et al. 1988
+- [[Honey-Jumping-Exercise-Bone-Gonadotropins|Honey + Jumping Exercise on Bone and Gonadotropins]] — Mosavat et al. 2014
+- [[Honey-Exercise-Antioxidant-Bone-Metabolism|Honey + Exercise on Bone Metabolism and Antioxidant Status]] — Tavafzadeh et al. 2015
+- [[Honey-Aerobic-Dance-Bone-Turnover|Honey + Aerobic Dance on Bone Turnover]] — Ooi et al. 2011
+- [[Tualang-Honey-Bone-Metabolism-Postmenopausal-Review|Tualang Honey on Postmenopausal Bone Metabolism]] — Mohd Effendy et al. 2012 (review)
+- [[Honey-Bone-Health-Review-2019|Potential Beneficial Effects of Honey on Bone Health]] — Kamaruzzaman et al. 2019 (review)
+- [[Tualang-Honey-Bone-Structure-Ovariectomized-Rats|Tualang Honey on Bone Structure in Ovariectomized Rats]] — Zaid et al. 2012
+- [[Honey-Hydroxyapatite-Bone-Healing|Honey and Hydroxyapatite on Bone Healing]] — Bigham-Sadegh et al. 2018
+- [[Biocement-Honey-Composites|Biocement/Honey Composites for Bone Regenerative Medicine]] — Medvecky et al. 2023
+- [[Honey-Bone-Metabolism-Female-Athletes-Thesis|Honey Consumption and Bone Metabolism in Female Athletes]] — Ahmad 2017 (PhD thesis)
+- [[Honey-Nutrition-Health-Review-2008|Honey for Nutrition and Health]] — Bogdanov et al. 2008 (review)
+- [[Raw-vs-Regular-Honey-Nigeria|Raw vs. Regular Honey (Nigeria)]] — Edo et al. 2022
+- [[Honey-Microbiome-Analysis|Microbiome Analysis of Raw Honey]] — Xiong et al. 2023
+- [[Pubertal-Growth-and-Epiphyseal-Fusion|Pubertal Growth and Epiphyseal Fusion]] — Shim 2015 (review)
+- [[Aromatase-Inhibitors-Near-Final-Height-Males|Near Final Height in Males Treated with Aromatase Inhibitors]] — Bouliari et al. 2026
+- [[Aromatase-in-the-Human-Brain|Aromatase in the Human Brain]] — Azcoitia et al. 2021 (review)
+- [[Dihydrotestosterone-Clinical-Implications|Dihydrotestosterone: Biochemistry, Physiology, and Clinical Implications]] — Swerdloff et al. 2017 (review)
+- [[Androgen-Receptor-Upregulation-Osteoblasts|Homologous Androgen Receptor Up-Regulation in Osteoblastic Cells]] — Wiren et al. 1999
+- [[Hormones-and-Antioxidant-Systems|Hormones and Antioxidant Systems]] — Mancini et al. 2010
+- [[Nootropics-Cognitive-Enhancers|Nootropics as Cognitive Enhancers]] — Malík & Tlustoš 2022 (unrelated to Endocrinology domain — see source page)
+- [[DHT-Prevents-Glucocorticoid-Effects-Fetal-Bone|DHT Prevents Glucocorticoid Effects on Fetal Rat Metatarsal Bone]] — Picherit et al. 2000
+- [[Growth-Hormone-Androgen-Synergy-Hypopituitary-Dwarfs|Growth Hormone and Androgen Synergy in Hypopituitary Dwarfism]] — 1974 clinical trial
+- [[Androgen-Receptor-Modulation-No-Effect-Growth-Plate|Androgen Receptor Modulation Does Not Affect Longitudinal Bone Growth]] — Chagin et al. 2009
+- [[Testosterone-Metabolism-Rabbit-Cartilage|Testosterone Metabolism in Prepubertal Rabbit Cartilage]] — Takahashi et al. 1984
+- [[Sex-Steroid-Regulation-Cartilage-Bone-Proliferation|Sex Steroid Regulation of Cartilage and Bone Cell Proliferation]] — Somjen et al. 1991
+- [[Letrozole-Bone-Laying-Hens|Letrozole (Aromatase Inhibitor) Increases Bone Strength in Laying Hens]] — poultry science, 2019
+- [[Role-of-Growth-Plate-Longitudinal-Bone-Growth|The Role of the Growth Plate in Longitudinal Bone Growth]] — Pines & Hurwitz (review)
+- [[Dlx5-Chondrocyte-Differentiation|Dlx5 Positively Regulates Chondrocyte Hypertrophic Differentiation]] — Ferrari & Kosher 2002
+- [[Sox9-Growth-Plate-Chondrocyte-Fate|Sox9 Is Required to Maintain and Then Terminate Growth Plate Chondrocyte Proliferation]] — Dy et al. 2012
+- [[S-Equol-Estrogen-Receptor-Anti-Androgen|S-Equol: A Selective ERβ Ligand and DHT Antagonist]] — Setchell et al. 2005
+- [[Cartilage-Tissue-Engineering-Small-Molecules|Small Molecule Compounds for Chondrocyte Proliferation and Chondrogenic Differentiation]] — Li et al. 2020 (review)
+- [[HDAC2-Progesterone-Receptor-Breast-Cancer|Selective HDAC2 Inhibition Silences Progesterone Receptor Signaling]] — Bicaku et al. 2008 (unrelated to Endocrinology domain — see source page)
+- [[Preclinical-Formulations-Drug-Discovery-Toxicology|Preclinical Formulations for Discovery and Toxicology]] — Neervannan 2006 (unrelated to Endocrinology domain — see source page)
+- [[ERalpha-AF1-Growth-Plate-Closure-Female-Mice|ERα and AF-1 for Growth Plate Closure in Female Mice]] — Börjesson et al. 2012
+- [[Sox9-Localization-Magnesium-Deficient-Rat-Growth-Plate|Sox9 Localization Reduced in Magnesium-Deficient Rat Growth Plate]] — Gruber et al. 2004
+- [[AR-Overexpression-Chondrogenic-Rabbit-Articular-Chondrocytes|AR Overexpression Improves Chondrogenic Ability of Rabbit Articular Chondrocytes]] — Liu et al. 2021
+- [[GH-Dose-IGF1-Pubertal-Height-Gain|GH Dose-Dependent IGF-I Response and Pubertal Height Gain]] — Lundberg et al. 2015
+- [[Trenbolone-Extremity-Bones-Running-Rats|Trenbolone Supplementation and Extremity Bones in Running Rats]] — Sarı & Lök 2019
+- [[Thyroid-Hormone-Receptor-Skeletal-Phenotypes|Contrasting Skeletal Phenotypes in Thyroid Hormone Receptor Mutant Mice]] — O'Shea et al. 2005
+- [[Prenatal-Androgen-Excess-Multigenerational-Effects|Prenatal Androgen Excess and Multigenerational Effects]] — Abruzzese et al. 2023
+- [[Neurosteroids-GABAergic-Allopregnanolone|GABAergic Neurosteroid Steroidogenesis Review]] — Liang & Rasmusson (unrelated to Endocrinology domain — see source page)
+- [[Subcutaneous-Injection-Pain-Factors-Review|Subcutaneous Injection Pain Factors Review]] — Usach et al. 2019 (unrelated to Endocrinology domain — see source page)
+- [[BPC-157-Musculoskeletal-Healing-Review|BPC-157 and Musculoskeletal Healing]] — McGuire et al. 2025 (unrelated to Endocrinology domain — see source page)
+- [[Chondrogenesis-Osteoarthritis-Review|Chondrogenesis, Chondrocyte Differentiation, and Articular Cartilage Metabolism in Health and OA]] — Goldring 2012 (review)
+- [[Chondroinductive-Peptides-Cartilage-Regeneration|Peptides for Chondrogenic Induction and Cartilage Regeneration]] — Liao et al. 2024 (review)
+- [[Nandrolone-Telomere-Elongation-Bone-Marrow-Failure|Nandrolone Decanoate Elongates Telomeres in Telomeropathy Patients]] — Clé et al.
+- [[11-Oxygenated-Androgens-PCOS-Hirsutism-Thesis|Significance of Androgens of Adrenal Origin in PCOS and Hirsutism]] — Varausová 2023 (thesis)
+- [[Skeletal-Stem-Cells-Growth-Plate-Hedgehog-Signaling|Stimulation of Skeletal Stem Cells in the Growth Plate Promotes Linear Bone Growth]] — Trompet et al. 2024
+- [[Aromatase-Inhibitors-in-Men-Effects-Therapeutic-Options|Aromatase Inhibitors in Men: Effects and Therapeutic Options]] — de Ronde & de Jong 2011 (review)
+- [[DHEA-and-the-Skeleton-Review|DHEA and the Skeleton (Through the Ages)]] — Gordon et al. 1999 (review)
+- [[TYRA-300-FGFR3-Inhibitor-Chondrodysplasia|TYRA-300, an FGFR3-Selective Inhibitor, Promotes Bone Growth in Chondrodysplasia Models]] — Starrett et al. 2025
+- [[Fulvestrant-Precocious-Puberty-McCune-Albright|Fulvestrant Treatment of Precocious Puberty in McCune-Albright Syndrome]] — Sims et al. 2012
+- [[Dietary-Supplement-DHT-Testosterone-Estradiol-Dose-Response|Dietary Supplement Effects on DHT, Testosterone, and Estradiol]] — Angwafor & Anderson 2008
+- [[Testosterone-Liver-Kidney-Function-Rabbits|Testosterone Effects on Liver and Kidney Function in Male Rabbits]] — Elesawi et al. 2019
+- [[Peptide-Regulation-Chondrogenic-Stem-Cell-Differentiation|Peptide Regulation of Chondrogenic Stem Cell Differentiation]] — Linkova et al. 2023 (review)
+- [[H19-Gene-Silencing-Rhabdomyosarcoma|H19 Gene Silencing in Rhabdomyosarcoma]] — Lynch et al. 2002 (unrelated to Endocrinology domain — see source page)
+- [[Peptide-KEDW-DNA-Gene-Expression|Tetrapeptide KEDW and Gene Expression]] — Khavinson et al. 2015 (unrelated to Endocrinology domain — see source page)
+- [[Peptide-Bioregulators-Review-Solovev|Short Peptides as Signaling Molecules in Homeostasis Regulation]] — Khavinson & Solov'ev 2013 (unrelated to Endocrinology domain — see source page)
+- [[Peptide-Bioregulators-Plant-Callus-Growth|Short Bioactive Peptides and Plant Callus Growth]] — 2017 (unrelated to Endocrinology domain — see source page)
+- [[Medicinal-Peptide-Drugs-Pharmacology-Overview|Medicinal Peptide Drugs: A Promising Direction in Modern Pharmacology]] — Trofimova et al. 2022 (unrelated to Endocrinology domain — see source page)
+- [[Peptide-AEDG-Immunosenescence-Interferon|Interferon Gamma Decline and the Geroprotective Peptide AEDG]] — Linkova & Kuznik 2012 (unrelated to Endocrinology domain — see source page)
+- [[Growth-Plate-Senescence-Epiphyseal-Fusion-Review|Fundamental Limits on Longitudinal Bone Growth]] — Nilsson & Baron 2004 (review)
+- [[GPER1-Chondrocyte-Proliferation-PTHrP-Ihh|GPER-1 Facilitates Chondrocyte Proliferation via PTHrP/Ihh Regulation]] — Chou et al. 2025
+- [[Human-Growth-Plate-Transcriptional-Atlas-GH-Stem-Cells|A Transcriptional Atlas of the Pubertal Human Growth Plate]] — Chu et al. 2025 (preprint)
+- [[Hedgehog-Resting-Zone-Chondrocytes-Osteoblast-Transformation|Hedgehog-Activated Resting-Zone Chondrocytes Transform into Trabecular Osteoblasts]] — Orikasa et al. 2023 (preprint)
+- [[Dynasore-Hormetic-Bone-Growth|Dynasore Has a Hormetic Effect on Ex Vivo Bone Growth]] — Marchan-Alvarez et al. 2026 (preprint)
+- [[Nandrolone-Achondroplasia-Case-Report|Nandrolone Therapy in a Child with Achondroplasia (Case Report)]] — Al-Mosawi 2006
+- [[Deca-Durabolin-Reproductive-Organ-Damage-Rats|Effect of Long-Term Administration of Deca-Durabolin on Reproductive Organs]] — Zabiba 2017
+- [[TD-198946-Intervertebral-Disc-Regeneration|TD-198946 Promotes Intervertebral Disc Regeneration via PI3K/Akt]] — Kushioka et al. 2020
+- [[ERalpha-Mechanotransduction-Chondrocytes-Review|ERα as a Ligand-Independent Mechanotransducer in Chondrocytes]] — Wang et al. 2023 (review)
+- [[Growth-Promotion-Short-Normal-Child-Thesis|Growth Promotion in the Short Normal Child]] — Stirling 1994 (MD thesis)
+- [[Roncoleukin-Interferon-COVID-Treatment|Roncoleukin, Vladonix, and Interferon in COVID-19]] — Serikov et al. 2022 (unrelated to Endocrinology domain — see source page)
+- [[Fluorescein-Dye-Dilution-Retinal-Blood-Flow|Fluorescein Dye Dilution Method for Retinal Circulation Time]] — 1973 (unrelated to Endocrinology domain — see source page)
+- [[Fulvestrant-Breast-Cancer-Review-Nathan-Schmid|A Review of Fulvestrant in Breast Cancer]] — Nathan & Schmid 2017 (unrelated to Endocrinology domain — see source page)
+- [[Fulvestrant-Immune-Response-Breast-Cancer-Dabrosin|Fulvestrant-Mediated Attenuation of Innate Immune Response in Breast Cancer]] — Abrahamsson et al. 2020 (unrelated to Endocrinology domain — see source page)
+- [[Cartilage-Peptides-Chondrocyte-Proliferation-Geroprotection|Cartilage Tissue Peptides: Chondrocyte Proliferation and Geroprotection]] — Myakisheva et al. 2023 (unrelated to Endocrinology domain — see source page)
+- [[PTHrP-Resting-Chondrocytes-Wnt-Inhibitory-Environment|Chondrocytes in the Resting Zone Are Maintained in a Wnt-Inhibitory Environment]] — Hallett et al. 2021
+- [[Depletion-Resting-Zone-Chondrocytes-Growth-Plate-Senescence|Depletion of Resting Zone Chondrocytes During Growth Plate Senescence]] — Schrier et al. 2006
+- [[DHT-Estrogen-Combined-Bone-Density-Growth-Ovariectomized-Rats|DHT Alone and Combined with Estrogen on Bone in Ovariectomized Rats]] — Coxam et al. 1996
+- [[Oxandrolone-Pediatric-Growth-Disorders-Review|Oxandrolone Therapy in Pediatric Growth Disorders]] — Soliman et al. 2025
+- [[Genistein-Estradiol-ATDC5-Chondrogenesis-TGFbeta|Genistein and Estradiol Inhibit Chondrogenic ECM Production via TGF-β]] — Takeda et al. 2025
+- [[Chromosomal-Hormonal-Factors-Human-Sexual-Dimorphism|Chromosomal and Hormonal Factors in Human Sexual Dimorphism]] — Fukami et al. 2026 (review)
+- [[GH-IGF1-Distinct-Zones-Rat-Growth-Plate-Oberbauer|GH and IGF-I Act on Distinct Growth-Plate Zones]] — Oberbauer & Peng 1995
+- [[MRI-Growth-Plate-Closure-Adolescents-Kvist|MRI Study of Growth Plate Closure Factors in Adolescents]] — Kvist et al. 2021
+- [[GH-Therapy-Circulating-Stem-Cells-VSELs-Wedrychowicz|GH Therapy and Circulating Stem Cells (VSELs)]] — Wędrychowicz et al. 2025
+- [[Skeletal-Development-Basic-Applied-Bone-Biology|Skeletal Development (textbook chapter)]] — Basic and Applied Bone Biology, 2nd Ed.
+- [[SOCS2-Accelerated-Growth-Plate-Fusion-Osteoarthritis|SOCS2 Deletion, Accelerated Growth Plate Fusion, and OA Vulnerability]] — Samvelyan et al. 2022
+- [[Aromatase-Inhibitors-Short-Stature-Cochrane-Review|Aromatase Inhibitors for Short Stature (Cochrane Review)]] — McGrath & O'Grady 2015
+- [[Equine-MSC-Gene-Expression-Adipocyte-Chondrocyte-Differentiation|Gene Expression During Equine MSC Differentiation]] — Ropka-Molik et al. 2026
+- [[GHF1-Somatotropic-Progenitor-Immortalization-Dwarfism|GHF-1-Targeted Somatotropic Progenitor Immortalization Causes Dwarfism]] — Lew et al. 1993
+- [[Fulvestrant-ER-Antagonist-Mechanism-Osborne|Fulvestrant: A Novel-Mechanism ER Antagonist]] — Osborne et al. 2004 (unrelated to Endocrinology domain — see source page)
+- [[Methyl-Beta-Carboline-MAO-Inhibitor-Neurotrophic|9-Methyl-β-Carboline: MAO Inhibition and Astrocyte Neurotrophic Factors]] — Keller et al. 2020 (unrelated to Endocrinology domain — see source page)
+- [[Mestanolone-Tilapia-Masculinization-Thesis|Mestanolone-Induced Masculinization in Nile Tilapia]] — Thai thesis (unrelated to Endocrinology domain — see source page)
+- [[hCG-FSH-IVF-Controlled-Ovarian-Stimulation|hCG + FSH for IVF Controlled Ovarian Stimulation]] — Thuesen et al. (unrelated to Endocrinology domain — see source page)
+- [[Estriol-Vaginal-Cream-Serum-Concentration-Variability|Serum Estriol Variability After Vaginal Cream Application]] — te West et al. 2020 (unrelated to Endocrinology domain — see source page)
+- [[Childhood-Growth-Hunter-Gatherer-Societies-Anthropology|Childhood Growth in Hunter-Gatherer Societies]] — Cobby 2025 (unrelated to Endocrinology domain — see source page)
+- [[P2Y2-Purinergic-Bone-Anabolic-Response-Exercise|P2Y2 Inhibition and Bone Anabolic Response to Exercise]] — Chougule et al. 2025 (unrelated to Endocrinology domain — see source page)
+- [[Advances-in-Gerontology-Journal-Issue-Misplaced|Advances in Gerontology, Vol. 36 No. 3 (full journal issue)]] — misplaced file, not individually assessed
+- [[Differential-Regulation-Skeletal-Stem-Progenitor-Cells-Compartments|Differential Regulation of Skeletal Stem/Progenitor Cells]] — Solidum et al. 2023 (review)
+- [[Trestolone-Human-Metabolism-Doping-Analysis|Human Metabolism of Trestolone]] — Piper et al. 2025
+- [[IGF1-GH-Differential-Effects-Growth-Plate-Hunziker|Differential Effects of IGF-I and GH on Growth Plate Chondrocytes]] — Hunziker et al. 1994
+- [[GH-Single-Cell-Enzyme-Activity-Proliferation-Gevers1996|Single Cell Enzyme Activity and Proliferation in the Growth Plate]] — Gevers et al. 1996
+- [[Letrozole-Long-Term-McCune-Albright-Precocious-Puberty|Long-Term Letrozole for McCune-Albright Precocious Puberty]] — Estrada et al. 2016
+- [[GH-Rapid-STAT5-Phosphorylation-Resting-Chondrocytes-Gevers2009|GH-Induced STAT5 Phosphorylation in Resting-Zone Chondrocytes]] — Gevers et al. 2009
+- [[ERalpha-DNA-Damage-Chondrocyte-Senescence-Osteoarthritis|Ligand-Independent ERα Suppresses DNA-Damage-Induced Chondrocyte Senescence]] — Zhang et al. 2023
+- [[Membrane-Effects-Sex-Hormones-Growth-Plate-Chondrocytes-Thesis|Membrane Effects of Sex Hormones on Growth Plate Chondrocytes]] — ElBaradie 2012 (PhD thesis)
+- [[Nandrolone-TGFbeta-IGF1-Muscle-Wound-Healing|Local Nandrolone, TGF-β1/IGF-1, and Muscle Wound Healing]] — Al-Abdullah & Al-Mashhadane 2023
+- [[GH-IGF1-Exercise-NonWeightBearing-Muscle-Hypophysectomized|GH, IGF-I, and Exercise Effects on Muscle]] — Grossman et al.
+- [[Kartogenin-Nanomedicine-Cartilage-Regeneration|Nanomedicine Delivery of Kartogenin]] — Bhuyan et al.
+- [[Erdafitinib-FGFR-Inhibitor-Prescribing-Information|Erdafitinib (BALVERSA) Prescribing Information]] — FDA labeling (unrelated to Endocrinology domain — see source page)
+- [[Glutathione-Cellular-Increase-Review|How to Increase Cellular Glutathione]] — Giustarini et al. 2023 (unrelated to Endocrinology domain — see source page)
+- [[Forskolin-Granulosa-Cell-ESC-Germ-Cell-Differentiation|Forskolin, Granulosa Co-Culture, and ESC-to-Germ-Cell Differentiation]] — Bahmanpour et al. 2020 (unrelated to Endocrinology domain — see source page)
+- [[Intranasal-Insulin-Postoperative-Delirium|Intranasal Insulin and Postoperative Delirium]] — Zhang et al. (unrelated to Endocrinology domain — see source page)
+- [[Letrozole-Serum-Estradiol-Estrone-Breast-Cancer-PK|Letrozole PK in Postmenopausal Breast Cancer]] — Faltinová et al. 2023 (unrelated to Endocrinology domain — see source page)
+- [[ERalpha-Cytokeratins-Fulvestrant-Breast-Cancer-2010|ERα-Interacting Cytokeratins and Fulvestrant]] — Long et al. 2010 (unrelated to Endocrinology domain — see source page)
+- [[Insulin-Local-Aromatase-Growth-Plate-Obesity|Insulin's Role in Regulating Local Aromatase]] — Hu et al. 2025
+- [[ERalpha-Cartilage-Specific-Inactivation-GH-IGF1-Axis-Borjesson2010|ERα in Growth Plate Cartilage: Direct vs. Indirect Action]] — Börjesson et al. 2010
+- [[AR-Osteoblast-Stage-Dependent-Action-Russell2014|Stage-Dependent AR Action in Osteoblasts]] — Russell et al. 2014
+- [[Abaloparatide-PTH-Catabolic-Effects-Bone|Abaloparatide vs. PTH(1-34) Catabolic Effects]] — JBMR Plus
+- [[ERalpha-ERbeta-Selective-Agonists-Ovariectomized-Mice-Iravani2016|Selective ERα vs. ERβ Agonists and Growth-Plate Bone Effects]] — Iravani et al. 2016
+- [[Sex-Hormones-Cartilaginous-Tissues-Scoping-Review-Hutchinson2025|Sex Hormones in Cartilaginous Tissues (Scoping Review)]] — Hutchinson & Séguin 2025
+- [[Low-Dose-Testosterone-CDGP-Bergada1995|Low-Dose Testosterone for CDGP]] — Bergadá et al. 1995
+- [[Letrozole-Bone-Age-Adrenal-Suppression-Jacobson2005|Letrozole, Bone Age, and Adrenal Suppression]] — Jacobson et al. 2005
+- [[Serinc5-Sox9-Chondrocyte-Differentiation-Hata2024|Serinc5 Inhibits Sox9]] — Hata et al. 2024
+- [[MENT-Trestolone-Pharmacokinetics-Monkeys-Kumar2013|MENT (Trestolone) Pharmacokinetics]] — Kumar et al. 2013
+- [[Resting-Zone-Chondrocytes-Stem-Cell-Review-Lui2020|Are Resting-Zone Chondrocytes Bona Fide Stem Cells?]] — Lui 2020
+- [[SASP-Chondrocyte-Osteoarthritis-Peptide-Chondroprotection-Linkova|Chondrocyte SASP in Osteoarthritis and Peptide Bioregulation]] — Linkova et al.
+- [[GH-Replacement-Hematopoiesis-GHD-Children-Kawa2014|GH Replacement and Hematopoiesis in GHD Children]] — Kawa et al. 2014
+- [[PTHrP-HDAC4-MEF2-Chondrocyte-Hypertrophy-Kozhemyakina2009|PTHrP Represses Chondrocyte Hypertrophy via HDAC4/MEF2]] — Kozhemyakina et al. 2009
+- [[GH-Multiple-Effects-Prohormone-Review-Devesa2016|GH as a Prohormone]] — Devesa et al. 2016
+- [[Soy-Isoflavones-Endocrine-Disruptor-Technical-Review-Messina2021|Soy Isoflavones Are Not Endocrine Disruptors]] — Messina et al. 2021
+- [[Cerebrolysin-Neurotrophic-Peptide-Monograph|Cerebrolysin Medical Professional Monograph]] — (unrelated to Endocrinology domain — see source page)
+- [[Aromatase-Deficient-Man-Estrogen-Therapy-Bilezikian1998|Increased Bone Mass from Estrogen Therapy in Aromatase-Deficient Man]] — Bilezikian et al. 1998
+- [[PTH-Cartilage-Circadian-Clock-Okubo2015|PTH Resets the Cartilage Circadian Clock]] — Okubo et al. 2015
+- [[MENT-Human-PK-Suvisaari1997|MENT Pharmacokinetics in Healthy Men]] — Suvisaari et al. 1997
+- [[Liquiritigenin-Osteoblast-Osteoclast-Dual-Effects|Dual Effects of Liquiritigenin on Bone Cells]] — Uchino et al.
+- [[S-Equol-SE5OH-Pharmacokinetics-Postmenopausal-Women|S-Equol (SE5-OH) Pharmacokinetics]] — postmenopausal women study
+- [[cAMP-Calcium-Condylar-Cartilage-Growth-Kantomaa|cAMP and Ca++ in Mandibular Condylar Growth]] — Kantomaa & Hall
+- [[GH-Breast-Epithelium-Progesterone-Stem-Cells-Lombardi2014|GH Secreted by Breast Epithelium Upon Progesterone Stimulation]] — Lombardi et al. 2014
+- [[Infigratinib-FGFR-Achondroplasia-Savarirayan2024|Infigratinib for Achondroplasia]] — Savarirayan et al. 2024
+- [[Short-Stature-Children-Classic-Review-Frasier1981|Short Stature in Children]] — Frasier 1981
+- [[GH-Receptor-Osteogenesis-BMPC-Cool2005|GH Receptor Signaling in Osteogenesis from BMPCs]] — Cool et al. 2005
+- [[GH-Mesenchymal-Stem-Cell-Commitment-Review-Bolamperti2019|The Role of GH in MSC Commitment]] — Bolamperti et al. 2019
+- [[Resting-Zone-Growth-Plate-Chondrogenesis-Abad2002|The Role of the Resting Zone in Growth Plate Chondrogenesis]] — Abad et al. 2002 (foundational)
+- [[Tamoxifen-Height-Potential-Short-Pubertal-Boys-Kreher2005|Tamoxifen to Improve Height Potential in Short Pubertal Boys]] — Kreher et al. 2005
+- [[Estrogen-Actions-Growth-Plate-Cartilage-Thesis-Iravani2020|Estrogen Actions in the Growth Plate Cartilage]] — Iravani 2020 (PhD thesis)
+- [[Fluoxymesterone-Linear-Growth-Weight-Laron|Effectiveness of Fluoxymesterone on Linear Growth and Weight]] — Laron
+- [[Anabolic-Steroids-Growth-Review-Prader|The Influence of Anabolic Steroids on Growth]] — Prader
+- [[Anabolic-Steroids-Osteoporosis-Dequeker-Geusens|Anabolic Steroids and Osteoporosis]] — Dequeker & Geusens
+- [[Nandrolone-Humerus-Fracture-Delayed-Union-Oliveira|Nandrolone Decanoate for Humerus Fracture Delayed Union]] — Oliveira et al. 2020
+- [[Oxandrolone-Neuroregenerative-Case-Report-Bianchi2015|Neuroregenerative Effect of Oxandrolone]] — Bianchi & Marbini 2015
+- [[PTH-Calcium-Gluconate-Mouse-Skeleton-Selye|Effects of PTH and Calcium Gluconate on Mouse Skeletal Tissue]] — Selye & Stone (historical)
+- [[Androgen-Receptor-Structure-Prostate-Cancer-Tan2015|Androgen Receptor: Structure and Drug Discovery]] — Tan et al. 2015
+- [[Osteoarthritis-ADAMTS-MMP-Cartilage-Degradation|OA Cartilage Degradation via ADAMTS and MMP]] — review
+- [[Combined-Nandrolone-Testosterone-Femur-Morphometry-Sefa2011|Combined Nandrolone and Testosterone Effects on Femur]] — Sefa et al. 2011
+- [[Androgen-Suppression-PSA-Prostate-Cancer-Crook2012|Intermittent Androgen Suppression After Radiotherapy]] — Crook et al. 2012 (unrelated)
+- [[Fulvestrant-MMQ-Pituitary-Cells-Li2009|Fulvestrant Effects on MMQ Pituitary Cells]] — Li et al. 2009 (unrelated)
+- [[Polypeptide-Drugs-Periodontitis-Oral-Fluid|Polypeptide Drugs and Periodontitis]] — Bandrivsky et al. 2022 (unrelated)
+- [[Fulvestrant-ER-Degradation-Mechanism-Long2006|Fulvestrant-Induced ER Degradation]] — Long & Nephew 2006 (unrelated)
+- [[Peptide-Regulation-Gene-Expression-Systematic-Review-Khavinson2021|Peptide Regulation of Gene Expression]] — Khavinson et al. 2021 (unrelated)
+- [[R-Lipoic-Acid-Plasma-Pharmacokinetics|R-Lipoic Acid Plasma Pharmacokinetics]] — 2007 (unrelated)
+- [[Ultrashort-Peptide-Transport-POT-LAT-Khavinson2022|Ultrashort Peptide Transport]] — Khavinson et al. 2022 (unrelated)
+- [[JAK-STAT3-Cancer-Metastasis-WookJin2019|JAK/STAT3 in Cancer Metastasis]] — Wook Jin 2019 (unrelated)
+- [[Maximum-Safe-Starting-Dose-Animal-Human-Conversion|Maximum Safe Starting Dose Conversion Guide]] — Saadh et al. 2020 (unrelated)
+- [[Intranasal-Glutathione-Cognitive-Vitality-Report|Intranasal Glutathione]] — ADDF (unrelated)
+- [[Fulvestrant-Drug-Development-Robertson|Fulvestrant Drug Development]] — Robertson (unrelated)
+- [[Musculoskeletal-Disease-Chondroprotector-Consumption-Stavropol|Chondroprotector Consumption in Stavropol]] — Bidarova et al. 2012 (unrelated)
+- [[Fulvestrant-ErbB3-ErbB4-Breast-Cancer-Hutcheson|Fulvestrant-Induced ErbB3/ErbB4]] — Hutcheson et al. (unrelated)
+- [[Letrozole-PK-Age-Single-Multiple-Dose-Pfister2001|Letrozole Age/Dose Pharmacokinetics]] — Pfister et al. 2001 (unrelated)
+- [[Cognitive-Impairment-Drug-Development-Beglinger2004|Cognitive Impairment and Drug Development]] — Beglinger 2004 (unrelated)
+- [[Nandrolone-OVX-Rat-Femur-Mechanical-Properties-Aerssens1993|Nandrolone Decanoate Effects on OVX Rat Femur]] — Aerssens et al. 1993
+- [[GH-Stanozolol-Turner-Syndrome-Fang1999|GH + Stanozolol in Turner Syndrome]] — Fang et al. 1999
+- [[Letrozole-Bone-Biomarkers-Femur-Fracture-Yonden|Letrozole and Bone Biomarkers/Femur Fracture]] — Yonden et al.
+- [[Norandrostenololylaurate-Testosterone-Growth-Plate-Colts-Koskinen1997|Anabolic Steroid Effects on Growth Plate Closure in Colts]] — Koskinen & Katila 1997
+- [[Bone-Remodeling-Regeneration-Hormones-Review-Mehreen2025|Connecting Bone Remodeling and Regeneration]] — Mehreen et al. 2025
+- [[Androgens-Human-Fascia-Fede2025|Effect of Androgens on Human Fascia]] — Fede et al. 2025
+- [[Androgen-Ectopic-Chondrocyte-Penile-Body-Hiremath|Androgen-Induced Ectopic Chondrocytes in Penile Body]] — Hiremath et al.
+- [[Equol-Anti-Androgen-Prostate-Growth-Lund2004|Equol as a Novel Anti-Androgen]] — Lund et al. 2004
+- [[Liquiritigenin-Anti-Inflammatory-NFkB-iNOS|Liquiritigenin's Anti-Inflammatory Mechanism]] — Kim et al.
+- [[IGF2-MSC-Glutathione-Osteoarthritis-Senescence-Cho2025|MSC-Secreted IGF-2 Rejuvenates Senescent Chondrocytes]] — Cho et al. 2025
+- [[Autocrine-Paracrine-IGF1-Skeletal-Development-Wang2013|Autocrine/Paracrine IGF-I in Skeletal Development]] — Wang et al. 2013
+- [[GHRP2-Sustained-GH-IGF1-Older-Adults-Bowers2004|GHRP-2 Sustains GH/IGF-I Elevation]] — Bowers et al. 2004
+- [[Resting-Zone-Growth-Region-Chondrocyte-Phenotype-Boyan1988|Resting Zone vs. Growth Region Chondrocyte Phenotype]] — Boyan et al. 1988
+- [[Somatotropic-Axis-GH-IGF-Related-Independent-Roles-Butler2001|GH and IGF-I: Related but Independent Roles]] — Butler & Le Roith 2001
+- [[GH-Stanozolol-Turner-Syndrome-Final-Height-Xiong|GH + Stanozolol: Final Height in Turner Syndrome]] — Xiong et al.
+- [[Growth-Plate-Zones-Height-Gains-Review-CEP2023|Height Gains from Longitudinal Bone Growth]] — review
+- [[Idiopathic-Short-Stature-Genomic-Era-Paparella2025|Idiopathic Short Stature in the Genomic Era]] — Paparella et al. 2025
+- [[Histone-Acetylation-MSC-Differentiation-Review-Jang2022|The Role of Histone Acetylation in MSC Differentiation]] — Jang et al. 2022
+- [[Androgen-Receptors-Human-Osteoblasts-Colvard1989|Identification of Androgen Receptors in Human Osteoblasts]] — Colvard et al. 1989 (foundational)
+- [[Retrotransposon-MSC-Dnmt3a-HSC-Clonal-Expansion-Zhang2024|Retrotransposon Reactivation and HSC Clonal Expansion]] — Zhang et al. 2024 (unrelated)
+- [[Androgen-Bone-Maturation-Not-Attenuated-Faslodex-Gunther2001|Androgen Bone Maturation Not Attenuated by Faslodex]] — Gunther et al. 2001
+- [[GPR30-GPER1-Deficiency-Bone-Mass-Male-Mice-Ford|GPR30 Deficiency Increases Bone Mass and Growth Plate Proliferation]] — Ford et al.
+- [[Testosterone-Sexual-Dimorphism-5AlphaReductase-Raz2005|Testosterone's Sex-Dimorphic Chondrocyte Effect Requires 5α-Reductase]] — Raz et al. 2005
+- [[DHT-Metabolite-ERbeta-Brain-Handa2008|DHT Metabolite Activates ERβ in the Brain]] — Handa et al. 2008
+- [[Methylphenidate-Premature-Growth-Plate-Closure-Pazos-Perez|Methylphenidate Promotes Premature Growth Plate Closure]] — Pazos-Pérez et al. 2023
+- [[Letrozole-Near-Final-Height-CDGP-Hero2006|Letrozole Increases Near-Final Height in CDGP]] — Hero et al. 2006
+- [[Snail1-FGFR3-Chondrogenesis-Achondroplasia-DeFrutos2007|Snail1 as a Transcriptional Effector of FGFR3 Signaling]] — de Frutos et al. 2007
+- [[PDGFRbeta-Skeletal-Stem-Progenitor-Cell-Activation-Bohm2019|PDGFRβ Signaling Activates Skeletal Stem/Progenitor Cells]] — Böhm et al. 2019
+- [[AAS-Neurotoxicity-Rat-Cortical-Cultures-Zelleroth|Neurotoxic Effects of Anabolic Androgenic Steroids]] — Zelleroth et al.
+- [[GH-Receptor-GHBP-Localization-Rat-Growth-Plate-Gevers2002|GH Receptor and GHBP Localization in Rat Growth Plate]] — Gevers et al. 2002
+- [[GHRP-Mechanism-Review-GHIR1999|GH-Releasing Peptides: Mechanism Review]] — 1999
+- [[Hypoxia-MSC-Proliferation-Grayson2007|Hypoxia Enhances MSC Proliferation]] — Grayson et al. 2007
+- [[Mechanism-Longitudinal-Bone-Growth-Review-Hunziker1994|Mechanism of Longitudinal Bone Growth: Review]] — Hunziker 1994
+- [[Estradiol-Growth-Plate-Limb-Spine-ER-Concentration-Shi2017|Estradiol's Dose- and Site-Dependent Effect on Limb vs. Spine Growth Plates]] — Shi et al. 2017
+- [[EMT-MET-Growth-Plate-Chondrocyte-Differentiation-Zhou2015|EMT/MET-Like Transitions in Growth-Plate Chondrocyte Differentiation]] — Zhou et al. 2015
+- [[Growth-Plate-Chondrocytes-Skeletal-Development-Review-Hallett2019|Growth Plate Chondrocytes: Skeletal Development Review]] — Hallett, Ono, Ono 2019
+- [[Vertebral-Growth-Plate-Reactivation-Tethering-Latalski2022|Vertebral Growth Plate Reactivation via Body Tethering]] — Latalski et al. 2022
+- [[Estrogen-ER-GH-Secreting-Adenomas-Voltan2023|Estrogen and ER in GH-Secreting Pituitary Adenomas]] — Voltan et al. 2023
+- [[Letrozole-Delayed-Puberty-Boys-Once-Twice-Daily-GH|Once vs. Twice Daily GH Injections in Idiopathic Short Stature]] — Phillip et al. 1997
+- [[Stem-Cells-Niches-Review-Morrison-Spradling2008|Stem Cells and Niches: General Review]] — Morrison & Spradling 2008
+- [[IGF1-Rescues-FGFR3-Mutant-Apoptosis-Koike2003|IGF-1 Rescues FGFR3-Mutant Chondrogenic Cells from Apoptosis]] — Koike et al. 2003
+- [[Androgen-Metabolism-Human-Fetal-Epiphyseal-Cartilage-Audi1984|Androgen Metabolism in Human Fetal Epiphyseal Cartilage]] — Audi et al. 1984
+- [[DHT-Binding-Sites-Human-Fetal-Chondrocytes-Carrascosa1990|DHT-Binding Sites in Human Fetal Epiphyseal Chondrocytes]] — Carrascosa et al. 1990
+- [[Keenan-1990-DHT-Heptanoate-Patent-US4956357|Biological Methods Utilizing Dihydrotestosterone Heptanoate]] — Keenan & Sparrow, US 4,956,357 (1990) / EP0197753A2 (1986) — the 190 mg/mL sesame-oil formulation
+- [[Keenan-1987-DHT-Heptanoate-Pharmacokinetics|DHT Heptanoate: Synthesis, Pharmacokinetics, HPT Function]] — Keenan et al. 1987
+- [[Eberle-1986-DHT-Heptanoate-Pubertal-Gynecomastia|Treatment of Persistent Pubertal Gynecomastia with DHT Heptanoate]] — Eberle, Sparrow, Keenan 1986
+- [[Keenan-1993-DHT-Heptanoate-Pubertal-Growth|Androgen-Stimulated Pubertal Growth: T vs DHT on GH and IGF-1]] — Keenan et al. 1993
+- [[Keenan-1996-DHT-Heptanoate-GH-Binding-Protein|Androgen Regulation of Growth Hormone Binding Protein]] — Keenan et al. 1996
+- [[Saad-2001-DHT-Heptanoate-Insulin-Sensitivity|DHT Treatment in Adolescents with Delayed Puberty: Insulin Resistance of Puberty?]] — Saad, Keenan et al. 2001 (50 mg q2wk, the lowest human DHT-hp dose; FDA IND 29,139)
+- [[Coutts-1997-DHT-Heptanoate-Urinary-Profile|IM 5α-DHT Heptanoate: Changes in Urinary Hormone Profile]] — Coutts et al. 1997 (250 mg in 6 healthy men)
+- [[Weinbauer-1990-TE-vs-DHT-Enanthate-Primates|PK/PD of Testosterone Enanthate and DHT Enanthate in Non-Human Primates]] — Weinbauer et al. 1990
+- [[Yang-Yoon-1994-DHT-Enanthate-Mice|Effect of DHT Enanthate on Serum T and DHT and Testis Weight in Mice]] — Yang & Yoon 1994
+- [[Hanson-2020-DHT-Enanthate-Castrate-Rat-Hypertension|Hypogonadal Hypertension in Male Rats is RAS-Dependent]] — Hanson, Perusquía, Stallone 2020 (5.0 mg/mL DHT-E formulation)
+- [[Forti-1983-DHT-Propionate-Klinefelter|Pharmacological Doses of T and DHT on the HP Axis of Klinefelter Patients]] — Forti et al. 1983 (the only human DHT propionate dose)
+- [[Androgen-Receptor-Localization-Human-Bone-Abu1997|Androgen Receptor Localization in Human Bone Tissue]] — Abu et al.
+- [[Sex-Dependent-Estradiol-Chondrocyte-Differentiation-Nasatzky1993|Sex-Dependent Estradiol Effects on Chondrocyte Differentiation]] — Nasatzky et al. 1993
+- [[Fluoxymesterone-Accelerates-Delayed-Growth-Puberty-1982|Fluoxymesterone Accelerates Growth and Puberty in Delayed Boys]] — 1982
+- [[Cyclopia-Extract-ER-Breast-Cancer-Offtopic|Cyclopia Extract and ER Signaling in Breast Cancer]] — (unrelated)
+- [[Donepezil-5HT4-Object-Recognition-Offtopic|Donepezil and 5-HT4 Receptor Effects on Memory]] — Freret et al. 2012 (unrelated)
+- [[Thymus-Pituitary-Axis-Aging-Goya1999-Offtopic|Thymus-Pituitary Axis and Aging]] — Goya et al. 1999 (unrelated)
+- [[Parkinsons-Disease-Gruss2012-Offtopic|Parkinson's Disease Study]] — Gruss et al. 2012 (unrelated)
+- [[Methyl-Beta-Carboline-Dopaminergic-Neurons-Hamann2008-Offtopic|9-Methyl-β-Carboline and Dopaminergic Neurons]] — Hamann et al. 2008 (unrelated)
+- [[ER-AR-Human-Sperm-Mitochondria-Offtopic|ER and AR in Human Sperm Mitochondria]] — (unrelated)
+- [[Osteoking-Chinese-Patent-Drug-Fracture-Offtopic|Osteoking Chinese Patent Medicine for Fracture Healing]] — (unrelated)
+- [[Khavinson-Peptides-THP1-Monocyte-Offtopic|Khavinson Peptide Bioregulator and THP-1 Monocytes]] — (unrelated)
+- [[Testosterone-Prostate-Cancer-Saturation-Model-Offtopic|Testosterone and Prostate Cancer: Saturation Model]] — 2008 (unrelated)
+- [[ER-Tamoxifen-Fulvestrant-Resistance-Offtopic|ER Changes in Tamoxifen/Fulvestrant Resistance]] — 2005 (unrelated)
+- [[Pulsed-Glucocorticoids-DMD-Muscle-Quattrocelli-Offtopic|Pulsed Glucocorticoids in Duchenne Muscular Dystrophy]] — Quattrocelli et al. (unrelated)
+- [[ERalpha-ERbeta-Opposing-Effects-Longitudinal-Bone-Growth-Vidal2000|ERα and ERβ Have Opposing Effects on Longitudinal Bone Growth]] — Vidal et al.
+- [[ERalpha-ERbeta-AR-Localization-Human-Pubertal-Growth-Plate-Nilsson2003|ERα, ERβ, and AR Localization in the Human Pubertal Growth Plate]] — Nilsson et al. 2003
+- [[ERalpha-Selective-Agonist-PPT-Shortens-Bones-Chagin2004|Selective ERα (Not ERβ) Agonism Reproduces Estrogen's Bone-Shortening Effect]] — Chagin et al. 2004
+- [[ERalpha-ERbeta-Expression-Rat-Rabbit-Growth-Plate-Postnatal-Nilsson1999|ERα/ERβ Expression Timing Across Growth-Plate Zones]] — Nilsson et al. 1999
+- [[ERKO-BERKO-DERKO-OPG-RANKL-Male-Mice-Windahl2001|ERα Mediates Estrogen's OPG/RANKL Effect in Male Mice]] — Windahl et al. 2001
+- [[GH-Secretagogues-Ipamorelin-GHRP6-Bone-Mineral-Content-Svensson2000|GH Secretagogues Ipamorelin and GHRP-6 Increase Bone Mineral Content]] — Svensson et al. 2000
+- [[GH-Pulsatile-vs-Continuous-Infusion-Hypophysectomized-Rats-Clark1985|Pulsatile GH Infusion Outperforms Continuous Infusion]] — Clark et al. 1985
+- [[Local-Estrogen-Production-Growth-Plate-Cartilage-Nilsson2001|Local Estrogen Synthesis and Function in a Human Chondrocyte Cell Line]] — Nilsson et al. 2001
+- [[Aromatase-Transcripts-Human-Growth-Plate-Nawata|Aromatase Expression Confirmed in Human Growth Plate Tissue]]
+- [[Nandrolone-Craniofacial-Growth-Rats-Fischman|Nandrolone Alters Craniofacial Growth in Rats]]
+- [[Cell-Cycle-Proliferative-Zone-Chondrocytes-Wilsman1996|Cell Cycle Kinetics of Proliferative-Zone Chondrocytes]] — Wilsman et al. 1996
+- [[Differential-Growth-Plate-Senescence-Bone-Size-Dolan2022|Diverse Mechanisms of Growth Plate Exhaustion Determine Skeletal Proportions]] — Dolan et al. 2022
+- [[5AlphaReductase-Deficiency-Androgen-Treatment-Height-BoneAge|Androgen Treatment, Bone Age, and Height in 5α-Reductase Type 2 Deficiency]]
+- [[Ecdysteroid-MDR-Cancer-Offtopic|Ecdysteroids and Cancer Multidrug Resistance]] — (unrelated)
+- [[ERbeta-Inflammasome-Hippocampal-Ischemia-Offtopic|ERβ and Hippocampal Ischemia Neuroprotection]] — (unrelated)
+- [[Fulvestrant-Paradoxical-Tamoxifen-Osipo-Offtopic|Paradoxical Fulvestrant Action in Tamoxifen-Stimulated Breast Cancer]] — Osipo et al. 2003 (unrelated)
+- [[Induction-Increased-cAMP-Chondroprotective-Karsdal2007|Elevated cAMP Blocks MMP- But Not Aggrecanase-Mediated Cartilage Degradation]] — Karsdal et al. 2007
+- [[GH-Stimulates-Human-Osteoblast-Proliferation-Kassem1993|GH Directly Stimulates Human Osteoblast Proliferation and Differentiation]] — Kassem et al. 1993
+- [[FSHR-Chondrocytes-FSH-Effect-Kong2018|FSH Receptor Expression and Direct FSH Effects on Chondrocytes]] — Kong et al. 2018
+- [[PTH-Calcitonin-GH-cAMP-Growth-Cartilage-Uremic-Kreusser1982|PTH Resistance in Growth Cartilage of Uremic Rats]] — Kreusser et al. 1982
+- [[Testosterone-Dose-Age-Conversion-Estradiol-DHT-Lakshman2010|Testosterone Dose and Age Determine Conversion to Estradiol vs. DHT]] — Lakshman et al. 2010
+- [[IGF1-IGFBP-Diaphragm-Nandrolone-Lewis2002|IGF-I/IGFBP Mediates Nandrolone's Effect in Diaphragm Muscle]] — Lewis et al. 2002
+- [[hGH-Colony-Formation-Rat-Epiphyseal-Chondrocytes-Lindahl1986|hGH Directly Potentiates Rat Epiphyseal Chondrocyte Colony Formation]] — Lindahl et al. 1986
+- [[ERbeta-Yin-Yang-ERalpha-Transcription-Lindberg2003|ERβ Directly Antagonizes ERα Transcription]] — Lindberg et al. 2003
+- [[GH-Direct-Indirect-Action-Longitudinal-Growth-Loveridge1995|GH Neutralization Reveals Direct and Indirect Growth Effects]] — Loveridge et al. 1995
+- [[Growth-Plate-Physiology-Review-Lui2014|Growth Plate Physiology: A Modern Synthesis Review]] — Lui et al. 2014
+- [[Cartilage-Targeted-IGF1-Bone-Growth-Lui-Baron|Cartilage-Targeted IGF-1 to Promote Bone Growth]] — Lui, Baron et al.
+- [[Skeletal-Overgrowth-Pan-FGFR-Inhibitor-Case-Report|Pan-FGFR Inhibitor Causes Skeletal Overgrowth]] — Majlessipour et al. 2024
+- [[hGH-Chondrogenesis-Osteogenesis-Chondroprogenitor-Maor1989|hGH Enhances Both Chondrogenesis and Osteogenesis in Chondroprogenitor Cells]] — Maor et al. 1989
+- [[HighDose-rhGH-Puberty-NearFinalHeight-Mauras2000|High-Dose rhGH During Puberty Increases Near-Final Height]] — Mauras et al. 2000
+- [[Nandrolone-Cell-Cycle-Rat-Soleus-Muscle-McClung2005|Nandrolone Modulates Cell-Cycle Regulation in Overloaded Skeletal Muscle]] — McClung et al. 2005
+- [[PGE2-Apoptosis-Bovine-Articular-Chondrocytes-cAMP-Miwa2000|PGE2 Induces Chondrocyte Apoptosis via cAMP]] — Miwa et al. 2000
+- [[PEPITEM-Anabolic-Osteopeptide-Osteoblast-Osteoclast-Coupling|PEPITEM: A Novel Endogenous Bone-Anabolic Peptide]] — Lewis, Frost, et al.
+- [[Anabolic-Steroids-Mandibular-Growth-Rats-Gebhardt|Nandrolone Alters Mandibular Growth in Rats]] — Gebhardt & Pancherz
+- [[AAS-Skeletal-Muscle-Androgen-Receptor-Review-MuscleHypertrophy|Does AAS Use Downregulate Skeletal Muscle Androgen Receptors?]] — review
+- [[ERbeta-C28I2-Chondrocyte-Apoptosis-ER-Stress|ERβ Regulates Chondrocyte Proliferation/Apoptosis via ER Stress]]
+- [[Khavinson-Peptides-Gene-Expression-2016-Offtopic|Khavinson: Short Peptides Regulate Gene Expression]] — 2016 (unrelated)
+- [[Khavinson-Peptides-Cell-Differentiation-2019-Offtopic|Khavinson: Peptide-Induced Cell Differentiation]] — 2019 (unrelated)
+- [[Alzheimers-Adrenergic-Receptor-PAM-Offtopic|α1A-Adrenergic Receptor PAM in Alzheimer's Disease]] — (unrelated)
+- [[cAMP-cGMP-Epidermal-Cell-Growth-Marcelo1979-Offtopic|cAMP/cGMP Effects on Epidermal Cell Growth]] — Marcelo 1979 (unrelated)
+- [[FK962-Donepezil-Cognition-McCarthy2011-Offtopic|FK962 + Donepezil Synergy for Cognition]] — (unrelated)
+- [[ERbeta-Prostate-Cancer-Inflammation-Offtopic|ERβ and Inflammation in Prostate Cancer Cell Lines]] — (unrelated)
+- [[Fulvestrant-Prolactinoma-GH3-Offtopic|Fulvestrant Effects on Prolactinoma (GH3) Cells]] — (unrelated)
+- [[Pregnenolone-ER-Uteri-Ovaries-Offtopic|Pregnenolone and ER Activation in Uteri/Ovaries]] — (unrelated)
+- [[cAMP-Signaling-General-Review-Offtopic|General cAMP Signaling Review]] — (unrelated)
+- [[Conference-Abstract-Deadline-Notice-NotAPaper|Conference Abstract Deadline Notices]] — not a paper
+- [[GPER1-Discovery-Transmembrane-Estrogen-Receptor-Revankar2005|The Original GPER-1/GPR30 Discovery Paper]] — Revankar et al., Science 2005
+- [[Osteolectin-Growth-Plate-Proliferation-Bone-Elongation-PNAS2023|Osteolectin: A Novel Growth-Plate Proliferation Factor]] — PNAS 2023
+- [[Misconceptions-Epiphyseal-Fusion-Causes-Cessation-Growth-Parfitt2002|Epiphyseal Fusion Doesn't Cause Growth Cessation — It's the Other Way Around]] — Parfitt 2002
+- [[Estrogen-Growth-Plate-Senescence-Epiphyseal-Fusion-Weise2001|Effects of Estrogen on Growth Plate Senescence and Epiphyseal Fusion]] — Weise et al. 2001
+- [[ARKO-Mice-Tissue-Specific-Review-Chang|Tissue-Specific AR Knockout Mice Review]] — Chang et al. 2013
+- [[Liquiritigenin-ERbeta-Selective-Agonist-Mersereau|The Original Discovery of Liquiritigenin as an ERβ-Selective Agonist]] — Mersereau et al.
+- [[GH-IGF1-Longevity-Review|GH/IGF-1 Signaling and Longevity: An Inverse Relationship]]
+- [[ER-Modulators-Clinical-Applications-Review|ER Modulators Across Therapeutic Areas: A Review]]
+- [[Nandrolone-Conditioned-Place-Preference-Adolescent-Mice|Nandrolone Is Rewarding/Addictive in Adolescent Mice]]
+- [[ERalpha-Aromatase-Deficiency-Skeletal-Phenotype-Review|Estrogen Action on the Skeleton: Rodent and Rare Human Disorder Review]]
+- [[Growth-Plate-Signaling-Pathways-Review-Chondrodysplasia|Growth Plate Signaling Pathways and Skeletal Disorders: A Review]]
+- [[FGFR3-Achondroplasia-Chondrodysplasia-Foundational-Review|FGFR3 Mutation Mechanisms in Achondroplasia: Foundational Review]]
+- [[Longitudinal-Bone-Growth-Endocrine-Network-Review-Nilsson2005|Endocrine Regulation of the Growth Plate]] — Nilsson et al. 2005
+- [[Astragalus-Extract-GH-Alternative-IGF1-Bone-Growth|A Botanical Extract as a Potential GH-Alternative for Bone Growth]]
+- [[TGFbeta1-IL10-BMSC-Chondrogenesis-Gene-Therapy|Gene Therapy Directs BMSC Chondrogenic Differentiation]]
+- [[Estrogen-Testosterone-Long-Bone-Growth-Gonadectomized-Mice-Ornoy1994|Sex- and Hormone-Specific Long-Bone Growth in Gonadectomized Mice]] — Ornoy et al. 1994
+- [[cAMP-ECM-Gene-Expression-Rat-Chondrocytes-Rockel2009|cAMP Regulates ECM Gene Expression in Primary Rat Chondrocytes]] — Rockel et al. 2009
+- [[SSC-Epigenetic-Regulation-Ptip-Glycolysis|Epigenetic and Metabolic Regulation of Skeletal Stem Cells via Ptip]]
+- [[Hypothyroidism-Growth-Plate-Senescence-Generality-Test|Growth Inhibition Generally Delays Growth-Plate Senescence]]
+- [[Testosterone-Estradiol-DHEA-Skeletal-Effects-Review|Androgens and Skeletal Homeostasis: A Review]]
+- [[Pregnenolone-Schizophrenia-NMDA-Offtopic|Pregnenolone, NMDA Receptors, and Schizophrenia]] — (unrelated)
+- [[15PGDH-Inhibitor-Tissue-Regeneration-Offtopic|15-PGDH Inhibition and Tissue Regeneration]] — (unrelated)
+- [[Senescent-Cell-Apoptosis-Aging-Offtopic|Targeted Senescent Cell Apoptosis for Aging/Chemotoxicity]] — (unrelated)
+- [[ERalpha-ERbeta-Fulvestrant-Tamoxifen-BreastCancer-Offtopic|ERα/ERβ Status and Tamoxifen/Fulvestrant Combination Therapy]] — (unrelated)
+- [[cAMP-Endothelial-Permeability-Offtopic|cAMP and Endothelial Permeability]] — Perrot et al. 2018 (unrelated)
+- [[Alzheimers-Adrenergic-PAM-CCF219B-Offtopic|CCF219B: Another α1A-Adrenergic PAM for Alzheimer's Disease]] — (unrelated)
+- [[Beta-Carboline-Dopaminergic-Neurons-Polanski-Offtopic|9-Methyl-β-Carboline and Dopaminergic Gene Expression]] — Polanski et al. 2010 (unrelated)
+- [[ER-AR-Male-Efferent-Ductules-Offtopic|ER/AR Regulation in Male Efferent Ductules]] — (unrelated)
+- [[MENT-Male-Contraceptive-Androgen-Offtopic|MENT as a Male Contraceptive Androgen]] — (unrelated)
+- [[Meclizine-Achondroplasia-Phase2-Japan-Trial|Meclizine: A Repurposed Antihistamine for Achondroplasia]] — Phase 2, Japan
+- [[Central-Stimulants-ADHD-Growth-Final-Height-410Children|Central Stimulant Treatment and Growth: 410-Patient Study]]
+- [[Beta2-Adrenergic-Receptor-Chondrocyte-Osteoblast-Transdifferentiation-Catecholamines|Catecholamines and β2-Adrenergic Signaling in Chondrocyte Transdifferentiation]]
+- [[RUNX2-Synchondrosis-Cranial-Base-Growth-Hallett|RUNX2 Maintains Cranial Base Synchondrosis Chondrocytes]] — Hallett et al. 2025
+- [[Kartogenin-OA-Cartilage-Protection-Mechanism|Kartogenin Protects Against Cartilage Degradation in Post-Traumatic OA]]
+- [[Kartogenin-Mode-of-Action-4ABP-PA|Does Kartogenin's Activity Come From Its Metabolites?]]
+- [[ERalpha-ERbeta-Expression-Rat-Epiphyseal-Plate-VanDerEerden|Independent Confirmation: ERα/ERβ Expression in the Rat Growth Plate]] — Van der Eerden et al. 2001
+- [[Systemic-Local-Regulation-Growth-Plate-Review-VanDerEerden2003|Systemic and Local Regulation of the Growth Plate]] — Van der Eerden et al. 2003
+- [[Androgen-Effects-Bone-Muscle-Notelovitz|Androgen Receptor Distribution Across Bone Cell Types]] — Notelovitz
+- [[Androgens-Constitutional-Delay-Growth-1973|Androgens for Constitutional Delay of Growth: 1973]]
+- [[GH-Pulsatility-STAT5b-Liver-Review-ChoiWaxman|STAT5b as the Molecular Decoder of Pulsatile GH Signaling]] — Choi & Waxman 2000
+- [[Jumping-Exercise-Short-Stature-GH-IGF1|Jumping Exercise as a Non-Pharmacological GH/IGF-1 Stimulus]]
+- [[Sex-Differences-Cartilage-Biology-Repair-Review|Sex Differences in Cartilage Biology and Repair]] — 2023
+- [[ERalpha-ERbeta-Knockout-Mice-Disease-Review|ER Knockout Mice Across Disease Areas]] — 2001
+- [[Epiphyseal-Plate-Injury-Pediatric-Orthopedics-Review|Epiphyseal Plate Injury: A Mechanical/Traumatic Angle]]
+- [[Hormonal-Doping-Detection-Bodybuilders-AthleteBiologicalPassport|Metabolic Effects of Hormonal Doping in Bodybuilders]]
+- [[SPI1-Mitochondrial-UPR-Chondrocyte-Senescence-OA|SPI1/Mitochondrial UPR: A Fourth Chondrocyte-Senescence-Reversal Mechanism]] — Zu et al. 2025
+- [[APEX1-Transcriptional-Hub-Endochondral-Ossification-Fracture-Repair|APEX1: A Novel Transcriptional Hub for Endochondral Ossification]]
+- [[Histone-Acetylation-Hypoxia-Chondrocyte-lncRNA-CADM1-AS1|Hypoxia-Driven Epigenetic Regulation via lncRNA CADM1-AS1]]
+- [[SEquol-Bioavailability-Rats-Sex-Dose|(S)-Equol Pharmacokinetics: A Sex-Comparative Rat Study]]
+- [[DHT-Estradiol-TMJ-Osteoarthritis-Sex-Specific-Tomura|DHT and Estradiol in TMJ Osteoarthritis: Sex-Specific Mechanisms]] — Tomura et al.
+- [[Intermittent-PTHrP-MSC-Chondrogenesis-Hypertrophy-Fischer2015|Intermittent PTHrP Dosing Improves MSC Chondrogenesis]] — Fischer et al. 2015
+- [[Estradiol-Nongenomic-Chondrocyte-Maturation-Stages-Schwartz1996|Rapid Non-Genomic Estradiol Effects on Chondrocytes]] — Schwartz et al. 1996
+- [[Chondrogenic-Differentiation-MSC-Challenges-Review-Somoza2014|MSC Chondrogenic Differentiation: Persistent Challenges]] — Somoza et al. 2014
+- [[Epiphysiodesis-Tension-Band-Plates-Limb-Length-Discrepancy|Tension Band Plate Epiphysiodesis for Limb Length Discrepancy]]
+- [[Estradiol-Membrane-Receptor-PKC-Sex-Specific-Sylvia2000|Sex-Specific Non-Genomic Estrogen Effects via PKC]] — Sylvia et al. 2000
+- [[Chondrocytes-Produce-Estradiol-Vitamin-D-Regulation-Sylvia2002|Vitamin D Regulates Local Chondrocyte Estradiol Production]] — Sylvia et al. 2002
+- [[Chondrocyte-Senescence-OA-Review-Tan2026|Chondrocyte Senescence in Osteoarthritis: A Unifying 2026 Review]] — Tan et al.
+- [[Nandrolone-Therapeutic-Applications-Review-MaleHealth|Legitimate Therapeutic Applications of Nandrolone]]
+- [[Trenbolone-Satellite-Cells-Muscle-Hypertrophy-Thompson1989|Trenbolone Induces Muscle Hypertrophy via Satellite Cells]] — Thompson et al. 1989
+- [[MSC-Osteogenic-Differentiation-Osteocyte-Osteoblast-Niche-Cues|Osteocyte/Osteoblast Niche Cues Regulate MSC Osteogenic Differentiation]]
+- [[Gender-Estradiol-Testosterone-GH-Secretagogue-Drive-Veldhuis2004|Sex Steroids Modulate Maximal GH-Secretagogue-Driven Secretion]] — Veldhuis et al. 2004
+- [[Idiopathic-Condylar-Resorption-Estrogen-Occlusal-Factors|Estrogen and Occlusal Factors in Idiopathic Condylar Resorption]]
+- [[Icariin-Bone-Formation-cAMP-Primary-Cilia-Osteoblasts|Icariin Promotes Bone Formation via Primary-Cilia cAMP Signaling]]
+- [[HDAC3-Phlpp1-Chondrocyte-Akt-Matrix-Secretion-Bradley2013|HDAC3 Regulates Chondrocyte Akt Signaling via Phlpp1]] — Bradley et al. 2013
+- [[Infigratinib-FGFR-Achondroplasia-Mouse-Model-Preclinical|Infigratinib in a Mouse Model of Achondroplasia: Preclinical Foundation]]
+- [[AR-Binding-Affinity-Fish-Brain-Ovary-Offtopic|Androgen Receptor Binding Affinities in Fish Brain/Ovary]] — (unrelated)
+- [[ERbeta-Hepatic-Stellate-Cells-Liver-Fibrosis-Offtopic|ERβ in Hepatic Stellate Cells and Liver Fibrosis]] — (unrelated)
+- [[Capivasertib-Fulvestrant-BreastCancer-Phase3-Offtopic|Capivasertib + Fulvestrant Phase 3 Breast Cancer Trial]] — (unrelated)
+- [[FOXO4-DRI-Keloid-Senescence-Offtopic|FOXO4-DRI and Keloid Fibroblast Senescence]] — (unrelated)
+- [[DNA-Damage-Checkpoint-Control-Offtopic|DNA Damage Checkpoint Control Proteins]] — (unrelated)
+- [[Russian-Cartilage-Tissue-Hydrobionts-FailedExtraction|Russian Cartilage-Tissue-of-Hydrobionts Paper]] — failed extraction
+- [[Schwann-Cell-Growth-cAMP-Offtopic|cAMP and Schwann Cell Growth]] — Stewart et al. 1991 (unrelated)
+- [[cAMP-PKA-General-Cell-Growth-Review-Stork2002-Offtopic|General cAMP/PKA Cell Growth Review]] — Stork 2002 (unrelated)
+- [[Liquiritigenin-Cholesterol-TNBC-Offtopic|Liquiritigenin, Cholesterol Biosynthesis, and TNBC Growth Inhibition]] — (unrelated)
+- [[Beta-Carboline-DNA-Damage-Photoexcited-Offtopic|Photoexcited β-Carboline DNA Damage Mechanisms]] — Vignoni et al. 2013 (unrelated)
+- [[Subperiosteal-Hematoma-Ossification-Case-Report-Offtopic|Subperiosteal Hematoma Ossification: A Trauma Case Report]] — (unrelated)
+- [[Donepezil-Curcumin-Alzheimers-Offtopic|Donepezil-Curcumin Hybrid for Alzheimer's Disease]] — Yan et al. 2017 (unrelated)
+- [[Liquiritigenin-Breast-Cancer-Prevention-Aromatase-Offtopic|Liquiritigenin as Aromatase-Inhibiting Breast Cancer Chemoprevention]] — (unrelated)
+- [[Estrogen-Resistance-ERalpha-Mutation-Man-Smith1994-NEJM|Estrogen Resistance Caused by a Mutation in the Estrogen-Receptor Gene in a Man]] — Smith et al. 1994, NEJM (foundational)
+- [[Anabolic-Steroids-Craniofacial-Growth-Rat-BarrettHarris1993|Anabolic Steroids and Craniofacial Growth in the Rat]] — Barrett & Harris 1993
+- [[Thyroid-GH-Axis-Interactions-Review-Laron2003|Interactions Between Thyroid Hormones and the GH Axis]] — Laron 2003
+- [[GH-IGF1-Hematopoiesis-Kelley1996|GH, Growth Factors and Hematopoiesis]] — Kelley et al. 1996
+- [[GH-Anabolic-Steroids-Family-IsolatedGHD-Yuksel1984|Combined GH + Anabolic Steroid Therapy in a Family with Isolated GHD]] — Yüksel et al. 1984
+- [[ERalpha-Cell-Proliferation-Cancer-UPR-Livezey|A New Role for ERα in Cell Proliferation and Cancer: Activating the UPR]] — Livezey et al. 2018 (unrelated)
+- [[GPER-ERalpha-Breast-Cancer-Structural-Saha|Decoding Estrogen Receptor and GPER Biology in ERα-Positive Breast Cancer]] — Saha & Lukong (unrelated)
+- [[Kursk-Medical-Conference-Proceedings-Misplaced|Kursk State Medical University Conference Proceedings]] — misplaced bulk document, not a single paper
+- [[Magnocellular-Hypothalamo-Neurohypophysial-Gene-Regulation-Burbach|Gene Regulation in the Magnocellular Hypothalamo-Neurohypophysial System]] — Burbach et al. 2001 (unrelated)
+- [[Russian-Patent-Cell-Culture-Method|Russian Federation Patent (Cell Culture Method)]] — not a research paper
 
 ---
 

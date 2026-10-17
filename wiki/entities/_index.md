@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Entities Index"
-updated: 2026-04-07
+updated: 2026-07-26
 tags:
   - meta
   - index
@@ -36,7 +36,8 @@ All entity pages — people, organizations, products, and tools.
 
 ## Products & Tools
 
-<!-- Add tool and product pages here -->
+- [[Honey]] — natural sweetener; subject of antidiabetic, bone-metabolism, and wound-healing research
+- [[Tualang Honey]] — Malaysian wild multi-floral honey; the most-studied variety in the bone-metabolism cluster
 
 ---
 

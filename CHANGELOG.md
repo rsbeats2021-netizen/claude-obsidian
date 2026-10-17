@@ -2,6 +2,74 @@
 
 All notable changes to claude-obsidian. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: [SemVer](https://semver.org/).
 
+## [Unreleased] - content pipeline and vault corpus
+
+Branch `content-pipeline-tiktok-decks`. A short-form content pipeline built on the
+vault, plus the vault corpus itself, which had accumulated on disk uncommitted since
+April. No plugin runtime code changes: `scripts/` gains content-pipeline tooling, and
+nothing under `skills/wiki*`, `agents/` or the retrieval path is touched.
+
+### Added
+
+- **Short-form deck pipeline** (`content/`). 37+ research-backed decks, each carrying a
+  research brief, video script, slide ledger (CSV) and claim list. Covers the growth-plate
+  and GH/IGF-1 series (an 18-part `hgh-` sequence on pulsatility, dose, timing, GHRH/GHRP,
+  somatostatin, pyridostigmine, chromatin, CNP, insulin/GHR, fasting and dissociations),
+  plus `viral-bone-age`, `eleven-oxyandrogens`, `isotretinoin-dose`, `ai-brain-penetration`
+  and `gh-thyroid-drain`.
+- **Renderers** (`scripts/render-slides.py`, `render-v2.py`, `render-v3.py`,
+  `render-classic.py`, `render-morph.py`). Decks render straight to 1080x1920 PNG with no
+  design tool, with aspect-ratio support, eight colour palettes on the morph layout,
+  semantic emphasis modes and configurable image density.
+- **Diagram generation** (`scripts/make-deck-images.py`, `make-deck-charts.py`).
+  Parameterised per-slide SVG generators for the recurring visuals — growth plate with
+  zones, split pathway, dip-and-overshoot curve, compared bars, blocked receptor — rather
+  than drawing 400 images by hand. 238 SVG diagrams committed.
+- **Video assembly** (`scripts/render-video.py`, `make-video.py`). ffmpeg deck-to-video
+  renderer and an assembler for the Character Animator pipeline.
+- **Style analysis** (`content/_style-analysis/`, `scripts/ocr-slides.py`,
+  `transcribe-videos.py`, `build-creator-claims.py`). Local OCR of competitor slides and
+  faster-whisper video transcription, with measured findings from 1,951 posts driving the
+  deck designs. Nine `content/voice-<handle>/` variants rewrite our own decks in a named
+  account's measured voice.
+- **Vault corpus** (`wiki/`). 480 pages: 410 source pages for the ingested study corpus,
+  29 concept and vocabulary pages, 7 comparisons, 7 claim pages with verdicts, 6 deck
+  pages with slide ledgers, 3 quote files, Templater templates and the navigation layer.
+- **DHT ester dosing deep dive** (`wiki/concepts/DHT Esters — Dosing and Concentrations.md`,
+  `wiki/references/DHT Propionate Animal Dose Ledger.md`, 11 source pages). Every published
+  dosage and both of the only two mg/mL concentration figures that exist for DHT
+  heptanoate/enanthate and DHT propionate.
+- **`deep-review` skill** (`skills/deep-review/`). Builds a cited single-page HTML
+  reference document on a mechanism-heavy topic, verifying each claim against primary
+  literature before writing it.
+
+### Changed
+
+- `.gitignore` gains a research-pipeline policy block stating that the repo is public and
+  excluding third-party or regenerable material: the local venv, video transcripts,
+  rendered export dirs, the 1.6 GB extracted figure set, `wiki/creators/`, `wiki/figures/`
+  and the private chat exports.
+- Deck voice and structure reworked across several passes — decks rewritten to explain
+  rather than argue, redundant section labels dropped, tag column removed, em dashes
+  banned.
+
+### Fixed
+
+- **Absence claims audited against the literature** across every deck; the AI deck's false
+  exhaustiveness claim removed, the mandible deck corrected, and diagrams rebuilt after the
+  audit.
+- 4:5 cropping bug in the renderer; CSV field drift in the slide ledgers; every deck
+  citation resolved to a real PDF path.
+
+### Notes
+
+- This branch adds 120 MB of rendered slide PNGs, taking `.git` from 53 MB to 100 MB. They
+  have no SVG siblings, so they are not regenerable from the repo; committed deliberately
+  rather than ignored.
+- `make test` cannot complete on macOS: `test-address`, `test-lock` and `test-concurrent`
+  depend on `flock`, which macOS does not ship. Pre-existing, and in code this branch does
+  not touch. The other 6 suites pass.
+
 ## [1.9.2] - 2026-05-27 (prompt-cache hardening + path-handling robustness)
 
 Ports Anthropic prompt-caching best practices into the **one** place the plugin calls the Anthropic API directly: tier-1 contextual-prefix generation in `scripts/contextual-prefix.py`. Verified by full-repo sweep that `cache_control` and the Anthropic API surface exist nowhere else (incl. `claude-canvas/`). No change to retrieval output — API payload shape + observability only.

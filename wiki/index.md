@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Wiki Index"
-updated: 2026-10-02
+updated: 2026-10-21
 tags:
   - meta
   - index
@@ -148,6 +148,15 @@ Endocrinology domain sources (281 in-domain + 98 unrelated as of 2026-07-27) are
 - [[Three Estrogen Receptor Mechanisms in the Growth Plate]] — ERα/AF-1-independent closure vs. GPER-1 proliferation vs. ligand-independent ERα mechanotransduction; three distinct systems, one receptor family name
 - [[Three Achondroplasia Drug Strategies - FGFR3 Inhibition vs Repurposing]] — TYRA-300 and infigratinib (novel selective inhibitors) vs. meclizine (repurposed antihistamine); a pan-FGFR-inhibitor overgrowth case validates the shared mechanism
 - [[Anabolic Steroid Effects Across Craniofacial Sites]] — nandrolone/DHT/estradiol alter craniofacial growth at every site studied (skull vault, mandible, TMJ), not an isolated finding
+
+---
+
+## References
+
+Reference ledgers live in `wiki/references/`: large extracted tables that other pages cite rather than restate.
+
+- [[Molecuro Research Compound Catalogue]] - the full Molecuro commercial catalogue as of 2026-10-21: 479 products, 15 compound classes, grouped by class and physical form. Vendor listing copy: a record of what is sold, not evidence about any compound.
+- [[DHT Propionate Animal Dose Ledger]] - every DHT propionate dosing regimen extractable from PubMed abstracts (~50 regimens)
 
 ---
 

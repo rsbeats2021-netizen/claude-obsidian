@@ -1,7 +1,7 @@
 ---
 type: meta
 title: "Operation Log"
-updated: 2026-10-17
+updated: 2026-10-21
 tags:
   - meta
   - log
@@ -18,6 +18,15 @@ related:
 Navigation: [[index]] | [[hot]] | [[overview]]
 
 Append-only. New entries go at the TOP. Never edit past entries.
+
+## 2026-10-21 (save): Molecuro compound catalogue filed as a reference ledger
+
+- Filed [[Molecuro Research Compound Catalogue]]: the whole Molecuro commercial catalogue as of 2026-10-21, **479 products** across two shop sections and 15 compound classes, grouped by class and then by physical form (vials, solutions, powders, capsules, tablets, softgels).
+- Scope came from ten listing pages the user had printed to PDF (`~/Downloads/molecuro/`, outside the vault). **Those prints were incomplete**: 69 entries were lost at page breaks (DSIP, GHRP-2, GHRP-6, FOXO4-DRI and Follistatin-344 among the peptides alone) and the *Essential and herbal oils* class, 49 products, was never printed at all. Reconciled against the live listing pages the same day, so per-class counts now match the vendor's own stated totals: 72 peptides, 96 nootropic, 187 metabolic and longevity, 49 oils, 75 OTC.
+- **Forms, counting every form a product is sold in**: 415 powders, 152 capsules, 71 lyophilised vials (70 of them peptides), 53 solutions, 17 tablets, 3 softgels. **There are no sprays** in the catalogue, and no ampoules, creams, gels, patches or pre-filled syringes. The filing request assumed sprays existed; they do not.
+- **Not evidence.** Every field is vendor listing copy (class, form, price, formula), unchecked against any certificate of analysis, assay or regulatory record. The page opens with a callout saying so and makes no claim about what any compound does, so it has the standing the vault gives `creators/` (tier X): a commercial assertion kept so it can be checked, never a source of fact.
+- Rows resolve at `https://molecuro.com/products/<slug>`; the slug is a column. Formula and molar mass are present on 205 of the 479 rows, only where the listing states them. Prices are the entry price plus the vendor's unit price, whose basis varies (per mg, g, kg, capsule, 100 capsules, softgel) and is reproduced unconverted.
+- Produced outside the vault first, as the deliverable the user asked for: `~/Downloads/molecuro/Molecuro-catalogue-organised.md` and `molecuro-catalogue.csv` (one row per product, with resolvable URLs). The vault page is the same organisation in vault conventions.
 
 ## 2026-10-17 (gap-closing pass) — two of three DHT ester gaps closed
 

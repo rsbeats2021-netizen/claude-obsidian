@@ -155,7 +155,7 @@ Endocrinology domain sources (281 in-domain + 98 unrelated as of 2026-07-27) are
 
 Reference ledgers live in `wiki/references/`: large extracted tables that other pages cite rather than restate.
 
-- [[Molecuro Research Compound Catalogue]] - the full Molecuro commercial catalogue as of 2026-10-21: 479 products, 15 compound classes, grouped by class and physical form. Vendor listing copy: a record of what is sold, not evidence about any compound.
+- [[Molecuro Research Compound Catalogue]] - **moved 2026-10-21** to the Molecuro vault (`~/Documents/Molecuro/Vault/Molecuro`), where it is a source page with a ledger record. This path is now a pointer stub.
 - [[DHT Propionate Animal Dose Ledger]] - every DHT propionate dosing regimen extractable from PubMed abstracts (~50 regimens)
 
 ---

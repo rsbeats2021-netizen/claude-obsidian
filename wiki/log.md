@@ -19,6 +19,12 @@ Navigation: [[index]] | [[hot]] | [[overview]]
 
 Append-only. New entries go at the TOP. Never edit past entries.
 
+## 2026-10-21 (save): catalogue moved out to the Molecuro vault
+
+- The catalogue page filed here earlier today now lives at `~/Documents/Molecuro/Vault/Molecuro/wiki/sources/Molecuro Research Compound Catalogue.md`. This path keeps a pointer stub so the index entry and the earlier log entry do not dangle.
+- **Why**: this checkout is the product source and the engine refuses to treat it as a vault, so the catalogue was only ever a docs edit here. In the Molecuro vault it is a `source` page with a ledger record (`src-e59aa61e35da00bde6b0`, origin `https://molecuro.com/research`, authority official, refresh due 2026-11-21), and it sits with the content pipeline that reads it.
+- Nothing else in this checkout referenced the catalogue. The DHT propionate ledger entry added to the index in the same breath stays.
+
 ## 2026-10-21 (save): Molecuro compound catalogue filed as a reference ledger
 
 - Filed [[Molecuro Research Compound Catalogue]]: the whole Molecuro commercial catalogue as of 2026-10-21, **479 products** across two shop sections and 15 compound classes, grouped by class and then by physical form (vials, solutions, powders, capsules, tablets, softgels).

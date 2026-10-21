@@ -344,3 +344,93 @@ The two "not medical advice" slides in `voice-750tren` and `voice-ntluccy` are
 NOT mine — they are faithful reproductions of those creators' own disclaimer
 slides, which appear on 4 and 8 of their posts respectively. Removing them would
 make the voice copies less accurate, so they stay.
+
+## Androgens and IGF-1 (21 Oct)
+
+`content/androgens-igf1-ranking/` — brief plus claims file, no deck yet.
+
+Built from three Sci-Bot (sci-hub AI) answer pages, not from papers. Audited: real
+references, resolving DOIs, correct mechanism, no fabricated data. Faults found were
+two misattributed citations, one silent merge of two papers from the same group, one
+bad inference ("100-fold") and two consequential omissions.
+
+The claim worth a deck: **induction is not dependence**. How hard an androgen
+induces IGF-1 and how much its anabolic effect depends on IGF-1R rank in opposite
+orders — trenbolone is last on one and first on the other. The blood-IGF-1 arm is a
+third list, and it is really a ranking of aromatization.
+
+**Five claims are now verified** against the PubMed records with verbatim abstract
+quotes: Wu 2007 (the AREs, PMID 17363459), Le 2006 (DHT/T 7-fold, PMID 16368782),
+Pampusch 2008 (the trenbolone/estradiol dissociation, PMID 18676717), Thornton 2015
+(the IGF-1R dependence route, PMID 26440329), Lewis 2002 (the IGFBP switch,
+PMID 11788382).
+
+Verifying five papers caught **six errors** that had come through the synthesis.
+Full table in section B of the claims file; the two that change a conclusion:
+- **DHT does not beat testosterone.** Le 2006 says "DHT and T **each**" increased
+  IGF-1 7-fold. The induction ranking now reads DHT **=** T.
+- **The 8-fold protein figure does not exist.** 7-fold covers mRNA and protein.
+
+Two details stay demoted to unverified because the abstracts do not contain them
+(additive AREs, DNA-binding-deficient AR, both Wu 2007).
+
+The third was chased into the full text and **settled**. Lewis 2002 is free to read
+at `journals.physiology.org/doi/full/10.1152/ajpendo.00191.2001`, and serum IGF-I
+was **287.6 +/- 106.1 (CTL) vs 297.5 +/- 86.0 ng/ml (NAN)**, n = 7 per group, while
+muscle IGF-I rose 50%. So the local/systemic dissociation is real and quotable --
+but write it as a null, not an equivalence: those SDs are ~37% of the mean and the
+study could not have seen a modest rise.
+
+Reading one full text turned up three things no abstract contains:
+- **Urban's elderly men showed the same split** -- muscle IGF-I mRNA up, serum IGF-I
+  not elevated, on testosterone. Cuts both ways: supports "serum is a poor surrogate
+  for the intramuscular axis", and qualifies the aromatization rule, since
+  Weissberger & Ho's hypogonadal men *did* raise serum IGF-1 on testosterone.
+  Aromatization governs whether; baseline governs how much.
+- **Systemic IGF-1 downregulates local muscle IGF-1** (negative feedback), per the
+  authors' own earlier work.
+- **The testosterone RIA in that model cross-reacts heavily with nandrolone**, so its
+  "serum testosterone" numbers are not usable.
+
+One claim moved the other way: **Le 2006 cannot support "androgens up-regulate
+IGF-1R"** — it reports IGF-1R explicitly unchanged by all four steroids. That came
+from the Adzavon 2024 review instead, still unverified.
+
+**B7 (the aromatization rule) is now verified too** -- Weissberger & Ho 1993
+(PMID 8501143), Veldhuis 1997 (PMID 9329378), and Urban 1995 read from the free
+PDF. It did not confirm the rule as I had written it; it **narrowed** it:
+
+- Urban's elderly men **doubled estradiol** (17 -> 36 pg/ml, significant) and serum
+  IGF-1 still rose only a non-significant +16% (141 -> 163 ng/ml, n = 6). So the
+  thing separating Urban from Weissberger is **not** aromatization -- it is baseline
+  deficit and statistical power.
+- Weissberger's IGF-1 rise is +22% (0.9 -> 1.1 U/mL). Same modest effect, detected
+  once, missed once. The big reliable androgen effect on that axis is on **GH pulse
+  amplitude** (3.1 -> 5.2 ug/L), not on IGF-1.
+- Veldhuis measured **ApEn** -- the orderliness of GH secretion -- not IGF-1. My
+  earlier "DHT failed to reproduce testosterone's GH effect" was too loose to put
+  on a slide.
+- **Nobody in this set measured a non-aromatizable androgen lowering serum IGF-1 in
+  men.** The bottom of the blood-arm ranking is mechanism, not measurement.
+
+Running total: eight papers verified, **seven synthesis errors** caught, one rule of
+my own narrowed, two claims taken past the abstract into full text.
+
+Still unverified: B4 (Kamanga-Sollo 2004), the human leg of B9 (Johansen 1999 JAMA),
+the two Wu 2007 full-text details, and all of section D. Nothing cleared to post.
+
+None of the three PDFs got filed into `.raw/` — Sci-Hub returned not_found for all
+three DOIs, so the quotes are abstract-level off PubMed, which is the same standard
+`hgh-04-exogenous` uses for Isaksson 1982. Full texts still owed if a deck needs a
+figure or a methods detail.
+
+Two spin-offs recorded in the same file:
+- **"A thicker growth plate can mean a shorter bone"** — gefitinib doubled plate
+  thickness and shortened the bones. Best hook in the set; breaks a common intuition.
+- **EGFR is where GH, trenbolone and mechanical loading converge.** Bridges this
+  topic, `orca-09-gh-concentration` and `mechanical-loading-bone`. None of the three
+  source pages spotted it.
+
+Corrections owed to existing topics are in section C of the claims file —
+`orca-09-gh-concentration` provenance (Pan 2010 vs Zhu 2011) and three additions to
+its "ng/mL does not convert to mg/kg" argument.
